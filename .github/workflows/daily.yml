@@ -17,39 +17,12 @@ jobs:
           python-version: '3.11'
       - run: pip install -r requirements.txt
       - env:
-          FOOTBALL_API_KEY: ${{ secrets.f5cccd7b7043413db4febe6d01102014 }}
-          TELEGRAM_BOT_TOKEN: ${{ secrets.8965083786:AAFjxvc_hrCl9mZkKwkDzZBMNrNryMm6aoE }}
-          TELEGRAM_CHAT_ID: ${{ secrets.1666866384 }}
-        run: python src/predict_today.py
-      - run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "actions@github.com"
-          git add predictions/
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto update predictions [skip ci]" && git push)
-name: Daily Predictions
-
-on:
-  schedule:
-    - cron: '0 6 * * *'
-  workflow_dispatch:
-
-jobs:
-  predict:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-      - run: pip install -r requirements.txt
-      - env:
           FOOTBALL_API_KEY: ${{ secrets.FOOTBALL_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python src/predict_today.py
       - run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "actions@github.com"
           git add predictions/
           git diff --quiet && git diff --staged --quiet || (git commit -m "Auto update predictions [skip ci]" && git push)
-
