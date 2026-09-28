@@ -1,1 +1,13 @@
-[]
+[
+  {
+    "league": "English Premier League",
+    "home": "Liverpool",
+    "away": "Manchester City",
+    "date": "2026-10-11",
+    "probabilities": {
+      "home_win_pct": 43.8,
+      "draw_pct": 26.2,
+      "away_win_pct": 30.0
+    }
+  }
+]
