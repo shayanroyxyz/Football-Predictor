@@ -1,22 +1,18 @@
 import os
 import math
 import json
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 import requests
 
-API_KEY = os.getenv("FOOTBALL_API_KEY")
 TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
-
-HEADERS = {"X-Auth-Token": API_KEY}
-BASE_URL = "https://api.football-data.org/v4"
 
 def poisson_pmf(k, lamb):
     if lamb <= 0:
         return 0.0
     return (math.pow(lamb, k) * math.exp(-lamb)) / math.factorial(k)
 
-def calculate_match_probabilities(home_exp, away_exp, max_goals=6):
+def calculate_poisson_probabilities(home_exp=1.45, away_exp=1.15, max_goals=6):
     home_win, draw, away_win = 0.0, 0.0, 0.0
     for h in range(max_goals):
         for a in range(max_goals):
@@ -27,11 +23,25 @@ def calculate_match_probabilities(home_exp, away_exp, max_goals=6):
                 draw += prob
             else:
                 away_win += prob
-    return round(home_win * 100, 1), round(draw * 100, 1), round(away_win * 100, 1)
+    total = home_win + draw + away_win
+    return round((home_win / total) * 100, 1), round((draw / total) * 100, 1), round((away_win / total) * 100, 1)
+
+def odds_to_implied_probabilities(home_odds, draw_odds, away_odds):
+    try:
+        raw_h = 1.0 / float(home_odds)
+        raw_d = 1.0 / float(draw_odds)
+        raw_a = 1.0 / float(away_odds)
+        margin = raw_h + raw_d + raw_a
+        fair_h = round((raw_h / margin) * 100, 1)
+        fair_d = round((raw_d / margin) * 100, 1)
+        fair_a = round((raw_a / margin) * 100, 1)
+        return fair_h, fair_d, fair_a
+    except Exception:
+        return None
 
 def send_telegram_alert(message):
     if not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHAT_ID:
-        print("Telegram secrets not set. Skipping notification.")
+        print("Telegram credentials not configured. Skipping alert.")
         return
     url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
     payload = {
@@ -40,73 +50,174 @@ def send_telegram_alert(message):
         "parse_mode": "Markdown"
     }
     try:
-        r = requests.post(url, json=payload, timeout=10)
-        if r.status_code == 200:
-            print("Telegram alert sent successfully.")
-        else:
-            print(f"Telegram failed: {r.text}")
+        requests.post(url, json=payload, timeout=15)
     except Exception as e:
         print(f"Error sending to Telegram: {e}")
 
+def fetch_espn_scoreboard(date_str):
+    """Hits ESPN master soccer scoreboard across all world competitions."""
+    matches = []
+    # Query both the general soccer scoreboard and scorepanel endpoints
+    urls = [
+        f"https://site.api.espn.com/apis/site/v2/sports/soccer/scoreboard?dates={date_str}&limit=300",
+        f"https://site.api.espn.com/apis/site/v2/sports/soccer/scorepanel?dates={date_str}"
+    ]
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+    }
+    
+    seen_ids = set()
+    for url in urls:
+        try:
+            r = requests.get(url, headers=headers, timeout=15)
+            if r.status_code != 200:
+                continue
+            data = r.json()
+            
+            # Form 1: Direct events list
+            events = data.get("events", [])
+            
+            # Form 2: Nested leagues -> events
+            if not events:
+                for lg in data.get("leagues", []):
+                    events.extend(lg.get("events", []))
+
+            for event in events:
+                event_id = event.get("id")
+                if event_id in seen_ids:
+                    continue
+                seen_ids.add(event_id)
+
+                competitions = event.get("competitions", [])
+                if not competitions:
+                    continue
+                comp = competitions[0]
+                competitors = comp.get("competitors", [])
+                if len(competitors) < 2:
+                    continue
+
+                home_team = next((c["team"]["displayName"] for c in competitors if c.get("homeAway") == "home"), competitors[0]["team"]["displayName"])
+                away_team = next((c["team"]["displayName"] for c in competitors if c.get("homeAway") == "away"), competitors[1]["team"]["displayName"])
+                league_name = event.get("season", {}).get("displayName") or comp.get("type", {}).get("text") or "World Football"
+
+                # Check for live/pre-match odds
+                odds_info = comp.get("odds", [])
+                probs = None
+                source_type = "Statistical Model"
+
+                if odds_info:
+                    odd_entry = odds_info[0]
+                    home_dec = odd_entry.get("homeTeamOdds", {}).get("decimal")
+                    away_dec = odd_entry.get("awayTeamOdds", {}).get("decimal")
+                    draw_dec = odd_entry.get("drawOdds", {}).get("decimal")
+                    if home_dec and away_dec and draw_dec:
+                        probs = odds_to_implied_probabilities(home_dec, draw_dec, away_dec)
+                        if probs:
+                            source_type = "Consensus Market Odds"
+
+                if not probs:
+                    probs = calculate_poisson_probabilities()
+
+                matches.append({
+                    "league": league_name,
+                    "home": home_team,
+                    "away": away_team,
+                    "date": event.get("date", ""),
+                    "source": source_type,
+                    "probabilities": {
+                        "home_win_pct": probs[0],
+                        "draw_pct": probs[1],
+                        "away_win_pct": probs[2]
+                    }
+                })
+        except Exception as e:
+            print(f"Error reading from {url}: {e}")
+            continue
+
+    return matches
+
 def run():
-    if not API_KEY:
-        print("ERROR: FOOTBALL_API_KEY environment variable is missing.")
-        return
+    now_utc = datetime.now(timezone.utc)
+    today_str = now_utc.strftime("%Y%m%d")
+    tomorrow_str = (now_utc + timedelta(days=1)).strftime("%Y%m%d")
 
-    url = f"{BASE_URL}/matches"
-    response = requests.get(url, headers=HEADERS)
-    if response.status_code != 200:
-        print(f"API Error {response.status_code}: {response.text}")
-        return
+    # Fetch today and next 24h window
+    matches = fetch_espn_scoreboard(today_str)
+    if len(matches) < 5:
+        # Also grab next day fixtures to catch evening games across timezones
+        matches.extend(fetch_espn_scoreboard(tomorrow_str))
 
-    matches = response.json().get("matches", [])
-    if not matches:
-        print("No matches scheduled for today.")
-        send_telegram_alert("⚽ *Daily Match Predictor*\nNo matches found for today.")
-        return
-
-    output = []
-    telegram_lines = ["⚽ *Today's Football Predictions:*\n"]
-
-    DEFAULT_HOME_EXP = 1.45
-    DEFAULT_AWAY_EXP = 1.15
-
+    # Remove potential duplicates
+    unique_matches = []
+    seen = set()
     for m in matches:
-        home = m["homeTeam"]["name"]
-        away = m["awayTeam"]["name"]
-        comp = m["competition"]["name"]
+        key = (m["home"], m["away"])
+        if key not in seen:
+            seen.add(key)
+            unique_matches.append(m)
+    matches = unique_matches
 
-        p_home, p_draw, p_away = calculate_match_probabilities(DEFAULT_HOME_EXP, DEFAULT_AWAY_EXP)
+    if not matches:
+        send_telegram_alert("⚽ *Global Football Predictor*\nNo fixtures found for today.")
+        return
 
-        output.append({
-            "competition": comp,
-            "match": f"{home} vs {away}",
-            "date": m["utcDate"],
-            "prediction": {
-                "home_win_pct": p_home,
-                "draw_pct": p_draw,
-                "away_win_pct": p_away
-            }
-        })
-
-        telegram_lines.append(
-            f"🏆 *{comp}*\n"
-            f"⚔️ {home} vs {away}\n"
-            f"📊 1: `{p_home}%` | X: `{p_draw}%` | 2: `{p_away}%`\n"
-        )
-
-    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
-    out_file = f"predictions/{today}.json"
+    today_formatted = now_utc.strftime("%Y-%m-%d")
+    out_file = f"predictions/{today_formatted}.json"
+    os.makedirs("predictions", exist_ok=True)
     with open(out_file, "w") as f:
-        json.dump(output, f, indent=2)
+        json.dump(matches, f, indent=2)
 
-    full_message = "\n".join(telegram_lines)
-    if len(full_message) > 4000:
-        full_message = full_message[:3900] + "\n\n_...list truncated._"
-    send_telegram_alert(full_message)
+    high_value_picks = []
+    for m in matches:
+        p = m["probabilities"]
+        h_prob, a_prob = p["home_win_pct"], p["away_win_pct"]
+        if h_prob >= 55.0:
+            pick = f"⭐ *BET:* {m['home']} to WIN (`{h_prob}%` confidence)"
+            high_value_picks.append((m, pick))
+        elif a_prob >= 55.0:
+            pick = f"⭐ *BET:* {m['away']} to WIN (`{a_prob}%` confidence)"
+            high_value_picks.append((m, pick))
 
-    print(f"Processed {len(output)} matches -> {out_file}")
+    messages = []
+    
+    # 1. High Confidence Header
+    msg_header = f"🔥 *HIGH CONFIDENCE PICKS ({today_formatted})*\n\n"
+    if high_value_picks:
+        for m, pick in high_value_picks[:8]:
+            p = m["probabilities"]
+            msg_header += (
+                f"🏆 *{m['league']}*\n"
+                f"⚔️ {m['home']} vs {m['away']}\n"
+                f"{pick}\n"
+                f"📊 Probs: 1: `{p['home_win_pct']}%` | X: `{p['draw_pct']}%` | 2: `{p['away_win_pct']}%`\n"
+                f"🔍 _Basis: {m['source']}_\n\n"
+            )
+    else:
+        msg_header += "_No extreme single-team favorites today._\n\n"
+    messages.append(msg_header)
+
+    # 2. Complete Match List (batched)
+    all_fixtures_str = f"📋 *TODAY'S GLOBAL FIXTURES ({len(matches)} total)*\n\n"
+    for m in matches[:30]:  # Show top 30 to avoid Telegram flood
+        p = m["probabilities"]
+        entry = (
+            f"🏆 *{m['league']}*\n"
+            f"⚔️ {m['home']} vs {m['away']}\n"
+            f"📊 1: `{p['home_win_pct']}%` | X: `{p['draw_pct']}%` | 2: `{p['away_win_pct']}%`\n\n"
+        )
+        if len(all_fixtures_str) + len(entry) > 3800:
+            messages.append(all_fixtures_str)
+            all_fixtures_str = entry
+        else:
+            all_fixtures_str += entry
+
+    if all_fixtures_str.strip():
+        messages.append(all_fixtures_str)
+
+    for chunk in messages:
+        send_telegram_alert(chunk)
+
+    print(f"Processed {len(matches)} matches. Sent to Telegram.")
 
 if __name__ == "__main__":
     run()
-
