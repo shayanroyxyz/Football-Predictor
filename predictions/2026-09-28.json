@@ -8,8 +8,8 @@
     "match_time": "19:00 UTC",
     "bookmaker": "Betfair",
     "probabilities": {
-      "home_win_pct": 90.7,
-      "draw_pct": 5.5,
+      "home_win_pct": 90.5,
+      "draw_pct": 5.6,
       "away_win_pct": 3.8
     }
   },
@@ -64,9 +64,9 @@
     "match_time": "16:00 UTC",
     "bookmaker": "1xBet",
     "probabilities": {
-      "home_win_pct": 82.0,
-      "draw_pct": 13.1,
-      "away_win_pct": 5.0
+      "home_win_pct": 81.6,
+      "draw_pct": 13.3,
+      "away_win_pct": 5.1
     }
   },
   {
@@ -190,9 +190,9 @@
     "match_time": "19:00 UTC",
     "bookmaker": "Suprabets",
     "probabilities": {
-      "home_win_pct": 74.1,
-      "draw_pct": 16.1,
-      "away_win_pct": 9.8
+      "home_win_pct": 74.3,
+      "draw_pct": 16.0,
+      "away_win_pct": 9.6
     }
   },
   {
@@ -428,8 +428,8 @@
     "match_time": "16:45 UTC",
     "bookmaker": "1xBet",
     "probabilities": {
-      "home_win_pct": 14.9,
-      "draw_pct": 21.4,
+      "home_win_pct": 15.1,
+      "draw_pct": 21.1,
       "away_win_pct": 63.8
     }
   },
@@ -450,20 +450,6 @@
   {
     "league": "UEFA Champions League Women",
     "is_global": true,
-    "home": "Paris FC",
-    "away": "Arsenal",
-    "match_date": "30 Sep 2026",
-    "match_time": "16:45 UTC",
-    "bookmaker": "Nordic Bet",
-    "probabilities": {
-      "home_win_pct": 14.9,
-      "draw_pct": 21.9,
-      "away_win_pct": 63.2
-    }
-  },
-  {
-    "league": "UEFA Champions League Women",
-    "is_global": true,
     "home": "Lyon",
     "away": "Chelsea",
     "match_date": "30 Sep 2026",
@@ -473,6 +459,20 @@
       "home_win_pct": 62.7,
       "draw_pct": 21.4,
       "away_win_pct": 15.9
+    }
+  },
+  {
+    "league": "UEFA Champions League Women",
+    "is_global": true,
+    "home": "Paris FC",
+    "away": "Arsenal",
+    "match_date": "30 Sep 2026",
+    "match_time": "16:45 UTC",
+    "bookmaker": "Nordic Bet",
+    "probabilities": {
+      "home_win_pct": 16.0,
+      "draw_pct": 22.5,
+      "away_win_pct": 61.5
     }
   },
   {
@@ -492,20 +492,6 @@
   {
     "league": "UEFA Nations League",
     "is_global": true,
-    "home": "Slovenia",
-    "away": "North Macedonia",
-    "match_date": "29 Sep 2026",
-    "match_time": "18:45 UTC",
-    "bookmaker": "Betfair",
-    "probabilities": {
-      "home_win_pct": 59.9,
-      "draw_pct": 25.5,
-      "away_win_pct": 14.6
-    }
-  },
-  {
-    "league": "UEFA Nations League",
-    "is_global": true,
     "home": "Wales",
     "away": "Norway",
     "match_date": "01 Oct 2026",
@@ -515,6 +501,20 @@
       "home_win_pct": 17.9,
       "draw_pct": 22.4,
       "away_win_pct": 59.7
+    }
+  },
+  {
+    "league": "UEFA Nations League",
+    "is_global": true,
+    "home": "Slovenia",
+    "away": "North Macedonia",
+    "match_date": "29 Sep 2026",
+    "match_time": "18:45 UTC",
+    "bookmaker": "Betfair",
+    "probabilities": {
+      "home_win_pct": 59.5,
+      "draw_pct": 25.5,
+      "away_win_pct": 15.1
     }
   },
   {
@@ -694,8 +694,8 @@
     "match_time": "18:45 UTC",
     "bookmaker": "William Hill",
     "probabilities": {
-      "home_win_pct": 25.2,
-      "draw_pct": 24.5,
+      "home_win_pct": 24.5,
+      "draw_pct": 25.2,
       "away_win_pct": 50.3
     }
   },
@@ -854,6 +854,20 @@
     }
   },
   {
+    "league": "UEFA Nations League",
+    "is_global": true,
+    "home": "Wales",
+    "away": "Denmark",
+    "match_date": "04 Oct 2026",
+    "match_time": "18:45 UTC",
+    "bookmaker": "Winamax (DE)",
+    "probabilities": {
+      "home_win_pct": 28.5,
+      "draw_pct": 25.6,
+      "away_win_pct": 46.0
+    }
+  },
+  {
     "league": "UEFA Champions League Women",
     "is_global": true,
     "home": "HB K\u00f8ge",
@@ -921,20 +935,6 @@
       "home_win_pct": 44.9,
       "draw_pct": 26.2,
       "away_win_pct": 28.9
-    }
-  },
-  {
-    "league": "UEFA Nations League",
-    "is_global": true,
-    "home": "Wales",
-    "away": "Denmark",
-    "match_date": "04 Oct 2026",
-    "match_time": "18:45 UTC",
-    "bookmaker": "Winamax (DE)",
-    "probabilities": {
-      "home_win_pct": 29.9,
-      "draw_pct": 25.6,
-      "away_win_pct": 44.5
     }
   },
   {
@@ -1150,15 +1150,15 @@
   {
     "league": "UEFA Nations League",
     "is_global": true,
-    "home": "Romania",
-    "away": "Bosnia & Herzegovina",
+    "home": "Turkey",
+    "away": "Italy",
     "match_date": "28 Sep 2026",
     "match_time": "18:45 UTC",
-    "bookmaker": "Betfair",
+    "bookmaker": "1xBet",
     "probabilities": {
-      "home_win_pct": 39.2,
-      "draw_pct": 29.3,
-      "away_win_pct": 31.6
+      "home_win_pct": 35.6,
+      "draw_pct": 25.4,
+      "away_win_pct": 38.9
     }
   },
   {
@@ -1192,29 +1192,15 @@
   {
     "league": "UEFA Nations League",
     "is_global": true,
-    "home": "Armenia",
-    "away": "Montenegro",
-    "match_date": "28 Sep 2026",
-    "match_time": "16:00 UTC",
-    "bookmaker": "Betfair",
-    "probabilities": {
-      "home_win_pct": 32.5,
-      "draw_pct": 29.1,
-      "away_win_pct": 38.4
-    }
-  },
-  {
-    "league": "UEFA Nations League",
-    "is_global": true,
-    "home": "Turkey",
-    "away": "Italy",
+    "home": "Romania",
+    "away": "Bosnia & Herzegovina",
     "match_date": "28 Sep 2026",
     "match_time": "18:45 UTC",
-    "bookmaker": "1xBet",
+    "bookmaker": "Betfair",
     "probabilities": {
-      "home_win_pct": 36.3,
-      "draw_pct": 25.4,
-      "away_win_pct": 38.3
+      "home_win_pct": 38.6,
+      "draw_pct": 29.3,
+      "away_win_pct": 32.1
     }
   },
   {
@@ -1229,6 +1215,20 @@
       "home_win_pct": 34.9,
       "draw_pct": 27.2,
       "away_win_pct": 37.9
+    }
+  },
+  {
+    "league": "UEFA Nations League",
+    "is_global": true,
+    "home": "Armenia",
+    "away": "Montenegro",
+    "match_date": "28 Sep 2026",
+    "match_time": "16:00 UTC",
+    "bookmaker": "Betfair",
+    "probabilities": {
+      "home_win_pct": 33.2,
+      "draw_pct": 29.3,
+      "away_win_pct": 37.5
     }
   },
   {
@@ -1248,20 +1248,6 @@
   {
     "league": "UEFA Nations League",
     "is_global": true,
-    "home": "Latvia",
-    "away": "Cyprus",
-    "match_date": "28 Sep 2026",
-    "match_time": "16:00 UTC",
-    "bookmaker": "Betfair",
-    "probabilities": {
-      "home_win_pct": 35.8,
-      "draw_pct": 31.1,
-      "away_win_pct": 33.1
-    }
-  },
-  {
-    "league": "UEFA Nations League",
-    "is_global": true,
     "home": "Georgia",
     "away": "Ukraine",
     "match_date": "28 Sep 2026",
@@ -1271,6 +1257,20 @@
       "home_win_pct": 35.6,
       "draw_pct": 29.4,
       "away_win_pct": 35.0
+    }
+  },
+  {
+    "league": "UEFA Nations League",
+    "is_global": true,
+    "home": "Latvia",
+    "away": "Cyprus",
+    "match_date": "28 Sep 2026",
+    "match_time": "16:00 UTC",
+    "bookmaker": "Betfair",
+    "probabilities": {
+      "home_win_pct": 35.1,
+      "draw_pct": 31.9,
+      "away_win_pct": 33.0
     }
   },
   {
@@ -1310,8 +1310,8 @@
     "match_time": "16:00 UTC",
     "bookmaker": "Betsson",
     "probabilities": {
-      "home_win_pct": 32.4,
-      "draw_pct": 32.7,
+      "home_win_pct": 32.9,
+      "draw_pct": 32.3,
       "away_win_pct": 34.8
     }
   },
