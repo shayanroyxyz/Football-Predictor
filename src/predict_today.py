@@ -10,6 +10,7 @@ ODDS_API_KEY = os.getenv("ODDS_API_KEY")
 GITHUB_USERNAME = "shayanroyxyz"
 GITHUB_REPO = "Football-Predictor"
 PAGES_URL = f"https://{GITHUB_USERNAME}.github.io/{GITHUB_REPO}/"
+TRIGGER_URL = f"https://github.com/{GITHUB_USERNAME}/{GITHUB_REPO}/actions/workflows/daily.yml"
 
 GLOBAL_PRIORITY_KEYWORDS = [
     "champions", "uefa", "europa", "libertadores", "nations", 
@@ -17,7 +18,7 @@ GLOBAL_PRIORITY_KEYWORDS = [
 ]
 
 def format_commence_time(iso_str):
-    """Converts ISO 8601 UTC time into readable date and time."""
+    """Converts ISO 8601 UTC timestamp to readable date and time."""
     try:
         dt = datetime.fromisoformat(iso_str.replace("Z", "+00:00"))
         date_part = dt.strftime("%d %b %Y")
@@ -27,6 +28,7 @@ def format_commence_time(iso_str):
         return "Upcoming", "TBD"
 
 def send_telegram(message):
+    """Sends formatted Telegram message with 1-tap interactive inline action buttons."""
     if not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHAT_ID:
         print("Telegram configuration missing.")
         return
@@ -35,7 +37,15 @@ def send_telegram(message):
         "chat_id": TELEGRAM_CHAT_ID,
         "text": message,
         "parse_mode": "Markdown",
-        "disable_web_page_preview": True
+        "disable_web_page_preview": True,
+        "reply_markup": {
+            "inline_keyboard": [
+                [
+                    {"text": "⚡ Re-Run Predictions Now", "url": TRIGGER_URL},
+                    {"text": "🌐 Open Web Dashboard", "url": PAGES_URL}
+                ]
+            ]
+        }
     }
     try:
         requests.post(url, json=payload, timeout=15)
@@ -66,8 +76,8 @@ def get_predictions_from_market():
 
     soccer_keys.sort(key=get_sport_priority)
 
-    # Use 6 leagues per run to stay well within the 500-credit monthly quota
     matches = []
+    # Queries 6 active leagues to conserve quota (500 free requests/month)
     for sport_key in soccer_keys[:6]:
         odds_url = f"https://api.the-odds-api.com/v4/sports/{sport_key}/odds/?apiKey={ODDS_API_KEY}&regions=eu&markets=h2h&oddsFormat=decimal"
         try:
@@ -121,6 +131,7 @@ def get_predictions_from_market():
     return matches
 
 def generate_web_dashboard(matches, date_str):
+    """Compiles modern HTML dashboard for docs/index.html hosted on GitHub Pages."""
     os.makedirs("docs", exist_ok=True)
     cards_html = ""
     for m in matches:
@@ -197,9 +208,10 @@ def run():
     matches = get_predictions_from_market()
 
     if not matches:
-        send_telegram("⚠️ *Notice:* No active fixtures available right now.")
+        send_telegram("⚠️ *Notice:* No active fixtures available right now or check `ODDS_API_KEY`.")
         return
 
+    # Prioritize global tournaments, then sort by highest favorite win margin
     matches.sort(
         key=lambda m: (
             0 if m["is_global"] else 1,
@@ -215,7 +227,7 @@ def run():
 
     total = len(matches)
 
-    # Top Value Picks
+    # Highlight High-Confidence Picks
     top_picks = []
     for m in matches:
         p = m["probabilities"]
@@ -267,7 +279,7 @@ def run():
         batch += f"\n🔗 *View all {total} matches on your web page:*\n👉 {PAGES_URL}"
         send_telegram(batch)
 
-    print(f"Processed {total} matches with dates/times.")
+    print(f"Processed {total} matches with dates/times and generated docs/index.html.")
 
 if __name__ == "__main__":
     run()
