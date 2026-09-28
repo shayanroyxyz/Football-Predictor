@@ -9,7 +9,7 @@ ODDS_API_KEY = os.getenv("ODDS_API_KEY")
 
 GITHUB_USERNAME = "shayanroyxyz"
 GITHUB_REPO = "Football-Predictor"
-PAGES_URL = f"https://{GITHUB_USERNAME}.github.io/{GITHUB_REPO}/"
+PAGES_URL = "https://stranger.is-a.dev/"
 TRIGGER_URL = f"https://github.com/{GITHUB_USERNAME}/{GITHUB_REPO}/actions/workflows/daily.yml"
 
 GLOBAL_PRIORITY_KEYWORDS = [
@@ -77,7 +77,7 @@ def get_predictions_from_market():
     soccer_keys.sort(key=get_sport_priority)
 
     matches = []
-    # Queries 6 active leagues to conserve quota (500 free requests/month)
+    # Queries 6 active leagues per run to stay well within free monthly quota
     for sport_key in soccer_keys[:6]:
         odds_url = f"https://api.the-odds-api.com/v4/sports/{sport_key}/odds/?apiKey={ODDS_API_KEY}&regions=eu&markets=h2h&oddsFormat=decimal"
         try:
@@ -133,6 +133,11 @@ def get_predictions_from_market():
 def generate_web_dashboard(matches, date_str):
     """Compiles modern HTML dashboard for docs/index.html hosted on GitHub Pages."""
     os.makedirs("docs", exist_ok=True)
+    
+    # Preserve custom domain CNAME file in /docs
+    with open("docs/CNAME", "w", encoding="utf-8") as f:
+        f.write("stranger.is-a.dev\n")
+
     cards_html = ""
     for m in matches:
         p = m["probabilities"]
@@ -180,7 +185,7 @@ def generate_web_dashboard(matches, date_str):
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Global Football Predictions Dashboard</title>
+    <title>Global Football Match Predictions</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-slate-900 text-slate-100 min-h-screen py-8 px-4 font-sans">
@@ -211,7 +216,7 @@ def run():
         send_telegram("⚠️ *Notice:* No active fixtures available right now or check `ODDS_API_KEY`.")
         return
 
-    # Prioritize global tournaments, then sort by highest favorite win margin
+    # Sort: Global tournaments first, then descending by win probability of favorite
     matches.sort(
         key=lambda m: (
             0 if m["is_global"] else 1,
