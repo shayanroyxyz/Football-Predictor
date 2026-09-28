@@ -1,7 +1,7 @@
 import os
 import math
 import json
-from datetime import datetime, timedelta, timezone
+from datetime import datetime, timezone, timedelta
 import requests
 
 TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
@@ -39,140 +39,146 @@ def send_telegram_alert(message):
     try:
         requests.post(url, json=payload, timeout=15)
     except Exception as e:
-        print(f"Telegram error: {e}")
+        print(f"Telegram dispatch error: {e}")
 
-def fetch_from_fotmob(date_str):
-    """
-    Fetches matches from FotMob's open daily feed.
-    date_str format: YYYYMMDD
-    """
-    url = f"https://www.fotmob.com/api/matches?date={date_str}"
+def fetch_sofascore_matches(date_iso):
+    """Fetches hundreds of daily matches globally via Sofascore."""
+    url = f"https://api.sofascore.com/api/v1/sport/football/scheduled-events/{date_iso}"
     headers = {
-        "User-Agent": "Mozilla/5.0 (Linux; Android 10; Mobile) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36"
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+        "Referer": "https://www.sofascore.com/"
     }
     matches = []
     try:
         r = requests.get(url, headers=headers, timeout=15)
         if r.status_code == 200:
-            data = r.json()
-            for league in data.get("leagues", []):
-                league_name = league.get("name", "World Soccer")
-                ccode = league.get("ccode", "")
-                full_league = f"{league_name} ({ccode})" if ccode else league_name
-
-                for m in league.get("matches", []):
-                    home = m.get("home", {}).get("name")
-                    away = m.get("away", {}).get("name")
-                    status = m.get("status", {})
-                    
-                    if home and away:
-                        p_home, p_draw, p_away = calculate_probabilities()
-                        matches.append({
-                            "league": full_league,
-                            "home": home,
-                            "away": away,
-                            "date": status.get("utcTime", date_str),
-                            "probabilities": {
-                                "home_win_pct": p_home,
-                                "draw_pct": p_draw,
-                                "away_win_pct": p_away
-                            }
-                        })
-    except Exception as e:
-        print(f"FotMob error: {e}")
-    return matches
-
-def fetch_from_thesportsdb():
-    """Fallback feed covering all major global upcoming events."""
-    url = "https://www.thesportsdb.com/api/v1/json/3/eventsnext.php?id=133602"
-    matches = []
-    try:
-        r = requests.get(url, timeout=15)
-        if r.status_code == 200:
-            events = r.json().get("events", []) or []
+            events = r.json().get("events", [])
             for ev in events:
-                home = ev.get("strHomeTeam")
-                away = ev.get("strAwayTeam")
-                league = ev.get("strLeague", "Soccer")
-                date = ev.get("dateEvent", "")
+                home = ev.get("homeTeam", {}).get("name")
+                away = ev.get("awayTeam", {}).get("name")
+                league = ev.get("tournament", {}).get("name", "World Football")
+                category = ev.get("tournament", {}).get("category", {}).get("name", "")
+                full_league = f"{league} ({category})" if category else league
+                
                 if home and away:
-                    p_home, p_draw, p_away = calculate_probabilities()
+                    p_h, p_d, p_a = calculate_probabilities()
                     matches.append({
-                        "league": league,
+                        "league": full_league,
                         "home": home,
                         "away": away,
-                        "date": date,
                         "probabilities": {
-                            "home_win_pct": p_home,
-                            "draw_pct": p_draw,
-                            "away_win_pct": p_away
+                            "home_win_pct": p_h,
+                            "draw_pct": p_d,
+                            "away_win_pct": p_a
                         }
                     })
     except Exception as e:
-        print(f"TheSportsDB error: {e}")
+        print(f"Sofascore error: {e}")
+    return matches
+
+def fetch_espn_multi_league(date_str):
+    """Fetches from ESPN across the top worldwide competitions."""
+    leagues = [
+        "uefa.nations", "fifa.friendly", "eng.1", "esp.1", 
+        "ita.1", "ger.1", "fra.1", "uefa.champions", "usa.1"
+    ]
+    headers = {"User-Agent": "Mozilla/5.0"}
+    matches = []
+    for lg in leagues:
+        url = f"https://site.api.espn.com/apis/site/v2/sports/soccer/{lg}/scoreboard?dates={date_str}"
+        try:
+            r = requests.get(url, headers=headers, timeout=10)
+            if r.status_code != 200:
+                continue
+            for event in r.json().get("events", []):
+                comps = event.get("competitions", [])
+                if not comps:
+                    continue
+                competitors = comps[0].get("competitors", [])
+                if len(competitors) < 2:
+                    continue
+                home = next((c["team"]["displayName"] for c in competitors if c.get("homeAway") == "home"), competitors[0]["team"]["displayName"])
+                away = next((c["team"]["displayName"] for c in competitors if c.get("homeAway") == "away"), competitors[1]["team"]["displayName"])
+                p_h, p_d, p_a = calculate_probabilities()
+                matches.append({
+                    "league": event.get("name", lg),
+                    "home": home,
+                    "away": away,
+                    "probabilities": {
+                        "home_win_pct": p_h,
+                        "draw_pct": p_d,
+                        "away_win_pct": p_a
+                    }
+                })
+        except Exception:
+            continue
     return matches
 
 def run():
     now_utc = datetime.now(timezone.utc)
-    today_str = now_utc.strftime("%Y%m%d")
-    tomorrow_str = (now_utc + timedelta(days=1)).strftime("%Y%m%d")
+    date_iso = now_utc.strftime("%Y-%m-%d")
+    date_espn = now_utc.strftime("%Y%m%d")
 
-    # 1. Try FotMob for Today
-    matches = fetch_from_fotmob(today_str)
-    
-    # 2. If quiet, add tomorrow's matches
-    if len(matches) < 5:
-        matches.extend(fetch_from_fotmob(tomorrow_str))
+    # 1. Sofascore (covers every single global league)
+    matches = fetch_sofascore_matches(date_iso)
 
-    # 3. If still empty, fall back to TheSportsDB
-    if not matches:
-        matches = fetch_from_thesportsdb()
+    # 2. Add ESPN major tournaments & friendlies
+    espn_matches = fetch_espn_multi_league(date_espn)
+    matches.extend(espn_matches)
 
-    if not matches:
-        send_telegram_alert("⚠️ *Predictor Alert*\nUnable to retrieve fixtures from global servers today.")
-        return
-
-    # Deduplicate
-    unique = []
+    # Deduplicate matches
     seen = set()
+    unique_matches = []
     for m in matches:
-        key = (m["home"], m["away"])
+        key = (m["home"].lower(), m["away"].lower())
         if key not in seen:
             seen.add(key)
-            unique.append(m)
-    matches = unique
+            unique_matches.append(m)
+    matches = unique_matches
 
-    # Save JSON to repository
-    today_formatted = now_utc.strftime("%Y-%m-%d")
+    if not matches:
+        send_telegram_alert("⚠️ No matches discovered across global schedules today.")
+        return
+
+    # Save complete JSON database to repo
     os.makedirs("predictions", exist_ok=True)
-    with open(f"predictions/{today_formatted}.json", "w") as f:
+    with open(f"predictions/{date_iso}.json", "w") as f:
         json.dump(matches, f, indent=2)
 
-    # Build Telegram Output
+    total_count = len(matches)
+    
+    # Send Summary Header
     header = (
-        f"⚽ *GLOBAL FOOTBALL PREDICTIONS*\n"
-        f"📅 Date: `{today_formatted}`\n"
-        f"🔢 Fixtures Loaded: `{len(matches)}`\n"
+        f"⚽ *GLOBAL FOOTBALL PREDICTOR*\n"
+        f"📅 Date: `{date_iso}`\n"
+        f"🌍 *Total Matches Found:* `{total_count}`\n"
         f"━━━━━━━━━━━━━━━━━━━\n\n"
     )
 
-    # Show first 20 matches cleanly
-    match_entries = []
-    for m in matches[:20]:
+    # Deliver predictions in paginated Telegram messages (15 per message)
+    batch_size = 15
+    max_to_show = min(total_count, 45)  # Displays top 45 directly to Telegram
+
+    current_chunk = header
+    for idx, m in enumerate(matches[:max_to_show], start=1):
         p = m["probabilities"]
         entry = (
-            f"🏆 *{m['league']}*\n"
+            f"*{idx}. {m['league']}*\n"
             f"⚔️ *{m['home']}* vs *{m['away']}*\n"
-            f"📊 1: `{p['home_win_pct']}%` | X: `{p['draw_pct']}%` | 2: `{p['away_win_pct']}%`\n"
+            f"📊 1: `{p['home_win_pct']}%` | X: `{p['draw_pct']}%` | 2: `{p['away_win_pct']}%`\n\n"
         )
-        match_entries.append(entry)
+        if len(current_chunk) + len(entry) > 3800:
+            send_telegram_alert(current_chunk)
+            current_chunk = entry
+        else:
+            current_chunk += entry
 
-    full_message = header + "\n".join(match_entries)
-    if len(matches) > 20:
-        full_message += f"\n_...and {len(matches) - 20} more saved to repo._"
+    if current_chunk.strip():
+        if total_count > max_to_show:
+            current_chunk += f"\n_...and {total_count - max_to_show} more matches saved to your GitHub repo._"
+        send_telegram_alert(current_chunk)
 
-    send_telegram_alert(full_message)
-    print(f"Success! {len(matches)} fixtures processed and dispatched.")
+    print(f"Processed {total_count} matches successfully.")
 
 if __name__ == "__main__":
     run()
