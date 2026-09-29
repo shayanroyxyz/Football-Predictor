@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "public": false,
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/", "destination": "/docs/index.html" },
+    { "source": "/predictions/:match*", "destination": "/predictions/:match*" },
+    { "source": "/:path*", "destination": "/docs/:path*" }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }
+      ]
+    }
+  ]
+}
