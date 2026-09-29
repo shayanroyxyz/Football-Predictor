@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "public": false,
+  "buildCommand": null,
+  "outputDirectory": "docs",
   "cleanUrls": true,
   "rewrites": [
-    { "source": "/", "destination": "/docs/index.html" },
-    { "source": "/predictions/:match*", "destination": "/predictions/:match*" },
-    { "source": "/:path*", "destination": "/docs/:path*" }
+    { "source": "/", "destination": "/index.html" },
+    { "source": "/predictions/:path*", "destination": "/../predictions/:path*" }
   ],
   "headers": [
     {
