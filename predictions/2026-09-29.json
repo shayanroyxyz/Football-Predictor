@@ -24,9 +24,9 @@
     "match_time": "16:02 UTC",
     "bookmaker": "PMU (FR)",
     "probabilities": {
-      "home_win_pct": 9.3,
-      "draw_pct": 85.5,
-      "away_win_pct": 5.2
+      "home_win_pct": 8.8,
+      "draw_pct": 86.3,
+      "away_win_pct": 4.9
     }
   },
   {
@@ -39,9 +39,9 @@
     "match_time": "18:45 UTC",
     "bookmaker": "William Hill",
     "probabilities": {
-      "home_win_pct": 2.3,
-      "draw_pct": 6.3,
-      "away_win_pct": 91.3
+      "home_win_pct": 1.9,
+      "draw_pct": 7.3,
+      "away_win_pct": 90.8
     }
   },
   {
@@ -54,9 +54,9 @@
     "match_time": "18:45 UTC",
     "bookmaker": "PMU (FR)",
     "probabilities": {
-      "home_win_pct": 52.5,
-      "draw_pct": 28.9,
-      "away_win_pct": 18.6
+      "home_win_pct": 52.6,
+      "draw_pct": 29.0,
+      "away_win_pct": 18.4
     }
   },
   {
@@ -84,9 +84,9 @@
     "match_time": "18:45 UTC",
     "bookmaker": "William Hill",
     "probabilities": {
-      "home_win_pct": 10.0,
-      "draw_pct": 18.0,
-      "away_win_pct": 72.0
+      "home_win_pct": 11.4,
+      "draw_pct": 18.3,
+      "away_win_pct": 70.3
     }
   },
   {
@@ -129,9 +129,9 @@
     "match_time": "18:45 UTC",
     "bookmaker": "Betfair",
     "probabilities": {
-      "home_win_pct": 65.5,
-      "draw_pct": 24.1,
-      "away_win_pct": 10.3
+      "home_win_pct": 67.0,
+      "draw_pct": 23.1,
+      "away_win_pct": 9.9
     }
   },
   {
@@ -159,9 +159,9 @@
     "match_time": "16:45 UTC",
     "bookmaker": "Betfair",
     "probabilities": {
-      "home_win_pct": 3.8,
-      "draw_pct": 5.6,
-      "away_win_pct": 90.6
+      "home_win_pct": 4.4,
+      "draw_pct": 6.5,
+      "away_win_pct": 89.1
     }
   },
   {
@@ -444,9 +444,9 @@
     "match_time": "16:00 UTC",
     "bookmaker": "Betfair",
     "probabilities": {
-      "home_win_pct": 21.4,
-      "draw_pct": 27.5,
-      "away_win_pct": 51.2
+      "home_win_pct": 21.3,
+      "draw_pct": 27.4,
+      "away_win_pct": 51.3
     }
   },
   {
@@ -489,8 +489,8 @@
     "match_time": "18:45 UTC",
     "bookmaker": "1xBet",
     "probabilities": {
-      "home_win_pct": 13.9,
-      "draw_pct": 24.3,
+      "home_win_pct": 14.0,
+      "draw_pct": 24.2,
       "away_win_pct": 61.8
     }
   },
@@ -555,6 +555,51 @@
     }
   },
   {
+    "league": "Primera Divisi\u00f3n - Argentina",
+    "is_global": false,
+    "home": "Independiente",
+    "away": "Instituto de C\u00f3rdoba",
+    "commence_time": "2026-10-02T22:15:00Z",
+    "match_date": "02 Oct 2026",
+    "match_time": "22:15 UTC",
+    "bookmaker": "1xBet",
+    "probabilities": {
+      "home_win_pct": 40.2,
+      "draw_pct": 31.1,
+      "away_win_pct": 28.7
+    }
+  },
+  {
+    "league": "Primera Divisi\u00f3n - Argentina",
+    "is_global": false,
+    "home": "Boca Juniors",
+    "away": "Union Santa Fe",
+    "commence_time": "2026-10-03T00:30:00Z",
+    "match_date": "03 Oct 2026",
+    "match_time": "00:30 UTC",
+    "bookmaker": "LeoVegas (SE)",
+    "probabilities": {
+      "home_win_pct": 62.4,
+      "draw_pct": 23.3,
+      "away_win_pct": 14.3
+    }
+  },
+  {
+    "league": "Primera Divisi\u00f3n - Argentina",
+    "is_global": false,
+    "home": "Independiente Rivadavia",
+    "away": "Gimnasia La Plata",
+    "commence_time": "2026-10-03T00:30:00Z",
+    "match_date": "03 Oct 2026",
+    "match_time": "00:30 UTC",
+    "bookmaker": "1xBet",
+    "probabilities": {
+      "home_win_pct": 52.2,
+      "draw_pct": 26.6,
+      "away_win_pct": 21.2
+    }
+  },
+  {
     "league": "UEFA Nations League",
     "is_global": true,
     "home": "Croatia",
@@ -570,6 +615,21 @@
     }
   },
   {
+    "league": "Primera Divisi\u00f3n - Argentina",
+    "is_global": false,
+    "home": "Defensa y Justicia",
+    "away": "San Lorenzo",
+    "commence_time": "2026-10-03T17:45:00Z",
+    "match_date": "03 Oct 2026",
+    "match_time": "17:45 UTC",
+    "bookmaker": "1xBet",
+    "probabilities": {
+      "home_win_pct": 43.4,
+      "draw_pct": 33.0,
+      "away_win_pct": 23.6
+    }
+  },
+  {
     "league": "UEFA Nations League",
     "is_global": true,
     "home": "Spain",
@@ -582,6 +642,66 @@
       "home_win_pct": 78.4,
       "draw_pct": 16.0,
       "away_win_pct": 5.6
+    }
+  },
+  {
+    "league": "Primera Divisi\u00f3n - Argentina",
+    "is_global": false,
+    "home": "Atl\u00e9tico Tucuman",
+    "away": "Barracas Central",
+    "commence_time": "2026-10-03T20:00:00Z",
+    "match_date": "03 Oct 2026",
+    "match_time": "20:00 UTC",
+    "bookmaker": "1xBet",
+    "probabilities": {
+      "home_win_pct": 48.7,
+      "draw_pct": 31.1,
+      "away_win_pct": 20.2
+    }
+  },
+  {
+    "league": "Primera Divisi\u00f3n - Argentina",
+    "is_global": false,
+    "home": "Newells Old Boys",
+    "away": "Lanus",
+    "commence_time": "2026-10-03T20:00:00Z",
+    "match_date": "03 Oct 2026",
+    "match_time": "20:00 UTC",
+    "bookmaker": "1xBet",
+    "probabilities": {
+      "home_win_pct": 32.9,
+      "draw_pct": 32.1,
+      "away_win_pct": 35.0
+    }
+  },
+  {
+    "league": "Primera Divisi\u00f3n - Argentina",
+    "is_global": false,
+    "home": "Sarmiento de Junin",
+    "away": "River Plate",
+    "commence_time": "2026-10-04T16:45:00Z",
+    "match_date": "04 Oct 2026",
+    "match_time": "16:45 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 17.5,
+      "draw_pct": 26.8,
+      "away_win_pct": 55.7
+    }
+  },
+  {
+    "league": "Primera Divisi\u00f3n - Argentina",
+    "is_global": false,
+    "home": "Atl\u00e9tico Hurac\u00e1n",
+    "away": "Aldosivi Mar del Plata",
+    "commence_time": "2026-10-04T17:45:00Z",
+    "match_date": "04 Oct 2026",
+    "match_time": "17:45 UTC",
+    "bookmaker": "1xBet",
+    "probabilities": {
+      "home_win_pct": 55.3,
+      "draw_pct": 28.2,
+      "away_win_pct": 16.5
     }
   },
   {
@@ -657,6 +777,561 @@
       "home_win_pct": 55.5,
       "draw_pct": 21.6,
       "away_win_pct": 22.9
+    }
+  },
+  {
+    "league": "Primera Divisi\u00f3n - Argentina",
+    "is_global": false,
+    "home": "Talleres",
+    "away": "Belgrano de Cordoba",
+    "commence_time": "2026-10-04T20:00:00Z",
+    "match_date": "04 Oct 2026",
+    "match_time": "20:00 UTC",
+    "bookmaker": "1xBet",
+    "probabilities": {
+      "home_win_pct": 36.9,
+      "draw_pct": 31.4,
+      "away_win_pct": 31.6
+    }
+  },
+  {
+    "league": "Primera Divisi\u00f3n - Argentina",
+    "is_global": false,
+    "home": "Argentinos Juniors",
+    "away": "CA Tigre BA",
+    "commence_time": "2026-10-04T22:15:00Z",
+    "match_date": "04 Oct 2026",
+    "match_time": "22:15 UTC",
+    "bookmaker": "Winamax (FR)",
+    "probabilities": {
+      "home_win_pct": 49.3,
+      "draw_pct": 29.3,
+      "away_win_pct": 21.4
+    }
+  },
+  {
+    "league": "Primera Divisi\u00f3n - Argentina",
+    "is_global": false,
+    "home": "Estudiantes de R\u00edo Cuarto",
+    "away": "Racing Club",
+    "commence_time": "2026-10-05T00:30:00Z",
+    "match_date": "05 Oct 2026",
+    "match_time": "00:30 UTC",
+    "bookmaker": "1xBet",
+    "probabilities": {
+      "home_win_pct": 23.8,
+      "draw_pct": 31.2,
+      "away_win_pct": 45.0
+    }
+  },
+  {
+    "league": "Primera Divisi\u00f3n - Argentina",
+    "is_global": false,
+    "home": "Deportivo Riestra",
+    "away": "Central C\u00f3rdoba",
+    "commence_time": "2026-10-05T19:45:00Z",
+    "match_date": "05 Oct 2026",
+    "match_time": "19:45 UTC",
+    "bookmaker": "1xBet",
+    "probabilities": {
+      "home_win_pct": 49.2,
+      "draw_pct": 30.3,
+      "away_win_pct": 20.5
+    }
+  },
+  {
+    "league": "Primera Divisi\u00f3n - Argentina",
+    "is_global": false,
+    "home": "Estudiantes",
+    "away": "Gimnasia Mendoza",
+    "commence_time": "2026-10-05T22:00:00Z",
+    "match_date": "05 Oct 2026",
+    "match_time": "22:00 UTC",
+    "bookmaker": "1xBet",
+    "probabilities": {
+      "home_win_pct": 54.9,
+      "draw_pct": 26.8,
+      "away_win_pct": 18.3
+    }
+  },
+  {
+    "league": "Primera Divisi\u00f3n - Argentina",
+    "is_global": false,
+    "home": "Velez Sarsfield BA",
+    "away": "Platense",
+    "commence_time": "2026-10-05T22:00:00Z",
+    "match_date": "05 Oct 2026",
+    "match_time": "22:00 UTC",
+    "bookmaker": "Marathon Bet",
+    "probabilities": {
+      "home_win_pct": 49.8,
+      "draw_pct": 30.4,
+      "away_win_pct": 19.8
+    }
+  },
+  {
+    "league": "Primera Divisi\u00f3n - Argentina",
+    "is_global": false,
+    "home": "Banfield",
+    "away": "Rosario Central",
+    "commence_time": "2026-10-06T00:15:00Z",
+    "match_date": "06 Oct 2026",
+    "match_time": "00:15 UTC",
+    "bookmaker": "Marathon Bet",
+    "probabilities": {
+      "home_win_pct": 22.2,
+      "draw_pct": 28.6,
+      "away_win_pct": 49.2
+    }
+  },
+  {
+    "league": "Primera Divisi\u00f3n - Argentina",
+    "is_global": false,
+    "home": "Aldosivi Mar del Plata",
+    "away": "Sarmiento de Junin",
+    "commence_time": "2026-10-09T17:30:00Z",
+    "match_date": "09 Oct 2026",
+    "match_time": "17:30 UTC",
+    "bookmaker": "Betfair",
+    "probabilities": {
+      "home_win_pct": 32.8,
+      "draw_pct": 34.3,
+      "away_win_pct": 32.8
+    }
+  },
+  {
+    "league": "Belgium First Div",
+    "is_global": false,
+    "home": "SK Beveren",
+    "away": "Lommel SK",
+    "commence_time": "2026-10-09T18:45:00Z",
+    "match_date": "09 Oct 2026",
+    "match_time": "18:45 UTC",
+    "bookmaker": "Unibet (NL)",
+    "probabilities": {
+      "home_win_pct": 50.3,
+      "draw_pct": 25.8,
+      "away_win_pct": 23.9
+    }
+  },
+  {
+    "league": "Primera Divisi\u00f3n - Argentina",
+    "is_global": false,
+    "home": "Gimnasia La Plata",
+    "away": "Atl\u00e9tico Tucuman",
+    "commence_time": "2026-10-09T21:00:00Z",
+    "match_date": "09 Oct 2026",
+    "match_time": "21:00 UTC",
+    "bookmaker": "Betfair",
+    "probabilities": {
+      "home_win_pct": 40.3,
+      "draw_pct": 33.8,
+      "away_win_pct": 26.0
+    }
+  },
+  {
+    "league": "Primera Divisi\u00f3n - Argentina",
+    "is_global": false,
+    "home": "Instituto de C\u00f3rdoba",
+    "away": "Boca Juniors",
+    "commence_time": "2026-10-09T22:30:00Z",
+    "match_date": "09 Oct 2026",
+    "match_time": "22:30 UTC",
+    "bookmaker": "Betfair",
+    "probabilities": {
+      "home_win_pct": 32.6,
+      "draw_pct": 34.9,
+      "away_win_pct": 32.6
+    }
+  },
+  {
+    "league": "Primera Divisi\u00f3n - Argentina",
+    "is_global": false,
+    "home": "Union Santa Fe",
+    "away": "Defensa y Justicia",
+    "commence_time": "2026-10-10T00:45:00Z",
+    "match_date": "10 Oct 2026",
+    "match_time": "00:45 UTC",
+    "bookmaker": "Betfair",
+    "probabilities": {
+      "home_win_pct": 32.7,
+      "draw_pct": 34.5,
+      "away_win_pct": 32.7
+    }
+  },
+  {
+    "league": "Belgium First Div",
+    "is_global": false,
+    "home": "Cercle Brugge KSV",
+    "away": "Anderlecht",
+    "commence_time": "2026-10-10T14:00:00Z",
+    "match_date": "10 Oct 2026",
+    "match_time": "14:00 UTC",
+    "bookmaker": "Unibet (SE)",
+    "probabilities": {
+      "home_win_pct": 28.3,
+      "draw_pct": 26.7,
+      "away_win_pct": 45.1
+    }
+  },
+  {
+    "league": "Austrian Football Bundesliga",
+    "is_global": false,
+    "home": "Grazer AK",
+    "away": "RB Salzburg",
+    "commence_time": "2026-10-10T15:00:00Z",
+    "match_date": "10 Oct 2026",
+    "match_time": "15:00 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 15.7,
+      "draw_pct": 19.1,
+      "away_win_pct": 65.3
+    }
+  },
+  {
+    "league": "Austrian Football Bundesliga",
+    "is_global": false,
+    "home": "WSG Tirol",
+    "away": "Ried",
+    "commence_time": "2026-10-10T15:00:00Z",
+    "match_date": "10 Oct 2026",
+    "match_time": "15:00 UTC",
+    "bookmaker": "Winamax (FR)",
+    "probabilities": {
+      "home_win_pct": 37.4,
+      "draw_pct": 25.3,
+      "away_win_pct": 37.4
+    }
+  },
+  {
+    "league": "Belgium First Div",
+    "is_global": false,
+    "home": "RAAL La Louvi\u00e8re",
+    "away": "Club Brugge",
+    "commence_time": "2026-10-10T16:15:00Z",
+    "match_date": "10 Oct 2026",
+    "match_time": "16:15 UTC",
+    "bookmaker": "Unibet (NL)",
+    "probabilities": {
+      "home_win_pct": 12.4,
+      "draw_pct": 19.3,
+      "away_win_pct": 68.3
+    }
+  },
+  {
+    "league": "Austrian Football Bundesliga",
+    "is_global": false,
+    "home": "Austria Wien",
+    "away": "Sturm Graz",
+    "commence_time": "2026-10-10T17:30:00Z",
+    "match_date": "10 Oct 2026",
+    "match_time": "17:30 UTC",
+    "bookmaker": "Winamax (FR)",
+    "probabilities": {
+      "home_win_pct": 30.8,
+      "draw_pct": 26.1,
+      "away_win_pct": 43.1
+    }
+  },
+  {
+    "league": "Primera Divisi\u00f3n - Argentina",
+    "is_global": false,
+    "home": "Barracas Central",
+    "away": "Atl\u00e9tico Hurac\u00e1n",
+    "commence_time": "2026-10-10T17:45:00Z",
+    "match_date": "10 Oct 2026",
+    "match_time": "17:45 UTC",
+    "bookmaker": "Betfair",
+    "probabilities": {
+      "home_win_pct": 32.8,
+      "draw_pct": 34.3,
+      "away_win_pct": 32.8
+    }
+  },
+  {
+    "league": "Belgium First Div",
+    "is_global": false,
+    "home": "Genk",
+    "away": "KV Kortrijk",
+    "commence_time": "2026-10-10T18:45:00Z",
+    "match_date": "10 Oct 2026",
+    "match_time": "18:45 UTC",
+    "bookmaker": "Unibet (NL)",
+    "probabilities": {
+      "home_win_pct": 64.3,
+      "draw_pct": 21.4,
+      "away_win_pct": 14.3
+    }
+  },
+  {
+    "league": "Belgium First Div",
+    "is_global": false,
+    "home": "SV Zulte-Waregem",
+    "away": "Gent",
+    "commence_time": "2026-10-10T18:45:00Z",
+    "match_date": "10 Oct 2026",
+    "match_time": "18:45 UTC",
+    "bookmaker": "Unibet (NL)",
+    "probabilities": {
+      "home_win_pct": 35.9,
+      "draw_pct": 27.5,
+      "away_win_pct": 36.6
+    }
+  },
+  {
+    "league": "Primera Divisi\u00f3n - Argentina",
+    "is_global": false,
+    "home": "Central C\u00f3rdoba",
+    "away": "Estudiantes",
+    "commence_time": "2026-10-10T20:00:00Z",
+    "match_date": "10 Oct 2026",
+    "match_time": "20:00 UTC",
+    "bookmaker": "Codere (IT)",
+    "probabilities": {
+      "home_win_pct": 24.0,
+      "draw_pct": 31.8,
+      "away_win_pct": 44.2
+    }
+  },
+  {
+    "league": "Primera Divisi\u00f3n - Argentina",
+    "is_global": false,
+    "home": "CA Tigre BA",
+    "away": "Banfield",
+    "commence_time": "2026-10-10T22:15:00Z",
+    "match_date": "10 Oct 2026",
+    "match_time": "22:15 UTC",
+    "bookmaker": "Unibet (FR)",
+    "probabilities": {
+      "home_win_pct": 53.3,
+      "draw_pct": 28.9,
+      "away_win_pct": 17.8
+    }
+  },
+  {
+    "league": "Primera Divisi\u00f3n - Argentina",
+    "is_global": false,
+    "home": "River Plate",
+    "away": "Estudiantes de R\u00edo Cuarto",
+    "commence_time": "2026-10-11T00:30:00Z",
+    "match_date": "11 Oct 2026",
+    "match_time": "00:30 UTC",
+    "bookmaker": "1xBet",
+    "probabilities": {
+      "home_win_pct": 78.4,
+      "draw_pct": 16.5,
+      "away_win_pct": 5.1
+    }
+  },
+  {
+    "league": "Belgium First Div",
+    "is_global": false,
+    "home": "Standard Liege",
+    "away": "Charleroi",
+    "commence_time": "2026-10-11T11:30:00Z",
+    "match_date": "11 Oct 2026",
+    "match_time": "11:30 UTC",
+    "bookmaker": "Unibet (SE)",
+    "probabilities": {
+      "home_win_pct": 31.5,
+      "draw_pct": 27.3,
+      "away_win_pct": 41.2
+    }
+  },
+  {
+    "league": "Austrian Football Bundesliga",
+    "is_global": false,
+    "home": "Hartberg",
+    "away": "Austria Lustenau",
+    "commence_time": "2026-10-11T12:30:00Z",
+    "match_date": "11 Oct 2026",
+    "match_time": "12:30 UTC",
+    "bookmaker": "Winamax (FR)",
+    "probabilities": {
+      "home_win_pct": 45.0,
+      "draw_pct": 25.8,
+      "away_win_pct": 29.3
+    }
+  },
+  {
+    "league": "Austrian Football Bundesliga",
+    "is_global": false,
+    "home": "Rheindorf Altach",
+    "away": "Wolfsberger AC",
+    "commence_time": "2026-10-11T12:30:00Z",
+    "match_date": "11 Oct 2026",
+    "match_time": "12:30 UTC",
+    "bookmaker": "Winamax (FR)",
+    "probabilities": {
+      "home_win_pct": 47.5,
+      "draw_pct": 25.1,
+      "away_win_pct": 27.4
+    }
+  },
+  {
+    "league": "Belgium First Div",
+    "is_global": false,
+    "home": "Union Saint-Gilloise",
+    "away": "Leuven",
+    "commence_time": "2026-10-11T14:00:00Z",
+    "match_date": "11 Oct 2026",
+    "match_time": "14:00 UTC",
+    "bookmaker": "Unibet (SE)",
+    "probabilities": {
+      "home_win_pct": 73.7,
+      "draw_pct": 16.6,
+      "away_win_pct": 9.8
+    }
+  },
+  {
+    "league": "Austrian Football Bundesliga",
+    "is_global": false,
+    "home": "LASK",
+    "away": "Rapid Wien",
+    "commence_time": "2026-10-11T15:00:00Z",
+    "match_date": "11 Oct 2026",
+    "match_time": "15:00 UTC",
+    "bookmaker": "Winamax (FR)",
+    "probabilities": {
+      "home_win_pct": 51.0,
+      "draw_pct": 22.8,
+      "away_win_pct": 26.2
+    }
+  },
+  {
+    "league": "Belgium First Div",
+    "is_global": false,
+    "home": "Westerlo",
+    "away": "Royal Antwerp",
+    "commence_time": "2026-10-11T16:30:00Z",
+    "match_date": "11 Oct 2026",
+    "match_time": "16:30 UTC",
+    "bookmaker": "Unibet (NL)",
+    "probabilities": {
+      "home_win_pct": 43.0,
+      "draw_pct": 25.9,
+      "away_win_pct": 31.1
+    }
+  },
+  {
+    "league": "Belgium First Div",
+    "is_global": false,
+    "home": "KV Mechelen",
+    "away": "Sint Truiden",
+    "commence_time": "2026-10-11T17:15:00Z",
+    "match_date": "11 Oct 2026",
+    "match_time": "17:15 UTC",
+    "bookmaker": "Unibet (SE)",
+    "probabilities": {
+      "home_win_pct": 30.6,
+      "draw_pct": 26.3,
+      "away_win_pct": 43.2
+    }
+  },
+  {
+    "league": "Primera Divisi\u00f3n - Argentina",
+    "is_global": false,
+    "home": "San Lorenzo",
+    "away": "Deportivo Riestra",
+    "commence_time": "2026-10-11T17:45:00Z",
+    "match_date": "11 Oct 2026",
+    "match_time": "17:45 UTC",
+    "bookmaker": "1xBet",
+    "probabilities": {
+      "home_win_pct": 42.1,
+      "draw_pct": 33.0,
+      "away_win_pct": 24.9
+    }
+  },
+  {
+    "league": "Primera Divisi\u00f3n - Argentina",
+    "is_global": false,
+    "home": "Platense",
+    "away": "Argentinos Juniors",
+    "commence_time": "2026-10-11T20:00:00Z",
+    "match_date": "11 Oct 2026",
+    "match_time": "20:00 UTC",
+    "bookmaker": "Unibet (FR)",
+    "probabilities": {
+      "home_win_pct": 26.6,
+      "draw_pct": 30.9,
+      "away_win_pct": 42.5
+    }
+  },
+  {
+    "league": "Primera Divisi\u00f3n - Argentina",
+    "is_global": false,
+    "home": "Rosario Central",
+    "away": "Independiente Rivadavia",
+    "commence_time": "2026-10-11T20:00:00Z",
+    "match_date": "11 Oct 2026",
+    "match_time": "20:00 UTC",
+    "bookmaker": "Winamax (DE)",
+    "probabilities": {
+      "home_win_pct": 45.7,
+      "draw_pct": 29.2,
+      "away_win_pct": 25.1
+    }
+  },
+  {
+    "league": "Primera Divisi\u00f3n - Argentina",
+    "is_global": false,
+    "home": "Racing Club",
+    "away": "Belgrano de Cordoba",
+    "commence_time": "2026-10-11T22:15:00Z",
+    "match_date": "11 Oct 2026",
+    "match_time": "22:15 UTC",
+    "bookmaker": "Unibet (FR)",
+    "probabilities": {
+      "home_win_pct": 40.5,
+      "draw_pct": 31.5,
+      "away_win_pct": 27.9
+    }
+  },
+  {
+    "league": "Primera Divisi\u00f3n - Argentina",
+    "is_global": false,
+    "home": "Talleres",
+    "away": "Independiente",
+    "commence_time": "2026-10-12T00:30:00Z",
+    "match_date": "12 Oct 2026",
+    "match_time": "00:30 UTC",
+    "bookmaker": "Codere (IT)",
+    "probabilities": {
+      "home_win_pct": 38.1,
+      "draw_pct": 31.0,
+      "away_win_pct": 31.0
+    }
+  },
+  {
+    "league": "Primera Divisi\u00f3n - Argentina",
+    "is_global": false,
+    "home": "Lanus",
+    "away": "Velez Sarsfield BA",
+    "commence_time": "2026-10-12T19:00:00Z",
+    "match_date": "12 Oct 2026",
+    "match_time": "19:00 UTC",
+    "bookmaker": "Winamax (DE)",
+    "probabilities": {
+      "home_win_pct": 42.8,
+      "draw_pct": 31.4,
+      "away_win_pct": 25.8
+    }
+  },
+  {
+    "league": "Primera Divisi\u00f3n - Argentina",
+    "is_global": false,
+    "home": "Gimnasia Mendoza",
+    "away": "Newells Old Boys",
+    "commence_time": "2026-10-12T21:30:00Z",
+    "match_date": "12 Oct 2026",
+    "match_time": "21:30 UTC",
+    "bookmaker": "Betfair",
+    "probabilities": {
+      "home_win_pct": 32.8,
+      "draw_pct": 34.3,
+      "away_win_pct": 32.8
     }
   },
   {
@@ -984,8 +1659,8 @@
     "match_time": "16:45 UTC",
     "bookmaker": "1xBet",
     "probabilities": {
-      "home_win_pct": 15.1,
-      "draw_pct": 21.1,
+      "home_win_pct": 14.9,
+      "draw_pct": 21.4,
       "away_win_pct": 63.8
     }
   },
@@ -1512,6 +2187,261 @@
       "home_win_pct": 26.5,
       "draw_pct": 30.3,
       "away_win_pct": 43.1
+    }
+  },
+  {
+    "league": "A-League",
+    "is_global": false,
+    "home": "Sydney FC",
+    "away": "Western Sydney Wanderers",
+    "commence_time": "2026-10-16T09:00:00Z",
+    "match_date": "16 Oct 2026",
+    "match_time": "09:00 UTC",
+    "bookmaker": "William Hill",
+    "probabilities": {
+      "home_win_pct": 52.3,
+      "draw_pct": 24.8,
+      "away_win_pct": 22.9
+    }
+  },
+  {
+    "league": "Austrian Football Bundesliga",
+    "is_global": false,
+    "home": "Rapid Wien",
+    "away": "Hartberg",
+    "commence_time": "2026-10-16T17:30:00Z",
+    "match_date": "16 Oct 2026",
+    "match_time": "17:30 UTC",
+    "bookmaker": "Betclic (FR)",
+    "probabilities": {
+      "home_win_pct": 70.5,
+      "draw_pct": 17.8,
+      "away_win_pct": 11.7
+    }
+  },
+  {
+    "league": "A-League",
+    "is_global": false,
+    "home": "Auckland FC",
+    "away": "Melbourne City",
+    "commence_time": "2026-10-17T04:00:00Z",
+    "match_date": "17 Oct 2026",
+    "match_time": "04:00 UTC",
+    "bookmaker": "Unibet (FR)",
+    "probabilities": {
+      "home_win_pct": 38.0,
+      "draw_pct": 28.5,
+      "away_win_pct": 33.5
+    }
+  },
+  {
+    "league": "A-League",
+    "is_global": false,
+    "home": "Macarthur FC",
+    "away": "Perth Glory",
+    "commence_time": "2026-10-17T06:00:00Z",
+    "match_date": "17 Oct 2026",
+    "match_time": "06:00 UTC",
+    "bookmaker": "Unibet (FR)",
+    "probabilities": {
+      "home_win_pct": 55.5,
+      "draw_pct": 23.4,
+      "away_win_pct": 21.1
+    }
+  },
+  {
+    "league": "A-League",
+    "is_global": false,
+    "home": "Central Coast Mariners",
+    "away": "Newcastle Jets FC",
+    "commence_time": "2026-10-17T08:40:00Z",
+    "match_date": "17 Oct 2026",
+    "match_time": "08:40 UTC",
+    "bookmaker": "Unibet (FR)",
+    "probabilities": {
+      "home_win_pct": 24.1,
+      "draw_pct": 24.1,
+      "away_win_pct": 51.8
+    }
+  },
+  {
+    "league": "Austrian Football Bundesliga",
+    "is_global": false,
+    "home": "Austria Lustenau",
+    "away": "LASK",
+    "commence_time": "2026-10-17T15:00:00Z",
+    "match_date": "17 Oct 2026",
+    "match_time": "15:00 UTC",
+    "bookmaker": "Codere (IT)",
+    "probabilities": {
+      "home_win_pct": 14.2,
+      "draw_pct": 19.4,
+      "away_win_pct": 66.4
+    }
+  },
+  {
+    "league": "Austrian Football Bundesliga",
+    "is_global": false,
+    "home": "Ried",
+    "away": "Austria Wien",
+    "commence_time": "2026-10-17T17:30:00Z",
+    "match_date": "17 Oct 2026",
+    "match_time": "17:30 UTC",
+    "bookmaker": "Betclic (FR)",
+    "probabilities": {
+      "home_win_pct": 41.7,
+      "draw_pct": 26.6,
+      "away_win_pct": 31.6
+    }
+  },
+  {
+    "league": "A-League",
+    "is_global": false,
+    "home": "Wellington Phoenix FC",
+    "away": "Melbourne Victory",
+    "commence_time": "2026-10-18T02:00:00Z",
+    "match_date": "18 Oct 2026",
+    "match_time": "02:00 UTC",
+    "bookmaker": "Unibet (FR)",
+    "probabilities": {
+      "home_win_pct": 28.1,
+      "draw_pct": 25.2,
+      "away_win_pct": 46.8
+    }
+  },
+  {
+    "league": "Austrian Football Bundesliga",
+    "is_global": false,
+    "home": "RB Salzburg",
+    "away": "Rheindorf Altach",
+    "commence_time": "2026-10-18T12:30:00Z",
+    "match_date": "18 Oct 2026",
+    "match_time": "12:30 UTC",
+    "bookmaker": "Betclic (FR)",
+    "probabilities": {
+      "home_win_pct": 69.6,
+      "draw_pct": 17.9,
+      "away_win_pct": 12.6
+    }
+  },
+  {
+    "league": "Austrian Football Bundesliga",
+    "is_global": false,
+    "home": "Wolfsberger AC",
+    "away": "WSG Tirol",
+    "commence_time": "2026-10-18T12:30:00Z",
+    "match_date": "18 Oct 2026",
+    "match_time": "12:30 UTC",
+    "bookmaker": "Betclic (FR)",
+    "probabilities": {
+      "home_win_pct": 40.0,
+      "draw_pct": 25.1,
+      "away_win_pct": 34.9
+    }
+  },
+  {
+    "league": "Austrian Football Bundesliga",
+    "is_global": false,
+    "home": "Sturm Graz",
+    "away": "Grazer AK",
+    "commence_time": "2026-10-18T15:00:00Z",
+    "match_date": "18 Oct 2026",
+    "match_time": "15:00 UTC",
+    "bookmaker": "Codere (IT)",
+    "probabilities": {
+      "home_win_pct": 56.0,
+      "draw_pct": 23.9,
+      "away_win_pct": 20.2
+    }
+  },
+  {
+    "league": "A-League",
+    "is_global": false,
+    "home": "Brisbane Roar",
+    "away": "Perth Glory",
+    "commence_time": "2026-10-23T09:00:00Z",
+    "match_date": "23 Oct 2026",
+    "match_time": "09:00 UTC",
+    "bookmaker": "Codere (IT)",
+    "probabilities": {
+      "home_win_pct": 45.1,
+      "draw_pct": 26.4,
+      "away_win_pct": 28.5
+    }
+  },
+  {
+    "league": "A-League",
+    "is_global": false,
+    "home": "Newcastle Jets FC",
+    "away": "Macarthur FC",
+    "commence_time": "2026-10-24T04:00:00Z",
+    "match_date": "24 Oct 2026",
+    "match_time": "04:00 UTC",
+    "bookmaker": "Codere (IT)",
+    "probabilities": {
+      "home_win_pct": 47.5,
+      "draw_pct": 24.0,
+      "away_win_pct": 28.5
+    }
+  },
+  {
+    "league": "A-League",
+    "is_global": false,
+    "home": "Western Sydney Wanderers",
+    "away": "Auckland FC",
+    "commence_time": "2026-10-24T06:00:00Z",
+    "match_date": "24 Oct 2026",
+    "match_time": "06:00 UTC",
+    "bookmaker": "Winamax (DE)",
+    "probabilities": {
+      "home_win_pct": 34.4,
+      "draw_pct": 26.6,
+      "away_win_pct": 39.0
+    }
+  },
+  {
+    "league": "A-League",
+    "is_global": false,
+    "home": "Melbourne Victory",
+    "away": "Melbourne City",
+    "commence_time": "2026-10-24T08:40:00Z",
+    "match_date": "24 Oct 2026",
+    "match_time": "08:40 UTC",
+    "bookmaker": "Codere (IT)",
+    "probabilities": {
+      "home_win_pct": 41.5,
+      "draw_pct": 25.4,
+      "away_win_pct": 33.1
+    }
+  },
+  {
+    "league": "A-League",
+    "is_global": false,
+    "home": "Wellington Phoenix FC",
+    "away": "Central Coast Mariners",
+    "commence_time": "2026-10-25T02:00:00Z",
+    "match_date": "25 Oct 2026",
+    "match_time": "02:00 UTC",
+    "bookmaker": "Codere (IT)",
+    "probabilities": {
+      "home_win_pct": 52.5,
+      "draw_pct": 24.3,
+      "away_win_pct": 23.1
+    }
+  },
+  {
+    "league": "A-League",
+    "is_global": false,
+    "home": "Sydney FC",
+    "away": "Adelaide United",
+    "commence_time": "2026-10-25T04:00:00Z",
+    "match_date": "25 Oct 2026",
+    "match_time": "04:00 UTC",
+    "bookmaker": "Winamax (DE)",
+    "probabilities": {
+      "home_win_pct": 48.1,
+      "draw_pct": 25.0,
+      "away_win_pct": 26.9
     }
   }
 ]
