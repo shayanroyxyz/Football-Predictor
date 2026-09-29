@@ -10,26 +10,30 @@ ODDS_API_KEY = os.getenv("ODDS_API_KEY")
 GITHUB_USERNAME = "shayanroyxyz"
 GITHUB_REPO = "Football-Predictor"
 
-# PASTE YOUR EXACT VERCEL DOMAIN HERE:
-PAGES_URL = "https://football-predictor-shayan.vercel.app"
+# Live Vercel deployment URL
+PAGES_URL = "https://football-predictor-croi-sigma.vercel.app"
 TRIGGER_URL = f"https://github.com/{GITHUB_USERNAME}/{GITHUB_REPO}/actions/workflows/daily.yml"
 
+# Priority keywords for global / continental tournaments
 GLOBAL_PRIORITY_KEYWORDS = [
     "champions", "uefa", "europa", "libertadores", "nations", 
     "world cup", "fifa", "copa sudamericana", "afcon", "asian cup"
 ]
 
 def format_commence_time(iso_str):
+    """Converts ISO 8601 UTC time into clean readable date and time."""
     try:
         dt = datetime.fromisoformat(iso_str.replace("Z", "+00:00"))
-        return dt.strftime("%d %b %Y"), dt.strftime("%H:%M UTC")
+        date_part = dt.strftime("%d %b %Y")
+        time_part = dt.strftime("%H:%M UTC")
+        return date_part, time_part
     except Exception:
         return "Upcoming", "TBD"
 
 def send_telegram(message):
     """Sends message with persistent docked Telegram Keyboard and Web App button."""
     if not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHAT_ID:
-        print("Telegram configuration missing.")
+        print("Telegram configuration missing. Skipping message.")
         return
     url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
     payload = {
@@ -60,7 +64,9 @@ def send_telegram(message):
         }
     }
     try:
-        requests.post(url, json=payload, timeout=15)
+        res = requests.post(url, json=payload, timeout=15)
+        if res.status_code != 200:
+            print(f"Telegram API warning: {res.text}")
     except Exception as e:
         print(f"Telegram error: {e}")
 
@@ -73,10 +79,12 @@ def get_predictions_from_market():
     try:
         r = requests.get(sports_url, timeout=15)
         if r.status_code != 200:
+            print(f"Failed to fetch sports: {r.text}")
             return []
         all_sports = r.json()
         soccer_keys = [s["key"] for s in all_sports if s.get("group") == "Soccer" and s.get("active")]
-    except Exception:
+    except Exception as e:
+        print(f"Error fetching sports list: {e}")
         return []
 
     def get_sport_priority(key_name):
@@ -89,6 +97,7 @@ def get_predictions_from_market():
     soccer_keys.sort(key=get_sport_priority)
 
     matches = []
+    # Queries up to 6 active leagues to conserve quota (500 free requests/month)
     for sport_key in soccer_keys[:6]:
         odds_url = f"https://api.the-odds-api.com/v4/sports/{sport_key}/odds/?apiKey={ODDS_API_KEY}&regions=eu&markets=h2h&oddsFormat=decimal"
         try:
@@ -136,19 +145,97 @@ def get_predictions_from_market():
                             "away_win_pct": p_a
                         }
                     })
-        except Exception:
+        except Exception as e:
+            print(f"Error querying sport {sport_key}: {e}")
             continue
 
     return matches
+
+def generate_web_dashboard(matches, date_str):
+    """Compiles modern HTML dashboard into docs/index.html."""
+    os.makedirs("docs", exist_ok=True)
+    cards_html = ""
+    for m in matches:
+        p = m["probabilities"]
+        fav_class = "border-l-4 border-amber-500" if (p["home_win_pct"] >= 55 or p["away_win_pct"] >= 55) else "border-l-4 border-slate-700"
+        badge = '<span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>' if m["is_global"] else ""
+        
+        cards_html += f"""
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md {fav_class}">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">{m['league']}</span>
+                {badge}
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ {m['match_date']}</span>
+                <span>•</span>
+                <span>⏰ {m['match_time']}</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>{m['home']}</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>{m['away']}</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">{m['home']} Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">{p['home_win_pct']}%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">{p['draw_pct']}%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">{m['away']} Win</div>
+                    <div class="text-sky-400 text-sm font-bold">{p['away_win_pct']}%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: {m['bookmaker']}
+            </div>
+        </div>
+        """
+
+    html_content = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Football Match Predictions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen py-8 px-4 font-sans">
+    <div class="max-w-4xl mx-auto">
+        <header class="mb-8 border-b border-slate-800 pb-5 flex flex-wrap justify-between items-end gap-2">
+            <div>
+                <h1 class="text-2xl md:text-3xl font-extrabold tracking-tight text-white flex items-center gap-2">
+                    ⚽ Global Football Match Predictions
+                </h1>
+                <p class="text-slate-400 text-sm mt-1">Generated: {date_str} (UTC) • Total Matches: {len(matches)}</p>
+            </div>
+            <a href="{TRIGGER_URL}" target="_blank" class="bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-semibold px-3 py-2 rounded-lg transition-colors shadow">
+                ⚡ Re-Run Predictions
+            </a>
+        </header>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {cards_html}
+        </div>
+    </div>
+</body>
+</html>
+"""
+    with open("docs/index.html", "w", encoding="utf-8") as f:
+        f.write(html_content)
 
 def run():
     now_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     matches = get_predictions_from_market()
 
     if not matches:
-        send_telegram("⚠️ *Notice:* No active fixtures available right now or check `ODDS_API_KEY`.")
+        send_telegram("⚠️ *Notice:* No active fixtures retrieved. Please verify your `ODDS_API_KEY`.")
         return
 
+    # Prioritize global tournaments, then sort by highest favorite win percentage
     matches.sort(
         key=lambda m: (
             0 if m["is_global"] else 1,
@@ -156,12 +243,16 @@ def run():
         )
     )
 
+    # Save JSON database & update HTML dashboard
     os.makedirs("predictions", exist_ok=True)
     with open(f"predictions/{now_str}.json", "w") as f:
         json.dump(matches, f, indent=2)
 
+    generate_web_dashboard(matches, now_str)
+
     total = len(matches)
 
+    # Top Value Picks (Prob >= 55%)
     top_picks = []
     for m in matches:
         p = m["probabilities"]
@@ -212,7 +303,7 @@ def run():
         batch += f"\nTap **🌐 Open Web App** below to view all {total} matches with search & filters."
         send_telegram(batch)
 
-    print(f"Processed {total} matches successfully.")
+    print(f"Processed {total} matches successfully and updated web dashboard.")
 
 if __name__ == "__main__":
     run()
