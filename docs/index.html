@@ -1,246 +1,3050 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Global Football Match Predictions</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <style>
-    body { font-family: 'Inter', sans-serif; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Football Match Predictions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-slate-950 text-slate-100 min-h-screen pb-16 antialiased">
-
-  <!-- Navigation / Header -->
-  <header class="border-b border-slate-800 bg-slate-900/80 backdrop-blur sticky top-0 z-50 px-4 py-4">
-    <div class="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3">
-      <div class="flex items-center gap-3">
-        <span class="text-2xl">⚽</span>
-        <div>
-          <h1 class="text-lg sm:text-xl font-bold tracking-tight text-white">Global Football Predictor</h1>
-          <p class="text-xs text-slate-400">Live consensus market odds & mathematical forecasts</p>
+<body class="bg-slate-900 text-slate-100 min-h-screen py-8 px-4 font-sans">
+    <div class="max-w-4xl mx-auto">
+        <header class="mb-8 border-b border-slate-800 pb-5 flex flex-wrap justify-between items-end gap-2">
+            <div>
+                <h1 class="text-2xl md:text-3xl font-extrabold tracking-tight text-white flex items-center gap-2">
+                    ⚽ Global Football Match Predictions
+                </h1>
+                <p class="text-slate-400 text-sm mt-1">Generated: 2026-09-29 (UTC) • Total Matches: 89</p>
+            </div>
+        </header>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-amber-500">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Europa Conference League</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 15 Oct 2026</span>
+                <span>•</span>
+                <span>⏰ 19:00 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>Brighton and Hove Albion</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>FK Kauno Žalgiris</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Brighton and Hove Albion Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">92.7%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">4.9%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">FK Kauno Žalgiris Win</div>
+                    <div class="text-sky-400 text-sm font-bold">2.3%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: Betfair
+            </div>
         </div>
-      </div>
-      <div class="flex items-center gap-2">
-        <a href="https://github.com/shayanroyxyz/Football-Predictor/actions/workflows/daily.yml" target="_blank" 
-           class="inline-flex items-center gap-1.5 bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-semibold px-3 py-2 rounded-lg transition-colors shadow">
-          <span>⚡ Re-Run Actions</span>
-        </a>
-      </div>
-    </div>
-  </header>
-
-  <main class="max-w-5xl mx-auto px-4 mt-6">
-    
-    <!-- Controls: Search & Tournament Filters -->
-    <div class="bg-slate-900 border border-slate-800 rounded-xl p-4 mb-6 flex flex-col sm:flex-row items-center justify-between gap-3 shadow-sm">
-      <div class="relative w-full sm:w-80">
-        <input type="text" id="searchInput" placeholder="Search team, league, or country..." 
-               class="w-full bg-slate-950 border border-slate-700 text-xs rounded-lg px-3 py-2.5 text-slate-200 placeholder-slate-500 focus:outline-none focus:border-indigo-500" />
-      </div>
-      <div class="flex items-center gap-2 w-full sm:w-auto">
-        <button id="filterAll" class="flex-1 sm:flex-none px-3 py-1.5 text-xs font-medium rounded-lg bg-indigo-600 text-white transition">All Matches</button>
-        <button id="filterGlobal" class="flex-1 sm:flex-none px-3 py-1.5 text-xs font-medium rounded-lg bg-slate-800 text-slate-300 hover:bg-slate-700 transition">Global / Cups</button>
-        <button id="filterHigh" class="flex-1 sm:flex-none px-3 py-1.5 text-xs font-medium rounded-lg bg-slate-800 text-slate-300 hover:bg-slate-700 transition">🔥 Top Picks</button>
-      </div>
-    </div>
-
-    <!-- Match Counter & Status -->
-    <div class="flex items-center justify-between text-xs text-slate-400 mb-4 px-1">
-      <span id="matchStats">Loading scheduled matches...</span>
-      <span class="text-slate-500 text-[11px]">All times shown in UTC</span>
-    </div>
-
-    <!-- Grid Cards Container -->
-    <div id="matchesContainer" class="grid grid-cols-1 md:grid-cols-2 gap-4"></div>
-
-    <!-- Empty State -->
-    <div id="noResults" class="hidden text-center py-16">
-      <p class="text-slate-400 text-sm">No matches found matching your selection.</p>
-    </div>
-
-  </main>
-
-  <footer class="mt-12 text-center text-xs text-slate-600">
-    <p>Automated with GitHub Actions • Data source: The-Odds-API Consensus</p>
-  </footer>
-
-  <script>
-    let allMatches = [];
-
-    // Helper: Determine if a match qualifies as a global/continental priority
-    function isGlobalTournament(league) {
-      const keywords = ["champions", "uefa", "europa", "libertadores", "nations", "world cup", "fifa", "copa sudamericana", "afcon", "asian cup"];
-      return keywords.some(k => (league || "").toLowerCase().includes(k));
-    }
-
-    function renderCards(matches) {
-      const container = document.getElementById("matchesContainer");
-      const noResults = document.getElementById("noResults");
-      const stats = document.getElementById("matchStats");
-
-      container.innerHTML = "";
-      stats.textContent = `Showing ${matches.length} scheduled fixtures`;
-
-      if (matches.length === 0) {
-        noResults.classList.remove("hidden");
-        return;
-      }
-      noResults.classList.add("hidden");
-
-      matches.forEach(m => {
-        const p = m.probabilities || { home_win_pct: 33.3, draw_pct: 33.3, away_win_pct: 33.3 };
-        const isGlobal = m.is_global || isGlobalTournament(m.league);
-        const isHighConfidence = (p.home_win_pct >= 55 || p.away_win_pct >= 55);
-
-        const borderStyle = isHighConfidence ? "border-amber-500/70" : "border-slate-800";
-        const globalBadge = isGlobal ? `<span class="bg-indigo-500/20 text-indigo-400 border border-indigo-500/30 text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>` : "";
-        const highBadge = isHighConfidence ? `<span class="bg-amber-500/20 text-amber-400 border border-amber-500/30 text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">⭐ HIGH CONFIDENCE</span>` : "";
-
-        const card = document.createElement("div");
-        card.className = `bg-slate-900 border ${borderStyle} rounded-xl p-4 shadow-sm flex flex-col justify-between hover:border-slate-700 transition`;
-
-        card.innerHTML = `
-          <div>
-            <div class="flex items-center justify-between gap-2 mb-2">
-              <span class="text-xs font-semibold text-slate-400 truncate uppercase tracking-wider">${m.league}</span>
-              <div class="flex items-center gap-1.5 flex-shrink-0">
-                ${globalBadge}
-                ${highBadge}
-              </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-amber-500">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Nations League</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
             </div>
-
-            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400 font-medium">
-              <span>🗓️ ${m.match_date || "Upcoming"}</span>
-              <span class="text-slate-600">•</span>
-              <span>⏰ ${m.match_time || "TBD"}</span>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 29 Sep 2026</span>
+                <span>•</span>
+                <span>⏰ 18:45 UTC</span>
             </div>
-
-            <div class="text-base font-bold text-white mb-4 flex items-center justify-between gap-2">
-              <span class="truncate w-5/12 text-left">${m.home}</span>
-              <span class="text-xs text-slate-500 font-normal w-2/12 text-center">VS</span>
-              <span class="truncate w-5/12 text-right">${m.away}</span>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>San Marino</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>Albania</span>
             </div>
-
-            <!-- Odds & Probability Bar -->
-            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium mb-3">
-              <div class="bg-slate-950 border border-slate-800/80 p-2.5 rounded-lg">
-                <div class="text-slate-400 text-[10px] uppercase truncate mb-0.5">${m.home}</div>
-                <div class="text-emerald-400 text-sm font-extrabold">${p.home_win_pct}%</div>
-              </div>
-              <div class="bg-slate-950 border border-slate-800/80 p-2.5 rounded-lg">
-                <div class="text-slate-400 text-[10px] uppercase mb-0.5">Draw</div>
-                <div class="text-amber-400 text-sm font-extrabold">${p.draw_pct}%</div>
-              </div>
-              <div class="bg-slate-950 border border-slate-800/80 p-2.5 rounded-lg">
-                <div class="text-slate-400 text-[10px] uppercase truncate mb-0.5">${m.away}</div>
-                <div class="text-sky-400 text-sm font-extrabold">${p.away_win_pct}%</div>
-              </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">San Marino Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">2.9%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">8.2%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Albania Win</div>
+                    <div class="text-sky-400 text-sm font-bold">88.9%</div>
+                </div>
             </div>
-          </div>
-
-          <div class="pt-2 border-t border-slate-800/60 flex items-center justify-between text-[11px] text-slate-500">
-            <span>Basis: ${m.bookmaker || "Market Consensus"}</span>
-            <span class="text-indigo-400 font-medium">${isHighConfidence ? (p.home_win_pct >= 55 ? m.home + " to WIN" : m.away + " to WIN") : "Balanced Odds"}</span>
-          </div>
-        `;
-        container.appendChild(card);
-      });
-    }
-
-    // Dynamic Filter handlers
-    function setupFilters() {
-      const search = document.getElementById("searchInput");
-      const btnAll = document.getElementById("filterAll");
-      const btnGlobal = document.getElementById("filterGlobal");
-      const btnHigh = document.getElementById("filterHigh");
-
-      let currentMode = "all";
-
-      function apply() {
-        const query = search.value.toLowerCase().trim();
-        let filtered = allMatches.filter(m => {
-          const matchText = `${m.home} ${m.away} ${m.league}`.toLowerCase();
-          const matchesSearch = matchText.includes(query);
-          
-          if (!matchesSearch) return false;
-          if (currentMode === "global") return m.is_global || isGlobalTournament(m.league);
-          if (currentMode === "high") return (m.probabilities?.home_win_pct >= 55 || m.probabilities?.away_win_pct >= 55);
-          return true;
-        });
-        renderCards(filtered);
-      }
-
-      function setButtonActive(activeBtn) {
-        [btnAll, btnGlobal, btnHigh].forEach(b => {
-          b.className = "flex-1 sm:flex-none px-3 py-1.5 text-xs font-medium rounded-lg bg-slate-800 text-slate-300 hover:bg-slate-700 transition";
-        });
-        activeBtn.className = "flex-1 sm:flex-none px-3 py-1.5 text-xs font-medium rounded-lg bg-indigo-600 text-white transition";
-      }
-
-      search.addEventListener("input", apply);
-
-      btnAll.addEventListener("click", () => {
-        currentMode = "all";
-        setButtonActive(btnAll);
-        apply();
-      });
-
-      btnGlobal.addEventListener("click", () => {
-        currentMode = "global";
-        setButtonActive(btnGlobal);
-        apply();
-      });
-
-      btnHigh.addEventListener("click", () => {
-        currentMode = "high";
-        setButtonActive(btnHigh);
-        apply();
-      });
-    }
-
-    // Automatically load latest JSON generated by python workflow
-    async function loadData() {
-      const todayUTC = new Date().toISOString().split('T')[0];
-      const paths = [
-        `../predictions/${todayUTC}.json`,
-        `predictions/${todayUTC}.json`
-      ];
-
-      for (let p of paths) {
-        try {
-          const res = await fetch(p);
-          if (res.ok) {
-            allMatches = await res.json();
-            break;
-          }
-        } catch (e) {}
-      }
-
-      if (!allMatches || allMatches.length === 0) {
-        // Fallback placeholder data if run has not finished yet
-        allMatches = [
-          {
-            league: "UEFA Champions League",
-            is_global: true,
-            home: "Real Madrid",
-            away: "Manchester City",
-            match_date: todayUTC,
-            match_time: "20:00 UTC",
-            bookmaker: "Pinnacle Consensus",
-            probabilities: { home_win_pct: 42.5, draw_pct: 26.5, away_win_pct: 31.0 }
-          }
-        ];
-      }
-
-      renderCards(allMatches);
-      setupFilters();
-    }
-
-    loadData();
-  </script>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: PMU (FR)
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-amber-500">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Champions League</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 13 Oct 2026</span>
+                <span>•</span>
+                <span>⏰ 19:00 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>Viking FK</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>Bayern Munich</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Viking FK Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">7.1%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">8.4%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Bayern Munich Win</div>
+                    <div class="text-sky-400 text-sm font-bold">84.5%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: Suprabets
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-amber-500">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Europa Conference League</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 15 Oct 2026</span>
+                <span>•</span>
+                <span>⏰ 19:00 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>SK Brann</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>Lincoln Red Imps FC</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">SK Brann Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">83.4%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">11.3%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Lincoln Red Imps FC Win</div>
+                    <div class="text-sky-400 text-sm font-bold">5.3%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: Coolbet
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-amber-500">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Nations League</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 01 Oct 2026</span>
+                <span>•</span>
+                <span>⏰ 16:00 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>Azerbaijan</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>Liechtenstein</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Azerbaijan Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">81.5%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">13.5%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Liechtenstein Win</div>
+                    <div class="text-sky-400 text-sm font-bold">5.0%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: 1xBet
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-amber-500">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Nations League</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 29 Sep 2026</span>
+                <span>•</span>
+                <span>⏰ 18:45 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>Spain</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>Croatia</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Spain Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">80.1%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">12.9%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Croatia Win</div>
+                    <div class="text-sky-400 text-sm font-bold">6.9%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: 1xBet
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-amber-500">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Europa Conference League</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 15 Oct 2026</span>
+                <span>•</span>
+                <span>⏰ 19:00 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>FC Twente Enschede</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>FC Thun</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">FC Twente Enschede Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">79.4%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">13.2%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">FC Thun Win</div>
+                    <div class="text-sky-400 text-sm font-bold">7.4%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: Coolbet
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-amber-500">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Champions League Women</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 01 Oct 2026</span>
+                <span>•</span>
+                <span>⏰ 19:00 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>Paris Saint Germain</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>Leuven</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Paris Saint Germain Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">79.1%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">13.2%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Leuven Win</div>
+                    <div class="text-sky-400 text-sm font-bold">7.7%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: Betfair
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-amber-500">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Europa Conference League</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 15 Oct 2026</span>
+                <span>•</span>
+                <span>⏰ 16:45 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>Panathinaikos FC</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>FK Borac Banja Luka</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Panathinaikos FC Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">77.0%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">15.4%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">FK Borac Banja Luka Win</div>
+                    <div class="text-sky-400 text-sm font-bold">7.6%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: 1xBet
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-amber-500">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Europa League</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 15 Oct 2026</span>
+                <span>•</span>
+                <span>⏰ 19:00 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>Bournemouth</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>SK Sturm Graz</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Bournemouth Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">76.2%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">14.0%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">SK Sturm Graz Win</div>
+                    <div class="text-sky-400 text-sm font-bold">9.7%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: Winamax (FR)
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-amber-500">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Champions League</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 13 Oct 2026</span>
+                <span>•</span>
+                <span>⏰ 19:00 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>Arsenal</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>Lille</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Arsenal Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">75.5%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">17.3%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Lille Win</div>
+                    <div class="text-sky-400 text-sm font-bold">7.2%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: Marathon Bet
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-amber-500">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Champions League</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 14 Oct 2026</span>
+                <span>•</span>
+                <span>⏰ 16:45 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>LASK</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>Liverpool</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">LASK Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">10.0%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">15.1%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Liverpool Win</div>
+                    <div class="text-sky-400 text-sm font-bold">74.9%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: Marathon Bet
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-amber-500">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Europa League</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 15 Oct 2026</span>
+                <span>•</span>
+                <span>⏰ 19:00 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>Benfica</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>Celtic</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Benfica Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">74.5%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">14.7%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Celtic Win</div>
+                    <div class="text-sky-400 text-sm font-bold">10.8%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: Winamax (DE)
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-amber-500">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Nations League</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 01 Oct 2026</span>
+                <span>•</span>
+                <span>⏰ 18:45 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>Germany</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>Serbia</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Germany Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">73.9%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">16.8%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Serbia Win</div>
+                    <div class="text-sky-400 text-sm font-bold">9.2%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: William Hill
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-amber-500">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Champions League Women</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 01 Oct 2026</span>
+                <span>•</span>
+                <span>⏰ 16:45 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>HB Køge</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>Servette FC</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">HB Køge Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">73.8%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">16.9%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Servette FC Win</div>
+                    <div class="text-sky-400 text-sm font-bold">9.3%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: Betfair
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-amber-500">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Nations League</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 01 Oct 2026</span>
+                <span>•</span>
+                <span>⏰ 18:45 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>Malta</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>Gibraltar</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Malta Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">73.8%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">18.4%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Gibraltar Win</div>
+                    <div class="text-sky-400 text-sm font-bold">7.9%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: 1xBet
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-amber-500">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Europa Conference League</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 15 Oct 2026</span>
+                <span>•</span>
+                <span>⏰ 16:45 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>Mjällby AIF</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>Inter Club d'Escaldes</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Mjällby AIF Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">73.7%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">17.2%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Inter Club d'Escaldes Win</div>
+                    <div class="text-sky-400 text-sm font-bold">9.1%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: 1xBet
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-amber-500">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Champions League</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 13 Oct 2026</span>
+                <span>•</span>
+                <span>⏰ 19:00 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>Inter Milan</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>Club Brugge</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Inter Milan Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">73.3%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">16.4%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Club Brugge Win</div>
+                    <div class="text-sky-400 text-sm font-bold">10.3%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: Suprabets
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-amber-500">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Champions League</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 14 Oct 2026</span>
+                <span>•</span>
+                <span>⏰ 19:00 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>ŠK Slovan Bratislava</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>VfB Stuttgart</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">ŠK Slovan Bratislava Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">10.8%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">16.1%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">VfB Stuttgart Win</div>
+                    <div class="text-sky-400 text-sm font-bold">73.1%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: Marathon Bet
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-amber-500">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Europa Conference League</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 15 Oct 2026</span>
+                <span>•</span>
+                <span>⏰ 19:00 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>SC Freiburg</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>FK Jablonec</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">SC Freiburg Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">72.5%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">17.6%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">FK Jablonec Win</div>
+                    <div class="text-sky-400 text-sm font-bold">9.9%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: 1xBet
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-amber-500">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Europa League</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 15 Oct 2026</span>
+                <span>•</span>
+                <span>⏰ 16:45 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>AZ Alkmaar</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>Hapoel Be'er Sheva</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">AZ Alkmaar Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">72.3%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">16.7%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Hapoel Be'er Sheva Win</div>
+                    <div class="text-sky-400 text-sm font-bold">11.0%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: Pinnacle
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-amber-500">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Nations League</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 29 Sep 2026</span>
+                <span>•</span>
+                <span>⏰ 18:45 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>Slovakia</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>Kazakhstan</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Slovakia Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">71.8%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">19.3%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Kazakhstan Win</div>
+                    <div class="text-sky-400 text-sm font-bold">8.9%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: PMU (FR)
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-amber-500">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Champions League</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 13 Oct 2026</span>
+                <span>•</span>
+                <span>⏰ 19:00 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>Galatasaray</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>Barcelona</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Galatasaray Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">12.4%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">16.6%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Barcelona Win</div>
+                    <div class="text-sky-400 text-sm font-bold">71.0%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: Suprabets
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-amber-500">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Nations League</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 29 Sep 2026</span>
+                <span>•</span>
+                <span>⏰ 18:45 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>Czech Republic</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>England</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Czech Republic Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">10.8%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">18.4%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">England Win</div>
+                    <div class="text-sky-400 text-sm font-bold">70.8%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: William Hill
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-amber-500">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Europa League</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 15 Oct 2026</span>
+                <span>•</span>
+                <span>⏰ 19:00 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>Rennes</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>OFI Crete</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Rennes Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">69.7%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">17.2%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">OFI Crete Win</div>
+                    <div class="text-sky-400 text-sm font-bold">13.0%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: Winamax (FR)
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-amber-500">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Europa Conference League</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 15 Oct 2026</span>
+                <span>•</span>
+                <span>⏰ 19:00 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>Sint Truiden</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>FC Iberia 1999</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Sint Truiden Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">69.6%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">19.3%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">FC Iberia 1999 Win</div>
+                    <div class="text-sky-400 text-sm font-bold">11.1%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: 1xBet
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-amber-500">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Europa League</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 15 Oct 2026</span>
+                <span>•</span>
+                <span>⏰ 16:45 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>Sparta Prague</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>Lillestrom</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Sparta Prague Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">69.5%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">18.4%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Lillestrom Win</div>
+                    <div class="text-sky-400 text-sm font-bold">12.1%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: Pinnacle
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-amber-500">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Champions League Women</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 30 Sep 2026</span>
+                <span>•</span>
+                <span>⏰ 19:00 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>Benfica</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>Bayern Munich</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Benfica Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">12.6%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">18.3%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Bayern Munich Win</div>
+                    <div class="text-sky-400 text-sm font-bold">69.1%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: Nordic Bet
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-amber-500">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Europa Conference League</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 15 Oct 2026</span>
+                <span>•</span>
+                <span>⏰ 19:00 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>Atalanta BC</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>Pafos FC</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Atalanta BC Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">67.9%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">19.3%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Pafos FC Win</div>
+                    <div class="text-sky-400 text-sm font-bold">12.9%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: Coolbet
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-amber-500">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Champions League Women</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 30 Sep 2026</span>
+                <span>•</span>
+                <span>⏰ 19:00 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>Lyon</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>Chelsea</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Lyon Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">66.8%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">19.6%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Chelsea Win</div>
+                    <div class="text-sky-400 text-sm font-bold">13.7%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: Nordic Bet
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-amber-500">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Europa League</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 15 Oct 2026</span>
+                <span>•</span>
+                <span>⏰ 16:45 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>Torreense</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>Sunderland</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Torreense Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">15.9%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">17.4%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Sunderland Win</div>
+                    <div class="text-sky-400 text-sm font-bold">66.7%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: Winamax (DE)
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-amber-500">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Europa League</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 15 Oct 2026</span>
+                <span>•</span>
+                <span>⏰ 19:00 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>Jagiellonia Białystok</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>FC Ararat-Armenia</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Jagiellonia Białystok Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">66.3%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">19.7%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">FC Ararat-Armenia Win</div>
+                    <div class="text-sky-400 text-sm font-bold">14.0%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: Unibet (FR)
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-amber-500">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Champions League Women</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 30 Sep 2026</span>
+                <span>•</span>
+                <span>⏰ 16:45 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>Paris FC</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>Arsenal</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Paris FC Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">13.4%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">22.0%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Arsenal Win</div>
+                    <div class="text-sky-400 text-sm font-bold">64.6%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: Nordic Bet
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-amber-500">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Nations League</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 02 Oct 2026</span>
+                <span>•</span>
+                <span>⏰ 18:45 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>Belgium</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>Turkey</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Belgium Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">64.5%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">19.4%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Turkey Win</div>
+                    <div class="text-sky-400 text-sm font-bold">16.1%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: 1xBet
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-amber-500">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Europa Conference League</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 15 Oct 2026</span>
+                <span>•</span>
+                <span>⏰ 16:45 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>KuPS Kuopio</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>Trabzonspor</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">KuPS Kuopio Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">14.2%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">21.6%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Trabzonspor Win</div>
+                    <div class="text-sky-400 text-sm font-bold">64.2%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: 1xBet
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-amber-500">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Europa Conference League</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 15 Oct 2026</span>
+                <span>•</span>
+                <span>⏰ 16:45 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>PFC CSKA Sofia</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>AS Monaco</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">PFC CSKA Sofia Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">14.9%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">21.4%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">AS Monaco Win</div>
+                    <div class="text-sky-400 text-sm font-bold">63.8%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: 1xBet
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-amber-500">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Europa Conference League</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 15 Oct 2026</span>
+                <span>•</span>
+                <span>⏰ 16:45 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>Hajduk Split</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>Ajax</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Hajduk Split Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">15.8%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">20.9%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Ajax Win</div>
+                    <div class="text-sky-400 text-sm font-bold">63.4%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: 1xBet
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-amber-500">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Europa Conference League</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 15 Oct 2026</span>
+                <span>•</span>
+                <span>⏰ 16:45 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>KF Egnatia</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>FC Midtjylland</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">KF Egnatia Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">16.1%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">22.9%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">FC Midtjylland Win</div>
+                    <div class="text-sky-400 text-sm font-bold">61.0%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: Coolbet
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-amber-500">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Nations League</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 01 Oct 2026</span>
+                <span>•</span>
+                <span>⏰ 18:45 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>Wales</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>Norway</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Wales Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">17.9%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">22.4%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Norway Win</div>
+                    <div class="text-sky-400 text-sm font-bold">59.7%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: William Hill
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-amber-500">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Nations League</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 29 Sep 2026</span>
+                <span>•</span>
+                <span>⏰ 16:00 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>Finland</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>Belarus</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Finland Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">59.1%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">25.7%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Belarus Win</div>
+                    <div class="text-sky-400 text-sm font-bold">15.3%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: PMU (FR)
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-amber-500">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Nations League</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 29 Sep 2026</span>
+                <span>•</span>
+                <span>⏰ 18:45 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>Slovenia</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>North Macedonia</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Slovenia Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">58.6%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">26.4%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">North Macedonia Win</div>
+                    <div class="text-sky-400 text-sm font-bold">15.0%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: Betfair
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-amber-500">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Nations League</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 29 Sep 2026</span>
+                <span>•</span>
+                <span>⏰ 18:45 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>Bulgaria</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>Estonia</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Bulgaria Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">57.0%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">26.5%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Estonia Win</div>
+                    <div class="text-sky-400 text-sm font-bold">16.5%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: PMU (FR)
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-amber-500">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Europa League</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 15 Oct 2026</span>
+                <span>•</span>
+                <span>⏰ 16:45 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>Lech Poznań</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>Bayer Leverkusen</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Lech Poznań Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">21.2%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">21.9%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Bayer Leverkusen Win</div>
+                    <div class="text-sky-400 text-sm font-bold">56.9%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: Pinnacle
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-amber-500">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Europa Conference League</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 15 Oct 2026</span>
+                <span>•</span>
+                <span>⏰ 16:45 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>Gent</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>AGF Aarhus</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Gent Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">56.4%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">23.4%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">AGF Aarhus Win</div>
+                    <div class="text-sky-400 text-sm font-bold">20.2%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: Coolbet
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-amber-500">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Nations League</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 02 Oct 2026</span>
+                <span>•</span>
+                <span>⏰ 14:00 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>Kazakhstan</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>Moldova</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Kazakhstan Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">56.1%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">25.2%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Moldova Win</div>
+                    <div class="text-sky-400 text-sm font-bold">18.7%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: PMU (FR)
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-amber-500">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Champions League</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 14 Oct 2026</span>
+                <span>•</span>
+                <span>⏰ 19:00 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>Aston Villa</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>Fenerbahce</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Aston Villa Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">55.1%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">25.0%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Fenerbahce Win</div>
+                    <div class="text-sky-400 text-sm font-bold">20.0%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: Marathon Bet
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-slate-700">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Champions League Women</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 01 Oct 2026</span>
+                <span>•</span>
+                <span>⏰ 19:00 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>Manchester City</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>Real Madrid</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Manchester City Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">54.8%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">24.1%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Real Madrid Win</div>
+                    <div class="text-sky-400 text-sm font-bold">21.0%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: Nordic Bet
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-slate-700">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Champions League Women</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 01 Oct 2026</span>
+                <span>•</span>
+                <span>⏰ 16:45 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>Austria Wien</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>Inter Milan</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Austria Wien Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">22.1%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">24.6%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Inter Milan Win</div>
+                    <div class="text-sky-400 text-sm font-bold">53.3%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: Betfair
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-slate-700">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Europa League</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 15 Oct 2026</span>
+                <span>•</span>
+                <span>⏰ 16:45 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>Salzburg</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>AC Milan</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Salzburg Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">23.7%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">23.9%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">AC Milan Win</div>
+                    <div class="text-sky-400 text-sm font-bold">52.4%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: Pinnacle
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-slate-700">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Nations League</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 02 Oct 2026</span>
+                <span>•</span>
+                <span>⏰ 16:00 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>Latvia</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>Montenegro</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Latvia Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">20.8%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">27.7%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Montenegro Win</div>
+                    <div class="text-sky-400 text-sm font-bold">51.5%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: Betfair
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-slate-700">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Champions League</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 14 Oct 2026</span>
+                <span>•</span>
+                <span>⏰ 16:45 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>Feyenoord</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>Como</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Feyenoord Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">26.1%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">22.8%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Como Win</div>
+                    <div class="text-sky-400 text-sm font-bold">51.0%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: 1xBet
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-slate-700">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Europa League</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 15 Oct 2026</span>
+                <span>•</span>
+                <span>⏰ 19:00 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>NEC Nijmegen</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>PFC Levski Sofia</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">NEC Nijmegen Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">50.3%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">25.6%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">PFC Levski Sofia Win</div>
+                    <div class="text-sky-400 text-sm font-bold">24.2%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: Unibet (FR)
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-slate-700">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Nations League</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 29 Sep 2026</span>
+                <span>•</span>
+                <span>⏰ 18:45 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>Scotland</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>Switzerland</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Scotland Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">23.2%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">27.0%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Switzerland Win</div>
+                    <div class="text-sky-400 text-sm font-bold">49.8%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: Betclic (FR)
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-slate-700">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Nations League</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 04 Oct 2026</span>
+                <span>•</span>
+                <span>⏰ 18:45 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>Wales</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>Denmark</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Wales Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">23.9%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">26.3%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Denmark Win</div>
+                    <div class="text-sky-400 text-sm font-bold">49.8%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: Winamax (DE)
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-slate-700">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Europa Conference League</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 15 Oct 2026</span>
+                <span>•</span>
+                <span>⏰ 16:45 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>Riga FC</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>FC Kairat</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Riga FC Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">49.5%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">26.6%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">FC Kairat Win</div>
+                    <div class="text-sky-400 text-sm font-bold">23.9%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: Coolbet
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-slate-700">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Europa League</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 15 Oct 2026</span>
+                <span>•</span>
+                <span>⏰ 19:00 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>TSG Hoffenheim</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>Besiktas JK</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">TSG Hoffenheim Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">48.1%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">24.0%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Besiktas JK Win</div>
+                    <div class="text-sky-400 text-sm font-bold">27.9%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: Unibet (FR)
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-slate-700">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Europa League</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 15 Oct 2026</span>
+                <span>•</span>
+                <span>⏰ 19:00 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>Dinamo Zagreb</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>Anderlecht</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Dinamo Zagreb Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">47.9%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">26.3%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Anderlecht Win</div>
+                    <div class="text-sky-400 text-sm font-bold">25.9%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: Winamax (DE)
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-slate-700">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Europa League</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 15 Oct 2026</span>
+                <span>•</span>
+                <span>⏰ 19:00 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>Ferencváros TC</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>Viktoria Plzeň</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Ferencváros TC Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">47.8%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">25.5%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Viktoria Plzeň Win</div>
+                    <div class="text-sky-400 text-sm font-bold">26.7%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: Winamax (FR)
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-slate-700">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Champions League</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 13 Oct 2026</span>
+                <span>•</span>
+                <span>⏰ 16:45 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>Sabah FK</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>Slavia Praha</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Sabah FK Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">27.3%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">25.4%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Slavia Praha Win</div>
+                    <div class="text-sky-400 text-sm font-bold">47.3%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: Betclic (FR)
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-slate-700">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Champions League</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 13 Oct 2026</span>
+                <span>•</span>
+                <span>⏰ 19:00 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>RB Leipzig</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>PSV Eindhoven</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">RB Leipzig Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">47.3%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">23.7%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">PSV Eindhoven Win</div>
+                    <div class="text-sky-400 text-sm font-bold">29.1%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: Marathon Bet
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-slate-700">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Nations League</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 04 Oct 2026</span>
+                <span>•</span>
+                <span>⏰ 18:45 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>Greece</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>Germany</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Greece Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">28.1%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">25.1%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Germany Win</div>
+                    <div class="text-sky-400 text-sm font-bold">46.7%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: Betclic (FR)
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-slate-700">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Nations League</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 01 Oct 2026</span>
+                <span>•</span>
+                <span>⏰ 18:45 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>Denmark</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>Portugal</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Denmark Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">27.3%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">26.5%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Portugal Win</div>
+                    <div class="text-sky-400 text-sm font-bold">46.2%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: William Hill
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-slate-700">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Champions League</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 14 Oct 2026</span>
+                <span>•</span>
+                <span>⏰ 19:00 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>AS Roma</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>Real Madrid</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">AS Roma Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">28.9%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">25.0%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Real Madrid Win</div>
+                    <div class="text-sky-400 text-sm font-bold">46.1%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: Suprabets
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-slate-700">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Champions League</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 14 Oct 2026</span>
+                <span>•</span>
+                <span>⏰ 19:00 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>Bodø/Glimt</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>Borussia Dortmund</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Bodø/Glimt Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">30.0%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">24.0%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Borussia Dortmund Win</div>
+                    <div class="text-sky-400 text-sm font-bold">46.1%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: Marathon Bet
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-slate-700">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Europa League</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 15 Oct 2026</span>
+                <span>•</span>
+                <span>⏰ 19:00 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>Celta Vigo</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>Juventus</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Celta Vigo Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">27.9%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">26.3%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Juventus Win</div>
+                    <div class="text-sky-400 text-sm font-bold">45.8%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: Winamax (FR)
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-slate-700">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Champions League</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 14 Oct 2026</span>
+                <span>•</span>
+                <span>⏰ 19:00 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>Real Betis</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>Porto</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Real Betis Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">45.4%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">26.2%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Porto Win</div>
+                    <div class="text-sky-400 text-sm font-bold">28.3%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: Marathon Bet
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-slate-700">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Europa League</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 15 Oct 2026</span>
+                <span>•</span>
+                <span>⏰ 19:00 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>Marseille</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>Olympiakos Piraeus</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Marseille Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">44.9%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">26.2%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Olympiakos Piraeus Win</div>
+                    <div class="text-sky-400 text-sm font-bold">28.9%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: Pinnacle
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-slate-700">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Champions League</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 14 Oct 2026</span>
+                <span>•</span>
+                <span>⏰ 19:00 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>Manchester City</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>Paris Saint Germain</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Manchester City Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">44.2%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">24.7%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Paris Saint Germain Win</div>
+                    <div class="text-sky-400 text-sm font-bold">31.1%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: Marathon Bet
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-slate-700">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Europa League</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 15 Oct 2026</span>
+                <span>•</span>
+                <span>⏰ 16:45 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>Lyon</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>Crystal Palace</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Lyon Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">43.9%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">25.7%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Crystal Palace Win</div>
+                    <div class="text-sky-400 text-sm font-bold">30.4%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: Pinnacle
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-slate-700">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Copa Libertadores</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 13 Oct 2026</span>
+                <span>•</span>
+                <span>⏰ 22:00 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>Estudiantes La Plata</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>Flamengo-RJ</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Estudiantes La Plata Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">25.3%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">30.8%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Flamengo-RJ Win</div>
+                    <div class="text-sky-400 text-sm font-bold">43.9%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: Pinnacle
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-slate-700">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Nations League</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 01 Oct 2026</span>
+                <span>•</span>
+                <span>⏰ 18:45 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>Republic of Ireland</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>Austria</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Republic of Ireland Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">27.1%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">29.3%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Austria Win</div>
+                    <div class="text-sky-400 text-sm font-bold">43.6%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: PMU (FR)
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-slate-700">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Copa Libertadores</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 16 Oct 2026</span>
+                <span>•</span>
+                <span>⏰ 00:30 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>Estudiantes La Plata</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>Flamengo-RJ</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Estudiantes La Plata Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">26.5%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">30.3%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Flamengo-RJ Win</div>
+                    <div class="text-sky-400 text-sm font-bold">43.1%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: Unibet (FR)
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-slate-700">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Nations League</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 01 Oct 2026</span>
+                <span>•</span>
+                <span>⏰ 18:45 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>Greece</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>Netherlands</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Greece Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">30.9%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">26.2%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Netherlands Win</div>
+                    <div class="text-sky-400 text-sm font-bold">42.9%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: Winamax (FR)
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-slate-700">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Champions League</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 13 Oct 2026</span>
+                <span>•</span>
+                <span>⏰ 19:00 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>Atlético Madrid</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>Manchester United</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Atlético Madrid Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">42.6%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">24.9%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Manchester United Win</div>
+                    <div class="text-sky-400 text-sm font-bold">32.5%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: Marathon Bet
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-slate-700">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Nations League</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 01 Oct 2026</span>
+                <span>•</span>
+                <span>⏰ 18:45 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>Israel</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>Kosovo</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Israel Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">29.5%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">28.1%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Kosovo Win</div>
+                    <div class="text-sky-400 text-sm font-bold">42.5%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: PMU (FR)
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-slate-700">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Nations League</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 29 Sep 2026</span>
+                <span>•</span>
+                <span>⏰ 18:45 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>Luxembourg</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>Iceland</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Luxembourg Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">29.0%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">29.0%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Iceland Win</div>
+                    <div class="text-sky-400 text-sm font-bold">42.1%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: PMU (FR)
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-slate-700">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Champions League</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 13 Oct 2026</span>
+                <span>•</span>
+                <span>⏰ 19:00 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>Villarreal</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>Napoli</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Villarreal Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">41.6%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">26.6%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Napoli Win</div>
+                    <div class="text-sky-400 text-sm font-bold">31.8%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: Suprabets
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-slate-700">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Europa League</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 15 Oct 2026</span>
+                <span>•</span>
+                <span>⏰ 16:45 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>Union Saint-Gilloise</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>Real Sociedad</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Union Saint-Gilloise Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">41.1%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">26.1%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Real Sociedad Win</div>
+                    <div class="text-sky-400 text-sm font-bold">32.8%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: Pinnacle
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-slate-700">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Champions League</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 13 Oct 2026</span>
+                <span>•</span>
+                <span>⏰ 16:45 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>RC Lens</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>Sporting Lisbon</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">RC Lens Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">39.9%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">25.6%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Sporting Lisbon Win</div>
+                    <div class="text-sky-400 text-sm font-bold">34.5%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: Marathon Bet
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-slate-700">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Europa League</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 15 Oct 2026</span>
+                <span>•</span>
+                <span>⏰ 16:45 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>NK Celje</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>Omonoia FC</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">NK Celje Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">39.5%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">27.7%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Omonoia FC Win</div>
+                    <div class="text-sky-400 text-sm font-bold">32.8%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: Pinnacle
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-slate-700">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Europa Conference League</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 15 Oct 2026</span>
+                <span>•</span>
+                <span>⏰ 19:00 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>FC Copenhagen</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>SC Braga</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">FC Copenhagen Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">39.4%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">26.8%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">SC Braga Win</div>
+                    <div class="text-sky-400 text-sm font-bold">33.8%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: Coolbet
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-slate-700">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Europa Conference League</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 15 Oct 2026</span>
+                <span>•</span>
+                <span>⏰ 19:00 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>Hearts</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>FC Nordsjaelland</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Hearts Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">34.3%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">26.3%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">FC Nordsjaelland Win</div>
+                    <div class="text-sky-400 text-sm font-bold">39.4%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: 1xBet
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-slate-700">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Champions League Women</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 30 Sep 2026</span>
+                <span>•</span>
+                <span>⏰ 16:45 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>BK Hacken</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>Juventus</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">BK Hacken Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">38.8%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">26.8%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Juventus Win</div>
+                    <div class="text-sky-400 text-sm font-bold">34.4%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: Nordic Bet
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-slate-700">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Europa Conference League</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 15 Oct 2026</span>
+                <span>•</span>
+                <span>⏰ 16:45 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>Universitatea Craiova</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>Getafe</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Universitatea Craiova Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">31.2%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">30.4%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Getafe Win</div>
+                    <div class="text-sky-400 text-sm font-bold">38.4%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: 1xBet
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-slate-700">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Champions League</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 14 Oct 2026</span>
+                <span>•</span>
+                <span>⏰ 19:00 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>Shakhtar Donetsk</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>AEK Athens</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Shakhtar Donetsk Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">34.9%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">27.2%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">AEK Athens Win</div>
+                    <div class="text-sky-400 text-sm font-bold">37.9%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: Suprabets
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-slate-700">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Europa Conference League</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 15 Oct 2026</span>
+                <span>•</span>
+                <span>⏰ 16:45 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>FC Lugano</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>Red Star Belgrade</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">FC Lugano Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">37.1%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">25.7%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Red Star Belgrade Win</div>
+                    <div class="text-sky-400 text-sm font-bold">37.1%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: Coolbet
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-slate-700">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Copa Libertadores</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 15 Oct 2026</span>
+                <span>•</span>
+                <span>⏰ 00:30 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>Fluminense-RJ</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>Palmeiras-SP</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Fluminense-RJ Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">32.5%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">32.5%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Palmeiras-SP Win</div>
+                    <div class="text-sky-400 text-sm font-bold">35.0%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: Codere (IT)
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-slate-700">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Nations League</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 29 Sep 2026</span>
+                <span>•</span>
+                <span>⏰ 16:00 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>Moldova</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>Faroe Islands</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Moldova Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">32.9%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">32.3%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Faroe Islands Win</div>
+                    <div class="text-sky-400 text-sm font-bold">34.8%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: Betsson
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl p-4 shadow-md border-l-4 border-slate-700">
+            <div class="flex justify-between items-center mb-1">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">UEFA Champions League Women</span>
+                <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
+                <span>🗓️ 30 Sep 2026</span>
+                <span>•</span>
+                <span>⏰ 16:45 UTC</span>
+            </div>
+            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
+                <span>AS Roma</span>
+                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
+                <span>Barcelona</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">AS Roma Win</div>
+                    <div class="text-emerald-400 text-sm font-bold">32.8%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
+                    <div class="text-amber-400 text-sm font-bold">32.8%</div>
+                </div>
+                <div class="bg-slate-900/60 p-2 rounded-lg">
+                    <div class="text-slate-400 text-[10px] uppercase truncate">Barcelona Win</div>
+                    <div class="text-sky-400 text-sm font-bold">34.3%</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-400 text-right">
+                Market: Betfair
+            </div>
+        </div>
+        
+        </div>
+    </div>
 </body>
 </html>

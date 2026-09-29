@@ -8,9 +8,9 @@
     "match_time": "19:00 UTC",
     "bookmaker": "Betfair",
     "probabilities": {
-      "home_win_pct": 90.7,
-      "draw_pct": 5.5,
-      "away_win_pct": 3.8
+      "home_win_pct": 92.7,
+      "draw_pct": 4.9,
+      "away_win_pct": 2.3
     }
   },
   {
@@ -78,9 +78,9 @@
     "match_time": "18:45 UTC",
     "bookmaker": "1xBet",
     "probabilities": {
-      "home_win_pct": 79.5,
-      "draw_pct": 13.3,
-      "away_win_pct": 7.2
+      "home_win_pct": 80.1,
+      "draw_pct": 12.9,
+      "away_win_pct": 6.9
     }
   },
   {
@@ -322,6 +322,20 @@
     }
   },
   {
+    "league": "UEFA Nations League",
+    "is_global": true,
+    "home": "Czech Republic",
+    "away": "England",
+    "match_date": "29 Sep 2026",
+    "match_time": "18:45 UTC",
+    "bookmaker": "William Hill",
+    "probabilities": {
+      "home_win_pct": 10.8,
+      "draw_pct": 18.4,
+      "away_win_pct": 70.8
+    }
+  },
+  {
     "league": "UEFA Europa League",
     "is_global": true,
     "home": "Rennes",
@@ -374,20 +388,6 @@
     "probabilities": {
       "home_win_pct": 12.6,
       "draw_pct": 18.3,
-      "away_win_pct": 69.1
-    }
-  },
-  {
-    "league": "UEFA Nations League",
-    "is_global": true,
-    "home": "Czech Republic",
-    "away": "England",
-    "match_date": "29 Sep 2026",
-    "match_time": "18:45 UTC",
-    "bookmaker": "William Hill",
-    "probabilities": {
-      "home_win_pct": 11.5,
-      "draw_pct": 19.4,
       "away_win_pct": 69.1
     }
   },
@@ -658,6 +658,20 @@
     }
   },
   {
+    "league": "UEFA Champions League Women",
+    "is_global": true,
+    "home": "Austria Wien",
+    "away": "Inter Milan",
+    "match_date": "01 Oct 2026",
+    "match_time": "16:45 UTC",
+    "bookmaker": "Betfair",
+    "probabilities": {
+      "home_win_pct": 22.1,
+      "draw_pct": 24.6,
+      "away_win_pct": 53.3
+    }
+  },
+  {
     "league": "UEFA Europa League",
     "is_global": true,
     "home": "Salzburg",
@@ -711,20 +725,6 @@
       "home_win_pct": 50.3,
       "draw_pct": 25.6,
       "away_win_pct": 24.2
-    }
-  },
-  {
-    "league": "UEFA Champions League Women",
-    "is_global": true,
-    "home": "Austria Wien",
-    "away": "Inter Milan",
-    "match_date": "01 Oct 2026",
-    "match_time": "16:45 UTC",
-    "bookmaker": "Betfair",
-    "probabilities": {
-      "home_win_pct": 24.7,
-      "draw_pct": 25.4,
-      "away_win_pct": 49.9
     }
   },
   {
@@ -1072,9 +1072,9 @@
     "match_time": "19:00 UTC",
     "bookmaker": "Suprabets",
     "probabilities": {
-      "home_win_pct": 41.5,
-      "draw_pct": 26.9,
-      "away_win_pct": 31.6
+      "home_win_pct": 41.6,
+      "draw_pct": 26.6,
+      "away_win_pct": 31.8
     }
   },
   {
