@@ -9,7 +9,9 @@ ODDS_API_KEY = os.getenv("ODDS_API_KEY")
 
 GITHUB_USERNAME = "shayanroyxyz"
 GITHUB_REPO = "Football-Predictor"
-PAGES_URL = "https://stranger.is-a.dev/"
+
+# PASTE YOUR EXACT VERCEL DOMAIN HERE:
+PAGES_URL = "https://football-predictor-shayan.vercel.app"
 TRIGGER_URL = f"https://github.com/{GITHUB_USERNAME}/{GITHUB_REPO}/actions/workflows/daily.yml"
 
 GLOBAL_PRIORITY_KEYWORDS = [
@@ -18,17 +20,14 @@ GLOBAL_PRIORITY_KEYWORDS = [
 ]
 
 def format_commence_time(iso_str):
-    """Converts ISO 8601 UTC timestamp to readable date and time."""
     try:
         dt = datetime.fromisoformat(iso_str.replace("Z", "+00:00"))
-        date_part = dt.strftime("%d %b %Y")
-        time_part = dt.strftime("%H:%M UTC")
-        return date_part, time_part
+        return dt.strftime("%d %b %Y"), dt.strftime("%H:%M UTC")
     except Exception:
         return "Upcoming", "TBD"
 
 def send_telegram(message):
-    """Sends formatted Telegram message with 1-tap interactive inline action buttons."""
+    """Sends message with persistent docked Telegram Keyboard and Web App button."""
     if not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHAT_ID:
         print("Telegram configuration missing.")
         return
@@ -39,12 +38,25 @@ def send_telegram(message):
         "parse_mode": "Markdown",
         "disable_web_page_preview": True,
         "reply_markup": {
-            "inline_keyboard": [
+            "keyboard": [
                 [
-                    {"text": "⚡ Re-Run Predictions Now", "url": TRIGGER_URL},
-                    {"text": "🌐 Open Web Dashboard", "url": PAGES_URL}
+                    {"text": "🔥 Top Value Picks"}
+                ],
+                [
+                    {"text": "🌍 Global & Cups"},
+                    {"text": "📋 All Today's Matches"}
+                ],
+                [
+                    {"text": "🌐 Open Web App", "web_app": {"url": PAGES_URL}},
+                    {"text": "⚡ Refresh / Run"}
+                ],
+                [
+                    {"text": "📊 Prediction Guide"},
+                    {"text": "⚙️ Bot Status"}
                 ]
-            ]
+            ],
+            "resize_keyboard": True,
+            "persistent": True
         }
     }
     try:
@@ -77,7 +89,6 @@ def get_predictions_from_market():
     soccer_keys.sort(key=get_sport_priority)
 
     matches = []
-    # Queries 6 active leagues per run to stay well within free monthly quota
     for sport_key in soccer_keys[:6]:
         odds_url = f"https://api.the-odds-api.com/v4/sports/{sport_key}/odds/?apiKey={ODDS_API_KEY}&regions=eu&markets=h2h&oddsFormat=decimal"
         try:
@@ -130,84 +141,6 @@ def get_predictions_from_market():
 
     return matches
 
-def generate_web_dashboard(matches, date_str):
-    """Compiles modern HTML dashboard for docs/index.html hosted on GitHub Pages."""
-    os.makedirs("docs", exist_ok=True)
-    
-    # Preserve custom domain CNAME file in /docs
-    with open("docs/CNAME", "w", encoding="utf-8") as f:
-        f.write("stranger.is-a.dev\n")
-
-    cards_html = ""
-    for m in matches:
-        p = m["probabilities"]
-        fav_class = "border-l-4 border-amber-500" if (p["home_win_pct"] >= 55 or p["away_win_pct"] >= 55) else "border-l-4 border-slate-700"
-        badge = '<span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded font-semibold uppercase tracking-wider">GLOBAL</span>' if m["is_global"] else ""
-        
-        cards_html += f"""
-        <div class="bg-slate-800 rounded-xl p-4 shadow-md {fav_class}">
-            <div class="flex justify-between items-center mb-1">
-                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">{m['league']}</span>
-                {badge}
-            </div>
-            <div class="flex items-center gap-2 mb-3 text-xs text-amber-400/90 font-medium">
-                <span>🗓️ {m['match_date']}</span>
-                <span>•</span>
-                <span>⏰ {m['match_time']}</span>
-            </div>
-            <div class="text-base font-bold text-slate-100 mb-3 flex items-center justify-between">
-                <span>{m['home']}</span>
-                <span class="text-xs text-slate-500 font-normal px-2">VS</span>
-                <span>{m['away']}</span>
-            </div>
-            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
-                <div class="bg-slate-900/60 p-2 rounded-lg">
-                    <div class="text-slate-400 text-[10px] uppercase truncate">{m['home']} Win</div>
-                    <div class="text-emerald-400 text-sm font-bold">{p['home_win_pct']}%</div>
-                </div>
-                <div class="bg-slate-900/60 p-2 rounded-lg">
-                    <div class="text-slate-400 text-[10px] uppercase">Draw</div>
-                    <div class="text-amber-400 text-sm font-bold">{p['draw_pct']}%</div>
-                </div>
-                <div class="bg-slate-900/60 p-2 rounded-lg">
-                    <div class="text-slate-400 text-[10px] uppercase truncate">{m['away']} Win</div>
-                    <div class="text-sky-400 text-sm font-bold">{p['away_win_pct']}%</div>
-                </div>
-            </div>
-            <div class="mt-2 text-[10px] text-slate-400 text-right">
-                Market: {m['bookmaker']}
-            </div>
-        </div>
-        """
-
-    html_content = f"""<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Global Football Match Predictions</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-slate-900 text-slate-100 min-h-screen py-8 px-4 font-sans">
-    <div class="max-w-4xl mx-auto">
-        <header class="mb-8 border-b border-slate-800 pb-5 flex flex-wrap justify-between items-end gap-2">
-            <div>
-                <h1 class="text-2xl md:text-3xl font-extrabold tracking-tight text-white flex items-center gap-2">
-                    ⚽ Global Football Match Predictions
-                </h1>
-                <p class="text-slate-400 text-sm mt-1">Generated: {date_str} (UTC) • Total Matches: {len(matches)}</p>
-            </div>
-        </header>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {cards_html}
-        </div>
-    </div>
-</body>
-</html>
-"""
-    with open("docs/index.html", "w", encoding="utf-8") as f:
-        f.write(html_content)
-
 def run():
     now_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     matches = get_predictions_from_market()
@@ -216,7 +149,6 @@ def run():
         send_telegram("⚠️ *Notice:* No active fixtures available right now or check `ODDS_API_KEY`.")
         return
 
-    # Sort: Global tournaments first, then descending by win probability of favorite
     matches.sort(
         key=lambda m: (
             0 if m["is_global"] else 1,
@@ -228,11 +160,8 @@ def run():
     with open(f"predictions/{now_str}.json", "w") as f:
         json.dump(matches, f, indent=2)
 
-    generate_web_dashboard(matches, now_str)
-
     total = len(matches)
 
-    # Highlight High-Confidence Picks
     top_picks = []
     for m in matches:
         p = m["probabilities"]
@@ -253,7 +182,6 @@ def run():
         f"⚽ *GLOBAL FOOTBALL PREDICTIONS*\n"
         f"📅 Date: `{now_str}`\n"
         f"🌍 *Upcoming Matches Found:* `{total}`\n"
-        f"🌐 [Open Interactive Dashboard]({PAGES_URL})\n"
         f"━━━━━━━━━━━━━━━━━━━\n\n"
     )
 
@@ -281,10 +209,10 @@ def run():
             batch += entry
 
     if batch.strip():
-        batch += f"\n🔗 *View all {total} matches on your web page:*\n👉 {PAGES_URL}"
+        batch += f"\nTap **🌐 Open Web App** below to view all {total} matches with search & filters."
         send_telegram(batch)
 
-    print(f"Processed {total} matches with dates/times and generated docs/index.html.")
+    print(f"Processed {total} matches successfully.")
 
 if __name__ == "__main__":
     run()
