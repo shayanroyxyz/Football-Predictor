@@ -1,17 +1,16 @@
 {
-  "version": 2,
-  "buildCommand": null,
-  "outputDirectory": "docs",
   "cleanUrls": true,
   "rewrites": [
-    { "source": "/", "destination": "/index.html" },
-    { "source": "/predictions/:path*", "destination": "/../predictions/:path*" }
+    { "source": "/", "destination": "/docs/index.html" },
+    { "source": "/predictions/:match*", "destination": "/predictions/:match*" },
+    { "source": "/:path*", "destination": "/docs/:path*" }
   ],
   "headers": [
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }
+        { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" },
+        { "key": "Access-Control-Allow-Origin", "value": "*" }
       ]
     }
   ]
