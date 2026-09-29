@@ -2,8 +2,39 @@
   {
     "league": "UEFA Nations League",
     "is_global": true,
+    "home": "Moldova",
+    "away": "Faroe Islands",
+    "commence_time": "2026-09-29T16:00:00Z",
+    "match_date": "29 Sep 2026",
+    "match_time": "16:00 UTC",
+    "bookmaker": "Betsson",
+    "probabilities": {
+      "home_win_pct": 4.4,
+      "draw_pct": 92.3,
+      "away_win_pct": 3.2
+    }
+  },
+  {
+    "league": "UEFA Nations League",
+    "is_global": true,
+    "home": "Finland",
+    "away": "Belarus",
+    "commence_time": "2026-09-29T16:02:00Z",
+    "match_date": "29 Sep 2026",
+    "match_time": "16:02 UTC",
+    "bookmaker": "PMU (FR)",
+    "probabilities": {
+      "home_win_pct": 9.3,
+      "draw_pct": 85.5,
+      "away_win_pct": 5.2
+    }
+  },
+  {
+    "league": "UEFA Nations League",
+    "is_global": true,
     "home": "San Marino",
     "away": "Albania",
+    "commence_time": "2026-09-29T18:45:00Z",
     "match_date": "29 Sep 2026",
     "match_time": "18:45 UTC",
     "bookmaker": "William Hill",
@@ -14,101 +45,18 @@
     }
   },
   {
-    "league": "UEFA Champions League Women",
-    "is_global": true,
-    "home": "AS Roma",
-    "away": "Barcelona",
-    "match_date": "30 Sep 2026",
-    "match_time": "16:45 UTC",
-    "bookmaker": "Betfair",
-    "probabilities": {
-      "home_win_pct": 3.7,
-      "draw_pct": 5.6,
-      "away_win_pct": 90.7
-    }
-  },
-  {
-    "league": "UEFA Europa Conference League",
-    "is_global": true,
-    "home": "Brighton and Hove Albion",
-    "away": "FK Kauno \u017dalgiris",
-    "match_date": "15 Oct 2026",
-    "match_time": "19:00 UTC",
-    "bookmaker": "Betfair",
-    "probabilities": {
-      "home_win_pct": 90.7,
-      "draw_pct": 5.5,
-      "away_win_pct": 3.8
-    }
-  },
-  {
-    "league": "UEFA Champions League",
-    "is_global": true,
-    "home": "Viking FK",
-    "away": "Bayern Munich",
-    "match_date": "13 Oct 2026",
-    "match_time": "19:00 UTC",
-    "bookmaker": "Suprabets",
-    "probabilities": {
-      "home_win_pct": 7.1,
-      "draw_pct": 8.4,
-      "away_win_pct": 84.5
-    }
-  },
-  {
-    "league": "UEFA Europa Conference League",
-    "is_global": true,
-    "home": "SK Brann",
-    "away": "Lincoln Red Imps FC",
-    "match_date": "15 Oct 2026",
-    "match_time": "19:00 UTC",
-    "bookmaker": "Coolbet",
-    "probabilities": {
-      "home_win_pct": 83.4,
-      "draw_pct": 11.3,
-      "away_win_pct": 5.3
-    }
-  },
-  {
     "league": "UEFA Nations League",
     "is_global": true,
-    "home": "Azerbaijan",
-    "away": "Liechtenstein",
-    "match_date": "01 Oct 2026",
-    "match_time": "16:00 UTC",
-    "bookmaker": "1xBet",
-    "probabilities": {
-      "home_win_pct": 82.0,
-      "draw_pct": 13.1,
-      "away_win_pct": 5.0
-    }
-  },
-  {
-    "league": "UEFA Europa Conference League",
-    "is_global": true,
-    "home": "FC Twente Enschede",
-    "away": "FC Thun",
-    "match_date": "15 Oct 2026",
-    "match_time": "19:00 UTC",
-    "bookmaker": "Coolbet",
-    "probabilities": {
-      "home_win_pct": 79.4,
-      "draw_pct": 13.2,
-      "away_win_pct": 7.4
-    }
-  },
-  {
-    "league": "UEFA Nations League",
-    "is_global": true,
-    "home": "Spain",
-    "away": "Czech Republic",
-    "match_date": "03 Oct 2026",
+    "home": "Bulgaria",
+    "away": "Estonia",
+    "commence_time": "2026-09-29T18:45:00Z",
+    "match_date": "29 Sep 2026",
     "match_time": "18:45 UTC",
-    "bookmaker": "1xBet",
+    "bookmaker": "PMU (FR)",
     "probabilities": {
-      "home_win_pct": 78.4,
-      "draw_pct": 16.0,
-      "away_win_pct": 5.6
+      "home_win_pct": 52.5,
+      "draw_pct": 28.9,
+      "away_win_pct": 18.6
     }
   },
   {
@@ -116,6 +64,7 @@
     "is_global": true,
     "home": "Spain",
     "away": "Croatia",
+    "commence_time": "2026-09-29T18:45:00Z",
     "match_date": "29 Sep 2026",
     "match_time": "18:45 UTC",
     "bookmaker": "1xBet",
@@ -128,218 +77,9 @@
   {
     "league": "UEFA Nations League",
     "is_global": true,
-    "home": "Slovakia",
-    "away": "Kazakhstan",
-    "match_date": "29 Sep 2026",
-    "match_time": "18:45 UTC",
-    "bookmaker": "PMU (FR)",
-    "probabilities": {
-      "home_win_pct": 77.3,
-      "draw_pct": 15.3,
-      "away_win_pct": 7.4
-    }
-  },
-  {
-    "league": "UEFA Europa Conference League",
-    "is_global": true,
-    "home": "Panathinaikos FC",
-    "away": "FK Borac Banja Luka",
-    "match_date": "15 Oct 2026",
-    "match_time": "16:45 UTC",
-    "bookmaker": "1xBet",
-    "probabilities": {
-      "home_win_pct": 76.4,
-      "draw_pct": 15.8,
-      "away_win_pct": 7.8
-    }
-  },
-  {
-    "league": "UEFA Europa League",
-    "is_global": true,
-    "home": "Bournemouth",
-    "away": "SK Sturm Graz",
-    "match_date": "15 Oct 2026",
-    "match_time": "19:00 UTC",
-    "bookmaker": "Winamax (FR)",
-    "probabilities": {
-      "home_win_pct": 76.2,
-      "draw_pct": 14.0,
-      "away_win_pct": 9.7
-    }
-  },
-  {
-    "league": "UEFA Champions League",
-    "is_global": true,
-    "home": "Arsenal",
-    "away": "Lille",
-    "match_date": "13 Oct 2026",
-    "match_time": "19:00 UTC",
-    "bookmaker": "Marathon Bet",
-    "probabilities": {
-      "home_win_pct": 75.5,
-      "draw_pct": 17.3,
-      "away_win_pct": 7.2
-    }
-  },
-  {
-    "league": "UEFA Champions League",
-    "is_global": true,
-    "home": "LASK",
-    "away": "Liverpool",
-    "match_date": "14 Oct 2026",
-    "match_time": "16:45 UTC",
-    "bookmaker": "Marathon Bet",
-    "probabilities": {
-      "home_win_pct": 10.0,
-      "draw_pct": 15.1,
-      "away_win_pct": 74.9
-    }
-  },
-  {
-    "league": "UEFA Champions League Women",
-    "is_global": true,
-    "home": "Benfica",
-    "away": "Bayern Munich",
-    "match_date": "30 Sep 2026",
-    "match_time": "19:00 UTC",
-    "bookmaker": "Nordic Bet",
-    "probabilities": {
-      "home_win_pct": 10.1,
-      "draw_pct": 15.4,
-      "away_win_pct": 74.5
-    }
-  },
-  {
-    "league": "UEFA Europa League",
-    "is_global": true,
-    "home": "Benfica",
-    "away": "Celtic",
-    "match_date": "15 Oct 2026",
-    "match_time": "19:00 UTC",
-    "bookmaker": "Winamax (DE)",
-    "probabilities": {
-      "home_win_pct": 74.5,
-      "draw_pct": 14.7,
-      "away_win_pct": 10.8
-    }
-  },
-  {
-    "league": "UEFA Nations League",
-    "is_global": true,
-    "home": "Malta",
-    "away": "Gibraltar",
-    "match_date": "01 Oct 2026",
-    "match_time": "18:45 UTC",
-    "bookmaker": "1xBet",
-    "probabilities": {
-      "home_win_pct": 73.8,
-      "draw_pct": 18.4,
-      "away_win_pct": 7.9
-    }
-  },
-  {
-    "league": "UEFA Europa Conference League",
-    "is_global": true,
-    "home": "Mj\u00e4llby AIF",
-    "away": "Inter Club d'Escaldes",
-    "match_date": "15 Oct 2026",
-    "match_time": "16:45 UTC",
-    "bookmaker": "1xBet",
-    "probabilities": {
-      "home_win_pct": 73.7,
-      "draw_pct": 17.0,
-      "away_win_pct": 9.3
-    }
-  },
-  {
-    "league": "UEFA Champions League",
-    "is_global": true,
-    "home": "Inter Milan",
-    "away": "Club Brugge",
-    "match_date": "13 Oct 2026",
-    "match_time": "19:00 UTC",
-    "bookmaker": "Suprabets",
-    "probabilities": {
-      "home_win_pct": 73.3,
-      "draw_pct": 16.4,
-      "away_win_pct": 10.3
-    }
-  },
-  {
-    "league": "UEFA Nations League",
-    "is_global": true,
-    "home": "Netherlands",
-    "away": "Serbia",
-    "match_date": "04 Oct 2026",
-    "match_time": "18:45 UTC",
-    "bookmaker": "PMU (FR)",
-    "probabilities": {
-      "home_win_pct": 73.3,
-      "draw_pct": 16.9,
-      "away_win_pct": 9.8
-    }
-  },
-  {
-    "league": "UEFA Champions League",
-    "is_global": true,
-    "home": "\u0160K Slovan Bratislava",
-    "away": "VfB Stuttgart",
-    "match_date": "14 Oct 2026",
-    "match_time": "19:00 UTC",
-    "bookmaker": "Marathon Bet",
-    "probabilities": {
-      "home_win_pct": 10.8,
-      "draw_pct": 16.1,
-      "away_win_pct": 73.1
-    }
-  },
-  {
-    "league": "UEFA Nations League",
-    "is_global": true,
-    "home": "Germany",
-    "away": "Serbia",
-    "match_date": "01 Oct 2026",
-    "match_time": "18:45 UTC",
-    "bookmaker": "William Hill",
-    "probabilities": {
-      "home_win_pct": 72.7,
-      "draw_pct": 18.2,
-      "away_win_pct": 9.1
-    }
-  },
-  {
-    "league": "UEFA Europa League",
-    "is_global": true,
-    "home": "AZ Alkmaar",
-    "away": "Hapoel Be'er Sheva",
-    "match_date": "15 Oct 2026",
-    "match_time": "16:45 UTC",
-    "bookmaker": "Pinnacle",
-    "probabilities": {
-      "home_win_pct": 72.3,
-      "draw_pct": 16.7,
-      "away_win_pct": 11.0
-    }
-  },
-  {
-    "league": "UEFA Europa Conference League",
-    "is_global": true,
-    "home": "SC Freiburg",
-    "away": "FK Jablonec",
-    "match_date": "15 Oct 2026",
-    "match_time": "19:00 UTC",
-    "bookmaker": "1xBet",
-    "probabilities": {
-      "home_win_pct": 72.0,
-      "draw_pct": 18.0,
-      "away_win_pct": 10.1
-    }
-  },
-  {
-    "league": "UEFA Nations League",
-    "is_global": true,
     "home": "Czech Republic",
     "away": "England",
+    "commence_time": "2026-09-29T18:45:00Z",
     "match_date": "29 Sep 2026",
     "match_time": "18:45 UTC",
     "bookmaker": "William Hill",
@@ -350,129 +90,78 @@
     }
   },
   {
-    "league": "UEFA Champions League",
+    "league": "UEFA Nations League",
     "is_global": true,
-    "home": "Galatasaray",
-    "away": "Barcelona",
-    "match_date": "13 Oct 2026",
-    "match_time": "19:00 UTC",
-    "bookmaker": "Suprabets",
+    "home": "Luxembourg",
+    "away": "Iceland",
+    "commence_time": "2026-09-29T18:45:00Z",
+    "match_date": "29 Sep 2026",
+    "match_time": "18:45 UTC",
+    "bookmaker": "PMU (FR)",
     "probabilities": {
-      "home_win_pct": 12.4,
-      "draw_pct": 16.6,
-      "away_win_pct": 71.0
+      "home_win_pct": 29.9,
+      "draw_pct": 29.9,
+      "away_win_pct": 40.1
+    }
+  },
+  {
+    "league": "UEFA Nations League",
+    "is_global": true,
+    "home": "Slovakia",
+    "away": "Kazakhstan",
+    "commence_time": "2026-09-29T18:45:00Z",
+    "match_date": "29 Sep 2026",
+    "match_time": "18:45 UTC",
+    "bookmaker": "PMU (FR)",
+    "probabilities": {
+      "home_win_pct": 76.9,
+      "draw_pct": 15.9,
+      "away_win_pct": 7.1
+    }
+  },
+  {
+    "league": "UEFA Nations League",
+    "is_global": true,
+    "home": "Slovenia",
+    "away": "North Macedonia",
+    "commence_time": "2026-09-29T18:45:00Z",
+    "match_date": "29 Sep 2026",
+    "match_time": "18:45 UTC",
+    "bookmaker": "Betfair",
+    "probabilities": {
+      "home_win_pct": 65.5,
+      "draw_pct": 24.1,
+      "away_win_pct": 10.3
+    }
+  },
+  {
+    "league": "UEFA Nations League",
+    "is_global": true,
+    "home": "Scotland",
+    "away": "Switzerland",
+    "commence_time": "2026-09-29T18:45:00Z",
+    "match_date": "29 Sep 2026",
+    "match_time": "18:45 UTC",
+    "bookmaker": "Betclic (FR)",
+    "probabilities": {
+      "home_win_pct": 21.3,
+      "draw_pct": 26.7,
+      "away_win_pct": 52.0
     }
   },
   {
     "league": "UEFA Champions League Women",
     "is_global": true,
-    "home": "HB K\u00f8ge",
-    "away": "Servette FC",
-    "match_date": "01 Oct 2026",
+    "home": "AS Roma",
+    "away": "Barcelona",
+    "commence_time": "2026-09-30T16:45:00Z",
+    "match_date": "30 Sep 2026",
     "match_time": "16:45 UTC",
     "bookmaker": "Betfair",
     "probabilities": {
-      "home_win_pct": 70.9,
-      "draw_pct": 18.8,
-      "away_win_pct": 10.2
-    }
-  },
-  {
-    "league": "UEFA Europa League",
-    "is_global": true,
-    "home": "Rennes",
-    "away": "OFI Crete",
-    "match_date": "15 Oct 2026",
-    "match_time": "19:00 UTC",
-    "bookmaker": "Winamax (FR)",
-    "probabilities": {
-      "home_win_pct": 69.7,
-      "draw_pct": 17.2,
-      "away_win_pct": 13.0
-    }
-  },
-  {
-    "league": "UEFA Europa Conference League",
-    "is_global": true,
-    "home": "Sint Truiden",
-    "away": "FC Iberia 1999",
-    "match_date": "15 Oct 2026",
-    "match_time": "19:00 UTC",
-    "bookmaker": "1xBet",
-    "probabilities": {
-      "home_win_pct": 69.6,
-      "draw_pct": 19.3,
-      "away_win_pct": 11.1
-    }
-  },
-  {
-    "league": "UEFA Europa League",
-    "is_global": true,
-    "home": "Sparta Prague",
-    "away": "Lillestrom",
-    "match_date": "15 Oct 2026",
-    "match_time": "16:45 UTC",
-    "bookmaker": "Pinnacle",
-    "probabilities": {
-      "home_win_pct": 69.5,
-      "draw_pct": 18.4,
-      "away_win_pct": 12.1
-    }
-  },
-  {
-    "league": "UEFA Europa Conference League",
-    "is_global": true,
-    "home": "Atalanta BC",
-    "away": "Pafos FC",
-    "match_date": "15 Oct 2026",
-    "match_time": "19:00 UTC",
-    "bookmaker": "Coolbet",
-    "probabilities": {
-      "home_win_pct": 67.9,
-      "draw_pct": 19.3,
-      "away_win_pct": 12.9
-    }
-  },
-  {
-    "league": "UEFA Europa League",
-    "is_global": true,
-    "home": "Torreense",
-    "away": "Sunderland",
-    "match_date": "15 Oct 2026",
-    "match_time": "16:45 UTC",
-    "bookmaker": "Winamax (DE)",
-    "probabilities": {
-      "home_win_pct": 15.3,
-      "draw_pct": 17.0,
-      "away_win_pct": 67.6
-    }
-  },
-  {
-    "league": "UEFA Europa League",
-    "is_global": true,
-    "home": "Jagiellonia Bia\u0142ystok",
-    "away": "FC Ararat-Armenia",
-    "match_date": "15 Oct 2026",
-    "match_time": "19:00 UTC",
-    "bookmaker": "Unibet (FR)",
-    "probabilities": {
-      "home_win_pct": 66.3,
-      "draw_pct": 19.7,
-      "away_win_pct": 14.0
-    }
-  },
-  {
-    "league": "UEFA Champions League Women",
-    "is_global": true,
-    "home": "Lyon",
-    "away": "Chelsea",
-    "match_date": "30 Sep 2026",
-    "match_time": "19:00 UTC",
-    "bookmaker": "Nordic Bet",
-    "probabilities": {
-      "home_win_pct": 65.5,
-      "draw_pct": 20.1,
-      "away_win_pct": 14.4
+      "home_win_pct": 3.8,
+      "draw_pct": 5.6,
+      "away_win_pct": 90.6
     }
   },
   {
@@ -480,6 +169,7 @@
     "is_global": true,
     "home": "Paris FC",
     "away": "Arsenal",
+    "commence_time": "2026-09-30T16:45:00Z",
     "match_date": "30 Sep 2026",
     "match_time": "16:45 UTC",
     "bookmaker": "Nordic Bet",
@@ -490,101 +180,183 @@
     }
   },
   {
+    "league": "UEFA Champions League Women",
+    "is_global": true,
+    "home": "BK Hacken",
+    "away": "Juventus",
+    "commence_time": "2026-09-30T16:45:00Z",
+    "match_date": "30 Sep 2026",
+    "match_time": "16:45 UTC",
+    "bookmaker": "Nordic Bet",
+    "probabilities": {
+      "home_win_pct": 38.8,
+      "draw_pct": 26.8,
+      "away_win_pct": 34.4
+    }
+  },
+  {
+    "league": "UEFA Champions League Women",
+    "is_global": true,
+    "home": "Benfica",
+    "away": "Bayern Munich",
+    "commence_time": "2026-09-30T19:00:00Z",
+    "match_date": "30 Sep 2026",
+    "match_time": "19:00 UTC",
+    "bookmaker": "Nordic Bet",
+    "probabilities": {
+      "home_win_pct": 10.1,
+      "draw_pct": 15.4,
+      "away_win_pct": 74.5
+    }
+  },
+  {
+    "league": "UEFA Champions League Women",
+    "is_global": true,
+    "home": "Lyon",
+    "away": "Chelsea",
+    "commence_time": "2026-09-30T19:00:00Z",
+    "match_date": "30 Sep 2026",
+    "match_time": "19:00 UTC",
+    "bookmaker": "Nordic Bet",
+    "probabilities": {
+      "home_win_pct": 65.5,
+      "draw_pct": 20.1,
+      "away_win_pct": 14.4
+    }
+  },
+  {
     "league": "UEFA Nations League",
     "is_global": true,
-    "home": "Slovenia",
-    "away": "North Macedonia",
-    "match_date": "29 Sep 2026",
-    "match_time": "18:45 UTC",
+    "home": "Azerbaijan",
+    "away": "Liechtenstein",
+    "commence_time": "2026-10-01T16:00:00Z",
+    "match_date": "01 Oct 2026",
+    "match_time": "16:00 UTC",
+    "bookmaker": "1xBet",
+    "probabilities": {
+      "home_win_pct": 82.0,
+      "draw_pct": 13.1,
+      "away_win_pct": 5.0
+    }
+  },
+  {
+    "league": "UEFA Champions League Women",
+    "is_global": true,
+    "home": "Austria Wien",
+    "away": "Inter Milan",
+    "commence_time": "2026-10-01T16:45:00Z",
+    "match_date": "01 Oct 2026",
+    "match_time": "16:45 UTC",
     "bookmaker": "Betfair",
     "probabilities": {
-      "home_win_pct": 65.0,
-      "draw_pct": 24.2,
-      "away_win_pct": 10.8
+      "home_win_pct": 22.1,
+      "draw_pct": 25.4,
+      "away_win_pct": 52.5
+    }
+  },
+  {
+    "league": "UEFA Champions League Women",
+    "is_global": true,
+    "home": "HB K\u00f8ge",
+    "away": "Servette FC",
+    "commence_time": "2026-10-01T16:45:00Z",
+    "match_date": "01 Oct 2026",
+    "match_time": "16:45 UTC",
+    "bookmaker": "Betfair",
+    "probabilities": {
+      "home_win_pct": 70.9,
+      "draw_pct": 18.8,
+      "away_win_pct": 10.2
     }
   },
   {
     "league": "UEFA Nations League",
     "is_global": true,
-    "home": "France",
-    "away": "Italy",
-    "match_date": "02 Oct 2026",
+    "home": "Republic of Ireland",
+    "away": "Austria",
+    "commence_time": "2026-10-01T18:45:00Z",
+    "match_date": "01 Oct 2026",
     "match_time": "18:45 UTC",
-    "bookmaker": "MyBookie.ag",
+    "bookmaker": "PMU (FR)",
     "probabilities": {
-      "home_win_pct": 65.0,
-      "draw_pct": 19.5,
-      "away_win_pct": 15.5
+      "home_win_pct": 27.0,
+      "draw_pct": 28.8,
+      "away_win_pct": 44.2
     }
   },
   {
     "league": "UEFA Nations League",
     "is_global": true,
-    "home": "Belgium",
-    "away": "Turkey",
-    "match_date": "02 Oct 2026",
+    "home": "Denmark",
+    "away": "Portugal",
+    "commence_time": "2026-10-01T18:45:00Z",
+    "match_date": "01 Oct 2026",
     "match_time": "18:45 UTC",
-    "bookmaker": "1xBet",
+    "bookmaker": "William Hill",
     "probabilities": {
-      "home_win_pct": 64.3,
-      "draw_pct": 19.6,
-      "away_win_pct": 16.1
-    }
-  },
-  {
-    "league": "UEFA Europa Conference League",
-    "is_global": true,
-    "home": "KuPS Kuopio",
-    "away": "Trabzonspor",
-    "match_date": "15 Oct 2026",
-    "match_time": "16:45 UTC",
-    "bookmaker": "1xBet",
-    "probabilities": {
-      "home_win_pct": 14.2,
-      "draw_pct": 21.6,
-      "away_win_pct": 64.2
-    }
-  },
-  {
-    "league": "UEFA Europa Conference League",
-    "is_global": true,
-    "home": "PFC CSKA Sofia",
-    "away": "AS Monaco",
-    "match_date": "15 Oct 2026",
-    "match_time": "16:45 UTC",
-    "bookmaker": "1xBet",
-    "probabilities": {
-      "home_win_pct": 15.1,
-      "draw_pct": 21.1,
-      "away_win_pct": 63.8
-    }
-  },
-  {
-    "league": "UEFA Europa Conference League",
-    "is_global": true,
-    "home": "Hajduk Split",
-    "away": "Ajax",
-    "match_date": "15 Oct 2026",
-    "match_time": "16:45 UTC",
-    "bookmaker": "1xBet",
-    "probabilities": {
-      "home_win_pct": 15.8,
-      "draw_pct": 20.9,
-      "away_win_pct": 63.4
+      "home_win_pct": 27.9,
+      "draw_pct": 26.7,
+      "away_win_pct": 45.4
     }
   },
   {
     "league": "UEFA Nations League",
     "is_global": true,
-    "home": "Faroe Islands",
-    "away": "Slovakia",
-    "match_date": "02 Oct 2026",
+    "home": "Germany",
+    "away": "Serbia",
+    "commence_time": "2026-10-01T18:45:00Z",
+    "match_date": "01 Oct 2026",
+    "match_time": "18:45 UTC",
+    "bookmaker": "William Hill",
+    "probabilities": {
+      "home_win_pct": 72.7,
+      "draw_pct": 18.2,
+      "away_win_pct": 9.1
+    }
+  },
+  {
+    "league": "UEFA Nations League",
+    "is_global": true,
+    "home": "Malta",
+    "away": "Gibraltar",
+    "commence_time": "2026-10-01T18:45:00Z",
+    "match_date": "01 Oct 2026",
     "match_time": "18:45 UTC",
     "bookmaker": "1xBet",
     "probabilities": {
-      "home_win_pct": 14.0,
-      "draw_pct": 24.2,
-      "away_win_pct": 61.8
+      "home_win_pct": 73.8,
+      "draw_pct": 18.4,
+      "away_win_pct": 7.9
+    }
+  },
+  {
+    "league": "UEFA Nations League",
+    "is_global": true,
+    "home": "Greece",
+    "away": "Netherlands",
+    "commence_time": "2026-10-01T18:45:00Z",
+    "match_date": "01 Oct 2026",
+    "match_time": "18:45 UTC",
+    "bookmaker": "Winamax (FR)",
+    "probabilities": {
+      "home_win_pct": 30.1,
+      "draw_pct": 26.2,
+      "away_win_pct": 43.7
+    }
+  },
+  {
+    "league": "UEFA Nations League",
+    "is_global": true,
+    "home": "Israel",
+    "away": "Kosovo",
+    "commence_time": "2026-10-01T18:45:00Z",
+    "match_date": "01 Oct 2026",
+    "match_time": "18:45 UTC",
+    "bookmaker": "PMU (FR)",
+    "probabilities": {
+      "home_win_pct": 29.4,
+      "draw_pct": 28.0,
+      "away_win_pct": 42.6
     }
   },
   {
@@ -592,6 +364,7 @@
     "is_global": true,
     "home": "Wales",
     "away": "Norway",
+    "commence_time": "2026-10-01T18:45:00Z",
     "match_date": "01 Oct 2026",
     "match_time": "18:45 UTC",
     "bookmaker": "William Hill",
@@ -602,73 +375,18 @@
     }
   },
   {
-    "league": "UEFA Europa Conference League",
+    "league": "UEFA Champions League Women",
     "is_global": true,
-    "home": "KF Egnatia",
-    "away": "FC Midtjylland",
-    "match_date": "15 Oct 2026",
-    "match_time": "16:45 UTC",
-    "bookmaker": "Coolbet",
+    "home": "Paris Saint Germain",
+    "away": "Leuven",
+    "commence_time": "2026-10-01T19:00:00Z",
+    "match_date": "01 Oct 2026",
+    "match_time": "19:00 UTC",
+    "bookmaker": "Betfair",
     "probabilities": {
-      "home_win_pct": 16.1,
-      "draw_pct": 22.9,
-      "away_win_pct": 61.0
-    }
-  },
-  {
-    "league": "UEFA Nations League",
-    "is_global": true,
-    "home": "Poland",
-    "away": "Romania",
-    "match_date": "02 Oct 2026",
-    "match_time": "18:45 UTC",
-    "bookmaker": "Winamax (DE)",
-    "probabilities": {
-      "home_win_pct": 58.1,
-      "draw_pct": 23.2,
-      "away_win_pct": 18.6
-    }
-  },
-  {
-    "league": "UEFA Europa League",
-    "is_global": true,
-    "home": "Lech Pozna\u0144",
-    "away": "Bayer Leverkusen",
-    "match_date": "15 Oct 2026",
-    "match_time": "16:45 UTC",
-    "bookmaker": "Pinnacle",
-    "probabilities": {
-      "home_win_pct": 21.2,
-      "draw_pct": 21.9,
-      "away_win_pct": 56.9
-    }
-  },
-  {
-    "league": "UEFA Europa Conference League",
-    "is_global": true,
-    "home": "Gent",
-    "away": "AGF Aarhus",
-    "match_date": "15 Oct 2026",
-    "match_time": "16:45 UTC",
-    "bookmaker": "Coolbet",
-    "probabilities": {
-      "home_win_pct": 56.4,
-      "draw_pct": 23.4,
-      "away_win_pct": 20.2
-    }
-  },
-  {
-    "league": "UEFA Nations League",
-    "is_global": true,
-    "home": "Kazakhstan",
-    "away": "Moldova",
-    "match_date": "02 Oct 2026",
-    "match_time": "14:00 UTC",
-    "bookmaker": "PMU (FR)",
-    "probabilities": {
-      "home_win_pct": 56.1,
-      "draw_pct": 25.2,
-      "away_win_pct": 18.7
+      "home_win_pct": 44.5,
+      "draw_pct": 8.3,
+      "away_win_pct": 47.3
     }
   },
   {
@@ -676,6 +394,7 @@
     "is_global": true,
     "home": "Manchester City",
     "away": "Real Madrid",
+    "commence_time": "2026-10-01T19:00:00Z",
     "match_date": "01 Oct 2026",
     "match_time": "19:00 UTC",
     "bookmaker": "Nordic Bet",
@@ -688,99 +407,31 @@
   {
     "league": "UEFA Nations League",
     "is_global": true,
-    "home": "Portugal",
-    "away": "Norway",
-    "match_date": "04 Oct 2026",
-    "match_time": "18:45 UTC",
-    "bookmaker": "1xBet",
-    "probabilities": {
-      "home_win_pct": 55.5,
-      "draw_pct": 21.6,
-      "away_win_pct": 22.9
-    }
-  },
-  {
-    "league": "UEFA Champions League",
-    "is_global": true,
-    "home": "Aston Villa",
-    "away": "Fenerbahce",
-    "match_date": "14 Oct 2026",
-    "match_time": "19:00 UTC",
-    "bookmaker": "Marathon Bet",
-    "probabilities": {
-      "home_win_pct": 55.1,
-      "draw_pct": 25.0,
-      "away_win_pct": 20.0
-    }
-  },
-  {
-    "league": "UEFA Champions League Women",
-    "is_global": true,
-    "home": "Austria Wien",
-    "away": "Inter Milan",
-    "match_date": "01 Oct 2026",
-    "match_time": "16:45 UTC",
-    "bookmaker": "Betfair",
-    "probabilities": {
-      "home_win_pct": 22.1,
-      "draw_pct": 25.4,
-      "away_win_pct": 52.5
-    }
-  },
-  {
-    "league": "UEFA Europa League",
-    "is_global": true,
-    "home": "Salzburg",
-    "away": "AC Milan",
-    "match_date": "15 Oct 2026",
-    "match_time": "16:45 UTC",
-    "bookmaker": "Pinnacle",
-    "probabilities": {
-      "home_win_pct": 23.7,
-      "draw_pct": 23.9,
-      "away_win_pct": 52.4
-    }
-  },
-  {
-    "league": "UEFA Nations League",
-    "is_global": true,
-    "home": "Bulgaria",
-    "away": "Estonia",
-    "match_date": "29 Sep 2026",
-    "match_time": "18:45 UTC",
+    "home": "Kazakhstan",
+    "away": "Moldova",
+    "commence_time": "2026-10-02T14:00:00Z",
+    "match_date": "02 Oct 2026",
+    "match_time": "14:00 UTC",
     "bookmaker": "PMU (FR)",
     "probabilities": {
-      "home_win_pct": 52.4,
-      "draw_pct": 28.7,
-      "away_win_pct": 18.9
+      "home_win_pct": 56.1,
+      "draw_pct": 25.2,
+      "away_win_pct": 18.7
     }
   },
   {
     "league": "UEFA Nations League",
     "is_global": true,
-    "home": "Scotland",
-    "away": "Switzerland",
-    "match_date": "29 Sep 2026",
-    "match_time": "18:45 UTC",
-    "bookmaker": "Betclic (FR)",
+    "home": "Cyprus",
+    "away": "Armenia",
+    "commence_time": "2026-10-02T16:00:00Z",
+    "match_date": "02 Oct 2026",
+    "match_time": "16:00 UTC",
+    "bookmaker": "Unibet (SE)",
     "probabilities": {
-      "home_win_pct": 21.3,
-      "draw_pct": 26.7,
-      "away_win_pct": 52.0
-    }
-  },
-  {
-    "league": "UEFA Champions League",
-    "is_global": true,
-    "home": "Feyenoord",
-    "away": "Como",
-    "match_date": "14 Oct 2026",
-    "match_time": "16:45 UTC",
-    "bookmaker": "1xBet",
-    "probabilities": {
-      "home_win_pct": 25.8,
-      "draw_pct": 22.9,
-      "away_win_pct": 51.3
+      "home_win_pct": 41.0,
+      "draw_pct": 28.6,
+      "away_win_pct": 30.4
     }
   },
   {
@@ -788,6 +439,7 @@
     "is_global": true,
     "home": "Latvia",
     "away": "Montenegro",
+    "commence_time": "2026-10-02T16:00:00Z",
     "match_date": "02 Oct 2026",
     "match_time": "16:00 UTC",
     "bookmaker": "Betfair",
@@ -800,43 +452,76 @@
   {
     "league": "UEFA Nations League",
     "is_global": true,
-    "home": "Wales",
-    "away": "Denmark",
-    "match_date": "04 Oct 2026",
+    "home": "Belgium",
+    "away": "Turkey",
+    "commence_time": "2026-10-02T18:45:00Z",
+    "match_date": "02 Oct 2026",
     "match_time": "18:45 UTC",
-    "bookmaker": "Winamax (DE)",
+    "bookmaker": "1xBet",
     "probabilities": {
-      "home_win_pct": 25.2,
-      "draw_pct": 23.9,
-      "away_win_pct": 50.9
+      "home_win_pct": 64.3,
+      "draw_pct": 19.6,
+      "away_win_pct": 16.1
     }
   },
   {
-    "league": "UEFA Europa League",
+    "league": "UEFA Nations League",
     "is_global": true,
-    "home": "NEC Nijmegen",
-    "away": "PFC Levski Sofia",
-    "match_date": "15 Oct 2026",
-    "match_time": "19:00 UTC",
-    "bookmaker": "Unibet (FR)",
+    "home": "Bosnia & Herzegovina",
+    "away": "Sweden",
+    "commence_time": "2026-10-02T18:45:00Z",
+    "match_date": "02 Oct 2026",
+    "match_time": "18:45 UTC",
+    "bookmaker": "1xBet",
     "probabilities": {
-      "home_win_pct": 50.3,
-      "draw_pct": 25.6,
-      "away_win_pct": 24.2
+      "home_win_pct": 29.1,
+      "draw_pct": 26.3,
+      "away_win_pct": 44.6
     }
   },
   {
-    "league": "UEFA Europa Conference League",
+    "league": "UEFA Nations League",
     "is_global": true,
-    "home": "Riga FC",
-    "away": "FC Kairat",
-    "match_date": "15 Oct 2026",
-    "match_time": "16:45 UTC",
-    "bookmaker": "Coolbet",
+    "home": "Faroe Islands",
+    "away": "Slovakia",
+    "commence_time": "2026-10-02T18:45:00Z",
+    "match_date": "02 Oct 2026",
+    "match_time": "18:45 UTC",
+    "bookmaker": "1xBet",
     "probabilities": {
-      "home_win_pct": 49.5,
-      "draw_pct": 26.6,
-      "away_win_pct": 23.9
+      "home_win_pct": 13.9,
+      "draw_pct": 24.3,
+      "away_win_pct": 61.8
+    }
+  },
+  {
+    "league": "UEFA Nations League",
+    "is_global": true,
+    "home": "France",
+    "away": "Italy",
+    "commence_time": "2026-10-02T18:45:00Z",
+    "match_date": "02 Oct 2026",
+    "match_time": "18:45 UTC",
+    "bookmaker": "MyBookie.ag",
+    "probabilities": {
+      "home_win_pct": 65.0,
+      "draw_pct": 19.5,
+      "away_win_pct": 15.5
+    }
+  },
+  {
+    "league": "UEFA Nations League",
+    "is_global": true,
+    "home": "Hungary",
+    "away": "Georgia",
+    "commence_time": "2026-10-02T18:45:00Z",
+    "match_date": "02 Oct 2026",
+    "match_time": "18:45 UTC",
+    "bookmaker": "LeoVegas (SE)",
+    "probabilities": {
+      "home_win_pct": 46.5,
+      "draw_pct": 27.7,
+      "away_win_pct": 25.8
     }
   },
   {
@@ -844,6 +529,7 @@
     "is_global": true,
     "home": "Ukraine",
     "away": "Northern Ireland",
+    "commence_time": "2026-10-02T18:45:00Z",
     "match_date": "02 Oct 2026",
     "match_time": "18:45 UTC",
     "bookmaker": "Winamax (DE)",
@@ -856,8 +542,24 @@
   {
     "league": "UEFA Nations League",
     "is_global": true,
+    "home": "Poland",
+    "away": "Romania",
+    "commence_time": "2026-10-02T18:45:00Z",
+    "match_date": "02 Oct 2026",
+    "match_time": "18:45 UTC",
+    "bookmaker": "Winamax (DE)",
+    "probabilities": {
+      "home_win_pct": 59.0,
+      "draw_pct": 22.7,
+      "away_win_pct": 18.3
+    }
+  },
+  {
+    "league": "UEFA Nations League",
+    "is_global": true,
     "home": "Croatia",
     "away": "England",
+    "commence_time": "2026-10-03T16:00:00Z",
     "match_date": "03 Oct 2026",
     "match_time": "16:00 UTC",
     "bookmaker": "1xBet",
@@ -868,45 +570,33 @@
     }
   },
   {
-    "league": "UEFA Europa League",
+    "league": "UEFA Nations League",
     "is_global": true,
-    "home": "TSG Hoffenheim",
-    "away": "Besiktas JK",
-    "match_date": "15 Oct 2026",
-    "match_time": "19:00 UTC",
-    "bookmaker": "Unibet (FR)",
+    "home": "Spain",
+    "away": "Czech Republic",
+    "commence_time": "2026-10-03T18:45:00Z",
+    "match_date": "03 Oct 2026",
+    "match_time": "18:45 UTC",
+    "bookmaker": "1xBet",
     "probabilities": {
-      "home_win_pct": 48.1,
-      "draw_pct": 24.0,
-      "away_win_pct": 27.9
+      "home_win_pct": 78.4,
+      "draw_pct": 16.0,
+      "away_win_pct": 5.6
     }
   },
   {
-    "league": "UEFA Europa League",
+    "league": "UEFA Nations League",
     "is_global": true,
-    "home": "Dinamo Zagreb",
-    "away": "Anderlecht",
-    "match_date": "15 Oct 2026",
-    "match_time": "19:00 UTC",
+    "home": "Wales",
+    "away": "Denmark",
+    "commence_time": "2026-10-04T18:45:00Z",
+    "match_date": "04 Oct 2026",
+    "match_time": "18:45 UTC",
     "bookmaker": "Winamax (DE)",
     "probabilities": {
-      "home_win_pct": 47.9,
-      "draw_pct": 26.3,
-      "away_win_pct": 25.9
-    }
-  },
-  {
-    "league": "UEFA Europa League",
-    "is_global": true,
-    "home": "Ferencv\u00e1ros TC",
-    "away": "Viktoria Plze\u0148",
-    "match_date": "15 Oct 2026",
-    "match_time": "19:00 UTC",
-    "bookmaker": "Winamax (FR)",
-    "probabilities": {
-      "home_win_pct": 47.8,
-      "draw_pct": 25.5,
-      "away_win_pct": 26.7
+      "home_win_pct": 25.2,
+      "draw_pct": 23.9,
+      "away_win_pct": 50.9
     }
   },
   {
@@ -914,6 +604,7 @@
     "is_global": true,
     "home": "Greece",
     "away": "Germany",
+    "commence_time": "2026-10-04T18:45:00Z",
     "match_date": "04 Oct 2026",
     "match_time": "18:45 UTC",
     "bookmaker": "Betclic (FR)",
@@ -928,6 +619,7 @@
     "is_global": true,
     "home": "Republic of Ireland",
     "away": "Israel",
+    "commence_time": "2026-10-04T18:45:00Z",
     "match_date": "04 Oct 2026",
     "match_time": "18:45 UTC",
     "bookmaker": "PMU (FR)",
@@ -938,10 +630,56 @@
     }
   },
   {
+    "league": "UEFA Nations League",
+    "is_global": true,
+    "home": "Netherlands",
+    "away": "Serbia",
+    "commence_time": "2026-10-04T18:45:00Z",
+    "match_date": "04 Oct 2026",
+    "match_time": "18:45 UTC",
+    "bookmaker": "PMU (FR)",
+    "probabilities": {
+      "home_win_pct": 73.3,
+      "draw_pct": 16.9,
+      "away_win_pct": 9.8
+    }
+  },
+  {
+    "league": "UEFA Nations League",
+    "is_global": true,
+    "home": "Portugal",
+    "away": "Norway",
+    "commence_time": "2026-10-04T18:45:00Z",
+    "match_date": "04 Oct 2026",
+    "match_time": "18:45 UTC",
+    "bookmaker": "1xBet",
+    "probabilities": {
+      "home_win_pct": 55.5,
+      "draw_pct": 21.6,
+      "away_win_pct": 22.9
+    }
+  },
+  {
+    "league": "UEFA Champions League",
+    "is_global": true,
+    "home": "RC Lens",
+    "away": "Sporting Lisbon",
+    "commence_time": "2026-10-13T16:45:00Z",
+    "match_date": "13 Oct 2026",
+    "match_time": "16:45 UTC",
+    "bookmaker": "Marathon Bet",
+    "probabilities": {
+      "home_win_pct": 39.9,
+      "draw_pct": 25.6,
+      "away_win_pct": 34.5
+    }
+  },
+  {
     "league": "UEFA Champions League",
     "is_global": true,
     "home": "Sabah FK",
     "away": "Slavia Praha",
+    "commence_time": "2026-10-13T16:45:00Z",
     "match_date": "13 Oct 2026",
     "match_time": "16:45 UTC",
     "bookmaker": "Betclic (FR)",
@@ -954,8 +692,99 @@
   {
     "league": "UEFA Champions League",
     "is_global": true,
+    "home": "Arsenal",
+    "away": "Lille",
+    "commence_time": "2026-10-13T19:00:00Z",
+    "match_date": "13 Oct 2026",
+    "match_time": "19:00 UTC",
+    "bookmaker": "Marathon Bet",
+    "probabilities": {
+      "home_win_pct": 75.5,
+      "draw_pct": 17.3,
+      "away_win_pct": 7.2
+    }
+  },
+  {
+    "league": "UEFA Champions League",
+    "is_global": true,
+    "home": "Atl\u00e9tico Madrid",
+    "away": "Manchester United",
+    "commence_time": "2026-10-13T19:00:00Z",
+    "match_date": "13 Oct 2026",
+    "match_time": "19:00 UTC",
+    "bookmaker": "Marathon Bet",
+    "probabilities": {
+      "home_win_pct": 42.6,
+      "draw_pct": 24.9,
+      "away_win_pct": 32.5
+    }
+  },
+  {
+    "league": "UEFA Champions League",
+    "is_global": true,
+    "home": "Galatasaray",
+    "away": "Barcelona",
+    "commence_time": "2026-10-13T19:00:00Z",
+    "match_date": "13 Oct 2026",
+    "match_time": "19:00 UTC",
+    "bookmaker": "Suprabets",
+    "probabilities": {
+      "home_win_pct": 12.4,
+      "draw_pct": 16.6,
+      "away_win_pct": 71.0
+    }
+  },
+  {
+    "league": "UEFA Champions League",
+    "is_global": true,
+    "home": "Viking FK",
+    "away": "Bayern Munich",
+    "commence_time": "2026-10-13T19:00:00Z",
+    "match_date": "13 Oct 2026",
+    "match_time": "19:00 UTC",
+    "bookmaker": "Suprabets",
+    "probabilities": {
+      "home_win_pct": 7.1,
+      "draw_pct": 8.4,
+      "away_win_pct": 84.5
+    }
+  },
+  {
+    "league": "UEFA Champions League",
+    "is_global": true,
+    "home": "Inter Milan",
+    "away": "Club Brugge",
+    "commence_time": "2026-10-13T19:00:00Z",
+    "match_date": "13 Oct 2026",
+    "match_time": "19:00 UTC",
+    "bookmaker": "Suprabets",
+    "probabilities": {
+      "home_win_pct": 73.3,
+      "draw_pct": 16.4,
+      "away_win_pct": 10.3
+    }
+  },
+  {
+    "league": "UEFA Champions League",
+    "is_global": true,
+    "home": "Villarreal",
+    "away": "Napoli",
+    "commence_time": "2026-10-13T19:00:00Z",
+    "match_date": "13 Oct 2026",
+    "match_time": "19:00 UTC",
+    "bookmaker": "Suprabets",
+    "probabilities": {
+      "home_win_pct": 41.6,
+      "draw_pct": 26.6,
+      "away_win_pct": 31.8
+    }
+  },
+  {
+    "league": "UEFA Champions League",
+    "is_global": true,
     "home": "RB Leipzig",
     "away": "PSV Eindhoven",
+    "commence_time": "2026-10-13T19:00:00Z",
     "match_date": "13 Oct 2026",
     "match_time": "19:00 UTC",
     "bookmaker": "Marathon Bet",
@@ -966,31 +795,63 @@
     }
   },
   {
-    "league": "UEFA Champions League Women",
+    "league": "Copa Libertadores",
     "is_global": true,
-    "home": "Paris Saint Germain",
-    "away": "Leuven",
-    "match_date": "01 Oct 2026",
-    "match_time": "19:00 UTC",
-    "bookmaker": "Betfair",
+    "home": "Estudiantes La Plata",
+    "away": "Flamengo-RJ",
+    "commence_time": "2026-10-13T22:00:00Z",
+    "match_date": "13 Oct 2026",
+    "match_time": "22:00 UTC",
+    "bookmaker": "Pinnacle",
     "probabilities": {
-      "home_win_pct": 44.5,
-      "draw_pct": 8.3,
-      "away_win_pct": 47.3
+      "home_win_pct": 25.3,
+      "draw_pct": 30.8,
+      "away_win_pct": 43.9
     }
   },
   {
-    "league": "UEFA Nations League",
+    "league": "UEFA Champions League",
     "is_global": true,
-    "home": "Hungary",
-    "away": "Georgia",
-    "match_date": "02 Oct 2026",
-    "match_time": "18:45 UTC",
-    "bookmaker": "LeoVegas (SE)",
+    "home": "Feyenoord",
+    "away": "Como",
+    "commence_time": "2026-10-14T16:45:00Z",
+    "match_date": "14 Oct 2026",
+    "match_time": "16:45 UTC",
+    "bookmaker": "1xBet",
     "probabilities": {
-      "home_win_pct": 46.5,
-      "draw_pct": 27.7,
-      "away_win_pct": 25.8
+      "home_win_pct": 25.8,
+      "draw_pct": 22.9,
+      "away_win_pct": 51.3
+    }
+  },
+  {
+    "league": "UEFA Champions League",
+    "is_global": true,
+    "home": "LASK",
+    "away": "Liverpool",
+    "commence_time": "2026-10-14T16:45:00Z",
+    "match_date": "14 Oct 2026",
+    "match_time": "16:45 UTC",
+    "bookmaker": "Marathon Bet",
+    "probabilities": {
+      "home_win_pct": 10.0,
+      "draw_pct": 15.1,
+      "away_win_pct": 74.9
+    }
+  },
+  {
+    "league": "UEFA Champions League",
+    "is_global": true,
+    "home": "Shakhtar Donetsk",
+    "away": "AEK Athens",
+    "commence_time": "2026-10-14T19:00:00Z",
+    "match_date": "14 Oct 2026",
+    "match_time": "19:00 UTC",
+    "bookmaker": "Suprabets",
+    "probabilities": {
+      "home_win_pct": 34.9,
+      "draw_pct": 27.2,
+      "away_win_pct": 37.9
     }
   },
   {
@@ -998,6 +859,7 @@
     "is_global": true,
     "home": "AS Roma",
     "away": "Real Madrid",
+    "commence_time": "2026-10-14T19:00:00Z",
     "match_date": "14 Oct 2026",
     "match_time": "19:00 UTC",
     "bookmaker": "Suprabets",
@@ -1010,8 +872,24 @@
   {
     "league": "UEFA Champions League",
     "is_global": true,
+    "home": "Aston Villa",
+    "away": "Fenerbahce",
+    "commence_time": "2026-10-14T19:00:00Z",
+    "match_date": "14 Oct 2026",
+    "match_time": "19:00 UTC",
+    "bookmaker": "Marathon Bet",
+    "probabilities": {
+      "home_win_pct": 55.1,
+      "draw_pct": 25.0,
+      "away_win_pct": 20.0
+    }
+  },
+  {
+    "league": "UEFA Champions League",
+    "is_global": true,
     "home": "Bod\u00f8/Glimt",
     "away": "Borussia Dortmund",
+    "commence_time": "2026-10-14T19:00:00Z",
     "match_date": "14 Oct 2026",
     "match_time": "19:00 UTC",
     "bookmaker": "Marathon Bet",
@@ -1022,80 +900,11 @@
     }
   },
   {
-    "league": "UEFA Europa League",
-    "is_global": true,
-    "home": "Celta Vigo",
-    "away": "Juventus",
-    "match_date": "15 Oct 2026",
-    "match_time": "19:00 UTC",
-    "bookmaker": "Winamax (FR)",
-    "probabilities": {
-      "home_win_pct": 27.9,
-      "draw_pct": 26.3,
-      "away_win_pct": 45.8
-    }
-  },
-  {
-    "league": "UEFA Champions League",
-    "is_global": true,
-    "home": "Real Betis",
-    "away": "Porto",
-    "match_date": "14 Oct 2026",
-    "match_time": "19:00 UTC",
-    "bookmaker": "Marathon Bet",
-    "probabilities": {
-      "home_win_pct": 45.4,
-      "draw_pct": 26.2,
-      "away_win_pct": 28.3
-    }
-  },
-  {
-    "league": "UEFA Nations League",
-    "is_global": true,
-    "home": "Denmark",
-    "away": "Portugal",
-    "match_date": "01 Oct 2026",
-    "match_time": "18:45 UTC",
-    "bookmaker": "William Hill",
-    "probabilities": {
-      "home_win_pct": 27.9,
-      "draw_pct": 26.7,
-      "away_win_pct": 45.4
-    }
-  },
-  {
-    "league": "UEFA Europa League",
-    "is_global": true,
-    "home": "Marseille",
-    "away": "Olympiakos Piraeus",
-    "match_date": "15 Oct 2026",
-    "match_time": "19:00 UTC",
-    "bookmaker": "Pinnacle",
-    "probabilities": {
-      "home_win_pct": 44.9,
-      "draw_pct": 26.2,
-      "away_win_pct": 28.9
-    }
-  },
-  {
-    "league": "UEFA Nations League",
-    "is_global": true,
-    "home": "Bosnia & Herzegovina",
-    "away": "Sweden",
-    "match_date": "02 Oct 2026",
-    "match_time": "18:45 UTC",
-    "bookmaker": "1xBet",
-    "probabilities": {
-      "home_win_pct": 29.1,
-      "draw_pct": 26.3,
-      "away_win_pct": 44.6
-    }
-  },
-  {
     "league": "UEFA Champions League",
     "is_global": true,
     "home": "Manchester City",
     "away": "Paris Saint Germain",
+    "commence_time": "2026-10-14T19:00:00Z",
     "match_date": "14 Oct 2026",
     "match_time": "19:00 UTC",
     "bookmaker": "Marathon Bet",
@@ -1106,17 +915,243 @@
     }
   },
   {
-    "league": "UEFA Nations League",
+    "league": "UEFA Champions League",
     "is_global": true,
-    "home": "Republic of Ireland",
-    "away": "Austria",
-    "match_date": "01 Oct 2026",
-    "match_time": "18:45 UTC",
-    "bookmaker": "PMU (FR)",
+    "home": "Real Betis",
+    "away": "Porto",
+    "commence_time": "2026-10-14T19:00:00Z",
+    "match_date": "14 Oct 2026",
+    "match_time": "19:00 UTC",
+    "bookmaker": "Marathon Bet",
     "probabilities": {
-      "home_win_pct": 27.0,
-      "draw_pct": 28.8,
-      "away_win_pct": 44.2
+      "home_win_pct": 45.4,
+      "draw_pct": 26.2,
+      "away_win_pct": 28.3
+    }
+  },
+  {
+    "league": "UEFA Champions League",
+    "is_global": true,
+    "home": "\u0160K Slovan Bratislava",
+    "away": "VfB Stuttgart",
+    "commence_time": "2026-10-14T19:00:00Z",
+    "match_date": "14 Oct 2026",
+    "match_time": "19:00 UTC",
+    "bookmaker": "Marathon Bet",
+    "probabilities": {
+      "home_win_pct": 10.8,
+      "draw_pct": 16.1,
+      "away_win_pct": 73.1
+    }
+  },
+  {
+    "league": "Copa Libertadores",
+    "is_global": true,
+    "home": "Fluminense-RJ",
+    "away": "Palmeiras-SP",
+    "commence_time": "2026-10-15T00:30:00Z",
+    "match_date": "15 Oct 2026",
+    "match_time": "00:30 UTC",
+    "bookmaker": "Codere (IT)",
+    "probabilities": {
+      "home_win_pct": 32.5,
+      "draw_pct": 32.5,
+      "away_win_pct": 35.0
+    }
+  },
+  {
+    "league": "UEFA Europa Conference League",
+    "is_global": true,
+    "home": "Gent",
+    "away": "AGF Aarhus",
+    "commence_time": "2026-10-15T16:45:00Z",
+    "match_date": "15 Oct 2026",
+    "match_time": "16:45 UTC",
+    "bookmaker": "Coolbet",
+    "probabilities": {
+      "home_win_pct": 56.4,
+      "draw_pct": 23.4,
+      "away_win_pct": 20.2
+    }
+  },
+  {
+    "league": "UEFA Europa Conference League",
+    "is_global": true,
+    "home": "PFC CSKA Sofia",
+    "away": "AS Monaco",
+    "commence_time": "2026-10-15T16:45:00Z",
+    "match_date": "15 Oct 2026",
+    "match_time": "16:45 UTC",
+    "bookmaker": "1xBet",
+    "probabilities": {
+      "home_win_pct": 15.1,
+      "draw_pct": 21.1,
+      "away_win_pct": 63.8
+    }
+  },
+  {
+    "league": "UEFA Europa Conference League",
+    "is_global": true,
+    "home": "Hajduk Split",
+    "away": "Ajax",
+    "commence_time": "2026-10-15T16:45:00Z",
+    "match_date": "15 Oct 2026",
+    "match_time": "16:45 UTC",
+    "bookmaker": "1xBet",
+    "probabilities": {
+      "home_win_pct": 15.8,
+      "draw_pct": 20.9,
+      "away_win_pct": 63.4
+    }
+  },
+  {
+    "league": "UEFA Europa Conference League",
+    "is_global": true,
+    "home": "Riga FC",
+    "away": "FC Kairat",
+    "commence_time": "2026-10-15T16:45:00Z",
+    "match_date": "15 Oct 2026",
+    "match_time": "16:45 UTC",
+    "bookmaker": "Coolbet",
+    "probabilities": {
+      "home_win_pct": 49.5,
+      "draw_pct": 26.6,
+      "away_win_pct": 23.9
+    }
+  },
+  {
+    "league": "UEFA Europa Conference League",
+    "is_global": true,
+    "home": "FC Lugano",
+    "away": "Red Star Belgrade",
+    "commence_time": "2026-10-15T16:45:00Z",
+    "match_date": "15 Oct 2026",
+    "match_time": "16:45 UTC",
+    "bookmaker": "Coolbet",
+    "probabilities": {
+      "home_win_pct": 37.1,
+      "draw_pct": 25.7,
+      "away_win_pct": 37.1
+    }
+  },
+  {
+    "league": "UEFA Europa Conference League",
+    "is_global": true,
+    "home": "KF Egnatia",
+    "away": "FC Midtjylland",
+    "commence_time": "2026-10-15T16:45:00Z",
+    "match_date": "15 Oct 2026",
+    "match_time": "16:45 UTC",
+    "bookmaker": "Coolbet",
+    "probabilities": {
+      "home_win_pct": 16.1,
+      "draw_pct": 22.9,
+      "away_win_pct": 61.0
+    }
+  },
+  {
+    "league": "UEFA Europa Conference League",
+    "is_global": true,
+    "home": "Panathinaikos FC",
+    "away": "FK Borac Banja Luka",
+    "commence_time": "2026-10-15T16:45:00Z",
+    "match_date": "15 Oct 2026",
+    "match_time": "16:45 UTC",
+    "bookmaker": "1xBet",
+    "probabilities": {
+      "home_win_pct": 76.4,
+      "draw_pct": 15.8,
+      "away_win_pct": 7.8
+    }
+  },
+  {
+    "league": "UEFA Europa Conference League",
+    "is_global": true,
+    "home": "Universitatea Craiova",
+    "away": "Getafe",
+    "commence_time": "2026-10-15T16:45:00Z",
+    "match_date": "15 Oct 2026",
+    "match_time": "16:45 UTC",
+    "bookmaker": "1xBet",
+    "probabilities": {
+      "home_win_pct": 31.2,
+      "draw_pct": 30.4,
+      "away_win_pct": 38.4
+    }
+  },
+  {
+    "league": "UEFA Europa Conference League",
+    "is_global": true,
+    "home": "Mj\u00e4llby AIF",
+    "away": "Inter Club d'Escaldes",
+    "commence_time": "2026-10-15T16:45:00Z",
+    "match_date": "15 Oct 2026",
+    "match_time": "16:45 UTC",
+    "bookmaker": "1xBet",
+    "probabilities": {
+      "home_win_pct": 73.7,
+      "draw_pct": 17.0,
+      "away_win_pct": 9.3
+    }
+  },
+  {
+    "league": "UEFA Europa Conference League",
+    "is_global": true,
+    "home": "KuPS Kuopio",
+    "away": "Trabzonspor",
+    "commence_time": "2026-10-15T16:45:00Z",
+    "match_date": "15 Oct 2026",
+    "match_time": "16:45 UTC",
+    "bookmaker": "1xBet",
+    "probabilities": {
+      "home_win_pct": 14.2,
+      "draw_pct": 21.6,
+      "away_win_pct": 64.2
+    }
+  },
+  {
+    "league": "UEFA Europa League",
+    "is_global": true,
+    "home": "Salzburg",
+    "away": "AC Milan",
+    "commence_time": "2026-10-15T16:45:00Z",
+    "match_date": "15 Oct 2026",
+    "match_time": "16:45 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 23.7,
+      "draw_pct": 23.9,
+      "away_win_pct": 52.4
+    }
+  },
+  {
+    "league": "UEFA Europa League",
+    "is_global": true,
+    "home": "AZ Alkmaar",
+    "away": "Hapoel Be'er Sheva",
+    "commence_time": "2026-10-15T16:45:00Z",
+    "match_date": "15 Oct 2026",
+    "match_time": "16:45 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 72.3,
+      "draw_pct": 16.7,
+      "away_win_pct": 11.0
+    }
+  },
+  {
+    "league": "UEFA Europa League",
+    "is_global": true,
+    "home": "Lech Pozna\u0144",
+    "away": "Bayer Leverkusen",
+    "commence_time": "2026-10-15T16:45:00Z",
+    "match_date": "15 Oct 2026",
+    "match_time": "16:45 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 21.2,
+      "draw_pct": 21.9,
+      "away_win_pct": 56.9
     }
   },
   {
@@ -1124,6 +1159,7 @@
     "is_global": true,
     "home": "Lyon",
     "away": "Crystal Palace",
+    "commence_time": "2026-10-15T16:45:00Z",
     "match_date": "15 Oct 2026",
     "match_time": "16:45 UTC",
     "bookmaker": "Pinnacle",
@@ -1134,143 +1170,18 @@
     }
   },
   {
-    "league": "Copa Libertadores",
-    "is_global": true,
-    "home": "Estudiantes La Plata",
-    "away": "Flamengo-RJ",
-    "match_date": "13 Oct 2026",
-    "match_time": "22:00 UTC",
-    "bookmaker": "Pinnacle",
-    "probabilities": {
-      "home_win_pct": 25.3,
-      "draw_pct": 30.8,
-      "away_win_pct": 43.9
-    }
-  },
-  {
-    "league": "UEFA Nations League",
-    "is_global": true,
-    "home": "Greece",
-    "away": "Netherlands",
-    "match_date": "01 Oct 2026",
-    "match_time": "18:45 UTC",
-    "bookmaker": "Winamax (FR)",
-    "probabilities": {
-      "home_win_pct": 30.1,
-      "draw_pct": 26.2,
-      "away_win_pct": 43.7
-    }
-  },
-  {
-    "league": "Copa Libertadores",
-    "is_global": true,
-    "home": "Estudiantes La Plata",
-    "away": "Flamengo-RJ",
-    "match_date": "16 Oct 2026",
-    "match_time": "00:30 UTC",
-    "bookmaker": "Unibet (FR)",
-    "probabilities": {
-      "home_win_pct": 26.5,
-      "draw_pct": 30.3,
-      "away_win_pct": 43.1
-    }
-  },
-  {
-    "league": "UEFA Champions League",
-    "is_global": true,
-    "home": "Atl\u00e9tico Madrid",
-    "away": "Manchester United",
-    "match_date": "13 Oct 2026",
-    "match_time": "19:00 UTC",
-    "bookmaker": "Marathon Bet",
-    "probabilities": {
-      "home_win_pct": 42.6,
-      "draw_pct": 24.9,
-      "away_win_pct": 32.5
-    }
-  },
-  {
-    "league": "UEFA Nations League",
-    "is_global": true,
-    "home": "Israel",
-    "away": "Kosovo",
-    "match_date": "01 Oct 2026",
-    "match_time": "18:45 UTC",
-    "bookmaker": "PMU (FR)",
-    "probabilities": {
-      "home_win_pct": 29.4,
-      "draw_pct": 28.0,
-      "away_win_pct": 42.6
-    }
-  },
-  {
-    "league": "UEFA Champions League",
-    "is_global": true,
-    "home": "Villarreal",
-    "away": "Napoli",
-    "match_date": "13 Oct 2026",
-    "match_time": "19:00 UTC",
-    "bookmaker": "Suprabets",
-    "probabilities": {
-      "home_win_pct": 41.6,
-      "draw_pct": 26.6,
-      "away_win_pct": 31.8
-    }
-  },
-  {
     "league": "UEFA Europa League",
     "is_global": true,
-    "home": "Union Saint-Gilloise",
-    "away": "Real Sociedad",
+    "home": "Sparta Prague",
+    "away": "Lillestrom",
+    "commence_time": "2026-10-15T16:45:00Z",
     "match_date": "15 Oct 2026",
     "match_time": "16:45 UTC",
     "bookmaker": "Pinnacle",
     "probabilities": {
-      "home_win_pct": 41.1,
-      "draw_pct": 26.1,
-      "away_win_pct": 32.8
-    }
-  },
-  {
-    "league": "UEFA Nations League",
-    "is_global": true,
-    "home": "Cyprus",
-    "away": "Armenia",
-    "match_date": "02 Oct 2026",
-    "match_time": "16:00 UTC",
-    "bookmaker": "Unibet (SE)",
-    "probabilities": {
-      "home_win_pct": 41.0,
-      "draw_pct": 28.6,
-      "away_win_pct": 30.4
-    }
-  },
-  {
-    "league": "UEFA Nations League",
-    "is_global": true,
-    "home": "Luxembourg",
-    "away": "Iceland",
-    "match_date": "29 Sep 2026",
-    "match_time": "18:45 UTC",
-    "bookmaker": "PMU (FR)",
-    "probabilities": {
-      "home_win_pct": 29.9,
-      "draw_pct": 29.9,
-      "away_win_pct": 40.1
-    }
-  },
-  {
-    "league": "UEFA Champions League",
-    "is_global": true,
-    "home": "RC Lens",
-    "away": "Sporting Lisbon",
-    "match_date": "13 Oct 2026",
-    "match_time": "16:45 UTC",
-    "bookmaker": "Marathon Bet",
-    "probabilities": {
-      "home_win_pct": 39.9,
-      "draw_pct": 25.6,
-      "away_win_pct": 34.5
+      "home_win_pct": 69.5,
+      "draw_pct": 18.4,
+      "away_win_pct": 12.1
     }
   },
   {
@@ -1278,6 +1189,7 @@
     "is_global": true,
     "home": "NK Celje",
     "away": "Omonoia FC",
+    "commence_time": "2026-10-15T16:45:00Z",
     "match_date": "15 Oct 2026",
     "match_time": "16:45 UTC",
     "bookmaker": "Pinnacle",
@@ -1288,10 +1200,71 @@
     }
   },
   {
+    "league": "UEFA Europa League",
+    "is_global": true,
+    "home": "Union Saint-Gilloise",
+    "away": "Real Sociedad",
+    "commence_time": "2026-10-15T16:45:00Z",
+    "match_date": "15 Oct 2026",
+    "match_time": "16:45 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 41.1,
+      "draw_pct": 26.1,
+      "away_win_pct": 32.8
+    }
+  },
+  {
+    "league": "UEFA Europa League",
+    "is_global": true,
+    "home": "Torreense",
+    "away": "Sunderland",
+    "commence_time": "2026-10-15T16:45:00Z",
+    "match_date": "15 Oct 2026",
+    "match_time": "16:45 UTC",
+    "bookmaker": "Winamax (DE)",
+    "probabilities": {
+      "home_win_pct": 15.3,
+      "draw_pct": 17.0,
+      "away_win_pct": 67.6
+    }
+  },
+  {
+    "league": "UEFA Europa Conference League",
+    "is_global": true,
+    "home": "Atalanta BC",
+    "away": "Pafos FC",
+    "commence_time": "2026-10-15T19:00:00Z",
+    "match_date": "15 Oct 2026",
+    "match_time": "19:00 UTC",
+    "bookmaker": "Coolbet",
+    "probabilities": {
+      "home_win_pct": 67.9,
+      "draw_pct": 19.3,
+      "away_win_pct": 12.9
+    }
+  },
+  {
+    "league": "UEFA Europa Conference League",
+    "is_global": true,
+    "home": "Brighton and Hove Albion",
+    "away": "FK Kauno \u017dalgiris",
+    "commence_time": "2026-10-15T19:00:00Z",
+    "match_date": "15 Oct 2026",
+    "match_time": "19:00 UTC",
+    "bookmaker": "Betfair",
+    "probabilities": {
+      "home_win_pct": 90.7,
+      "draw_pct": 5.5,
+      "away_win_pct": 3.8
+    }
+  },
+  {
     "league": "UEFA Europa Conference League",
     "is_global": true,
     "home": "FC Copenhagen",
     "away": "SC Braga",
+    "commence_time": "2026-10-15T19:00:00Z",
     "match_date": "15 Oct 2026",
     "match_time": "19:00 UTC",
     "bookmaker": "Coolbet",
@@ -1304,8 +1277,24 @@
   {
     "league": "UEFA Europa Conference League",
     "is_global": true,
+    "home": "Sint Truiden",
+    "away": "FC Iberia 1999",
+    "commence_time": "2026-10-15T19:00:00Z",
+    "match_date": "15 Oct 2026",
+    "match_time": "19:00 UTC",
+    "bookmaker": "1xBet",
+    "probabilities": {
+      "home_win_pct": 69.6,
+      "draw_pct": 19.3,
+      "away_win_pct": 11.1
+    }
+  },
+  {
+    "league": "UEFA Europa Conference League",
+    "is_global": true,
     "home": "Hearts",
     "away": "FC Nordsjaelland",
+    "commence_time": "2026-10-15T19:00:00Z",
     "match_date": "15 Oct 2026",
     "match_time": "19:00 UTC",
     "bookmaker": "1xBet",
@@ -1316,101 +1305,213 @@
     }
   },
   {
-    "league": "UEFA Champions League Women",
-    "is_global": true,
-    "home": "BK Hacken",
-    "away": "Juventus",
-    "match_date": "30 Sep 2026",
-    "match_time": "16:45 UTC",
-    "bookmaker": "Nordic Bet",
-    "probabilities": {
-      "home_win_pct": 38.8,
-      "draw_pct": 26.8,
-      "away_win_pct": 34.4
-    }
-  },
-  {
     "league": "UEFA Europa Conference League",
     "is_global": true,
-    "home": "Universitatea Craiova",
-    "away": "Getafe",
+    "home": "FC Twente Enschede",
+    "away": "FC Thun",
+    "commence_time": "2026-10-15T19:00:00Z",
     "match_date": "15 Oct 2026",
-    "match_time": "16:45 UTC",
-    "bookmaker": "1xBet",
-    "probabilities": {
-      "home_win_pct": 31.2,
-      "draw_pct": 30.4,
-      "away_win_pct": 38.4
-    }
-  },
-  {
-    "league": "UEFA Champions League",
-    "is_global": true,
-    "home": "Shakhtar Donetsk",
-    "away": "AEK Athens",
-    "match_date": "14 Oct 2026",
     "match_time": "19:00 UTC",
-    "bookmaker": "Suprabets",
-    "probabilities": {
-      "home_win_pct": 34.9,
-      "draw_pct": 27.2,
-      "away_win_pct": 37.9
-    }
-  },
-  {
-    "league": "UEFA Europa Conference League",
-    "is_global": true,
-    "home": "FC Lugano",
-    "away": "Red Star Belgrade",
-    "match_date": "15 Oct 2026",
-    "match_time": "16:45 UTC",
     "bookmaker": "Coolbet",
     "probabilities": {
-      "home_win_pct": 37.1,
-      "draw_pct": 25.7,
-      "away_win_pct": 37.1
+      "home_win_pct": 79.4,
+      "draw_pct": 13.2,
+      "away_win_pct": 7.4
+    }
+  },
+  {
+    "league": "UEFA Europa Conference League",
+    "is_global": true,
+    "home": "SC Freiburg",
+    "away": "FK Jablonec",
+    "commence_time": "2026-10-15T19:00:00Z",
+    "match_date": "15 Oct 2026",
+    "match_time": "19:00 UTC",
+    "bookmaker": "1xBet",
+    "probabilities": {
+      "home_win_pct": 72.0,
+      "draw_pct": 18.0,
+      "away_win_pct": 10.1
+    }
+  },
+  {
+    "league": "UEFA Europa Conference League",
+    "is_global": true,
+    "home": "SK Brann",
+    "away": "Lincoln Red Imps FC",
+    "commence_time": "2026-10-15T19:00:00Z",
+    "match_date": "15 Oct 2026",
+    "match_time": "19:00 UTC",
+    "bookmaker": "Coolbet",
+    "probabilities": {
+      "home_win_pct": 83.4,
+      "draw_pct": 11.3,
+      "away_win_pct": 5.3
+    }
+  },
+  {
+    "league": "UEFA Europa League",
+    "is_global": true,
+    "home": "Dinamo Zagreb",
+    "away": "Anderlecht",
+    "commence_time": "2026-10-15T19:00:00Z",
+    "match_date": "15 Oct 2026",
+    "match_time": "19:00 UTC",
+    "bookmaker": "Winamax (DE)",
+    "probabilities": {
+      "home_win_pct": 47.9,
+      "draw_pct": 26.3,
+      "away_win_pct": 25.9
+    }
+  },
+  {
+    "league": "UEFA Europa League",
+    "is_global": true,
+    "home": "Benfica",
+    "away": "Celtic",
+    "commence_time": "2026-10-15T19:00:00Z",
+    "match_date": "15 Oct 2026",
+    "match_time": "19:00 UTC",
+    "bookmaker": "Winamax (DE)",
+    "probabilities": {
+      "home_win_pct": 74.5,
+      "draw_pct": 14.7,
+      "away_win_pct": 10.8
+    }
+  },
+  {
+    "league": "UEFA Europa League",
+    "is_global": true,
+    "home": "TSG Hoffenheim",
+    "away": "Besiktas JK",
+    "commence_time": "2026-10-15T19:00:00Z",
+    "match_date": "15 Oct 2026",
+    "match_time": "19:00 UTC",
+    "bookmaker": "Unibet (FR)",
+    "probabilities": {
+      "home_win_pct": 48.1,
+      "draw_pct": 24.0,
+      "away_win_pct": 27.9
+    }
+  },
+  {
+    "league": "UEFA Europa League",
+    "is_global": true,
+    "home": "Bournemouth",
+    "away": "SK Sturm Graz",
+    "commence_time": "2026-10-15T19:00:00Z",
+    "match_date": "15 Oct 2026",
+    "match_time": "19:00 UTC",
+    "bookmaker": "Winamax (FR)",
+    "probabilities": {
+      "home_win_pct": 76.2,
+      "draw_pct": 14.0,
+      "away_win_pct": 9.7
+    }
+  },
+  {
+    "league": "UEFA Europa League",
+    "is_global": true,
+    "home": "Celta Vigo",
+    "away": "Juventus",
+    "commence_time": "2026-10-15T19:00:00Z",
+    "match_date": "15 Oct 2026",
+    "match_time": "19:00 UTC",
+    "bookmaker": "Winamax (FR)",
+    "probabilities": {
+      "home_win_pct": 27.9,
+      "draw_pct": 26.3,
+      "away_win_pct": 45.8
+    }
+  },
+  {
+    "league": "UEFA Europa League",
+    "is_global": true,
+    "home": "Jagiellonia Bia\u0142ystok",
+    "away": "FC Ararat-Armenia",
+    "commence_time": "2026-10-15T19:00:00Z",
+    "match_date": "15 Oct 2026",
+    "match_time": "19:00 UTC",
+    "bookmaker": "Unibet (FR)",
+    "probabilities": {
+      "home_win_pct": 66.3,
+      "draw_pct": 19.7,
+      "away_win_pct": 14.0
+    }
+  },
+  {
+    "league": "UEFA Europa League",
+    "is_global": true,
+    "home": "Ferencv\u00e1ros TC",
+    "away": "Viktoria Plze\u0148",
+    "commence_time": "2026-10-15T19:00:00Z",
+    "match_date": "15 Oct 2026",
+    "match_time": "19:00 UTC",
+    "bookmaker": "Winamax (FR)",
+    "probabilities": {
+      "home_win_pct": 47.8,
+      "draw_pct": 25.5,
+      "away_win_pct": 26.7
+    }
+  },
+  {
+    "league": "UEFA Europa League",
+    "is_global": true,
+    "home": "Marseille",
+    "away": "Olympiakos Piraeus",
+    "commence_time": "2026-10-15T19:00:00Z",
+    "match_date": "15 Oct 2026",
+    "match_time": "19:00 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 44.9,
+      "draw_pct": 26.2,
+      "away_win_pct": 28.9
+    }
+  },
+  {
+    "league": "UEFA Europa League",
+    "is_global": true,
+    "home": "NEC Nijmegen",
+    "away": "PFC Levski Sofia",
+    "commence_time": "2026-10-15T19:00:00Z",
+    "match_date": "15 Oct 2026",
+    "match_time": "19:00 UTC",
+    "bookmaker": "Unibet (FR)",
+    "probabilities": {
+      "home_win_pct": 50.3,
+      "draw_pct": 25.6,
+      "away_win_pct": 24.2
+    }
+  },
+  {
+    "league": "UEFA Europa League",
+    "is_global": true,
+    "home": "Rennes",
+    "away": "OFI Crete",
+    "commence_time": "2026-10-15T19:00:00Z",
+    "match_date": "15 Oct 2026",
+    "match_time": "19:00 UTC",
+    "bookmaker": "Winamax (FR)",
+    "probabilities": {
+      "home_win_pct": 69.7,
+      "draw_pct": 17.2,
+      "away_win_pct": 13.0
     }
   },
   {
     "league": "Copa Libertadores",
     "is_global": true,
-    "home": "Fluminense-RJ",
-    "away": "Palmeiras-SP",
-    "match_date": "15 Oct 2026",
+    "home": "Estudiantes La Plata",
+    "away": "Flamengo-RJ",
+    "commence_time": "2026-10-16T00:30:00Z",
+    "match_date": "16 Oct 2026",
     "match_time": "00:30 UTC",
-    "bookmaker": "Codere (IT)",
+    "bookmaker": "Unibet (FR)",
     "probabilities": {
-      "home_win_pct": 32.5,
-      "draw_pct": 32.5,
-      "away_win_pct": 35.0
-    }
-  },
-  {
-    "league": "UEFA Nations League",
-    "is_global": true,
-    "home": "Finland",
-    "away": "Belarus",
-    "match_date": "29 Sep 2026",
-    "match_time": "16:02 UTC",
-    "bookmaker": "PMU (FR)",
-    "probabilities": {
-      "home_win_pct": 20.8,
-      "draw_pct": 71.2,
-      "away_win_pct": 8.0
-    }
-  },
-  {
-    "league": "UEFA Nations League",
-    "is_global": true,
-    "home": "Moldova",
-    "away": "Faroe Islands",
-    "match_date": "29 Sep 2026",
-    "match_time": "16:00 UTC",
-    "bookmaker": "Betsson",
-    "probabilities": {
-      "home_win_pct": 15.6,
-      "draw_pct": 73.4,
-      "away_win_pct": 11.0
+      "home_win_pct": 26.5,
+      "draw_pct": 30.3,
+      "away_win_pct": 43.1
     }
   }
 ]
