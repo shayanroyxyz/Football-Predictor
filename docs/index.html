@@ -25,7 +25,7 @@
       <!-- Live Search Bar -->
       <div class="w-full md:w-96">
         <div class="relative">
-          <input type="text" id="searchInput" placeholder="Search by team or league name..." 
+          <input type="text" id="searchInput" placeholder="Search team, country, or league..." 
                  class="w-full bg-slate-950 border border-slate-700 text-xs sm:text-sm rounded-lg pl-9 pr-4 py-2.5 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-indigo-500 shadow-inner" />
           <svg class="w-4 h-4 text-slate-500 absolute left-3 top-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
@@ -45,7 +45,7 @@
       </div>
     </div>
 
-    <!-- Container for Date-Wise Grouped Columns -->
+    <!-- Date Wise Grouped Grid -->
     <div id="dateGroupsContainer" class="space-y-8"></div>
 
     <div id="noResults" class="hidden text-center py-20">
@@ -72,7 +72,7 @@
       const summary = document.getElementById("matchSummary");
 
       container.innerHTML = "";
-      summary.textContent = `Showing ${matches.length} active fixtures across scheduled dates`;
+      summary.textContent = `Showing ${matches.length} fixtures across scheduled dates`;
 
       if (matches.length === 0) {
         noResults.classList.remove("hidden");
@@ -120,7 +120,7 @@
               </div>
               <div class="grid grid-cols-3 gap-1.5 text-center text-xs font-semibold mb-2">
                 <div class="bg-slate-950 p-2 rounded-lg border border-slate-800/80">
-                  <div class="text-slate-400 text-[9px] uppercase truncate">1 (Home)</div>
+                  <div class="text-slate-400 text-[9px] uppercase truncate">${m.home}</div>
                   <div class="text-emerald-400 text-xs font-bold">${p.home_win_pct}%</div>
                 </div>
                 <div class="bg-slate-950 p-2 rounded-lg border border-slate-800/80">
@@ -128,7 +128,7 @@
                   <div class="text-amber-400 text-xs font-bold">${p.draw_pct}%</div>
                 </div>
                 <div class="bg-slate-950 p-2 rounded-lg border border-slate-800/80">
-                  <div class="text-slate-400 text-[9px] uppercase truncate">2 (Away)</div>
+                  <div class="text-slate-400 text-[9px] uppercase truncate">${m.away}</div>
                   <div class="text-sky-400 text-xs font-bold">${p.away_win_pct}%</div>
                 </div>
               </div>
@@ -161,58 +161,35 @@
 
     document.getElementById("searchInput").addEventListener("input", applyFilterAndSearch);
 
-    function setupFilterButtons() {
-      const btns = {
-        all: document.getElementById("filterAll"),
-        global: document.getElementById("filterGlobal"),
-        picks: document.getElementById("filterPicks")
-      };
+    const btns = {
+      all: document.getElementById("filterAll"),
+      global: document.getElementById("filterGlobal"),
+      picks: document.getElementById("filterPicks")
+    };
 
-      Object.entries(btns).forEach(([key, btn]) => {
-        btn.addEventListener("click", () => {
-          currentFilter = key;
-          Object.values(btns).forEach(b => {
-            b.className = "px-3 py-1.5 text-xs rounded-lg font-medium bg-slate-800 text-slate-300 hover:bg-slate-700";
-          });
-          btn.className = "px-3 py-1.5 text-xs rounded-lg font-medium bg-indigo-600 text-white";
-          applyFilterAndSearch();
+    Object.entries(btns).forEach(([key, btn]) => {
+      btn.addEventListener("click", () => {
+        currentFilter = key;
+        Object.values(btns).forEach(b => {
+          b.className = "px-3 py-1.5 text-xs rounded-lg font-medium bg-slate-800 text-slate-300 hover:bg-slate-700";
         });
+        btn.className = "px-3 py-1.5 text-xs rounded-lg font-medium bg-indigo-600 text-white";
+        applyFilterAndSearch();
       });
-    }
+    });
 
     async function loadData() {
-      const todayUTC = new Date().toISOString().split('T')[0];
-      const paths = [`/predictions/${todayUTC}.json`, `predictions/${todayUTC}.json`, `../predictions/${todayUTC}.json`];
-
-      for (let path of paths) {
+      const endpoints = ["data.json", "/data.json", "./data.json"];
+      for (let url of endpoints) {
         try {
-          const res = await fetch(path);
+          const res = await fetch(url);
           if (res.ok) {
             rawMatches = await res.json();
             break;
           }
-        } catch(e) {}
+        } catch (e) {}
       }
-
-      if (!rawMatches || rawMatches.length === 0) {
-        rawMatches = [
-          {
-            league: "UEFA Champions League",
-            is_global: true,
-            home: "Real Madrid",
-            away: "Manchester City",
-            match_date: "29 Sep 2026",
-            match_time: "20:00 UTC",
-            bookmaker: "Market Consensus",
-            probabilities: { home_win_pct: 44.0, draw_pct: 26.0, away_win_pct: 30.0 }
-          }
-        ];
-      }
-
-      // Sort chronological by commence time
-      rawMatches.sort((a, b) => (a.commence_time || "").localeCompare(b.commence_time || ""));
       renderGroupedMatches(rawMatches);
-      setupFilterButtons();
     }
 
     loadData();
