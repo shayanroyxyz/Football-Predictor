@@ -12,15 +12,21 @@ GITHUB_REPO = "Football-Predictor"
 PAGES_URL = "https://football-predictor-croi-sigma.vercel.app"
 TRIGGER_URL = f"https://github.com/{GITHUB_USERNAME}/{GITHUB_REPO}/actions/workflows/daily.yml"
 
-# Priority keywords: AFC/Asian competitions placed at the very top
-GLOBAL_PRIORITY_KEYWORDS = [
-    "asian cup", "afc", "asia", "asian",
+# Explicit identifiers for all Asian leagues and continental tournaments
+ASIAN_KEYWORDS = [
+    "asia", "afc", "asian cup", "japan", "j_league", "j-league", 
+    "korea", "kleague", "k-league", "china", "csl", "superleague", 
+    "saudi", "pro league", "australia", "a-league", "aleague", 
+    "india", "isl", "singapore", "thailand", "vietnam", "iran", 
+    "qatar", "uae", "gulf"
+]
+
+GLOBAL_CUP_KEYWORDS = [
     "champions", "uefa", "europa", "libertadores", "nations", 
     "world cup", "fifa", "copa sudamericana", "afcon"
 ]
 
 def format_commence_time(iso_str):
-    """Converts ISO 8601 UTC time into clean readable date and time."""
     try:
         dt = datetime.fromisoformat(iso_str.replace("Z", "+00:00"))
         return dt.strftime("%d %b %Y"), dt.strftime("%H:%M UTC")
@@ -28,7 +34,6 @@ def format_commence_time(iso_str):
         return "Upcoming", "TBD"
 
 def send_telegram(message):
-    """Sends message with inline buttons directly beneath the text."""
     if not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHAT_ID:
         print("Telegram configuration missing.")
         return
@@ -41,8 +46,7 @@ def send_telegram(message):
         "reply_markup": {
             "inline_keyboard": [
                 [
-                    {"text": "🌐 Open Web Dashboard", "url": PAGES_URL},
-                    {"text": "⚡ Re-Run Predictions", "url": TRIGGER_URL}
+                    {"text": "🌐 Open Web Dashboard", "url": PAGES_URL}
                 ]
             ]
         }
@@ -69,18 +73,19 @@ def get_predictions_from_market():
 
     def get_sport_priority(key_name):
         k = key_name.lower()
-        for idx, word in enumerate(GLOBAL_PRIORITY_KEYWORDS):
+        for idx, word in enumerate(ASIAN_KEYWORDS):
             if word in k:
                 return idx
+        for idx, word in enumerate(GLOBAL_CUP_KEYWORDS):
+            if word in k:
+                return 50 + idx
         return 99
 
-    # Sort so AFC / Asian tournaments and major cups come first
     soccer_keys.sort(key=get_sport_priority)
 
     matches = []
-    # Queries up to 15 leagues to ensure full Asian and global coverage
-    for sport_key in soccer_keys[:15]:
-        # 'regions=eu,uk,au' captures bookmakers that carry Asian leagues and tournaments
+    # Queries up to 18 active competitions with global bookmaker coverage
+    for sport_key in soccer_keys[:18]:
         odds_url = f"https://api.the-odds-api.com/v4/sports/{sport_key}/odds/?apiKey={ODDS_API_KEY}&regions=eu,uk,au&markets=h2h&oddsFormat=decimal"
         try:
             res = requests.get(odds_url, timeout=15)
@@ -111,8 +116,10 @@ def get_predictions_from_market():
 
                     match_date, match_time = format_commence_time(ev.get("commence_time", ""))
                     league_title = ev.get("sport_title", "Soccer")
-                    is_asian = any(w in league_title.lower() or w in sport_key.lower() for w in ["asia", "afc", "asian cup"])
-                    is_global = is_asian or any(w in league_title.lower() for w in GLOBAL_PRIORITY_KEYWORDS)
+
+                    full_text = f"{league_title} {sport_key} {home} {away}".lower()
+                    is_asian = any(w in full_text for w in ASIAN_KEYWORDS)
+                    is_global = is_asian or any(w in full_text for w in GLOBAL_CUP_KEYWORDS)
 
                     matches.append({
                         "league": league_title,
@@ -139,11 +146,14 @@ def generate_full_dashboard(matches, date_str):
     os.makedirs("docs", exist_ok=True)
     matches_json_string = json.dumps(matches)
 
+    asian_count = sum(1 for m in matches if m.get("is_asian"))
+    global_count = sum(1 for m in matches if m.get("is_global"))
+
     html_parts = [
         '<!DOCTYPE html>\n<html lang="en">\n<head>\n',
         '  <meta charset="UTF-8" />\n',
         '  <meta name="viewport" content="width=device-width, initial-scale=1.0" />\n',
-        '  <title>Global & Asian Football Predictions</title>\n',
+        '  <title>Football Match Predictions</title>\n',
         '  <script src="https://cdn.tailwindcss.com"></script>\n',
         '  <link rel="preconnect" href="https://fonts.googleapis.com">\n',
         '  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n',
@@ -162,7 +172,7 @@ def generate_full_dashboard(matches, date_str):
         '      </div>\n\n',
         '      <div class="w-full md:w-96">\n',
         '        <div class="relative">\n',
-        '          <input type="text" id="searchInput" placeholder="Search team, AFC, Asian Cup, league..." \n',
+        '          <input type="text" id="searchInput" placeholder="Search team, league, AFC, Asia..." \n',
         '                 class="w-full bg-slate-950 border border-slate-700 text-xs sm:text-sm rounded-lg pl-9 pr-4 py-2.5 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-indigo-500 shadow-inner" />\n',
         '          <svg class="w-4 h-4 text-slate-500 absolute left-3 top-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">\n',
         '            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>\n',
@@ -176,8 +186,8 @@ def generate_full_dashboard(matches, date_str):
         f'      <div id="matchSummary" class="text-xs font-semibold text-slate-400">Showing all {len(matches)} fixtures</div>\n',
         '      <div class="flex flex-wrap gap-2">\n',
         f'        <button id="filterAll" class="px-3 py-1.5 text-xs rounded-lg font-medium bg-indigo-600 text-white">All ({len(matches)})</button>\n',
-        '        <button id="filterAsian" class="px-3 py-1.5 text-xs rounded-lg font-medium bg-slate-800 text-slate-300 hover:bg-slate-700">🌏 Asian / AFC</button>\n',
-        '        <button id="filterGlobal" class="px-3 py-1.5 text-xs rounded-lg font-medium bg-slate-800 text-slate-300 hover:bg-slate-700">🌍 Global Cups</button>\n',
+        f'        <button id="filterAsian" class="px-3 py-1.5 text-xs rounded-lg font-medium bg-slate-800 text-slate-300 hover:bg-slate-700">🌏 Asian / AFC ({asian_count})</button>\n',
+        f'        <button id="filterGlobal" class="px-3 py-1.5 text-xs rounded-lg font-medium bg-slate-800 text-slate-300 hover:bg-slate-700">🌍 Global Cups ({global_count})</button>\n',
         '        <button id="filterPicks" class="px-3 py-1.5 text-xs rounded-lg font-medium bg-slate-800 text-slate-300 hover:bg-slate-700">⭐ Top Picks</button>\n',
         '      </div>\n',
         '    </div>\n\n',
@@ -337,7 +347,6 @@ def run():
         send_telegram("⚠️ *Notice:* No active fixtures available right now.")
         return
 
-    # Chronological sorting by match kickoff time
     matches.sort(key=lambda m: (m.get("commence_time") or ""))
 
     os.makedirs("predictions", exist_ok=True)
@@ -395,7 +404,7 @@ def run():
             batch += entry
 
     if batch.strip():
-        batch += f"\n👉 Tap **🌐 Open Web Dashboard** below to filter Asian / AFC fixtures or search teams."
+        batch += f"\n👉 Tap **🌐 Open Web Dashboard** below to filter matches and view dates."
         send_telegram(batch)
 
     print(f"Processed {total} matches and generated docs/index.html")
