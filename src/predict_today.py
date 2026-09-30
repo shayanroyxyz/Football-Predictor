@@ -5,14 +5,21 @@ import requests
 
 TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
-ODDS_API_KEY = os.getenv("ODDS_API_KEY")
+ODDS_API_KEY_ENV = os.getenv("ODDS_API_KEY", "")
+
+# Support multiple API keys: separates by comma if you have more than one
+API_KEYS = [k.strip() for k in ODDS_API_KEY_ENV.split(",") if k.strip()]
 
 GITHUB_USERNAME = "shayanroyxyz"
 GITHUB_REPO = "Football-Predictor"
 PAGES_URL = "https://football-predictor-croi-sigma.vercel.app"
 TRIGGER_URL = f"https://github.com/{GITHUB_USERNAME}/{GITHUB_REPO}/actions/workflows/daily.yml"
 
-# Explicit identifiers for all Asian leagues and continental tournaments
+# Tracking quotas
+CREDITS_LEFT = "N/A"
+CREDITS_USED = "N/A"
+
+# Tournament Priority & Asian league identifiers
 ASIAN_KEYWORDS = [
     "asia", "afc", "asian cup", "japan", "j_league", "j-league", 
     "korea", "kleague", "k-league", "china", "csl", "superleague", 
@@ -56,20 +63,40 @@ def send_telegram(message):
     except Exception as e:
         print(f"Telegram error: {e}")
 
+def api_get(endpoint_path):
+    """Tries the API call across available keys; tracks remaining credits."""
+    global CREDITS_LEFT, CREDITS_USED
+    for key in API_KEYS:
+        url = f"https://api.the-odds-api.com/v4/{endpoint_path}&apiKey={key}" if "?" in endpoint_path else f"https://api.the-odds-api.com/v4/{endpoint_path}?apiKey={key}"
+        try:
+            r = requests.get(url, timeout=15)
+            # Fetch remaining credits from response headers
+            rem = r.headers.get("x-requests-remaining")
+            usd = r.headers.get("x-requests-used")
+            if rem is not None:
+                CREDITS_LEFT = rem
+            if usd is not None:
+                CREDITS_USED = usd
+
+            if r.status_code == 200:
+                return r.json()
+            elif r.status_code == 429 or (rem is not None and int(rem) <= 0):
+                print(f"Key {key[:6]}... exhausted. Trying next key if available.")
+                continue
+        except Exception:
+            continue
+    return None
+
 def get_predictions_from_market():
-    if not ODDS_API_KEY:
-        print("Error: ODDS_API_KEY is not set.")
+    if not API_KEYS:
+        print("Error: No ODDS_API_KEY set.")
         return []
 
-    sports_url = f"https://api.the-odds-api.com/v4/sports?apiKey={ODDS_API_KEY}"
-    try:
-        r = requests.get(sports_url, timeout=15)
-        if r.status_code != 200:
-            return []
-        all_sports = r.json()
-        soccer_keys = [s["key"] for s in all_sports if s.get("group") == "Soccer" and s.get("active")]
-    except Exception:
+    all_sports = api_get("sports")
+    if not all_sports or not isinstance(all_sports, list):
         return []
+
+    soccer_keys = [s["key"] for s in all_sports if s.get("group") == "Soccer" and s.get("active")]
 
     def get_sport_priority(key_name):
         k = key_name.lower()
@@ -84,61 +111,58 @@ def get_predictions_from_market():
     soccer_keys.sort(key=get_sport_priority)
 
     matches = []
-    # Queries up to 18 active competitions with global bookmaker coverage
+    # Query up to 18 active competitions
     for sport_key in soccer_keys[:18]:
-        odds_url = f"https://api.the-odds-api.com/v4/sports/{sport_key}/odds/?apiKey={ODDS_API_KEY}&regions=eu,uk,au&markets=h2h&oddsFormat=decimal"
-        try:
-            res = requests.get(odds_url, timeout=15)
-            if res.status_code != 200:
-                continue
-            events = res.json()
-            for ev in events:
-                home = ev.get("home_team")
-                away = ev.get("away_team")
-                bookmakers = ev.get("bookmakers", [])
-                if not bookmakers or not home or not away:
-                    continue
-
-                outcomes = bookmakers[0]["markets"][0]["outcomes"]
-                home_odds = next((o["price"] for o in outcomes if o["name"] == home), None)
-                away_odds = next((o["price"] for o in outcomes if o["name"] == away), None)
-                draw_odds = next((o["price"] for o in outcomes if o["name"].lower() == "draw"), None)
-
-                if home_odds and away_odds:
-                    raw_h = 1.0 / float(home_odds)
-                    raw_a = 1.0 / float(away_odds)
-                    raw_d = (1.0 / float(draw_odds)) if draw_odds else 0.25
-                    margin = raw_h + raw_d + raw_a
-
-                    p_h = round((raw_h / margin) * 100, 1)
-                    p_d = round((raw_d / margin) * 100, 1)
-                    p_a = round((raw_a / margin) * 100, 1)
-
-                    match_date, match_time = format_commence_time(ev.get("commence_time", ""))
-                    league_title = ev.get("sport_title", "Soccer")
-
-                    full_text = f"{league_title} {sport_key} {home} {away}".lower()
-                    is_asian = any(w in full_text for w in ASIAN_KEYWORDS)
-                    is_global = is_asian or any(w in full_text for w in GLOBAL_CUP_KEYWORDS)
-
-                    matches.append({
-                        "league": league_title,
-                        "is_asian": is_asian,
-                        "is_global": is_global,
-                        "home": home,
-                        "away": away,
-                        "commence_time": ev.get("commence_time", ""),
-                        "match_date": match_date,
-                        "match_time": match_time,
-                        "bookmaker": bookmakers[0].get("title", "Market Consensus"),
-                        "probabilities": {
-                            "home_win_pct": p_h,
-                            "draw_pct": p_d,
-                            "away_win_pct": p_a
-                        }
-                    })
-        except Exception:
+        endpoint = f"sports/{sport_key}/odds/?regions=eu,uk,au&markets=h2h&oddsFormat=decimal"
+        events = api_get(endpoint)
+        if not events or not isinstance(events, list):
             continue
+
+        for ev in events:
+            home = ev.get("home_team")
+            away = ev.get("away_team")
+            bookmakers = ev.get("bookmakers", [])
+            if not bookmakers or not home or not away:
+                continue
+
+            outcomes = bookmakers[0]["markets"][0]["outcomes"]
+            home_odds = next((o["price"] for o in outcomes if o["name"] == home), None)
+            away_odds = next((o["price"] for o in outcomes if o["name"] == away), None)
+            draw_odds = next((o["price"] for o in outcomes if o["name"].lower() == "draw"), None)
+
+            if home_odds and away_odds:
+                raw_h = 1.0 / float(home_odds)
+                raw_a = 1.0 / float(away_odds)
+                raw_d = (1.0 / float(draw_odds)) if draw_odds else 0.25
+                margin = raw_h + raw_d + raw_a
+
+                p_h = round((raw_h / margin) * 100, 1)
+                p_d = round((raw_d / margin) * 100, 1)
+                p_a = round((raw_a / margin) * 100, 1)
+
+                match_date, match_time = format_commence_time(ev.get("commence_time", ""))
+                league_title = ev.get("sport_title", "Soccer")
+
+                full_text = f"{league_title} {sport_key} {home} {away}".lower()
+                is_asian = any(w in full_text for w in ASIAN_KEYWORDS)
+                is_global = is_asian or any(w in full_text for w in GLOBAL_CUP_KEYWORDS)
+
+                matches.append({
+                    "league": league_title,
+                    "is_asian": is_asian,
+                    "is_global": is_global,
+                    "home": home,
+                    "away": away,
+                    "commence_time": ev.get("commence_time", ""),
+                    "match_date": match_date,
+                    "match_time": match_time,
+                    "bookmaker": bookmakers[0].get("title", "Market Consensus"),
+                    "probabilities": {
+                        "home_win_pct": p_h,
+                        "draw_pct": p_d,
+                        "away_win_pct": p_a
+                    }
+                })
 
     return matches
 
@@ -167,7 +191,7 @@ def generate_full_dashboard(matches, date_str):
         '        <span class="text-3xl">⚽</span>\n',
         '        <div>\n',
         '          <h1 class="text-xl font-bold tracking-tight text-white">Football Match Predictions</h1>\n',
-        f'          <p class="text-xs text-slate-400">Date: {date_str} (UTC) • Total: {len(matches)} Fixtures</p>\n',
+        f'          <p class="text-xs text-slate-400">Date: {date_str} (UTC) • Total: {len(matches)} Fixtures • API Left: {CREDITS_LEFT}</p>\n',
         '        </div>\n',
         '      </div>\n\n',
         '      <div class="w-full md:w-96">\n',
@@ -347,6 +371,7 @@ def run():
         send_telegram("⚠️ *Notice:* No active fixtures available right now.")
         return
 
+    # Chronological sort
     matches.sort(key=lambda m: (m.get("commence_time") or ""))
 
     os.makedirs("predictions", exist_ok=True)
@@ -376,6 +401,7 @@ def run():
     header = (
         f"⚽ *GLOBAL & ASIAN FOOTBALL PREDICTIONS*\n"
         f"📅 Date: `{now_str}`\n"
+        f"💳 *API Quota Left:* `{CREDITS_LEFT}` remaining\n"
         f"🌍 *Upcoming Matches Found:* `{total}`\n"
         f"━━━━━━━━━━━━━━━━━━━\n\n"
     )
@@ -404,10 +430,10 @@ def run():
             batch += entry
 
     if batch.strip():
-        batch += f"\n👉 Tap **🌐 Open Web Dashboard** below to filter matches and view dates."
+        batch += f"\n👉 Tap **🌐 Open Web Dashboard** below to filter matches by date & category."
         send_telegram(batch)
 
-    print(f"Processed {total} matches and generated docs/index.html")
+    print(f"Processed {total} matches. Quota remaining: {CREDITS_LEFT}")
 
 if __name__ == "__main__":
     run()
