@@ -7,7 +7,7 @@ TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
 ODDS_API_KEY_ENV = os.getenv("ODDS_API_KEY", "")
 
-# Support multiple API keys: separates by comma if you have more than one
+# Support multiple API keys separated by commas if you have more than one
 API_KEYS = [k.strip() for k in ODDS_API_KEY_ENV.split(",") if k.strip()]
 
 GITHUB_USERNAME = "shayanroyxyz"
@@ -15,22 +15,28 @@ GITHUB_REPO = "Football-Predictor"
 PAGES_URL = "https://football-predictor-croi-sigma.vercel.app"
 TRIGGER_URL = f"https://github.com/{GITHUB_USERNAME}/{GITHUB_REPO}/actions/workflows/daily.yml"
 
-# Tracking quotas
 CREDITS_LEFT = "N/A"
 CREDITS_USED = "N/A"
 
-# Tournament Priority & Asian league identifiers
-ASIAN_KEYWORDS = [
+# Broad keywords covering Latin America, Africa, Asia, and Continental Cups
+SOUTH_AMERICA_KEYWORDS = [
+    "chile", "copa chile", "uruguay", "peru", "colombia", "argentina", 
+    "brazil", "libertadores", "sudamericana", "paraguay", "bolivia", "ecuador"
+]
+
+AFRICA_KEYWORDS = [
+    "africa", "afcon", "caf", "south africa", "egypt", "morocco", 
+    "tunisia", "algeria", "ghana", "nigeria", "kenya"
+]
+
+ASIA_KEYWORDS = [
     "asia", "afc", "asian cup", "japan", "j_league", "j-league", 
-    "korea", "kleague", "k-league", "china", "csl", "superleague", 
-    "saudi", "pro league", "australia", "a-league", "aleague", 
-    "india", "isl", "singapore", "thailand", "vietnam", "iran", 
-    "qatar", "uae", "gulf"
+    "korea", "kleague", "china", "csl", "saudi", "pro league", 
+    "australia", "a-league", "isl", "india", "gulf", "qatar", "uae"
 ]
 
 GLOBAL_CUP_KEYWORDS = [
-    "champions", "uefa", "europa", "libertadores", "nations", 
-    "world cup", "fifa", "copa sudamericana", "afcon"
+    "champions", "uefa", "europa", "nations", "world cup", "fifa", "mls"
 ]
 
 def format_commence_time(iso_str):
@@ -64,13 +70,11 @@ def send_telegram(message):
         print(f"Telegram error: {e}")
 
 def api_get(endpoint_path):
-    """Tries the API call across available keys; tracks remaining credits."""
     global CREDITS_LEFT, CREDITS_USED
     for key in API_KEYS:
         url = f"https://api.the-odds-api.com/v4/{endpoint_path}&apiKey={key}" if "?" in endpoint_path else f"https://api.the-odds-api.com/v4/{endpoint_path}?apiKey={key}"
         try:
             r = requests.get(url, timeout=15)
-            # Fetch remaining credits from response headers
             rem = r.headers.get("x-requests-remaining")
             usd = r.headers.get("x-requests-used")
             if rem is not None:
@@ -81,7 +85,7 @@ def api_get(endpoint_path):
             if r.status_code == 200:
                 return r.json()
             elif r.status_code == 429 or (rem is not None and int(rem) <= 0):
-                print(f"Key {key[:6]}... exhausted. Trying next key if available.")
+                print(f"Key exhausted. Trying fallback if available.")
                 continue
         except Exception:
             continue
@@ -89,30 +93,32 @@ def api_get(endpoint_path):
 
 def get_predictions_from_market():
     if not API_KEYS:
-        print("Error: No ODDS_API_KEY set.")
+        print("Error: No ODDS_API_KEY provided.")
         return []
 
     all_sports = api_get("sports")
     if not all_sports or not isinstance(all_sports, list):
         return []
 
+    # Get every active football/soccer league
     soccer_keys = [s["key"] for s in all_sports if s.get("group") == "Soccer" and s.get("active")]
 
-    def get_sport_priority(key_name):
+    def get_priority(key_name):
         k = key_name.lower()
-        for idx, word in enumerate(ASIAN_KEYWORDS):
+        # South American cups, Africa, and Asia prioritized first
+        for idx, word in enumerate(SOUTH_AMERICA_KEYWORDS + AFRICA_KEYWORDS + ASIA_KEYWORDS):
             if word in k:
                 return idx
         for idx, word in enumerate(GLOBAL_CUP_KEYWORDS):
             if word in k:
-                return 50 + idx
-        return 99
+                return 100 + idx
+        return 200
 
-    soccer_keys.sort(key=get_sport_priority)
+    soccer_keys.sort(key=get_priority)
 
     matches = []
-    # Query up to 18 active competitions
-    for sport_key in soccer_keys[:18]:
+    # Queries up to 25 leagues to maximize coverage across Copa Chile, African, Asian, & European matches
+    for sport_key in soccer_keys[:25]:
         endpoint = f"sports/{sport_key}/odds/?regions=eu,uk,au&markets=h2h&oddsFormat=decimal"
         events = api_get(endpoint)
         if not events or not isinstance(events, list):
@@ -143,12 +149,27 @@ def get_predictions_from_market():
                 match_date, match_time = format_commence_time(ev.get("commence_time", ""))
                 league_title = ev.get("sport_title", "Soccer")
 
-                full_text = f"{league_title} {sport_key} {home} {away}".lower()
-                is_asian = any(w in full_text for w in ASIAN_KEYWORDS)
-                is_global = is_asian or any(w in full_text for w in GLOBAL_CUP_KEYWORDS)
+                full_str = f"{league_title} {sport_key} {home} {away}".lower()
+                is_sa = any(w in full_str for w in SOUTH_AMERICA_KEYWORDS)
+                is_africa = any(w in full_str for w in AFRICA_KEYWORDS)
+                is_asian = any(w in full_str for w in ASIA_KEYWORDS)
+                is_global = is_sa or is_africa or is_asian or any(w in full_str for w in GLOBAL_CUP_KEYWORDS)
+
+                category = "General"
+                if is_sa:
+                    category = "South America / Copa"
+                elif is_africa:
+                    category = "Africa / AFCON"
+                elif is_asian:
+                    category = "Asia / AFC"
+                elif is_global:
+                    category = "Global Cup"
 
                 matches.append({
                     "league": league_title,
+                    "category": category,
+                    "is_sa": is_sa,
+                    "is_africa": is_africa,
                     "is_asian": is_asian,
                     "is_global": is_global,
                     "home": home,
@@ -170,14 +191,15 @@ def generate_full_dashboard(matches, date_str):
     os.makedirs("docs", exist_ok=True)
     matches_json_string = json.dumps(matches)
 
+    sa_count = sum(1 for m in matches if m.get("is_sa"))
+    africa_count = sum(1 for m in matches if m.get("is_africa"))
     asian_count = sum(1 for m in matches if m.get("is_asian"))
-    global_count = sum(1 for m in matches if m.get("is_global"))
 
     html_parts = [
         '<!DOCTYPE html>\n<html lang="en">\n<head>\n',
         '  <meta charset="UTF-8" />\n',
         '  <meta name="viewport" content="width=device-width, initial-scale=1.0" />\n',
-        '  <title>Football Match Predictions</title>\n',
+        '  <title>Worldwide Football Predictions</title>\n',
         '  <script src="https://cdn.tailwindcss.com"></script>\n',
         '  <link rel="preconnect" href="https://fonts.googleapis.com">\n',
         '  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n',
@@ -190,13 +212,13 @@ def generate_full_dashboard(matches, date_str):
         '      <div class="flex items-center gap-3">\n',
         '        <span class="text-3xl">⚽</span>\n',
         '        <div>\n',
-        '          <h1 class="text-xl font-bold tracking-tight text-white">Football Match Predictions</h1>\n',
+        '          <h1 class="text-xl font-bold tracking-tight text-white">Global Football Predictions</h1>\n',
         f'          <p class="text-xs text-slate-400">Date: {date_str} (UTC) • Total: {len(matches)} Fixtures • API Left: {CREDITS_LEFT}</p>\n',
         '        </div>\n',
         '      </div>\n\n',
         '      <div class="w-full md:w-96">\n',
         '        <div class="relative">\n',
-        '          <input type="text" id="searchInput" placeholder="Search team, league, AFC, Asia..." \n',
+        '          <input type="text" id="searchInput" placeholder="Search team, Chile, Africa, Asia, cup..." \n',
         '                 class="w-full bg-slate-950 border border-slate-700 text-xs sm:text-sm rounded-lg pl-9 pr-4 py-2.5 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-indigo-500 shadow-inner" />\n',
         '          <svg class="w-4 h-4 text-slate-500 absolute left-3 top-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">\n',
         '            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>\n',
@@ -210,8 +232,9 @@ def generate_full_dashboard(matches, date_str):
         f'      <div id="matchSummary" class="text-xs font-semibold text-slate-400">Showing all {len(matches)} fixtures</div>\n',
         '      <div class="flex flex-wrap gap-2">\n',
         f'        <button id="filterAll" class="px-3 py-1.5 text-xs rounded-lg font-medium bg-indigo-600 text-white">All ({len(matches)})</button>\n',
-        f'        <button id="filterAsian" class="px-3 py-1.5 text-xs rounded-lg font-medium bg-slate-800 text-slate-300 hover:bg-slate-700">🌏 Asian / AFC ({asian_count})</button>\n',
-        f'        <button id="filterGlobal" class="px-3 py-1.5 text-xs rounded-lg font-medium bg-slate-800 text-slate-300 hover:bg-slate-700">🌍 Global Cups ({global_count})</button>\n',
+        f'        <button id="filterSA" class="px-3 py-1.5 text-xs rounded-lg font-medium bg-slate-800 text-slate-300 hover:bg-slate-700">🏆 Copa / S. America ({sa_count})</button>\n',
+        f'        <button id="filterAfrica" class="px-3 py-1.5 text-xs rounded-lg font-medium bg-slate-800 text-slate-300 hover:bg-slate-700">🌍 Africa / AFCON ({africa_count})</button>\n',
+        f'        <button id="filterAsian" class="px-3 py-1.5 text-xs rounded-lg font-medium bg-slate-800 text-slate-300 hover:bg-slate-700">🌏 Asia / AFC ({asian_count})</button>\n',
         '        <button id="filterPicks" class="px-3 py-1.5 text-xs rounded-lg font-medium bg-slate-800 text-slate-300 hover:bg-slate-700">⭐ Top Picks</button>\n',
         '      </div>\n',
         '    </div>\n\n',
@@ -271,10 +294,14 @@ def generate_full_dashboard(matches, date_str):
           const favBorder = isHigh ? "border-amber-500/60" : "border-slate-800";
           
           let tagHtml = "";
-          if (m.is_asian) {
+          if (m.is_sa) {
+            tagHtml = `<span class="bg-amber-500/20 text-amber-400 border border-amber-500/30 text-[9px] px-1.5 py-0.5 rounded font-bold uppercase">S. AMERICA / COPA</span>`;
+          } else if (m.is_africa) {
+            tagHtml = `<span class="bg-orange-500/20 text-orange-400 border border-orange-500/30 text-[9px] px-1.5 py-0.5 rounded font-bold uppercase">AFRICA</span>`;
+          } else if (m.is_asian) {
             tagHtml = `<span class="bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 text-[9px] px-1.5 py-0.5 rounded font-bold uppercase">ASIA / AFC</span>`;
           } else if (m.is_global) {
-            tagHtml = `<span class="bg-indigo-500/20 text-indigo-400 border border-indigo-500/30 text-[9px] px-1.5 py-0.5 rounded font-bold uppercase">GLOBAL</span>`;
+            tagHtml = `<span class="bg-indigo-500/20 text-indigo-400 border border-indigo-500/30 text-[9px] px-1.5 py-0.5 rounded font-bold uppercase">CUP / LEAGUE</span>`;
           }
 
           const card = document.createElement("div");
@@ -322,11 +349,12 @@ def generate_full_dashboard(matches, date_str):
     function applyFilterAndSearch() {
       const q = document.getElementById("searchInput").value.toLowerCase().trim();
       const filtered = rawMatches.filter(m => {
-        const text = `${m.home} ${m.away} ${m.league} ${m.match_date}`.toLowerCase();
+        const text = `${m.home} ${m.away} ${m.league} ${m.match_date} ${m.category}`.toLowerCase();
         const matchesQuery = text.includes(q);
         if (!matchesQuery) return false;
+        if (currentFilter === 'sa') return m.is_sa;
+        if (currentFilter === 'africa') return m.is_africa;
         if (currentFilter === 'asian') return m.is_asian;
-        if (currentFilter === 'global') return m.is_global;
         if (currentFilter === 'picks') return (m.probabilities?.home_win_pct >= 55 || m.probabilities?.away_win_pct >= 55);
         return true;
       });
@@ -337,8 +365,9 @@ def generate_full_dashboard(matches, date_str):
 
     const btns = {
       all: document.getElementById("filterAll"),
+      sa: document.getElementById("filterSA"),
+      africa: document.getElementById("filterAfrica"),
       asian: document.getElementById("filterAsian"),
-      global: document.getElementById("filterGlobal"),
       picks: document.getElementById("filterPicks")
     };
 
@@ -371,7 +400,6 @@ def run():
         send_telegram("⚠️ *Notice:* No active fixtures available right now.")
         return
 
-    # Chronological sort
     matches.sort(key=lambda m: (m.get("commence_time") or ""))
 
     os.makedirs("predictions", exist_ok=True)
@@ -399,7 +427,7 @@ def run():
             )
 
     header = (
-        f"⚽ *GLOBAL & ASIAN FOOTBALL PREDICTIONS*\n"
+        f"⚽ *WORLDWIDE FOOTBALL PREDICTIONS*\n"
         f"📅 Date: `{now_str}`\n"
         f"💳 *API Quota Left:* `{CREDITS_LEFT}` remaining\n"
         f"🌍 *Upcoming Matches Found:* `{total}`\n"
@@ -414,7 +442,7 @@ def run():
 
     for idx, m in enumerate(matches[:shown], start=1):
         p = m["probabilities"]
-        badge = "🌏 " if m.get("is_asian") else ("🌍 " if m.get("is_global") else "")
+        badge = "🏆 " if m.get("is_sa") else ("🌍 " if m.get("is_africa") else ("🌏 " if m.get("is_asian") else ""))
         entry = (
             f"*{idx}. {badge}{m['league']}*\n"
             f"🗓️ `{m['match_date']}` | ⏰ `{m['match_time']}`\n"
@@ -430,10 +458,10 @@ def run():
             batch += entry
 
     if batch.strip():
-        batch += f"\n👉 Tap **🌐 Open Web Dashboard** below to filter matches by date & category."
+        batch += f"\n👉 Tap **🌐 Open Web Dashboard** below to filter Copa Chile, Africa, Asia, or search teams."
         send_telegram(batch)
 
-    print(f"Processed {total} matches. Quota remaining: {CREDITS_LEFT}")
+    print(f"Processed {total} matches across South America, Africa, Asia, and Europe.")
 
 if __name__ == "__main__":
     run()
