@@ -385,7 +385,7 @@
   },
   {
     "league": "UEFA Nations League",
-    "is_asian": false,
+    "is_asian": true,
     "is_global": true,
     "home": "Faroe Islands",
     "away": "Slovakia",
@@ -577,8 +577,8 @@
   },
   {
     "league": "Primera Divisi\u00f3n - Argentina",
-    "is_asian": false,
-    "is_global": false,
+    "is_asian": true,
+    "is_global": true,
     "home": "Independiente Rivadavia",
     "away": "Gimnasia La Plata",
     "commence_time": "2026-10-03T00:30:00Z",
@@ -945,8 +945,8 @@
   },
   {
     "league": "Primera Divisi\u00f3n - Argentina",
-    "is_asian": false,
-    "is_global": false,
+    "is_asian": true,
+    "is_global": true,
     "home": "Estudiantes",
     "away": "Gimnasia Mendoza",
     "commence_time": "2026-10-05T22:00:00Z",
@@ -1264,9 +1264,25 @@
     }
   },
   {
-    "league": "Primera Divisi\u00f3n - Argentina",
+    "league": "Championship",
     "is_asian": false,
-    "is_global": false,
+    "is_global": true,
+    "home": "West Ham United",
+    "away": "Queens Park Rangers",
+    "commence_time": "2026-10-09T19:00:00Z",
+    "match_date": "09 Oct 2026",
+    "match_time": "19:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 62.8,
+      "draw_pct": 20.7,
+      "away_win_pct": 16.5
+    }
+  },
+  {
+    "league": "Primera Divisi\u00f3n - Argentina",
+    "is_asian": true,
+    "is_global": true,
     "home": "Gimnasia La Plata",
     "away": "Atl\u00e9tico Tucuman",
     "commence_time": "2026-10-09T21:00:00Z",
@@ -1328,6 +1344,54 @@
     }
   },
   {
+    "league": "Championship",
+    "is_asian": false,
+    "is_global": true,
+    "home": "West Bromwich Albion",
+    "away": "Birmingham City",
+    "commence_time": "2026-10-10T11:30:00Z",
+    "match_date": "10 Oct 2026",
+    "match_time": "11:30 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 42.3,
+      "draw_pct": 26.5,
+      "away_win_pct": 31.2
+    }
+  },
+  {
+    "league": "Championship",
+    "is_asian": false,
+    "is_global": true,
+    "home": "Charlton Athletic",
+    "away": "Bristol City",
+    "commence_time": "2026-10-10T11:30:00Z",
+    "match_date": "10 Oct 2026",
+    "match_time": "11:30 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 30.7,
+      "draw_pct": 28.8,
+      "away_win_pct": 40.5
+    }
+  },
+  {
+    "league": "Championship",
+    "is_asian": false,
+    "is_global": true,
+    "home": "Swansea City",
+    "away": "Norwich City",
+    "commence_time": "2026-10-10T11:30:00Z",
+    "match_date": "10 Oct 2026",
+    "match_time": "11:30 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 38.7,
+      "draw_pct": 25.6,
+      "away_win_pct": 35.7
+    }
+  },
+  {
     "league": "Belgium First Div",
     "is_asian": false,
     "is_global": false,
@@ -1341,6 +1405,118 @@
       "home_win_pct": 28.3,
       "draw_pct": 27.0,
       "away_win_pct": 44.8
+    }
+  },
+  {
+    "league": "Championship",
+    "is_asian": false,
+    "is_global": true,
+    "home": "Blackburn Rovers",
+    "away": "Cardiff City",
+    "commence_time": "2026-10-10T14:00:00Z",
+    "match_date": "10 Oct 2026",
+    "match_time": "14:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 37.2,
+      "draw_pct": 24.9,
+      "away_win_pct": 37.9
+    }
+  },
+  {
+    "league": "Championship",
+    "is_asian": false,
+    "is_global": true,
+    "home": "Bolton Wanderers",
+    "away": "Stoke City",
+    "commence_time": "2026-10-10T14:00:00Z",
+    "match_date": "10 Oct 2026",
+    "match_time": "14:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 37.2,
+      "draw_pct": 26.3,
+      "away_win_pct": 36.5
+    }
+  },
+  {
+    "league": "Championship",
+    "is_asian": false,
+    "is_global": true,
+    "home": "Watford",
+    "away": "Burnley",
+    "commence_time": "2026-10-10T14:00:00Z",
+    "match_date": "10 Oct 2026",
+    "match_time": "14:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 32.2,
+      "draw_pct": 26.4,
+      "away_win_pct": 41.3
+    }
+  },
+  {
+    "league": "Championship",
+    "is_asian": true,
+    "is_global": true,
+    "home": "Derby County",
+    "away": "Wrexham AFC",
+    "commence_time": "2026-10-10T14:00:00Z",
+    "match_date": "10 Oct 2026",
+    "match_time": "14:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 36.5,
+      "draw_pct": 27.1,
+      "away_win_pct": 36.5
+    }
+  },
+  {
+    "league": "Championship",
+    "is_asian": false,
+    "is_global": true,
+    "home": "Sheffield United",
+    "away": "Lincoln City",
+    "commence_time": "2026-10-10T14:00:00Z",
+    "match_date": "10 Oct 2026",
+    "match_time": "14:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 48.4,
+      "draw_pct": 26.5,
+      "away_win_pct": 25.1
+    }
+  },
+  {
+    "league": "Championship",
+    "is_asian": false,
+    "is_global": true,
+    "home": "Middlesbrough",
+    "away": "Wolverhampton Wanderers",
+    "commence_time": "2026-10-10T14:00:00Z",
+    "match_date": "10 Oct 2026",
+    "match_time": "14:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 43.2,
+      "draw_pct": 25.0,
+      "away_win_pct": 31.7
+    }
+  },
+  {
+    "league": "Championship",
+    "is_asian": false,
+    "is_global": true,
+    "home": "Preston North End",
+    "away": "Millwall",
+    "commence_time": "2026-10-10T14:00:00Z",
+    "match_date": "10 Oct 2026",
+    "match_time": "14:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 34.8,
+      "draw_pct": 26.8,
+      "away_win_pct": 38.4
     }
   },
   {
@@ -1373,6 +1549,54 @@
       "home_win_pct": 35.4,
       "draw_pct": 25.3,
       "away_win_pct": 39.3
+    }
+  },
+  {
+    "league": "Swiss Superleague",
+    "is_asian": true,
+    "is_global": true,
+    "home": "FC Lugano",
+    "away": "FC Luzern",
+    "commence_time": "2026-10-10T16:00:00Z",
+    "match_date": "10 Oct 2026",
+    "match_time": "16:00 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 57.9,
+      "draw_pct": 21.2,
+      "away_win_pct": 20.9
+    }
+  },
+  {
+    "league": "Swiss Superleague",
+    "is_asian": true,
+    "is_global": true,
+    "home": "Servette",
+    "away": "FC Sion",
+    "commence_time": "2026-10-10T16:00:00Z",
+    "match_date": "10 Oct 2026",
+    "match_time": "16:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 37.5,
+      "draw_pct": 24.2,
+      "away_win_pct": 38.3
+    }
+  },
+  {
+    "league": "Swiss Superleague",
+    "is_asian": true,
+    "is_global": true,
+    "home": "FC Zurich",
+    "away": "FC Thun",
+    "commence_time": "2026-10-10T16:00:00Z",
+    "match_date": "10 Oct 2026",
+    "match_time": "16:00 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 34.1,
+      "draw_pct": 24.5,
+      "away_win_pct": 41.4
     }
   },
   {
@@ -1584,6 +1808,22 @@
     }
   },
   {
+    "league": "Championship",
+    "is_asian": false,
+    "is_global": true,
+    "home": "Southampton",
+    "away": "Portsmouth",
+    "commence_time": "2026-10-11T11:00:00Z",
+    "match_date": "11 Oct 2026",
+    "match_time": "11:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 61.9,
+      "draw_pct": 21.7,
+      "away_win_pct": 16.4
+    }
+  },
+  {
     "league": "Belgium First Div",
     "is_asian": false,
     "is_global": false,
@@ -1597,6 +1837,22 @@
       "home_win_pct": 31.4,
       "draw_pct": 27.4,
       "away_win_pct": 41.1
+    }
+  },
+  {
+    "league": "Swiss Superleague",
+    "is_asian": true,
+    "is_global": true,
+    "home": "Grasshopper Z\u00fcrich",
+    "away": "BSC Young Boys",
+    "commence_time": "2026-10-11T12:00:00Z",
+    "match_date": "11 Oct 2026",
+    "match_time": "12:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 18.8,
+      "draw_pct": 18.8,
+      "away_win_pct": 62.3
     }
   },
   {
@@ -1693,6 +1949,38 @@
       "home_win_pct": 54.2,
       "draw_pct": 22.7,
       "away_win_pct": 23.0
+    }
+  },
+  {
+    "league": "Swiss Superleague",
+    "is_asian": true,
+    "is_global": true,
+    "home": "FC Vaduz",
+    "away": "FC Basel",
+    "commence_time": "2026-10-11T14:30:00Z",
+    "match_date": "11 Oct 2026",
+    "match_time": "14:30 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 36.9,
+      "draw_pct": 23.0,
+      "away_win_pct": 40.1
+    }
+  },
+  {
+    "league": "Swiss Superleague",
+    "is_asian": true,
+    "is_global": true,
+    "home": "FC St Gallen",
+    "away": "FC Lausanne-Sport",
+    "commence_time": "2026-10-11T14:30:00Z",
+    "match_date": "11 Oct 2026",
+    "match_time": "14:30 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 61.8,
+      "draw_pct": 19.6,
+      "away_win_pct": 18.6
     }
   },
   {
@@ -2049,8 +2337,8 @@
   },
   {
     "league": "Primera Divisi\u00f3n - Argentina",
-    "is_asian": false,
-    "is_global": false,
+    "is_asian": true,
+    "is_global": true,
     "home": "Gimnasia Mendoza",
     "away": "Newells Old Boys",
     "commence_time": "2026-10-12T21:30:00Z",
@@ -2330,9 +2618,9 @@
     "match_time": "19:00 UTC",
     "bookmaker": "SportsBet",
     "probabilities": {
-      "home_win_pct": 28.8,
-      "draw_pct": 25.0,
-      "away_win_pct": 46.3
+      "home_win_pct": 29.5,
+      "draw_pct": 23.6,
+      "away_win_pct": 46.8
     }
   },
   {
@@ -2401,7 +2689,7 @@
   },
   {
     "league": "UEFA Champions League",
-    "is_asian": false,
+    "is_asian": true,
     "is_global": true,
     "home": "\u0160K Slovan Bratislava",
     "away": "VfB Stuttgart",
@@ -3041,8 +3329,8 @@
   },
   {
     "league": "A-League",
-    "is_asian": false,
-    "is_global": false,
+    "is_asian": true,
+    "is_global": true,
     "home": "Sydney FC",
     "away": "Western Sydney Wanderers",
     "commence_time": "2026-10-16T09:00:00Z",
@@ -3073,8 +3361,8 @@
   },
   {
     "league": "A-League",
-    "is_asian": false,
-    "is_global": false,
+    "is_asian": true,
+    "is_global": true,
     "home": "Auckland FC",
     "away": "Melbourne City",
     "commence_time": "2026-10-17T04:00:00Z",
@@ -3089,8 +3377,8 @@
   },
   {
     "league": "A-League",
-    "is_asian": false,
-    "is_global": false,
+    "is_asian": true,
+    "is_global": true,
     "home": "Macarthur FC",
     "away": "Perth Glory",
     "commence_time": "2026-10-17T06:00:00Z",
@@ -3105,8 +3393,8 @@
   },
   {
     "league": "A-League",
-    "is_asian": false,
-    "is_global": false,
+    "is_asian": true,
+    "is_global": true,
     "home": "Central Coast Mariners",
     "away": "Newcastle Jets FC",
     "commence_time": "2026-10-17T08:40:00Z",
@@ -3153,8 +3441,8 @@
   },
   {
     "league": "A-League",
-    "is_asian": false,
-    "is_global": false,
+    "is_asian": true,
+    "is_global": true,
     "home": "Wellington Phoenix FC",
     "away": "Melbourne Victory",
     "commence_time": "2026-10-18T02:00:00Z",
@@ -3217,8 +3505,8 @@
   },
   {
     "league": "A-League",
-    "is_asian": false,
-    "is_global": false,
+    "is_asian": true,
+    "is_global": true,
     "home": "Brisbane Roar",
     "away": "Perth Glory",
     "commence_time": "2026-10-23T09:00:00Z",
@@ -3233,8 +3521,8 @@
   },
   {
     "league": "A-League",
-    "is_asian": false,
-    "is_global": false,
+    "is_asian": true,
+    "is_global": true,
     "home": "Newcastle Jets FC",
     "away": "Macarthur FC",
     "commence_time": "2026-10-24T04:00:00Z",
@@ -3249,8 +3537,8 @@
   },
   {
     "league": "A-League",
-    "is_asian": false,
-    "is_global": false,
+    "is_asian": true,
+    "is_global": true,
     "home": "Western Sydney Wanderers",
     "away": "Auckland FC",
     "commence_time": "2026-10-24T06:00:00Z",
@@ -3265,8 +3553,8 @@
   },
   {
     "league": "A-League",
-    "is_asian": false,
-    "is_global": false,
+    "is_asian": true,
+    "is_global": true,
     "home": "Melbourne Victory",
     "away": "Melbourne City",
     "commence_time": "2026-10-24T08:40:00Z",
@@ -3281,8 +3569,8 @@
   },
   {
     "league": "A-League",
-    "is_asian": false,
-    "is_global": false,
+    "is_asian": true,
+    "is_global": true,
     "home": "Wellington Phoenix FC",
     "away": "Central Coast Mariners",
     "commence_time": "2026-10-25T02:00:00Z",
@@ -3297,8 +3585,8 @@
   },
   {
     "league": "A-League",
-    "is_asian": false,
-    "is_global": false,
+    "is_asian": true,
+    "is_global": true,
     "home": "Sydney FC",
     "away": "Adelaide United",
     "commence_time": "2026-10-25T04:00:00Z",
@@ -3309,6 +3597,134 @@
       "home_win_pct": 48.0,
       "draw_pct": 24.9,
       "away_win_pct": 27.0
+    }
+  },
+  {
+    "league": "EFL Cup",
+    "is_asian": false,
+    "is_global": false,
+    "home": "Bradford City",
+    "away": "Peterborough United",
+    "commence_time": "2026-10-27T19:45:00Z",
+    "match_date": "27 Oct 2026",
+    "match_time": "19:45 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 52.0,
+      "draw_pct": 26.0,
+      "away_win_pct": 22.0
+    }
+  },
+  {
+    "league": "EFL Cup",
+    "is_asian": false,
+    "is_global": false,
+    "home": "Fleetwood Town",
+    "away": "Arsenal",
+    "commence_time": "2026-10-27T20:00:00Z",
+    "match_date": "27 Oct 2026",
+    "match_time": "20:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 3.0,
+      "draw_pct": 8.6,
+      "away_win_pct": 88.4
+    }
+  },
+  {
+    "league": "EFL Cup",
+    "is_asian": false,
+    "is_global": false,
+    "home": "Manchester City",
+    "away": "Brighton and Hove Albion",
+    "commence_time": "2026-10-28T19:30:00Z",
+    "match_date": "28 Oct 2026",
+    "match_time": "19:30 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 59.5,
+      "draw_pct": 22.8,
+      "away_win_pct": 17.8
+    }
+  },
+  {
+    "league": "EFL Cup",
+    "is_asian": false,
+    "is_global": false,
+    "home": "Bournemouth",
+    "away": "Aston Villa",
+    "commence_time": "2026-10-28T19:45:00Z",
+    "match_date": "28 Oct 2026",
+    "match_time": "19:45 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 41.4,
+      "draw_pct": 25.9,
+      "away_win_pct": 32.7
+    }
+  },
+  {
+    "league": "EFL Cup",
+    "is_asian": false,
+    "is_global": false,
+    "home": "Sunderland",
+    "away": "Brentford",
+    "commence_time": "2026-10-28T19:45:00Z",
+    "match_date": "28 Oct 2026",
+    "match_time": "19:45 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 32.4,
+      "draw_pct": 26.8,
+      "away_win_pct": 40.8
+    }
+  },
+  {
+    "league": "EFL Cup",
+    "is_asian": false,
+    "is_global": false,
+    "home": "Fulham",
+    "away": "Crystal Palace",
+    "commence_time": "2026-10-28T19:45:00Z",
+    "match_date": "28 Oct 2026",
+    "match_time": "19:45 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 45.0,
+      "draw_pct": 25.3,
+      "away_win_pct": 29.7
+    }
+  },
+  {
+    "league": "EFL Cup",
+    "is_asian": false,
+    "is_global": false,
+    "home": "Liverpool",
+    "away": "Chelsea",
+    "commence_time": "2026-10-28T20:00:00Z",
+    "match_date": "28 Oct 2026",
+    "match_time": "20:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 37.1,
+      "draw_pct": 25.1,
+      "away_win_pct": 37.8
+    }
+  },
+  {
+    "league": "EFL Cup",
+    "is_asian": false,
+    "is_global": false,
+    "home": "Everton",
+    "away": "Newcastle United",
+    "commence_time": "2026-10-29T19:45:00Z",
+    "match_date": "29 Oct 2026",
+    "match_time": "19:45 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 40.9,
+      "draw_pct": 27.3,
+      "away_win_pct": 31.9
     }
   }
 ]
