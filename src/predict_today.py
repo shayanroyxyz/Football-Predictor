@@ -12,9 +12,11 @@ GITHUB_REPO = "Football-Predictor"
 PAGES_URL = "https://football-predictor-croi-sigma.vercel.app"
 TRIGGER_URL = f"https://github.com/{GITHUB_USERNAME}/{GITHUB_REPO}/actions/workflows/daily.yml"
 
+# Priority keywords: AFC/Asian competitions placed at the very top
 GLOBAL_PRIORITY_KEYWORDS = [
+    "asian cup", "afc", "asia", "asian",
     "champions", "uefa", "europa", "libertadores", "nations", 
-    "world cup", "fifa", "copa sudamericana", "afcon", "asian cup"
+    "world cup", "fifa", "copa sudamericana", "afcon"
 ]
 
 def format_commence_time(iso_str):
@@ -72,12 +74,14 @@ def get_predictions_from_market():
                 return idx
         return 99
 
+    # Sort so AFC / Asian tournaments and major cups come first
     soccer_keys.sort(key=get_sport_priority)
 
     matches = []
-    # Queries up to 10 leagues to grab 100+ global and league matches
-    for sport_key in soccer_keys[:10]:
-        odds_url = f"https://api.the-odds-api.com/v4/sports/{sport_key}/odds/?apiKey={ODDS_API_KEY}&regions=eu&markets=h2h&oddsFormat=decimal"
+    # Queries up to 15 leagues to ensure full Asian and global coverage
+    for sport_key in soccer_keys[:15]:
+        # 'regions=eu,uk,au' captures bookmakers that carry Asian leagues and tournaments
+        odds_url = f"https://api.the-odds-api.com/v4/sports/{sport_key}/odds/?apiKey={ODDS_API_KEY}&regions=eu,uk,au&markets=h2h&oddsFormat=decimal"
         try:
             res = requests.get(odds_url, timeout=15)
             if res.status_code != 200:
@@ -107,10 +111,12 @@ def get_predictions_from_market():
 
                     match_date, match_time = format_commence_time(ev.get("commence_time", ""))
                     league_title = ev.get("sport_title", "Soccer")
-                    is_global = any(w in league_title.lower() for w in GLOBAL_PRIORITY_KEYWORDS)
+                    is_asian = any(w in league_title.lower() or w in sport_key.lower() for w in ["asia", "afc", "asian cup"])
+                    is_global = is_asian or any(w in league_title.lower() for w in GLOBAL_PRIORITY_KEYWORDS)
 
                     matches.append({
                         "league": league_title,
+                        "is_asian": is_asian,
                         "is_global": is_global,
                         "home": home,
                         "away": away,
@@ -130,16 +136,14 @@ def get_predictions_from_market():
     return matches
 
 def generate_full_dashboard(matches, date_str):
-    """Compiles the entire dashboard with date columns and search directly into docs/index.html."""
     os.makedirs("docs", exist_ok=True)
     matches_json_string = json.dumps(matches)
 
-    # Clean HTML template without Python string formatting conflicts
     html_parts = [
         '<!DOCTYPE html>\n<html lang="en">\n<head>\n',
         '  <meta charset="UTF-8" />\n',
         '  <meta name="viewport" content="width=device-width, initial-scale=1.0" />\n',
-        '  <title>Global Football Match Predictions</title>\n',
+        '  <title>Global & Asian Football Predictions</title>\n',
         '  <script src="https://cdn.tailwindcss.com"></script>\n',
         '  <link rel="preconnect" href="https://fonts.googleapis.com">\n',
         '  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n',
@@ -152,13 +156,13 @@ def generate_full_dashboard(matches, date_str):
         '      <div class="flex items-center gap-3">\n',
         '        <span class="text-3xl">⚽</span>\n',
         '        <div>\n',
-        f'          <h1 class="text-xl font-bold tracking-tight text-white">Global Football Predictions</h1>\n',
+        '          <h1 class="text-xl font-bold tracking-tight text-white">Football Match Predictions</h1>\n',
         f'          <p class="text-xs text-slate-400">Date: {date_str} (UTC) • Total: {len(matches)} Fixtures</p>\n',
         '        </div>\n',
         '      </div>\n\n',
         '      <div class="w-full md:w-96">\n',
         '        <div class="relative">\n',
-        '          <input type="text" id="searchInput" placeholder="Search team, country, or league..." \n',
+        '          <input type="text" id="searchInput" placeholder="Search team, AFC, Asian Cup, league..." \n',
         '                 class="w-full bg-slate-950 border border-slate-700 text-xs sm:text-sm rounded-lg pl-9 pr-4 py-2.5 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-indigo-500 shadow-inner" />\n',
         '          <svg class="w-4 h-4 text-slate-500 absolute left-3 top-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">\n',
         '            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>\n',
@@ -170,9 +174,10 @@ def generate_full_dashboard(matches, date_str):
         '  <main class="max-w-6xl mx-auto px-4 mt-6">\n',
         '    <div class="flex flex-wrap items-center justify-between gap-2 mb-6">\n',
         f'      <div id="matchSummary" class="text-xs font-semibold text-slate-400">Showing all {len(matches)} fixtures</div>\n',
-        '      <div class="flex gap-2">\n',
+        '      <div class="flex flex-wrap gap-2">\n',
         f'        <button id="filterAll" class="px-3 py-1.5 text-xs rounded-lg font-medium bg-indigo-600 text-white">All ({len(matches)})</button>\n',
-        '        <button id="filterGlobal" class="px-3 py-1.5 text-xs rounded-lg font-medium bg-slate-800 text-slate-300 hover:bg-slate-700">🌍 Global Only</button>\n',
+        '        <button id="filterAsian" class="px-3 py-1.5 text-xs rounded-lg font-medium bg-slate-800 text-slate-300 hover:bg-slate-700">🌏 Asian / AFC</button>\n',
+        '        <button id="filterGlobal" class="px-3 py-1.5 text-xs rounded-lg font-medium bg-slate-800 text-slate-300 hover:bg-slate-700">🌍 Global Cups</button>\n',
         '        <button id="filterPicks" class="px-3 py-1.5 text-xs rounded-lg font-medium bg-slate-800 text-slate-300 hover:bg-slate-700">⭐ Top Picks</button>\n',
         '      </div>\n',
         '    </div>\n\n',
@@ -230,7 +235,13 @@ def generate_full_dashboard(matches, date_str):
           const p = m.probabilities || { home_win_pct: 33.3, draw_pct: 33.3, away_win_pct: 33.3 };
           const isHigh = (p.home_win_pct >= 55 || p.away_win_pct >= 55);
           const favBorder = isHigh ? "border-amber-500/60" : "border-slate-800";
-          const globalTag = m.is_global ? `<span class="bg-indigo-500/20 text-indigo-400 border border-indigo-500/30 text-[9px] px-1.5 py-0.5 rounded font-bold uppercase">GLOBAL</span>` : "";
+          
+          let tagHtml = "";
+          if (m.is_asian) {
+            tagHtml = `<span class="bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 text-[9px] px-1.5 py-0.5 rounded font-bold uppercase">ASIA / AFC</span>`;
+          } else if (m.is_global) {
+            tagHtml = `<span class="bg-indigo-500/20 text-indigo-400 border border-indigo-500/30 text-[9px] px-1.5 py-0.5 rounded font-bold uppercase">GLOBAL</span>`;
+          }
 
           const card = document.createElement("div");
           card.className = `bg-slate-900 border ${favBorder} rounded-xl p-3.5 flex flex-col justify-between hover:border-slate-700 transition`;
@@ -238,7 +249,7 @@ def generate_full_dashboard(matches, date_str):
             <div>
               <div class="flex items-center justify-between mb-1.5">
                 <span class="text-[11px] font-semibold text-slate-400 truncate uppercase tracking-wider">${m.league}</span>
-                ${globalTag}
+                ${tagHtml}
               </div>
               <div class="text-[11px] text-amber-400 font-medium mb-2.5">⏰ ${m.match_time || "TBD"}</div>
               <div class="text-xs sm:text-sm font-bold text-white mb-3 flex items-center justify-between gap-2">
@@ -280,6 +291,7 @@ def generate_full_dashboard(matches, date_str):
         const text = `${m.home} ${m.away} ${m.league} ${m.match_date}`.toLowerCase();
         const matchesQuery = text.includes(q);
         if (!matchesQuery) return false;
+        if (currentFilter === 'asian') return m.is_asian;
         if (currentFilter === 'global') return m.is_global;
         if (currentFilter === 'picks') return (m.probabilities?.home_win_pct >= 55 || m.probabilities?.away_win_pct >= 55);
         return true;
@@ -291,6 +303,7 @@ def generate_full_dashboard(matches, date_str):
 
     const btns = {
       all: document.getElementById("filterAll"),
+      asian: document.getElementById("filterAsian"),
       global: document.getElementById("filterGlobal"),
       picks: document.getElementById("filterPicks")
     };
@@ -324,10 +337,9 @@ def run():
         send_telegram("⚠️ *Notice:* No active fixtures available right now.")
         return
 
-    # Sort matches chronologically by kickoff time
+    # Chronological sorting by match kickoff time
     matches.sort(key=lambda m: (m.get("commence_time") or ""))
 
-    # Save raw predictions archive & generate live dashboard
     os.makedirs("predictions", exist_ok=True)
     with open(f"predictions/{now_str}.json", "w") as f:
         json.dump(matches, f, indent=2)
@@ -336,7 +348,6 @@ def run():
 
     total = len(matches)
 
-    # Highlight High-Confidence Picks (>= 55%)
     top_picks = []
     for m in matches:
         p = m["probabilities"]
@@ -354,7 +365,7 @@ def run():
             )
 
     header = (
-        f"⚽ *GLOBAL FOOTBALL PREDICTIONS*\n"
+        f"⚽ *GLOBAL & ASIAN FOOTBALL PREDICTIONS*\n"
         f"📅 Date: `{now_str}`\n"
         f"🌍 *Upcoming Matches Found:* `{total}`\n"
         f"━━━━━━━━━━━━━━━━━━━\n\n"
@@ -368,7 +379,7 @@ def run():
 
     for idx, m in enumerate(matches[:shown], start=1):
         p = m["probabilities"]
-        badge = "🌍 " if m["is_global"] else ""
+        badge = "🌏 " if m.get("is_asian") else ("🌍 " if m.get("is_global") else "")
         entry = (
             f"*{idx}. {badge}{m['league']}*\n"
             f"🗓️ `{m['match_date']}` | ⏰ `{m['match_time']}`\n"
@@ -384,7 +395,7 @@ def run():
             batch += entry
 
     if batch.strip():
-        batch += f"\n👉 Tap **🌐 Open Web Dashboard** below to search and view all {total} matches."
+        batch += f"\n👉 Tap **🌐 Open Web Dashboard** below to filter Asian / AFC fixtures or search teams."
         send_telegram(batch)
 
     print(f"Processed {total} matches and generated docs/index.html")
