@@ -1,6 +1,9 @@
 [
   {
     "league": "UEFA Champions League Women",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "AS Roma",
@@ -10,13 +13,16 @@
     "match_time": "16:45 UTC",
     "bookmaker": "SportsBet",
     "probabilities": {
-      "home_win_pct": 5.2,
-      "draw_pct": 7.4,
-      "away_win_pct": 87.3
+      "home_win_pct": 3.5,
+      "draw_pct": 6.4,
+      "away_win_pct": 90.1
     }
   },
   {
     "league": "UEFA Champions League Women",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Paris FC",
@@ -26,13 +32,16 @@
     "match_time": "16:45 UTC",
     "bookmaker": "SportsBet",
     "probabilities": {
-      "home_win_pct": 11.3,
-      "draw_pct": 19.5,
-      "away_win_pct": 69.2
+      "home_win_pct": 14.5,
+      "draw_pct": 21.3,
+      "away_win_pct": 64.2
     }
   },
   {
     "league": "UEFA Champions League Women",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "BK Hacken",
@@ -42,13 +51,16 @@
     "match_time": "16:45 UTC",
     "bookmaker": "SportsBet",
     "probabilities": {
-      "home_win_pct": 39.8,
-      "draw_pct": 25.8,
-      "away_win_pct": 34.4
+      "home_win_pct": 36.5,
+      "draw_pct": 29.2,
+      "away_win_pct": 34.3
     }
   },
   {
     "league": "UEFA Champions League Women",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Benfica",
@@ -58,13 +70,16 @@
     "match_time": "19:00 UTC",
     "bookmaker": "SportsBet",
     "probabilities": {
-      "home_win_pct": 10.0,
-      "draw_pct": 16.1,
-      "away_win_pct": 73.9
+      "home_win_pct": 9.1,
+      "draw_pct": 15.5,
+      "away_win_pct": 75.5
     }
   },
   {
     "league": "UEFA Champions League Women",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Lyon",
@@ -74,13 +89,35 @@
     "match_time": "19:00 UTC",
     "bookmaker": "SportsBet",
     "probabilities": {
-      "home_win_pct": 66.2,
-      "draw_pct": 19.1,
-      "away_win_pct": 14.7
+      "home_win_pct": 64.9,
+      "draw_pct": 19.9,
+      "away_win_pct": 15.2
+    }
+  },
+  {
+    "league": "MLS",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": true,
+    "home": "New York Red Bulls",
+    "away": "St. Louis City SC",
+    "commence_time": "2026-09-30T23:30:00Z",
+    "match_date": "30 Sep 2026",
+    "match_time": "23:30 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 25.1,
+      "draw_pct": 23.3,
+      "away_win_pct": 51.6
     }
   },
   {
     "league": "UEFA Nations League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Azerbaijan",
@@ -90,13 +127,16 @@
     "match_time": "16:00 UTC",
     "bookmaker": "Unibet",
     "probabilities": {
-      "home_win_pct": 81.0,
-      "draw_pct": 13.4,
-      "away_win_pct": 5.5
+      "home_win_pct": 83.6,
+      "draw_pct": 11.7,
+      "away_win_pct": 4.7
     }
   },
   {
     "league": "UEFA Champions League Women",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Austria Wien",
@@ -113,6 +153,9 @@
   },
   {
     "league": "UEFA Champions League Women",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "HB K\u00f8ge",
@@ -129,6 +172,9 @@
   },
   {
     "league": "UEFA Nations League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Republic of Ireland",
@@ -145,6 +191,9 @@
   },
   {
     "league": "UEFA Nations League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Denmark",
@@ -161,6 +210,9 @@
   },
   {
     "league": "UEFA Nations League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Germany",
@@ -177,6 +229,9 @@
   },
   {
     "league": "UEFA Nations League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Malta",
@@ -186,13 +241,16 @@
     "match_time": "18:45 UTC",
     "bookmaker": "Unibet",
     "probabilities": {
-      "home_win_pct": 73.5,
-      "draw_pct": 18.7,
-      "away_win_pct": 7.8
+      "home_win_pct": 75.7,
+      "draw_pct": 17.1,
+      "away_win_pct": 7.2
     }
   },
   {
     "league": "UEFA Nations League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Greece",
@@ -209,6 +267,9 @@
   },
   {
     "league": "UEFA Nations League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Israel",
@@ -225,6 +286,9 @@
   },
   {
     "league": "UEFA Nations League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Wales",
@@ -234,13 +298,16 @@
     "match_time": "18:45 UTC",
     "bookmaker": "SportsBet",
     "probabilities": {
-      "home_win_pct": 15.5,
-      "draw_pct": 21.2,
-      "away_win_pct": 63.3
+      "home_win_pct": 15.6,
+      "draw_pct": 20.3,
+      "away_win_pct": 64.1
     }
   },
   {
     "league": "UEFA Champions League Women",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Paris Saint Germain",
@@ -250,13 +317,16 @@
     "match_time": "19:00 UTC",
     "bookmaker": "SportsBet",
     "probabilities": {
-      "home_win_pct": 79.0,
-      "draw_pct": 13.6,
-      "away_win_pct": 7.4
+      "home_win_pct": 79.7,
+      "draw_pct": 13.0,
+      "away_win_pct": 7.3
     }
   },
   {
     "league": "UEFA Champions League Women",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Manchester City",
@@ -266,15 +336,18 @@
     "match_time": "19:00 UTC",
     "bookmaker": "SportsBet",
     "probabilities": {
-      "home_win_pct": 58.8,
-      "draw_pct": 22.0,
-      "away_win_pct": 19.2
+      "home_win_pct": 57.2,
+      "draw_pct": 22.7,
+      "away_win_pct": 20.1
     }
   },
   {
     "league": "Brazil S\u00e9rie B",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
     "is_asian": false,
-    "is_global": false,
+    "is_global": true,
     "home": "Athletic Club (MG)",
     "away": "Sport Recife",
     "commence_time": "2026-10-01T23:30:00Z",
@@ -289,8 +362,11 @@
   },
   {
     "league": "Brazil S\u00e9rie B",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
     "is_asian": false,
-    "is_global": false,
+    "is_global": true,
     "home": "Gr\u00eamio Novorizontino",
     "away": "Goi\u00e1s",
     "commence_time": "2026-10-02T00:00:00Z",
@@ -304,7 +380,29 @@
     }
   },
   {
+    "league": "MLS",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": true,
+    "home": "Seattle Sounders FC",
+    "away": "Sporting Kansas City",
+    "commence_time": "2026-10-02T01:30:00Z",
+    "match_date": "02 Oct 2026",
+    "match_time": "01:30 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 63.9,
+      "draw_pct": 20.3,
+      "away_win_pct": 15.9
+    }
+  },
+  {
     "league": "UEFA Nations League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Kazakhstan",
@@ -314,13 +412,16 @@
     "match_time": "14:00 UTC",
     "bookmaker": "Unibet",
     "probabilities": {
-      "home_win_pct": 56.4,
-      "draw_pct": 25.1,
-      "away_win_pct": 18.5
+      "home_win_pct": 56.3,
+      "draw_pct": 25.5,
+      "away_win_pct": 18.2
     }
   },
   {
     "league": "UEFA Nations League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Cyprus",
@@ -330,13 +431,16 @@
     "match_time": "16:00 UTC",
     "bookmaker": "Unibet",
     "probabilities": {
-      "home_win_pct": 40.6,
-      "draw_pct": 29.0,
-      "away_win_pct": 30.4
+      "home_win_pct": 41.2,
+      "draw_pct": 28.9,
+      "away_win_pct": 29.8
     }
   },
   {
     "league": "UEFA Nations League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Latvia",
@@ -353,6 +457,9 @@
   },
   {
     "league": "UEFA Nations League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Belgium",
@@ -369,6 +476,9 @@
   },
   {
     "league": "UEFA Nations League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Bosnia & Herzegovina",
@@ -378,13 +488,16 @@
     "match_time": "18:45 UTC",
     "bookmaker": "Unibet",
     "probabilities": {
-      "home_win_pct": 27.9,
-      "draw_pct": 27.1,
-      "away_win_pct": 45.0
+      "home_win_pct": 30.1,
+      "draw_pct": 27.5,
+      "away_win_pct": 42.4
     }
   },
   {
     "league": "UEFA Nations League",
+    "category": "Asia / AFC",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": true,
     "is_global": true,
     "home": "Faroe Islands",
@@ -394,13 +507,16 @@
     "match_time": "18:45 UTC",
     "bookmaker": "Unibet",
     "probabilities": {
-      "home_win_pct": 14.7,
-      "draw_pct": 25.5,
-      "away_win_pct": 59.7
+      "home_win_pct": 14.0,
+      "draw_pct": 25.3,
+      "away_win_pct": 60.7
     }
   },
   {
     "league": "UEFA Nations League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "France",
@@ -410,13 +526,16 @@
     "match_time": "18:45 UTC",
     "bookmaker": "SportsBet",
     "probabilities": {
-      "home_win_pct": 68.2,
-      "draw_pct": 18.0,
-      "away_win_pct": 13.8
+      "home_win_pct": 68.0,
+      "draw_pct": 18.6,
+      "away_win_pct": 13.3
     }
   },
   {
     "league": "UEFA Nations League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Hungary",
@@ -433,6 +552,9 @@
   },
   {
     "league": "UEFA Nations League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Ukraine",
@@ -449,6 +571,9 @@
   },
   {
     "league": "UEFA Nations League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Poland",
@@ -458,15 +583,18 @@
     "match_time": "18:45 UTC",
     "bookmaker": "Unibet",
     "probabilities": {
-      "home_win_pct": 60.6,
-      "draw_pct": 22.8,
-      "away_win_pct": 16.7
+      "home_win_pct": 62.4,
+      "draw_pct": 22.0,
+      "away_win_pct": 15.6
     }
   },
   {
     "league": "Primera Divisi\u00f3n - Argentina",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
     "is_asian": false,
-    "is_global": false,
+    "is_global": true,
     "home": "Independiente",
     "away": "Instituto de C\u00f3rdoba",
     "commence_time": "2026-10-02T22:15:00Z",
@@ -481,8 +609,11 @@
   },
   {
     "league": "Brazil S\u00e9rie B",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
     "is_asian": false,
-    "is_global": false,
+    "is_global": true,
     "home": "S\u00e3o Bernardo",
     "away": "Clube de Regatas Brasil",
     "commence_time": "2026-10-02T22:30:00Z",
@@ -496,25 +627,12 @@
     }
   },
   {
-    "league": "Brazil S\u00e9rie A",
-    "is_asian": false,
-    "is_global": false,
-    "home": "Sao Paulo",
-    "away": "Santos",
-    "commence_time": "2026-10-02T23:00:00Z",
-    "match_date": "02 Oct 2026",
-    "match_time": "23:00 UTC",
-    "bookmaker": "SportsBet",
-    "probabilities": {
-      "home_win_pct": 46.4,
-      "draw_pct": 27.2,
-      "away_win_pct": 26.4
-    }
-  },
-  {
     "league": "Primera Divisi\u00f3n - Chile",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
     "is_asian": false,
-    "is_global": false,
+    "is_global": true,
     "home": "Universidad de Concepci\u00f3n",
     "away": "Huachipato",
     "commence_time": "2026-10-02T23:00:00Z",
@@ -528,9 +646,31 @@
     }
   },
   {
-    "league": "Brazil S\u00e9rie B",
+    "league": "Brazil S\u00e9rie A",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
     "is_asian": false,
-    "is_global": false,
+    "is_global": true,
+    "home": "Sao Paulo",
+    "away": "Santos",
+    "commence_time": "2026-10-02T23:00:00Z",
+    "match_date": "02 Oct 2026",
+    "match_time": "23:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 46.1,
+      "draw_pct": 27.0,
+      "away_win_pct": 27.0
+    }
+  },
+  {
+    "league": "Brazil S\u00e9rie B",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": true,
     "home": "Londrina",
     "away": "Criciuma",
     "commence_time": "2026-10-02T23:30:00Z",
@@ -545,8 +685,11 @@
   },
   {
     "league": "Brazil S\u00e9rie B",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
     "is_asian": false,
-    "is_global": false,
+    "is_global": true,
     "home": "Juventude",
     "away": "Operario PR",
     "commence_time": "2026-10-02T23:45:00Z",
@@ -554,15 +697,18 @@
     "match_time": "23:45 UTC",
     "bookmaker": "Unibet",
     "probabilities": {
-      "home_win_pct": 53.1,
-      "draw_pct": 27.5,
+      "home_win_pct": 53.4,
+      "draw_pct": 27.1,
       "away_win_pct": 19.5
     }
   },
   {
     "league": "Primera Divisi\u00f3n - Argentina",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
     "is_asian": false,
-    "is_global": false,
+    "is_global": true,
     "home": "Boca Juniors",
     "away": "Union Santa Fe",
     "commence_time": "2026-10-03T00:30:00Z",
@@ -577,6 +723,9 @@
   },
   {
     "league": "Primera Divisi\u00f3n - Argentina",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
     "is_asian": true,
     "is_global": true,
     "home": "Independiente Rivadavia",
@@ -593,8 +742,11 @@
   },
   {
     "league": "Brazil S\u00e9rie B",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
     "is_asian": false,
-    "is_global": false,
+    "is_global": true,
     "home": "Fortaleza",
     "away": "Nautico PE",
     "commence_time": "2026-10-03T00:35:00Z",
@@ -608,7 +760,29 @@
     }
   },
   {
+    "league": "League 2",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Chesterfield FC",
+    "away": "Tranmere Rovers",
+    "commence_time": "2026-10-03T11:30:00Z",
+    "match_date": "03 Oct 2026",
+    "match_time": "11:30 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 56.0,
+      "draw_pct": 23.6,
+      "away_win_pct": 20.4
+    }
+  },
+  {
     "league": "UEFA Nations League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Finland",
@@ -618,15 +792,18 @@
     "match_time": "13:00 UTC",
     "bookmaker": "Unibet",
     "probabilities": {
-      "home_win_pct": 44.5,
-      "draw_pct": 28.8,
-      "away_win_pct": 26.7
+      "home_win_pct": 43.0,
+      "draw_pct": 29.2,
+      "away_win_pct": 27.9
     }
   },
   {
     "league": "Brazil S\u00e9rie B",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
     "is_asian": false,
-    "is_global": false,
+    "is_global": true,
     "home": "Avai",
     "away": "Cear\u00e1",
     "commence_time": "2026-10-03T14:00:00Z",
@@ -640,7 +817,390 @@
     }
   },
   {
+    "league": "League 1",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Barnsley",
+    "away": "Milton Keynes Dons",
+    "commence_time": "2026-10-03T14:00:00Z",
+    "match_date": "03 Oct 2026",
+    "match_time": "14:00 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 39.4,
+      "draw_pct": 26.4,
+      "away_win_pct": 34.1
+    }
+  },
+  {
+    "league": "League 1",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Blackpool",
+    "away": "Leicester City",
+    "commence_time": "2026-10-03T14:00:00Z",
+    "match_date": "03 Oct 2026",
+    "match_time": "14:00 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 30.2,
+      "draw_pct": 25.6,
+      "away_win_pct": 44.2
+    }
+  },
+  {
+    "league": "League 1",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Reading",
+    "away": "Bradford City",
+    "commence_time": "2026-10-03T14:00:00Z",
+    "match_date": "03 Oct 2026",
+    "match_time": "14:00 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 41.0,
+      "draw_pct": 28.8,
+      "away_win_pct": 30.2
+    }
+  },
+  {
+    "league": "League 1",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Bromley FC",
+    "away": "Wycombe Wanderers",
+    "commence_time": "2026-10-03T14:00:00Z",
+    "match_date": "03 Oct 2026",
+    "match_time": "14:00 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 30.2,
+      "draw_pct": 27.2,
+      "away_win_pct": 42.6
+    }
+  },
+  {
+    "league": "League 1",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Burton Albion",
+    "away": "Huddersfield Town",
+    "commence_time": "2026-10-03T14:00:00Z",
+    "match_date": "03 Oct 2026",
+    "match_time": "14:00 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 24.4,
+      "draw_pct": 25.7,
+      "away_win_pct": 49.9
+    }
+  },
+  {
+    "league": "League 1",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Luton",
+    "away": "Doncaster Rovers",
+    "commence_time": "2026-10-03T14:00:00Z",
+    "match_date": "03 Oct 2026",
+    "match_time": "14:00 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 53.0,
+      "draw_pct": 24.1,
+      "away_win_pct": 22.9
+    }
+  },
+  {
+    "league": "League 1",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Leyton Orient",
+    "away": "Plymouth Argyle",
+    "commence_time": "2026-10-03T14:00:00Z",
+    "match_date": "03 Oct 2026",
+    "match_time": "14:00 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 27.1,
+      "draw_pct": 26.0,
+      "away_win_pct": 46.8
+    }
+  },
+  {
+    "league": "League 1",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Wigan Athletic",
+    "away": "Mansfield Town",
+    "commence_time": "2026-10-03T14:00:00Z",
+    "match_date": "03 Oct 2026",
+    "match_time": "14:00 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 40.4,
+      "draw_pct": 27.1,
+      "away_win_pct": 32.5
+    }
+  },
+  {
+    "league": "League 1",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Peterborough United",
+    "away": "Notts County",
+    "commence_time": "2026-10-03T14:00:00Z",
+    "match_date": "03 Oct 2026",
+    "match_time": "14:00 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 42.6,
+      "draw_pct": 26.7,
+      "away_win_pct": 30.7
+    }
+  },
+  {
+    "league": "League 1",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Wimbledon",
+    "away": "Stevenage",
+    "commence_time": "2026-10-03T14:00:00Z",
+    "match_date": "03 Oct 2026",
+    "match_time": "14:00 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 32.7,
+      "draw_pct": 29.4,
+      "away_win_pct": 37.9
+    }
+  },
+  {
+    "league": "League 2",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Accrington Stanley",
+    "away": "Cheltenham Town",
+    "commence_time": "2026-10-03T14:00:00Z",
+    "match_date": "03 Oct 2026",
+    "match_time": "14:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 40.7,
+      "draw_pct": 26.6,
+      "away_win_pct": 32.7
+    }
+  },
+  {
+    "league": "League 2",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Crewe Alexandra",
+    "away": "Bristol Rovers",
+    "commence_time": "2026-10-03T14:00:00Z",
+    "match_date": "03 Oct 2026",
+    "match_time": "14:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 32.0,
+      "draw_pct": 26.5,
+      "away_win_pct": 41.5
+    }
+  },
+  {
+    "league": "League 2",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Colchester United",
+    "away": "Port Vale",
+    "commence_time": "2026-10-03T14:00:00Z",
+    "match_date": "03 Oct 2026",
+    "match_time": "14:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 36.4,
+      "draw_pct": 27.2,
+      "away_win_pct": 36.4
+    }
+  },
+  {
+    "league": "League 2",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Walsall",
+    "away": "Crawley Town",
+    "commence_time": "2026-10-03T14:00:00Z",
+    "match_date": "03 Oct 2026",
+    "match_time": "14:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 58.2,
+      "draw_pct": 22.3,
+      "away_win_pct": 19.5
+    }
+  },
+  {
+    "league": "League 2",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Exeter City",
+    "away": "Rotherham United",
+    "commence_time": "2026-10-03T14:00:00Z",
+    "match_date": "03 Oct 2026",
+    "match_time": "14:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 37.4,
+      "draw_pct": 27.4,
+      "away_win_pct": 35.2
+    }
+  },
+  {
+    "league": "League 2",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Salford City",
+    "away": "Fleetwood Town",
+    "commence_time": "2026-10-03T14:00:00Z",
+    "match_date": "03 Oct 2026",
+    "match_time": "14:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 56.2,
+      "draw_pct": 24.2,
+      "away_win_pct": 19.6
+    }
+  },
+  {
+    "league": "League 2",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Gillingham",
+    "away": "Newport County",
+    "commence_time": "2026-10-03T14:00:00Z",
+    "match_date": "03 Oct 2026",
+    "match_time": "14:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 45.8,
+      "draw_pct": 27.3,
+      "away_win_pct": 26.9
+    }
+  },
+  {
+    "league": "League 2",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Grimsby Town",
+    "away": "Shrewsbury Town",
+    "commence_time": "2026-10-03T14:00:00Z",
+    "match_date": "03 Oct 2026",
+    "match_time": "14:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 55.2,
+      "draw_pct": 24.3,
+      "away_win_pct": 20.5
+    }
+  },
+  {
+    "league": "League 2",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Northampton Town",
+    "away": "Oldham Athletic",
+    "commence_time": "2026-10-03T14:00:00Z",
+    "match_date": "03 Oct 2026",
+    "match_time": "14:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 35.8,
+      "draw_pct": 27.7,
+      "away_win_pct": 36.5
+    }
+  },
+  {
+    "league": "League 2",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Rochdale",
+    "away": "Swindon Town",
+    "commence_time": "2026-10-03T14:00:00Z",
+    "match_date": "03 Oct 2026",
+    "match_time": "14:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 39.7,
+      "draw_pct": 26.5,
+      "away_win_pct": 33.8
+    }
+  },
+  {
     "league": "UEFA Nations League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Belarus",
@@ -657,6 +1217,9 @@
   },
   {
     "league": "UEFA Nations League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Iceland",
@@ -666,13 +1229,16 @@
     "match_time": "16:00 UTC",
     "bookmaker": "Unibet",
     "probabilities": {
-      "home_win_pct": 59.7,
-      "draw_pct": 24.5,
-      "away_win_pct": 15.7
+      "home_win_pct": 66.0,
+      "draw_pct": 21.4,
+      "away_win_pct": 12.6
     }
   },
   {
     "league": "UEFA Nations League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Croatia",
@@ -682,13 +1248,16 @@
     "match_time": "16:00 UTC",
     "bookmaker": "SportsBet",
     "probabilities": {
-      "home_win_pct": 26.0,
-      "draw_pct": 24.7,
-      "away_win_pct": 49.3
+      "home_win_pct": 24.7,
+      "draw_pct": 25.4,
+      "away_win_pct": 49.9
     }
   },
   {
     "league": "UEFA Nations League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Estonia",
@@ -698,15 +1267,18 @@
     "match_time": "16:00 UTC",
     "bookmaker": "Unibet",
     "probabilities": {
-      "home_win_pct": 36.9,
-      "draw_pct": 28.9,
-      "away_win_pct": 34.2
+      "home_win_pct": 35.1,
+      "draw_pct": 29.2,
+      "away_win_pct": 35.8
     }
   },
   {
     "league": "Primera Divisi\u00f3n - Argentina",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
     "is_asian": false,
-    "is_global": false,
+    "is_global": true,
     "home": "Defensa y Justicia",
     "away": "San Lorenzo",
     "commence_time": "2026-10-03T17:45:00Z",
@@ -714,13 +1286,16 @@
     "match_time": "17:45 UTC",
     "bookmaker": "SportsBet",
     "probabilities": {
-      "home_win_pct": 42.3,
-      "draw_pct": 31.0,
-      "away_win_pct": 26.6
+      "home_win_pct": 45.0,
+      "draw_pct": 31.1,
+      "away_win_pct": 23.9
     }
   },
   {
     "league": "UEFA Nations League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Spain",
@@ -737,6 +1312,9 @@
   },
   {
     "league": "UEFA Nations League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "North Macedonia",
@@ -747,12 +1325,15 @@
     "bookmaker": "Unibet",
     "probabilities": {
       "home_win_pct": 20.4,
-      "draw_pct": 26.4,
-      "away_win_pct": 53.2
+      "draw_pct": 26.5,
+      "away_win_pct": 53.1
     }
   },
   {
     "league": "UEFA Nations League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Switzerland",
@@ -762,15 +1343,18 @@
     "match_time": "18:45 UTC",
     "bookmaker": "Unibet",
     "probabilities": {
-      "home_win_pct": 66.8,
-      "draw_pct": 20.8,
-      "away_win_pct": 12.5
+      "home_win_pct": 70.6,
+      "draw_pct": 19.6,
+      "away_win_pct": 9.9
     }
   },
   {
     "league": "Brazil S\u00e9rie B",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
     "is_asian": false,
-    "is_global": false,
+    "is_global": true,
     "home": "Atletico Goianiense",
     "away": "Am\u00e9rica Mineiro",
     "commence_time": "2026-10-03T19:00:00Z",
@@ -785,8 +1369,11 @@
   },
   {
     "league": "Primera Divisi\u00f3n - Argentina",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
     "is_asian": false,
-    "is_global": false,
+    "is_global": true,
     "home": "Atl\u00e9tico Tucuman",
     "away": "Barracas Central",
     "commence_time": "2026-10-03T20:00:00Z",
@@ -801,8 +1388,11 @@
   },
   {
     "league": "Primera Divisi\u00f3n - Argentina",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
     "is_asian": false,
-    "is_global": false,
+    "is_global": true,
     "home": "Newells Old Boys",
     "away": "Lanus",
     "commence_time": "2026-10-03T20:00:00Z",
@@ -817,8 +1407,11 @@
   },
   {
     "league": "Brazil S\u00e9rie B",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
     "is_asian": false,
-    "is_global": false,
+    "is_global": true,
     "home": "Cuiab\u00e1",
     "away": "Ponte Preta",
     "commence_time": "2026-10-03T20:00:00Z",
@@ -826,15 +1419,18 @@
     "match_time": "20:00 UTC",
     "bookmaker": "Unibet",
     "probabilities": {
-      "home_win_pct": 80.4,
-      "draw_pct": 13.8,
-      "away_win_pct": 5.8
+      "home_win_pct": 80.2,
+      "draw_pct": 13.9,
+      "away_win_pct": 5.9
     }
   },
   {
     "league": "Brazil S\u00e9rie A",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
     "is_asian": false,
-    "is_global": false,
+    "is_global": true,
     "home": "Atletico Mineiro",
     "away": "Bragantino-SP",
     "commence_time": "2026-10-03T21:30:00Z",
@@ -849,8 +1445,11 @@
   },
   {
     "league": "Brazil S\u00e9rie B",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
     "is_asian": false,
-    "is_global": false,
+    "is_global": true,
     "home": "Botafogo-SP",
     "away": "Vila Nova",
     "commence_time": "2026-10-03T21:30:00Z",
@@ -865,8 +1464,11 @@
   },
   {
     "league": "Primera Divisi\u00f3n - Argentina",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
     "is_asian": false,
-    "is_global": false,
+    "is_global": true,
     "home": "Sarmiento de Junin",
     "away": "River Plate",
     "commence_time": "2026-10-04T16:45:00Z",
@@ -881,8 +1483,11 @@
   },
   {
     "league": "Primera Divisi\u00f3n - Argentina",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
     "is_asian": false,
-    "is_global": false,
+    "is_global": true,
     "home": "Atl\u00e9tico Hurac\u00e1n",
     "away": "Aldosivi Mar del Plata",
     "commence_time": "2026-10-04T17:45:00Z",
@@ -897,6 +1502,9 @@
   },
   {
     "league": "UEFA Nations League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Wales",
@@ -906,13 +1514,16 @@
     "match_time": "18:45 UTC",
     "bookmaker": "SportsBet",
     "probabilities": {
-      "home_win_pct": 22.3,
-      "draw_pct": 25.3,
-      "away_win_pct": 52.4
+      "home_win_pct": 22.8,
+      "draw_pct": 24.6,
+      "away_win_pct": 52.6
     }
   },
   {
     "league": "UEFA Nations League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Greece",
@@ -922,13 +1533,16 @@
     "match_time": "18:45 UTC",
     "bookmaker": "SportsBet",
     "probabilities": {
-      "home_win_pct": 27.1,
-      "draw_pct": 24.6,
-      "away_win_pct": 48.2
+      "home_win_pct": 28.3,
+      "draw_pct": 27.1,
+      "away_win_pct": 44.5
     }
   },
   {
     "league": "UEFA Nations League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Republic of Ireland",
@@ -945,6 +1559,9 @@
   },
   {
     "league": "UEFA Nations League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Netherlands",
@@ -961,6 +1578,9 @@
   },
   {
     "league": "UEFA Nations League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Portugal",
@@ -970,15 +1590,18 @@
     "match_time": "18:45 UTC",
     "bookmaker": "SportsBet",
     "probabilities": {
-      "home_win_pct": 52.0,
-      "draw_pct": 21.3,
-      "away_win_pct": 26.7
+      "home_win_pct": 52.4,
+      "draw_pct": 21.7,
+      "away_win_pct": 25.9
     }
   },
   {
     "league": "Primera Divisi\u00f3n - Argentina",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
     "is_asian": false,
-    "is_global": false,
+    "is_global": true,
     "home": "Talleres",
     "away": "Belgrano de Cordoba",
     "commence_time": "2026-10-04T20:00:00Z",
@@ -993,8 +1616,11 @@
   },
   {
     "league": "Primera Divisi\u00f3n - Argentina",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
     "is_asian": false,
-    "is_global": false,
+    "is_global": true,
     "home": "Argentinos Juniors",
     "away": "CA Tigre BA",
     "commence_time": "2026-10-04T22:15:00Z",
@@ -1009,8 +1635,11 @@
   },
   {
     "league": "Primera Divisi\u00f3n - Argentina",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
     "is_asian": false,
-    "is_global": false,
+    "is_global": true,
     "home": "Estudiantes de R\u00edo Cuarto",
     "away": "Racing Club",
     "commence_time": "2026-10-05T00:30:00Z",
@@ -1018,15 +1647,18 @@
     "match_time": "00:30 UTC",
     "bookmaker": "SportsBet",
     "probabilities": {
-      "home_win_pct": 24.0,
-      "draw_pct": 29.8,
-      "away_win_pct": 46.2
+      "home_win_pct": 23.4,
+      "draw_pct": 29.7,
+      "away_win_pct": 47.0
     }
   },
   {
     "league": "Primera Divisi\u00f3n - Argentina",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
     "is_asian": false,
-    "is_global": false,
+    "is_global": true,
     "home": "Deportivo Riestra",
     "away": "Central C\u00f3rdoba",
     "commence_time": "2026-10-05T19:45:00Z",
@@ -1041,6 +1673,9 @@
   },
   {
     "league": "Primera Divisi\u00f3n - Argentina",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
     "is_asian": true,
     "is_global": true,
     "home": "Estudiantes",
@@ -1057,8 +1692,11 @@
   },
   {
     "league": "Primera Divisi\u00f3n - Argentina",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
     "is_asian": false,
-    "is_global": false,
+    "is_global": true,
     "home": "Velez Sarsfield BA",
     "away": "Platense",
     "commence_time": "2026-10-05T22:00:00Z",
@@ -1073,8 +1711,11 @@
   },
   {
     "league": "Primera Divisi\u00f3n - Argentina",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
     "is_asian": false,
-    "is_global": false,
+    "is_global": true,
     "home": "Banfield",
     "away": "Rosario Central",
     "commence_time": "2026-10-06T00:15:00Z",
@@ -1089,8 +1730,11 @@
   },
   {
     "league": "Brazil S\u00e9rie B",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
     "is_asian": false,
-    "is_global": false,
+    "is_global": true,
     "home": "Sport Recife",
     "away": "S\u00e3o Bernardo",
     "commence_time": "2026-10-06T22:30:00Z",
@@ -1105,8 +1749,11 @@
   },
   {
     "league": "Brazil S\u00e9rie B",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
     "is_asian": false,
-    "is_global": false,
+    "is_global": true,
     "home": "Goi\u00e1s",
     "away": "Athletic Club (MG)",
     "commence_time": "2026-10-06T23:30:00Z",
@@ -1120,9 +1767,31 @@
     }
   },
   {
-    "league": "Brazil S\u00e9rie B",
+    "league": "MLS",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
-    "is_global": false,
+    "is_global": true,
+    "home": "Chicago Fire",
+    "away": "Vancouver Whitecaps FC",
+    "commence_time": "2026-10-07T00:30:00Z",
+    "match_date": "07 Oct 2026",
+    "match_time": "00:30 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 33.2,
+      "draw_pct": 23.7,
+      "away_win_pct": 43.1
+    }
+  },
+  {
+    "league": "Brazil S\u00e9rie B",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": true,
     "home": "Ponte Preta",
     "away": "Juventude",
     "commence_time": "2026-10-07T00:35:00Z",
@@ -1136,9 +1805,31 @@
     }
   },
   {
-    "league": "Primera Divisi\u00f3n - Argentina",
+    "league": "Veikkausliiga - Finland",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": false,
+    "home": "IF Gnistan",
+    "away": "FC Inter Turku",
+    "commence_time": "2026-10-07T16:00:00Z",
+    "match_date": "07 Oct 2026",
+    "match_time": "16:00 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 22.5,
+      "draw_pct": 25.3,
+      "away_win_pct": 52.2
+    }
+  },
+  {
+    "league": "Primera Divisi\u00f3n - Argentina",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": true,
     "home": "Sarmiento de Junin",
     "away": "River Plate",
     "commence_time": "2026-10-07T22:30:00Z",
@@ -1153,8 +1844,11 @@
   },
   {
     "league": "Brazil S\u00e9rie A",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
     "is_asian": false,
-    "is_global": false,
+    "is_global": true,
     "home": "Bragantino-SP",
     "away": "Mirassol",
     "commence_time": "2026-10-07T22:30:00Z",
@@ -1169,8 +1863,11 @@
   },
   {
     "league": "Brazil S\u00e9rie A",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
     "is_asian": false,
-    "is_global": false,
+    "is_global": true,
     "home": "Internacional",
     "away": "Corinthians",
     "commence_time": "2026-10-07T22:30:00Z",
@@ -1185,8 +1882,11 @@
   },
   {
     "league": "Brazil S\u00e9rie A",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
     "is_asian": false,
-    "is_global": false,
+    "is_global": true,
     "home": "Remo",
     "away": "Gr\u00eamio",
     "commence_time": "2026-10-07T22:30:00Z",
@@ -1201,8 +1901,11 @@
   },
   {
     "league": "Brazil S\u00e9rie B",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
     "is_asian": false,
-    "is_global": false,
+    "is_global": true,
     "home": "Avai",
     "away": "Londrina",
     "commence_time": "2026-10-07T22:30:00Z",
@@ -1217,8 +1920,11 @@
   },
   {
     "league": "Brazil S\u00e9rie B",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
     "is_asian": false,
-    "is_global": false,
+    "is_global": true,
     "home": "Operario PR",
     "away": "Botafogo-SP",
     "commence_time": "2026-10-07T22:30:00Z",
@@ -1233,8 +1939,11 @@
   },
   {
     "league": "Brazil S\u00e9rie A",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
     "is_asian": false,
-    "is_global": false,
+    "is_global": true,
     "home": "Vitoria",
     "away": "Chapecoense",
     "commence_time": "2026-10-07T23:00:00Z",
@@ -1249,8 +1958,11 @@
   },
   {
     "league": "Brazil S\u00e9rie A",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
     "is_asian": false,
-    "is_global": false,
+    "is_global": true,
     "home": "Botafogo",
     "away": "Vasco da Gama",
     "commence_time": "2026-10-07T23:30:00Z",
@@ -1265,8 +1977,11 @@
   },
   {
     "league": "Brazil S\u00e9rie B",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
     "is_asian": false,
-    "is_global": false,
+    "is_global": true,
     "home": "Am\u00e9rica Mineiro",
     "away": "Fortaleza",
     "commence_time": "2026-10-07T23:30:00Z",
@@ -1274,15 +1989,18 @@
     "match_time": "23:30 UTC",
     "bookmaker": "Unibet",
     "probabilities": {
-      "home_win_pct": 28.7,
-      "draw_pct": 28.3,
-      "away_win_pct": 43.0
+      "home_win_pct": 28.2,
+      "draw_pct": 29.1,
+      "away_win_pct": 42.7
     }
   },
   {
     "league": "Brazil S\u00e9rie B",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
     "is_asian": false,
-    "is_global": false,
+    "is_global": true,
     "home": "Clube de Regatas Brasil",
     "away": "Atletico Goianiense",
     "commence_time": "2026-10-07T23:30:00Z",
@@ -1297,8 +2015,11 @@
   },
   {
     "league": "Brazil S\u00e9rie B",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
     "is_asian": false,
-    "is_global": false,
+    "is_global": true,
     "home": "Vila Nova",
     "away": "Cuiab\u00e1",
     "commence_time": "2026-10-07T23:30:00Z",
@@ -1313,8 +2034,11 @@
   },
   {
     "league": "Brazil S\u00e9rie A",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
     "is_asian": false,
-    "is_global": false,
+    "is_global": true,
     "home": "Cruzeiro",
     "away": "Sao Paulo",
     "commence_time": "2026-10-08T00:30:00Z",
@@ -1328,9 +2052,50 @@
     }
   },
   {
-    "league": "Brazil S\u00e9rie A",
+    "league": "Veikkausliiga - Finland",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": false,
+    "home": "HJK Helsinki",
+    "away": "VPS Vaasa",
+    "commence_time": "2026-10-08T15:00:00Z",
+    "match_date": "08 Oct 2026",
+    "match_time": "15:00 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 60.0,
+      "draw_pct": 22.3,
+      "away_win_pct": 17.7
+    }
+  },
+  {
+    "league": "Veikkausliiga - Finland",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "KuPS Kuopio",
+    "away": "AC Oulu",
+    "commence_time": "2026-10-08T16:00:00Z",
+    "match_date": "08 Oct 2026",
+    "match_time": "16:00 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 59.9,
+      "draw_pct": 23.4,
+      "away_win_pct": 16.7
+    }
+  },
+  {
+    "league": "Brazil S\u00e9rie A",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": true,
     "home": "Santos",
     "away": "Flamengo",
     "commence_time": "2026-10-08T22:30:00Z",
@@ -1345,8 +2110,11 @@
   },
   {
     "league": "Brazil S\u00e9rie B",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
     "is_asian": false,
-    "is_global": false,
+    "is_global": true,
     "home": "Cear\u00e1",
     "away": "Criciuma",
     "commence_time": "2026-10-08T22:30:00Z",
@@ -1361,8 +2129,11 @@
   },
   {
     "league": "Brazil S\u00e9rie B",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
     "is_asian": false,
-    "is_global": false,
+    "is_global": true,
     "home": "Nautico PE",
     "away": "Gr\u00eamio Novorizontino",
     "commence_time": "2026-10-08T22:30:00Z",
@@ -1377,8 +2148,11 @@
   },
   {
     "league": "Brazil S\u00e9rie A",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
     "is_asian": false,
-    "is_global": false,
+    "is_global": true,
     "home": "Atletico Paranaense",
     "away": "Atletico Mineiro",
     "commence_time": "2026-10-08T23:00:00Z",
@@ -1393,8 +2167,11 @@
   },
   {
     "league": "Brazil S\u00e9rie A",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
     "is_asian": false,
-    "is_global": false,
+    "is_global": true,
     "home": "Palmeiras",
     "away": "Bahia",
     "commence_time": "2026-10-09T00:30:00Z",
@@ -1409,8 +2186,11 @@
   },
   {
     "league": "Brazil S\u00e9rie A",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
     "is_asian": false,
-    "is_global": false,
+    "is_global": true,
     "home": "Fluminense",
     "away": "Coritiba",
     "commence_time": "2026-10-09T00:30:00Z",
@@ -1424,7 +2204,29 @@
     }
   },
   {
+    "league": "Veikkausliiga - Finland",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "SJK Sein\u00e4joki",
+    "away": "FC Lahti",
+    "commence_time": "2026-10-09T15:00:00Z",
+    "match_date": "09 Oct 2026",
+    "match_time": "15:00 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 36.2,
+      "draw_pct": 27.3,
+      "away_win_pct": 36.5
+    }
+  },
+  {
     "league": "Denmark Superliga",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": false,
     "home": "FC Nordsjaelland",
@@ -1441,8 +2243,11 @@
   },
   {
     "league": "Primera Divisi\u00f3n - Argentina",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
     "is_asian": false,
-    "is_global": false,
+    "is_global": true,
     "home": "Aldosivi Mar del Plata",
     "away": "Sarmiento de Junin",
     "commence_time": "2026-10-09T17:30:00Z",
@@ -1456,7 +2261,124 @@
     }
   },
   {
+    "league": "Ligue 2 - France",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "USL Dunkerque",
+    "away": "Annecy FC",
+    "commence_time": "2026-10-09T18:00:00Z",
+    "match_date": "09 Oct 2026",
+    "match_time": "18:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 42.0,
+      "draw_pct": 26.5,
+      "away_win_pct": 31.5
+    }
+  },
+  {
+    "league": "Ligue 2 - France",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Sochaux",
+    "away": "Boulogne",
+    "commence_time": "2026-10-09T18:00:00Z",
+    "match_date": "09 Oct 2026",
+    "match_time": "18:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 43.4,
+      "draw_pct": 28.7,
+      "away_win_pct": 27.9
+    }
+  },
+  {
+    "league": "Ligue 2 - France",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Montpellier",
+    "away": "Grenoble",
+    "commence_time": "2026-10-09T18:00:00Z",
+    "match_date": "09 Oct 2026",
+    "match_time": "18:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 58.5,
+      "draw_pct": 24.8,
+      "away_win_pct": 16.7
+    }
+  },
+  {
+    "league": "Ligue 2 - France",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Nancy",
+    "away": "Guingamp",
+    "commence_time": "2026-10-09T18:00:00Z",
+    "match_date": "09 Oct 2026",
+    "match_time": "18:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 42.1,
+      "draw_pct": 26.2,
+      "away_win_pct": 31.7
+    }
+  },
+  {
+    "league": "Ligue 2 - France",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Pau FC",
+    "away": "Stade Lavallois",
+    "commence_time": "2026-10-09T18:00:00Z",
+    "match_date": "09 Oct 2026",
+    "match_time": "18:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 44.8,
+      "draw_pct": 27.4,
+      "away_win_pct": 27.8
+    }
+  },
+  {
+    "league": "Bundesliga - Germany",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Borussia Dortmund",
+    "away": "Werder Bremen",
+    "commence_time": "2026-10-09T18:30:00Z",
+    "match_date": "09 Oct 2026",
+    "match_time": "18:30 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 69.4,
+      "draw_pct": 17.3,
+      "away_win_pct": 13.4
+    }
+  },
+  {
     "league": "Belgium First Div",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": false,
     "home": "SK Beveren",
@@ -1472,7 +2394,29 @@
     }
   },
   {
+    "league": "Ligue 1 - France",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "RC Lens",
+    "away": "Lyon",
+    "commence_time": "2026-10-09T18:45:00Z",
+    "match_date": "09 Oct 2026",
+    "match_time": "18:45 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 43.0,
+      "draw_pct": 25.2,
+      "away_win_pct": 31.8
+    }
+  },
+  {
     "league": "Championship",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "West Ham United",
@@ -1489,6 +2433,9 @@
   },
   {
     "league": "Primera Divisi\u00f3n - Argentina",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
     "is_asian": true,
     "is_global": true,
     "home": "Gimnasia La Plata",
@@ -1505,8 +2452,11 @@
   },
   {
     "league": "Primera Divisi\u00f3n - Argentina",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
     "is_asian": false,
-    "is_global": false,
+    "is_global": true,
     "home": "Instituto de C\u00f3rdoba",
     "away": "Boca Juniors",
     "commence_time": "2026-10-09T22:30:00Z",
@@ -1521,8 +2471,11 @@
   },
   {
     "league": "Primera Divisi\u00f3n - Chile",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
     "is_asian": false,
-    "is_global": false,
+    "is_global": true,
     "home": "Universidad de Chile",
     "away": "\u00d1ublense",
     "commence_time": "2026-10-09T23:00:00Z",
@@ -1537,8 +2490,11 @@
   },
   {
     "league": "Primera Divisi\u00f3n - Argentina",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
     "is_asian": false,
-    "is_global": false,
+    "is_global": true,
     "home": "Union Santa Fe",
     "away": "Defensa y Justicia",
     "commence_time": "2026-10-10T00:45:00Z",
@@ -1553,6 +2509,9 @@
   },
   {
     "league": "Championship",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "West Bromwich Albion",
@@ -1569,6 +2528,9 @@
   },
   {
     "league": "Championship",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Charlton Athletic",
@@ -1585,6 +2547,9 @@
   },
   {
     "league": "Championship",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Swansea City",
@@ -1600,7 +2565,200 @@
     }
   },
   {
+    "league": "League 1",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Notts County",
+    "away": "Oxford United",
+    "commence_time": "2026-10-10T11:30:00Z",
+    "match_date": "10 Oct 2026",
+    "match_time": "11:30 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 33.4,
+      "draw_pct": 26.7,
+      "away_win_pct": 39.8
+    }
+  },
+  {
+    "league": "League 1",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Plymouth Argyle",
+    "away": "Wimbledon",
+    "commence_time": "2026-10-10T11:30:00Z",
+    "match_date": "10 Oct 2026",
+    "match_time": "11:30 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 64.7,
+      "draw_pct": 20.9,
+      "away_win_pct": 14.4
+    }
+  },
+  {
+    "league": "EPL",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Arsenal",
+    "away": "Leeds United",
+    "commence_time": "2026-10-10T11:30:00Z",
+    "match_date": "10 Oct 2026",
+    "match_time": "11:30 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 70.6,
+      "draw_pct": 18.2,
+      "away_win_pct": 11.2
+    }
+  },
+  {
+    "league": "Ligue 2 - France",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Clermont",
+    "away": "Red Star",
+    "commence_time": "2026-10-10T12:00:00Z",
+    "match_date": "10 Oct 2026",
+    "match_time": "12:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 27.4,
+      "draw_pct": 27.8,
+      "away_win_pct": 44.8
+    }
+  },
+  {
+    "league": "Ligue 2 - France",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Nantes",
+    "away": "Stade de Reims",
+    "commence_time": "2026-10-10T12:00:00Z",
+    "match_date": "10 Oct 2026",
+    "match_time": "12:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 43.3,
+      "draw_pct": 27.0,
+      "away_win_pct": 29.6
+    }
+  },
+  {
+    "league": "Bundesliga - Germany",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Augsburg",
+    "away": "Bayern Munich",
+    "commence_time": "2026-10-10T13:30:00Z",
+    "match_date": "10 Oct 2026",
+    "match_time": "13:30 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 11.2,
+      "draw_pct": 11.4,
+      "away_win_pct": 77.4
+    }
+  },
+  {
+    "league": "Bundesliga - Germany",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "FSV Mainz 05",
+    "away": "Bayer Leverkusen",
+    "commence_time": "2026-10-10T13:30:00Z",
+    "match_date": "10 Oct 2026",
+    "match_time": "13:30 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 32.8,
+      "draw_pct": 24.4,
+      "away_win_pct": 42.8
+    }
+  },
+  {
+    "league": "Bundesliga - Germany",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Union Berlin",
+    "away": "Elversberg",
+    "commence_time": "2026-10-10T13:30:00Z",
+    "match_date": "10 Oct 2026",
+    "match_time": "13:30 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 43.5,
+      "draw_pct": 24.0,
+      "away_win_pct": 32.5
+    }
+  },
+  {
+    "league": "Bundesliga - Germany",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "TSG Hoffenheim",
+    "away": "Hamburger SV",
+    "commence_time": "2026-10-10T13:30:00Z",
+    "match_date": "10 Oct 2026",
+    "match_time": "13:30 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 65.3,
+      "draw_pct": 20.4,
+      "away_win_pct": 14.3
+    }
+  },
+  {
+    "league": "Bundesliga - Germany",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "SC Paderborn",
+    "away": "VfB Stuttgart",
+    "commence_time": "2026-10-10T13:30:00Z",
+    "match_date": "10 Oct 2026",
+    "match_time": "13:30 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 19.5,
+      "draw_pct": 20.3,
+      "away_win_pct": 60.2
+    }
+  },
+  {
     "league": "Belgium First Div",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": false,
     "home": "Cercle Brugge KSV",
@@ -1610,13 +2768,16 @@
     "match_time": "14:00 UTC",
     "bookmaker": "Unibet",
     "probabilities": {
-      "home_win_pct": 28.3,
-      "draw_pct": 27.0,
-      "away_win_pct": 44.8
+      "home_win_pct": 28.0,
+      "draw_pct": 26.4,
+      "away_win_pct": 45.6
     }
   },
   {
     "league": "Championship",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Blackburn Rovers",
@@ -1633,6 +2794,9 @@
   },
   {
     "league": "Championship",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Bolton Wanderers",
@@ -1649,6 +2813,9 @@
   },
   {
     "league": "Championship",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Watford",
@@ -1665,6 +2832,9 @@
   },
   {
     "league": "Championship",
+    "category": "Asia / AFC",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": true,
     "is_global": true,
     "home": "Derby County",
@@ -1681,6 +2851,9 @@
   },
   {
     "league": "Championship",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Sheffield United",
@@ -1697,6 +2870,9 @@
   },
   {
     "league": "Championship",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Middlesbrough",
@@ -1713,6 +2889,9 @@
   },
   {
     "league": "Championship",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Preston North End",
@@ -1728,7 +2907,295 @@
     }
   },
   {
+    "league": "League 1",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Stockport County FC",
+    "away": "Barnsley",
+    "commence_time": "2026-10-10T14:00:00Z",
+    "match_date": "10 Oct 2026",
+    "match_time": "14:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 69.0,
+      "draw_pct": 17.7,
+      "away_win_pct": 13.3
+    }
+  },
+  {
+    "league": "League 1",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Cambridge United",
+    "away": "Blackpool",
+    "commence_time": "2026-10-10T14:00:00Z",
+    "match_date": "10 Oct 2026",
+    "match_time": "14:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 46.9,
+      "draw_pct": 25.2,
+      "away_win_pct": 27.9
+    }
+  },
+  {
+    "league": "League 1",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Bradford City",
+    "away": "Leyton Orient",
+    "commence_time": "2026-10-10T14:00:00Z",
+    "match_date": "10 Oct 2026",
+    "match_time": "14:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 53.2,
+      "draw_pct": 26.0,
+      "away_win_pct": 20.8
+    }
+  },
+  {
+    "league": "League 1",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Mansfield Town",
+    "away": "Bromley FC",
+    "commence_time": "2026-10-10T14:00:00Z",
+    "match_date": "10 Oct 2026",
+    "match_time": "14:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 51.7,
+      "draw_pct": 24.5,
+      "away_win_pct": 23.8
+    }
+  },
+  {
+    "league": "League 1",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Doncaster Rovers",
+    "away": "Burton Albion",
+    "commence_time": "2026-10-10T14:00:00Z",
+    "match_date": "10 Oct 2026",
+    "match_time": "14:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 52.0,
+      "draw_pct": 24.6,
+      "away_win_pct": 23.4
+    }
+  },
+  {
+    "league": "League 1",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Huddersfield Town",
+    "away": "Sheffield Wednesday",
+    "commence_time": "2026-10-10T14:00:00Z",
+    "match_date": "10 Oct 2026",
+    "match_time": "14:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 46.0,
+      "draw_pct": 25.2,
+      "away_win_pct": 28.7
+    }
+  },
+  {
+    "league": "League 1",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Leicester City",
+    "away": "Peterborough United",
+    "commence_time": "2026-10-10T14:00:00Z",
+    "match_date": "10 Oct 2026",
+    "match_time": "14:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 59.7,
+      "draw_pct": 20.8,
+      "away_win_pct": 19.5
+    }
+  },
+  {
+    "league": "League 1",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Wycombe Wanderers",
+    "away": "Luton",
+    "commence_time": "2026-10-10T14:00:00Z",
+    "match_date": "10 Oct 2026",
+    "match_time": "14:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 34.5,
+      "draw_pct": 25.9,
+      "away_win_pct": 39.6
+    }
+  },
+  {
+    "league": "League 1",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Milton Keynes Dons",
+    "away": "Reading",
+    "commence_time": "2026-10-10T14:00:00Z",
+    "match_date": "10 Oct 2026",
+    "match_time": "14:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 38.1,
+      "draw_pct": 25.9,
+      "away_win_pct": 35.9
+    }
+  },
+  {
+    "league": "League 1",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Stevenage",
+    "away": "Wigan Athletic",
+    "commence_time": "2026-10-10T14:00:00Z",
+    "match_date": "10 Oct 2026",
+    "match_time": "14:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 42.5,
+      "draw_pct": 27.9,
+      "away_win_pct": 29.7
+    }
+  },
+  {
+    "league": "EPL",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Aston Villa",
+    "away": "Brentford",
+    "commence_time": "2026-10-10T14:00:00Z",
+    "match_date": "10 Oct 2026",
+    "match_time": "14:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 37.2,
+      "draw_pct": 25.6,
+      "away_win_pct": 37.2
+    }
+  },
+  {
+    "league": "EPL",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Chelsea",
+    "away": "Bournemouth",
+    "commence_time": "2026-10-10T14:00:00Z",
+    "match_date": "10 Oct 2026",
+    "match_time": "14:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 55.4,
+      "draw_pct": 23.1,
+      "away_win_pct": 21.5
+    }
+  },
+  {
+    "league": "EPL",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Sunderland",
+    "away": "Brighton and Hove Albion",
+    "commence_time": "2026-10-10T14:00:00Z",
+    "match_date": "10 Oct 2026",
+    "match_time": "14:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 32.0,
+      "draw_pct": 27.8,
+      "away_win_pct": 40.2
+    }
+  },
+  {
+    "league": "EPL",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Ipswich Town",
+    "away": "Fulham",
+    "commence_time": "2026-10-10T14:00:00Z",
+    "match_date": "10 Oct 2026",
+    "match_time": "14:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 34.9,
+      "draw_pct": 27.3,
+      "away_win_pct": 37.7
+    }
+  },
+  {
+    "league": "Veikkausliiga - Finland",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "TPS Turku",
+    "away": "Jaro",
+    "commence_time": "2026-10-10T14:00:00Z",
+    "match_date": "10 Oct 2026",
+    "match_time": "14:00 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 45.1,
+      "draw_pct": 26.9,
+      "away_win_pct": 28.0
+    }
+  },
+  {
     "league": "Austrian Football Bundesliga",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": false,
     "home": "Grazer AK",
@@ -1745,6 +3212,9 @@
   },
   {
     "league": "Austrian Football Bundesliga",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": false,
     "home": "WSG Tirol",
@@ -1760,55 +3230,48 @@
     }
   },
   {
-    "league": "Swiss Superleague",
-    "is_asian": true,
-    "is_global": true,
-    "home": "FC Lugano",
-    "away": "FC Luzern",
+    "league": "Ligue 1 - France",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Lille",
+    "away": "Le Havre",
+    "commence_time": "2026-10-10T15:15:00Z",
+    "match_date": "10 Oct 2026",
+    "match_time": "15:15 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 65.3,
+      "draw_pct": 20.5,
+      "away_win_pct": 14.2
+    }
+  },
+  {
+    "league": "Veikkausliiga - Finland",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "IFK Mariehamn",
+    "away": "Ilves Tampere",
     "commence_time": "2026-10-10T16:00:00Z",
     "match_date": "10 Oct 2026",
     "match_time": "16:00 UTC",
     "bookmaker": "Pinnacle",
     "probabilities": {
-      "home_win_pct": 57.9,
-      "draw_pct": 21.2,
-      "away_win_pct": 20.9
-    }
-  },
-  {
-    "league": "Swiss Superleague",
-    "is_asian": true,
-    "is_global": true,
-    "home": "Servette",
-    "away": "FC Sion",
-    "commence_time": "2026-10-10T16:00:00Z",
-    "match_date": "10 Oct 2026",
-    "match_time": "16:00 UTC",
-    "bookmaker": "SportsBet",
-    "probabilities": {
-      "home_win_pct": 37.5,
-      "draw_pct": 24.2,
-      "away_win_pct": 38.3
-    }
-  },
-  {
-    "league": "Swiss Superleague",
-    "is_asian": true,
-    "is_global": true,
-    "home": "FC Zurich",
-    "away": "FC Thun",
-    "commence_time": "2026-10-10T16:00:00Z",
-    "match_date": "10 Oct 2026",
-    "match_time": "16:00 UTC",
-    "bookmaker": "Pinnacle",
-    "probabilities": {
-      "home_win_pct": 34.1,
-      "draw_pct": 24.5,
-      "away_win_pct": 41.4
+      "home_win_pct": 30.5,
+      "draw_pct": 25.5,
+      "away_win_pct": 44.0
     }
   },
   {
     "league": "Belgium First Div",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": false,
     "home": "RAAL La Louvi\u00e8re",
@@ -1824,7 +3287,67 @@
     }
   },
   {
+    "league": "EPL",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Manchester United",
+    "away": "Tottenham Hotspur",
+    "commence_time": "2026-10-10T16:30:00Z",
+    "match_date": "10 Oct 2026",
+    "match_time": "16:30 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 55.1,
+      "draw_pct": 23.0,
+      "away_win_pct": 21.9
+    }
+  },
+  {
+    "league": "Bundesliga - Germany",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "RB Leipzig",
+    "away": "Eintracht Frankfurt",
+    "commence_time": "2026-10-10T16:30:00Z",
+    "match_date": "10 Oct 2026",
+    "match_time": "16:30 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 62.3,
+      "draw_pct": 19.2,
+      "away_win_pct": 18.6
+    }
+  },
+  {
+    "league": "MLS",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": true,
+    "home": "Toronto FC",
+    "away": "CF Montreal",
+    "commence_time": "2026-10-10T17:00:00Z",
+    "match_date": "10 Oct 2026",
+    "match_time": "17:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 53.7,
+      "draw_pct": 22.5,
+      "away_win_pct": 23.9
+    }
+  },
+  {
     "league": "Austrian Football Bundesliga",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": false,
     "home": "Austria Wien",
@@ -1841,8 +3364,11 @@
   },
   {
     "league": "Primera Divisi\u00f3n - Argentina",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
     "is_asian": false,
-    "is_global": false,
+    "is_global": true,
     "home": "Barracas Central",
     "away": "Atl\u00e9tico Hurac\u00e1n",
     "commence_time": "2026-10-10T17:45:00Z",
@@ -1857,8 +3383,11 @@
   },
   {
     "league": "Primera Divisi\u00f3n - Chile",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
     "is_asian": false,
-    "is_global": false,
+    "is_global": true,
     "home": "Cobresal",
     "away": "Universidad de Concepci\u00f3n",
     "commence_time": "2026-10-10T18:00:00Z",
@@ -1872,7 +3401,48 @@
     }
   },
   {
+    "league": "Ligue 2 - France",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Saint Etienne",
+    "away": "Rodez AF",
+    "commence_time": "2026-10-10T18:00:00Z",
+    "match_date": "10 Oct 2026",
+    "match_time": "18:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 68.9,
+      "draw_pct": 18.0,
+      "away_win_pct": 13.1
+    }
+  },
+  {
+    "league": "MLS",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": true,
+    "home": "Chicago Fire",
+    "away": "New York City FC",
+    "commence_time": "2026-10-10T18:30:00Z",
+    "match_date": "10 Oct 2026",
+    "match_time": "18:30 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 53.7,
+      "draw_pct": 22.5,
+      "away_win_pct": 23.9
+    }
+  },
+  {
     "league": "Belgium First Div",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": false,
     "home": "Genk",
@@ -1889,6 +3459,9 @@
   },
   {
     "league": "Belgium First Div",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": false,
     "home": "SV Zulte-Waregem",
@@ -1904,9 +3477,88 @@
     }
   },
   {
-    "league": "Primera Divisi\u00f3n - Argentina",
+    "league": "Ligue 1 - France",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": false,
+    "home": "AS Monaco",
+    "away": "Toulouse",
+    "commence_time": "2026-10-10T18:45:00Z",
+    "match_date": "10 Oct 2026",
+    "match_time": "18:45 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 56.9,
+      "draw_pct": 22.6,
+      "away_win_pct": 20.5
+    }
+  },
+  {
+    "league": "Ligue 1 - France",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Brest",
+    "away": "Angers",
+    "commence_time": "2026-10-10T18:45:00Z",
+    "match_date": "10 Oct 2026",
+    "match_time": "18:45 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 50.8,
+      "draw_pct": 24.6,
+      "away_win_pct": 24.6
+    }
+  },
+  {
+    "league": "Ligue 1 - France",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Paris Saint Germain",
+    "away": "Le Mans FC",
+    "commence_time": "2026-10-10T18:45:00Z",
+    "match_date": "10 Oct 2026",
+    "match_time": "18:45 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 87.5,
+      "draw_pct": 7.6,
+      "away_win_pct": 4.8
+    }
+  },
+  {
+    "league": "Ligue 1 - France",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Lorient",
+    "away": "Paris FC",
+    "commence_time": "2026-10-10T18:45:00Z",
+    "match_date": "10 Oct 2026",
+    "match_time": "18:45 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 30.8,
+      "draw_pct": 28.8,
+      "away_win_pct": 40.4
+    }
+  },
+  {
+    "league": "Primera Divisi\u00f3n - Argentina",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": true,
     "home": "Central C\u00f3rdoba",
     "away": "Estudiantes",
     "commence_time": "2026-10-10T20:00:00Z",
@@ -1921,8 +3573,11 @@
   },
   {
     "league": "Brazil S\u00e9rie A",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
     "is_asian": false,
-    "is_global": false,
+    "is_global": true,
     "home": "Vasco da Gama",
     "away": "Remo",
     "commence_time": "2026-10-10T20:00:00Z",
@@ -1937,8 +3592,11 @@
   },
   {
     "league": "Primera Divisi\u00f3n - Chile",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
     "is_asian": false,
-    "is_global": false,
+    "is_global": true,
     "home": "Huachipato",
     "away": "O'Higgins",
     "commence_time": "2026-10-10T20:30:00Z",
@@ -1953,8 +3611,11 @@
   },
   {
     "league": "Primera Divisi\u00f3n - Argentina",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
     "is_asian": false,
-    "is_global": false,
+    "is_global": true,
     "home": "CA Tigre BA",
     "away": "Banfield",
     "commence_time": "2026-10-10T22:15:00Z",
@@ -1969,8 +3630,11 @@
   },
   {
     "league": "Primera Divisi\u00f3n - Chile",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
     "is_asian": false,
-    "is_global": false,
+    "is_global": true,
     "home": "Universidad Cat\u00f3lica (CHI)",
     "away": "Audax Italiano",
     "commence_time": "2026-10-10T23:00:00Z",
@@ -1984,9 +3648,145 @@
     }
   },
   {
-    "league": "Brazil S\u00e9rie A",
+    "league": "MLS",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
-    "is_global": false,
+    "is_global": true,
+    "home": "Atlanta United FC",
+    "away": "FC Cincinnati",
+    "commence_time": "2026-10-10T23:30:00Z",
+    "match_date": "10 Oct 2026",
+    "match_time": "23:30 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 40.4,
+      "draw_pct": 23.7,
+      "away_win_pct": 35.8
+    }
+  },
+  {
+    "league": "MLS",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": true,
+    "home": "Charlotte FC",
+    "away": "FC Dallas",
+    "commence_time": "2026-10-10T23:30:00Z",
+    "match_date": "10 Oct 2026",
+    "match_time": "23:30 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 47.2,
+      "draw_pct": 23.9,
+      "away_win_pct": 28.9
+    }
+  },
+  {
+    "league": "MLS",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": true,
+    "home": "Orlando City SC",
+    "away": "Columbus Crew SC",
+    "commence_time": "2026-10-10T23:30:00Z",
+    "match_date": "10 Oct 2026",
+    "match_time": "23:30 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 47.1,
+      "draw_pct": 23.2,
+      "away_win_pct": 29.7
+    }
+  },
+  {
+    "league": "MLS",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": true,
+    "home": "Inter Miami CF",
+    "away": "D.C. United",
+    "commence_time": "2026-10-10T23:30:00Z",
+    "match_date": "10 Oct 2026",
+    "match_time": "23:30 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 70.5,
+      "draw_pct": 16.4,
+      "away_win_pct": 13.1
+    }
+  },
+  {
+    "league": "MLS",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": true,
+    "home": "New England Revolution",
+    "away": "Seattle Sounders FC",
+    "commence_time": "2026-10-10T23:30:00Z",
+    "match_date": "10 Oct 2026",
+    "match_time": "23:30 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 54.2,
+      "draw_pct": 22.1,
+      "away_win_pct": 23.7
+    }
+  },
+  {
+    "league": "MLS",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": true,
+    "home": "New York Red Bulls",
+    "away": "San Diego FC",
+    "commence_time": "2026-10-10T23:30:00Z",
+    "match_date": "10 Oct 2026",
+    "match_time": "23:30 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 46.2,
+      "draw_pct": 22.3,
+      "away_win_pct": 31.6
+    }
+  },
+  {
+    "league": "MLS",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": true,
+    "home": "Philadelphia Union",
+    "away": "Real Salt Lake",
+    "commence_time": "2026-10-10T23:30:00Z",
+    "match_date": "10 Oct 2026",
+    "match_time": "23:30 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 73.0,
+      "draw_pct": 15.8,
+      "away_win_pct": 11.2
+    }
+  },
+  {
+    "league": "Brazil S\u00e9rie A",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": true,
     "home": "Sao Paulo",
     "away": "Vitoria",
     "commence_time": "2026-10-11T00:00:00Z",
@@ -2001,8 +3801,11 @@
   },
   {
     "league": "Primera Divisi\u00f3n - Argentina",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
     "is_asian": false,
-    "is_global": false,
+    "is_global": true,
     "home": "River Plate",
     "away": "Estudiantes de R\u00edo Cuarto",
     "commence_time": "2026-10-11T00:30:00Z",
@@ -2016,7 +3819,105 @@
     }
   },
   {
+    "league": "MLS",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": true,
+    "home": "Austin FC",
+    "away": "Nashville SC",
+    "commence_time": "2026-10-11T00:30:00Z",
+    "match_date": "11 Oct 2026",
+    "match_time": "00:30 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 25.6,
+      "draw_pct": 25.0,
+      "away_win_pct": 49.4
+    }
+  },
+  {
+    "league": "MLS",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": true,
+    "home": "Minnesota United FC",
+    "away": "Houston Dynamo",
+    "commence_time": "2026-10-11T00:30:00Z",
+    "match_date": "11 Oct 2026",
+    "match_time": "00:30 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 43.5,
+      "draw_pct": 25.2,
+      "away_win_pct": 31.4
+    }
+  },
+  {
+    "league": "MLS",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": true,
+    "home": "Sporting Kansas City",
+    "away": "Portland Timbers",
+    "commence_time": "2026-10-11T00:30:00Z",
+    "match_date": "11 Oct 2026",
+    "match_time": "00:30 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 36.5,
+      "draw_pct": 23.1,
+      "away_win_pct": 40.4
+    }
+  },
+  {
+    "league": "MLS",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": true,
+    "home": "Colorado Rapids",
+    "away": "San Jose Earthquakes",
+    "commence_time": "2026-10-11T01:30:00Z",
+    "match_date": "11 Oct 2026",
+    "match_time": "01:30 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 53.9,
+      "draw_pct": 23.0,
+      "away_win_pct": 23.0
+    }
+  },
+  {
+    "league": "MLS",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": true,
+    "home": "Los Angeles FC",
+    "away": "Vancouver Whitecaps FC",
+    "commence_time": "2026-10-11T02:30:00Z",
+    "match_date": "11 Oct 2026",
+    "match_time": "02:30 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 36.1,
+      "draw_pct": 24.7,
+      "away_win_pct": 39.1
+    }
+  },
+  {
     "league": "Championship",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Southampton",
@@ -2033,6 +3934,9 @@
   },
   {
     "league": "Belgium First Div",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": false,
     "home": "Standard Liege",
@@ -2048,23 +3952,10 @@
     }
   },
   {
-    "league": "Swiss Superleague",
-    "is_asian": true,
-    "is_global": true,
-    "home": "Grasshopper Z\u00fcrich",
-    "away": "BSC Young Boys",
-    "commence_time": "2026-10-11T12:00:00Z",
-    "match_date": "11 Oct 2026",
-    "match_time": "12:00 UTC",
-    "bookmaker": "SportsBet",
-    "probabilities": {
-      "home_win_pct": 18.8,
-      "draw_pct": 18.8,
-      "away_win_pct": 62.3
-    }
-  },
-  {
     "league": "Denmark Superliga",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": false,
     "home": "Silkeborg IF",
@@ -2081,6 +3972,9 @@
   },
   {
     "league": "Denmark Superliga",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": false,
     "home": "Randers FC",
@@ -2097,6 +3991,9 @@
   },
   {
     "league": "Austrian Football Bundesliga",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": false,
     "home": "Hartberg",
@@ -2113,6 +4010,9 @@
   },
   {
     "league": "Austrian Football Bundesliga",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": false,
     "home": "Rheindorf Altach",
@@ -2128,7 +4028,86 @@
     }
   },
   {
+    "league": "EPL",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Crystal Palace",
+    "away": "Nottingham Forest",
+    "commence_time": "2026-10-11T13:00:00Z",
+    "match_date": "11 Oct 2026",
+    "match_time": "13:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 35.8,
+      "draw_pct": 29.2,
+      "away_win_pct": 35.1
+    }
+  },
+  {
+    "league": "EPL",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Hull City",
+    "away": "Everton",
+    "commence_time": "2026-10-11T13:00:00Z",
+    "match_date": "11 Oct 2026",
+    "match_time": "13:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 27.0,
+      "draw_pct": 27.0,
+      "away_win_pct": 46.1
+    }
+  },
+  {
+    "league": "Ligue 1 - France",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Nice",
+    "away": "Strasbourg",
+    "commence_time": "2026-10-11T13:00:00Z",
+    "match_date": "11 Oct 2026",
+    "match_time": "13:00 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 43.4,
+      "draw_pct": 26.1,
+      "away_win_pct": 30.5
+    }
+  },
+  {
+    "league": "Bundesliga - Germany",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "1. FC K\u00f6ln",
+    "away": "Borussia Monchengladbach",
+    "commence_time": "2026-10-11T13:30:00Z",
+    "match_date": "11 Oct 2026",
+    "match_time": "13:30 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 48.7,
+      "draw_pct": 23.1,
+      "away_win_pct": 28.2
+    }
+  },
+  {
     "league": "Belgium First Div",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": false,
     "home": "Union Saint-Gilloise",
@@ -2145,6 +4124,9 @@
   },
   {
     "league": "Denmark Superliga",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": false,
     "home": "Brondby IF",
@@ -2160,39 +4142,10 @@
     }
   },
   {
-    "league": "Swiss Superleague",
-    "is_asian": true,
-    "is_global": true,
-    "home": "FC Vaduz",
-    "away": "FC Basel",
-    "commence_time": "2026-10-11T14:30:00Z",
-    "match_date": "11 Oct 2026",
-    "match_time": "14:30 UTC",
-    "bookmaker": "SportsBet",
-    "probabilities": {
-      "home_win_pct": 36.9,
-      "draw_pct": 23.0,
-      "away_win_pct": 40.1
-    }
-  },
-  {
-    "league": "Swiss Superleague",
-    "is_asian": true,
-    "is_global": true,
-    "home": "FC St Gallen",
-    "away": "FC Lausanne-Sport",
-    "commence_time": "2026-10-11T14:30:00Z",
-    "match_date": "11 Oct 2026",
-    "match_time": "14:30 UTC",
-    "bookmaker": "Pinnacle",
-    "probabilities": {
-      "home_win_pct": 61.8,
-      "draw_pct": 19.6,
-      "away_win_pct": 18.6
-    }
-  },
-  {
     "league": "Austrian Football Bundesliga",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": false,
     "home": "LASK",
@@ -2208,9 +4161,31 @@
     }
   },
   {
-    "league": "Primera Divisi\u00f3n - Chile",
+    "league": "Ligue 1 - France",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": false,
+    "home": "Rennes",
+    "away": "Auxerre",
+    "commence_time": "2026-10-11T15:15:00Z",
+    "match_date": "11 Oct 2026",
+    "match_time": "15:15 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 65.8,
+      "draw_pct": 19.1,
+      "away_win_pct": 15.0
+    }
+  },
+  {
+    "league": "Primera Divisi\u00f3n - Chile",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": true,
     "home": "Everton de Vi\u00f1a del Mar",
     "away": "La Serena",
     "commence_time": "2026-10-11T15:30:00Z",
@@ -2224,7 +4199,48 @@
     }
   },
   {
+    "league": "EPL",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Liverpool",
+    "away": "Manchester City",
+    "commence_time": "2026-10-11T15:30:00Z",
+    "match_date": "11 Oct 2026",
+    "match_time": "15:30 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 36.9,
+      "draw_pct": 25.4,
+      "away_win_pct": 37.6
+    }
+  },
+  {
+    "league": "Bundesliga - Germany",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "SC Freiburg",
+    "away": "FC Schalke 04",
+    "commence_time": "2026-10-11T15:30:00Z",
+    "match_date": "11 Oct 2026",
+    "match_time": "15:30 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 58.1,
+      "draw_pct": 24.1,
+      "away_win_pct": 17.8
+    }
+  },
+  {
     "league": "Denmark Superliga",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": false,
     "home": "FC Midtjylland",
@@ -2241,6 +4257,9 @@
   },
   {
     "league": "Belgium First Div",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": false,
     "home": "Westerlo",
@@ -2257,6 +4276,9 @@
   },
   {
     "league": "Belgium First Div",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": false,
     "home": "KV Mechelen",
@@ -2273,8 +4295,11 @@
   },
   {
     "league": "Primera Divisi\u00f3n - Argentina",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
     "is_asian": false,
-    "is_global": false,
+    "is_global": true,
     "home": "San Lorenzo",
     "away": "Deportivo Riestra",
     "commence_time": "2026-10-11T17:45:00Z",
@@ -2289,8 +4314,11 @@
   },
   {
     "league": "Primera Divisi\u00f3n - Chile",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
     "is_asian": false,
-    "is_global": false,
+    "is_global": true,
     "home": "Coquimbo Unido",
     "away": "Colo Colo",
     "commence_time": "2026-10-11T18:00:00Z",
@@ -2304,9 +4332,31 @@
     }
   },
   {
-    "league": "Brazil S\u00e9rie A",
+    "league": "Ligue 1 - France",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": false,
+    "home": "Troyes",
+    "away": "Marseille",
+    "commence_time": "2026-10-11T18:45:00Z",
+    "match_date": "11 Oct 2026",
+    "match_time": "18:45 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 23.9,
+      "draw_pct": 24.2,
+      "away_win_pct": 51.9
+    }
+  },
+  {
+    "league": "Brazil S\u00e9rie A",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": true,
     "home": "Atletico Mineiro",
     "away": "Santos",
     "commence_time": "2026-10-11T19:00:00Z",
@@ -2321,8 +4371,11 @@
   },
   {
     "league": "Primera Divisi\u00f3n - Argentina",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
     "is_asian": false,
-    "is_global": false,
+    "is_global": true,
     "home": "Platense",
     "away": "Argentinos Juniors",
     "commence_time": "2026-10-11T20:00:00Z",
@@ -2337,8 +4390,11 @@
   },
   {
     "league": "Primera Divisi\u00f3n - Argentina",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
     "is_asian": false,
-    "is_global": false,
+    "is_global": true,
     "home": "Rosario Central",
     "away": "Independiente Rivadavia",
     "commence_time": "2026-10-11T20:00:00Z",
@@ -2352,9 +4408,31 @@
     }
   },
   {
-    "league": "Brazil S\u00e9rie A",
+    "league": "Primera Divisi\u00f3n - Chile",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
     "is_asian": false,
-    "is_global": false,
+    "is_global": true,
+    "home": "Deportes Concepci\u00f3n",
+    "away": "Union La Calera",
+    "commence_time": "2026-10-11T20:30:00Z",
+    "match_date": "11 Oct 2026",
+    "match_time": "20:30 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 44.9,
+      "draw_pct": 28.8,
+      "away_win_pct": 26.3
+    }
+  },
+  {
+    "league": "Brazil S\u00e9rie A",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": true,
     "home": "Palmeiras",
     "away": "Corinthians",
     "commence_time": "2026-10-11T20:30:00Z",
@@ -2369,8 +4447,11 @@
   },
   {
     "league": "Brazil S\u00e9rie A",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
     "is_asian": false,
-    "is_global": false,
+    "is_global": true,
     "home": "Flamengo",
     "away": "Fluminense",
     "commence_time": "2026-10-11T20:30:00Z",
@@ -2385,8 +4466,11 @@
   },
   {
     "league": "Brazil S\u00e9rie A",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
     "is_asian": false,
-    "is_global": false,
+    "is_global": true,
     "home": "Gr\u00eamio",
     "away": "Internacional",
     "commence_time": "2026-10-11T20:30:00Z",
@@ -2400,25 +4484,12 @@
     }
   },
   {
-    "league": "Primera Divisi\u00f3n - Chile",
-    "is_asian": false,
-    "is_global": false,
-    "home": "Deportes Concepci\u00f3n",
-    "away": "Union La Calera",
-    "commence_time": "2026-10-11T20:30:00Z",
-    "match_date": "11 Oct 2026",
-    "match_time": "20:30 UTC",
-    "bookmaker": "SportsBet",
-    "probabilities": {
-      "home_win_pct": 44.9,
-      "draw_pct": 28.8,
-      "away_win_pct": 26.3
-    }
-  },
-  {
     "league": "Primera Divisi\u00f3n - Argentina",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
     "is_asian": false,
-    "is_global": false,
+    "is_global": true,
     "home": "Racing Club",
     "away": "Belgrano de Cordoba",
     "commence_time": "2026-10-11T22:15:00Z",
@@ -2433,8 +4504,11 @@
   },
   {
     "league": "Brazil S\u00e9rie A",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
     "is_asian": false,
-    "is_global": false,
+    "is_global": true,
     "home": "Bahia",
     "away": "Mirassol",
     "commence_time": "2026-10-11T22:30:00Z",
@@ -2449,8 +4523,11 @@
   },
   {
     "league": "Primera Divisi\u00f3n - Chile",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
     "is_asian": false,
-    "is_global": false,
+    "is_global": true,
     "home": "Deportes Limache",
     "away": "Palestino",
     "commence_time": "2026-10-11T23:00:00Z",
@@ -2464,9 +4541,31 @@
     }
   },
   {
-    "league": "Primera Divisi\u00f3n - Argentina",
+    "league": "MLS",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
-    "is_global": false,
+    "is_global": true,
+    "home": "St. Louis City SC",
+    "away": "LA Galaxy",
+    "commence_time": "2026-10-11T23:00:00Z",
+    "match_date": "11 Oct 2026",
+    "match_time": "23:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 62.6,
+      "draw_pct": 19.4,
+      "away_win_pct": 18.0
+    }
+  },
+  {
+    "league": "Primera Divisi\u00f3n - Argentina",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": true,
     "home": "Talleres",
     "away": "Independiente",
     "commence_time": "2026-10-12T00:30:00Z",
@@ -2481,6 +4580,9 @@
   },
   {
     "league": "Denmark Superliga",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": false,
     "home": "AGF Aarhus",
@@ -2496,9 +4598,31 @@
     }
   },
   {
-    "league": "Primera Divisi\u00f3n - Argentina",
+    "league": "Ligue 2 - France",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": false,
+    "home": "Dijon",
+    "away": "Metz",
+    "commence_time": "2026-10-12T18:45:00Z",
+    "match_date": "12 Oct 2026",
+    "match_time": "18:45 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 34.4,
+      "draw_pct": 26.0,
+      "away_win_pct": 39.6
+    }
+  },
+  {
+    "league": "Primera Divisi\u00f3n - Argentina",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": true,
     "home": "Lanus",
     "away": "Velez Sarsfield BA",
     "commence_time": "2026-10-12T19:00:00Z",
@@ -2513,8 +4637,11 @@
   },
   {
     "league": "Brazil S\u00e9rie A",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
     "is_asian": false,
-    "is_global": false,
+    "is_global": true,
     "home": "Coritiba",
     "away": "Botafogo",
     "commence_time": "2026-10-12T19:00:00Z",
@@ -2528,9 +4655,31 @@
     }
   },
   {
-    "league": "Primera Divisi\u00f3n - Chile",
+    "league": "EPL",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": false,
+    "home": "Coventry City",
+    "away": "Newcastle United",
+    "commence_time": "2026-10-12T19:00:00Z",
+    "match_date": "12 Oct 2026",
+    "match_time": "19:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 30.6,
+      "draw_pct": 26.3,
+      "away_win_pct": 43.1
+    }
+  },
+  {
+    "league": "Primera Divisi\u00f3n - Chile",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": true,
     "home": "Universidad de Chile",
     "away": "\u00d1ublense",
     "commence_time": "2026-10-12T21:00:00Z",
@@ -2545,6 +4694,9 @@
   },
   {
     "league": "Primera Divisi\u00f3n - Argentina",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
     "is_asian": true,
     "is_global": true,
     "home": "Gimnasia Mendoza",
@@ -2561,8 +4713,11 @@
   },
   {
     "league": "Brazil S\u00e9rie A",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
     "is_asian": false,
-    "is_global": false,
+    "is_global": true,
     "home": "Chapecoense",
     "away": "Atletico Paranaense",
     "commence_time": "2026-10-12T22:30:00Z",
@@ -2577,8 +4732,11 @@
   },
   {
     "league": "Brazil S\u00e9rie A",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
     "is_asian": false,
-    "is_global": false,
+    "is_global": true,
     "home": "Bragantino-SP",
     "away": "Cruzeiro",
     "commence_time": "2026-10-13T00:00:00Z",
@@ -2593,6 +4751,9 @@
   },
   {
     "league": "UEFA Champions League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "RC Lens",
@@ -2609,6 +4770,9 @@
   },
   {
     "league": "UEFA Champions League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Sabah FK",
@@ -2625,6 +4789,9 @@
   },
   {
     "league": "UEFA Champions League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Arsenal",
@@ -2641,6 +4808,9 @@
   },
   {
     "league": "UEFA Champions League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Atl\u00e9tico Madrid",
@@ -2657,6 +4827,9 @@
   },
   {
     "league": "UEFA Champions League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Galatasaray",
@@ -2673,6 +4846,9 @@
   },
   {
     "league": "UEFA Champions League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Viking FK",
@@ -2689,6 +4865,9 @@
   },
   {
     "league": "UEFA Champions League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Inter Milan",
@@ -2698,13 +4877,16 @@
     "match_time": "19:00 UTC",
     "bookmaker": "SportsBet",
     "probabilities": {
-      "home_win_pct": 75.0,
-      "draw_pct": 15.9,
-      "away_win_pct": 9.1
+      "home_win_pct": 74.7,
+      "draw_pct": 15.8,
+      "away_win_pct": 9.5
     }
   },
   {
     "league": "UEFA Champions League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Villarreal",
@@ -2721,6 +4903,9 @@
   },
   {
     "league": "UEFA Champions League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "RB Leipzig",
@@ -2737,6 +4922,9 @@
   },
   {
     "league": "Copa Libertadores",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Estudiantes La Plata",
@@ -2753,6 +4941,9 @@
   },
   {
     "league": "Copa Sudamericana",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Boca Juniors",
@@ -2769,6 +4960,9 @@
   },
   {
     "league": "UEFA Champions League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Feyenoord",
@@ -2785,6 +4979,9 @@
   },
   {
     "league": "UEFA Champions League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "LASK",
@@ -2801,6 +4998,9 @@
   },
   {
     "league": "UEFA Champions League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Shakhtar Donetsk",
@@ -2817,6 +5017,9 @@
   },
   {
     "league": "UEFA Champions League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "AS Roma",
@@ -2833,6 +5036,9 @@
   },
   {
     "league": "UEFA Champions League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Aston Villa",
@@ -2849,6 +5055,9 @@
   },
   {
     "league": "UEFA Champions League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Bod\u00f8/Glimt",
@@ -2865,6 +5074,9 @@
   },
   {
     "league": "UEFA Champions League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Manchester City",
@@ -2881,6 +5093,9 @@
   },
   {
     "league": "UEFA Champions League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Real Betis",
@@ -2890,13 +5105,16 @@
     "match_time": "19:00 UTC",
     "bookmaker": "SportsBet",
     "probabilities": {
-      "home_win_pct": 46.3,
+      "home_win_pct": 47.0,
       "draw_pct": 25.0,
-      "away_win_pct": 28.8
+      "away_win_pct": 27.9
     }
   },
   {
     "league": "UEFA Champions League",
+    "category": "Asia / AFC",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": true,
     "is_global": true,
     "home": "\u0160K Slovan Bratislava",
@@ -2913,6 +5131,9 @@
   },
   {
     "league": "Copa Sudamericana",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Clube Atl\u00e9tico Mineiro",
@@ -2929,6 +5150,9 @@
   },
   {
     "league": "Copa Libertadores",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Fluminense-RJ",
@@ -2945,6 +5169,9 @@
   },
   {
     "league": "UEFA Europa Conference League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Gent",
@@ -2961,6 +5188,9 @@
   },
   {
     "league": "UEFA Europa Conference League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "PFC CSKA Sofia",
@@ -2977,6 +5207,9 @@
   },
   {
     "league": "UEFA Europa Conference League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Hajduk Split",
@@ -2993,6 +5226,9 @@
   },
   {
     "league": "UEFA Europa Conference League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Riga FC",
@@ -3009,6 +5245,9 @@
   },
   {
     "league": "UEFA Europa Conference League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "FC Lugano",
@@ -3025,6 +5264,9 @@
   },
   {
     "league": "UEFA Europa Conference League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "KF Egnatia",
@@ -3041,6 +5283,9 @@
   },
   {
     "league": "UEFA Europa Conference League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Panathinaikos FC",
@@ -3057,6 +5302,9 @@
   },
   {
     "league": "UEFA Europa Conference League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Universitatea Craiova",
@@ -3073,6 +5321,9 @@
   },
   {
     "league": "UEFA Europa Conference League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Mj\u00e4llby AIF",
@@ -3089,6 +5340,9 @@
   },
   {
     "league": "UEFA Europa Conference League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "KuPS Kuopio",
@@ -3105,6 +5359,9 @@
   },
   {
     "league": "UEFA Europa League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Salzburg",
@@ -3121,6 +5378,9 @@
   },
   {
     "league": "UEFA Europa League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "AZ Alkmaar",
@@ -3137,6 +5397,9 @@
   },
   {
     "league": "UEFA Europa League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Lech Pozna\u0144",
@@ -3153,6 +5416,9 @@
   },
   {
     "league": "UEFA Europa League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Lyon",
@@ -3169,6 +5435,9 @@
   },
   {
     "league": "UEFA Europa League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Sparta Prague",
@@ -3185,6 +5454,9 @@
   },
   {
     "league": "UEFA Europa League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "NK Celje",
@@ -3201,6 +5473,9 @@
   },
   {
     "league": "UEFA Europa League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Union Saint-Gilloise",
@@ -3217,6 +5492,9 @@
   },
   {
     "league": "UEFA Europa League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Torreense",
@@ -3233,6 +5511,9 @@
   },
   {
     "league": "UEFA Europa Conference League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Atalanta BC",
@@ -3249,6 +5530,9 @@
   },
   {
     "league": "UEFA Europa Conference League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Brighton and Hove Albion",
@@ -3265,6 +5549,9 @@
   },
   {
     "league": "UEFA Europa Conference League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "FC Copenhagen",
@@ -3281,6 +5568,9 @@
   },
   {
     "league": "UEFA Europa Conference League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Sint Truiden",
@@ -3297,6 +5587,9 @@
   },
   {
     "league": "UEFA Europa Conference League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Hearts",
@@ -3306,13 +5599,16 @@
     "match_time": "19:00 UTC",
     "bookmaker": "SportsBet",
     "probabilities": {
-      "home_win_pct": 34.1,
-      "draw_pct": 25.0,
-      "away_win_pct": 40.8
+      "home_win_pct": 36.3,
+      "draw_pct": 25.2,
+      "away_win_pct": 38.5
     }
   },
   {
     "league": "UEFA Europa Conference League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "FC Twente Enschede",
@@ -3329,6 +5625,9 @@
   },
   {
     "league": "UEFA Europa Conference League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "SC Freiburg",
@@ -3345,6 +5644,9 @@
   },
   {
     "league": "UEFA Europa Conference League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "SK Brann",
@@ -3361,6 +5663,9 @@
   },
   {
     "league": "UEFA Europa League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Dinamo Zagreb",
@@ -3377,6 +5682,9 @@
   },
   {
     "league": "UEFA Europa League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Benfica",
@@ -3393,6 +5701,9 @@
   },
   {
     "league": "UEFA Europa League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "TSG Hoffenheim",
@@ -3409,6 +5720,9 @@
   },
   {
     "league": "UEFA Europa League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Bournemouth",
@@ -3425,6 +5739,9 @@
   },
   {
     "league": "UEFA Europa League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Celta Vigo",
@@ -3441,6 +5758,9 @@
   },
   {
     "league": "UEFA Europa League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Jagiellonia Bia\u0142ystok",
@@ -3457,6 +5777,9 @@
   },
   {
     "league": "UEFA Europa League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Ferencv\u00e1ros TC",
@@ -3466,13 +5789,16 @@
     "match_time": "19:00 UTC",
     "bookmaker": "SportsBet",
     "probabilities": {
-      "home_win_pct": 49.7,
-      "draw_pct": 25.0,
-      "away_win_pct": 25.3
+      "home_win_pct": 50.5,
+      "draw_pct": 24.7,
+      "away_win_pct": 24.7
     }
   },
   {
     "league": "UEFA Europa League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Marseille",
@@ -3489,6 +5815,9 @@
   },
   {
     "league": "UEFA Europa League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "NEC Nijmegen",
@@ -3505,6 +5834,9 @@
   },
   {
     "league": "UEFA Europa League",
+    "category": "Global Cup",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Rennes",
@@ -3521,6 +5853,9 @@
   },
   {
     "league": "Copa Libertadores",
+    "category": "South America / Copa",
+    "is_sa": true,
+    "is_africa": false,
     "is_asian": false,
     "is_global": true,
     "home": "Estudiantes La Plata",
@@ -3537,6 +5872,9 @@
   },
   {
     "league": "A-League",
+    "category": "Asia / AFC",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": true,
     "is_global": true,
     "home": "Sydney FC",
@@ -3546,13 +5884,16 @@
     "match_time": "09:00 UTC",
     "bookmaker": "SportsBet",
     "probabilities": {
-      "home_win_pct": 54.8,
-      "draw_pct": 23.7,
-      "away_win_pct": 21.5
+      "home_win_pct": 51.6,
+      "draw_pct": 24.2,
+      "away_win_pct": 24.2
     }
   },
   {
     "league": "Austrian Football Bundesliga",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": false,
     "home": "Rapid Wien",
@@ -3568,7 +5909,48 @@
     }
   },
   {
+    "league": "Bundesliga - Germany",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Eintracht Frankfurt",
+    "away": "1. FC K\u00f6ln",
+    "commence_time": "2026-10-16T18:30:00Z",
+    "match_date": "16 Oct 2026",
+    "match_time": "18:30 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 49.0,
+      "draw_pct": 23.1,
+      "away_win_pct": 27.9
+    }
+  },
+  {
+    "league": "Ligue 1 - France",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Le Mans FC",
+    "away": "Toulouse",
+    "commence_time": "2026-10-16T18:45:00Z",
+    "match_date": "16 Oct 2026",
+    "match_time": "18:45 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 30.3,
+      "draw_pct": 27.7,
+      "away_win_pct": 42.0
+    }
+  },
+  {
     "league": "A-League",
+    "category": "Asia / AFC",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": true,
     "is_global": true,
     "home": "Auckland FC",
@@ -3578,13 +5960,16 @@
     "match_time": "04:00 UTC",
     "bookmaker": "SportsBet",
     "probabilities": {
-      "home_win_pct": 37.1,
-      "draw_pct": 27.8,
-      "away_win_pct": 35.1
+      "home_win_pct": 39.2,
+      "draw_pct": 27.7,
+      "away_win_pct": 33.0
     }
   },
   {
     "league": "A-League",
+    "category": "Asia / AFC",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": true,
     "is_global": true,
     "home": "Macarthur FC",
@@ -3594,13 +5979,16 @@
     "match_time": "06:00 UTC",
     "bookmaker": "SportsBet",
     "probabilities": {
-      "home_win_pct": 56.3,
-      "draw_pct": 22.2,
-      "away_win_pct": 21.5
+      "home_win_pct": 52.5,
+      "draw_pct": 23.8,
+      "away_win_pct": 23.8
     }
   },
   {
     "league": "A-League",
+    "category": "Asia / AFC",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": true,
     "is_global": true,
     "home": "Central Coast Mariners",
@@ -3616,7 +6004,181 @@
     }
   },
   {
+    "league": "EPL",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Everton",
+    "away": "Chelsea",
+    "commence_time": "2026-10-17T11:30:00Z",
+    "match_date": "17 Oct 2026",
+    "match_time": "11:30 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 33.5,
+      "draw_pct": 25.1,
+      "away_win_pct": 41.5
+    }
+  },
+  {
+    "league": "Bundesliga - Germany",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Elversberg",
+    "away": "Augsburg",
+    "commence_time": "2026-10-17T13:30:00Z",
+    "match_date": "17 Oct 2026",
+    "match_time": "13:30 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 38.7,
+      "draw_pct": 25.1,
+      "away_win_pct": 36.2
+    }
+  },
+  {
+    "league": "Bundesliga - Germany",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Union Berlin",
+    "away": "Borussia Dortmund",
+    "commence_time": "2026-10-17T13:30:00Z",
+    "match_date": "17 Oct 2026",
+    "match_time": "13:30 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 21.3,
+      "draw_pct": 22.4,
+      "away_win_pct": 56.3
+    }
+  },
+  {
+    "league": "Bundesliga - Germany",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "FC Schalke 04",
+    "away": "FSV Mainz 05",
+    "commence_time": "2026-10-17T13:30:00Z",
+    "match_date": "17 Oct 2026",
+    "match_time": "13:30 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 31.2,
+      "draw_pct": 26.5,
+      "away_win_pct": 42.3
+    }
+  },
+  {
+    "league": "Bundesliga - Germany",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Hamburger SV",
+    "away": "VfB Stuttgart",
+    "commence_time": "2026-10-17T13:30:00Z",
+    "match_date": "17 Oct 2026",
+    "match_time": "13:30 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 23.6,
+      "draw_pct": 24.5,
+      "away_win_pct": 52.0
+    }
+  },
+  {
+    "league": "Bundesliga - Germany",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Werder Bremen",
+    "away": "SC Paderborn",
+    "commence_time": "2026-10-17T13:30:00Z",
+    "match_date": "17 Oct 2026",
+    "match_time": "13:30 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 53.6,
+      "draw_pct": 22.8,
+      "away_win_pct": 23.6
+    }
+  },
+  {
+    "league": "EPL",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Brentford",
+    "away": "Liverpool",
+    "commence_time": "2026-10-17T14:00:00Z",
+    "match_date": "17 Oct 2026",
+    "match_time": "14:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 36.1,
+      "draw_pct": 24.7,
+      "away_win_pct": 39.1
+    }
+  },
+  {
+    "league": "EPL",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Fulham",
+    "away": "Hull City",
+    "commence_time": "2026-10-17T14:00:00Z",
+    "match_date": "17 Oct 2026",
+    "match_time": "14:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 57.4,
+      "draw_pct": 23.2,
+      "away_win_pct": 19.4
+    }
+  },
+  {
+    "league": "EPL",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Manchester City",
+    "away": "Ipswich Town",
+    "commence_time": "2026-10-17T14:00:00Z",
+    "match_date": "17 Oct 2026",
+    "match_time": "14:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 78.7,
+      "draw_pct": 14.0,
+      "away_win_pct": 7.3
+    }
+  },
+  {
     "league": "Austrian Football Bundesliga",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": false,
     "home": "Austria Lustenau",
@@ -3632,7 +6194,67 @@
     }
   },
   {
+    "league": "Ligue 1 - France",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Strasbourg",
+    "away": "Paris Saint Germain",
+    "commence_time": "2026-10-17T15:15:00Z",
+    "match_date": "17 Oct 2026",
+    "match_time": "15:15 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 14.8,
+      "draw_pct": 17.5,
+      "away_win_pct": 67.7
+    }
+  },
+  {
+    "league": "EPL",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Newcastle United",
+    "away": "Aston Villa",
+    "commence_time": "2026-10-17T16:30:00Z",
+    "match_date": "17 Oct 2026",
+    "match_time": "16:30 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 44.3,
+      "draw_pct": 25.0,
+      "away_win_pct": 30.7
+    }
+  },
+  {
+    "league": "Bundesliga - Germany",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Bayern Munich",
+    "away": "RB Leipzig",
+    "commence_time": "2026-10-17T16:30:00Z",
+    "match_date": "17 Oct 2026",
+    "match_time": "16:30 UTC",
+    "bookmaker": "Betr",
+    "probabilities": {
+      "home_win_pct": 76.8,
+      "draw_pct": 13.5,
+      "away_win_pct": 9.7
+    }
+  },
+  {
     "league": "Austrian Football Bundesliga",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": false,
     "home": "Ried",
@@ -3648,7 +6270,48 @@
     }
   },
   {
+    "league": "Ligue 1 - France",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Lille",
+    "away": "Brest",
+    "commence_time": "2026-10-17T18:45:00Z",
+    "match_date": "17 Oct 2026",
+    "match_time": "18:45 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 59.9,
+      "draw_pct": 22.5,
+      "away_win_pct": 17.5
+    }
+  },
+  {
+    "league": "Ligue 1 - France",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Troyes",
+    "away": "RC Lens",
+    "commence_time": "2026-10-17T18:45:00Z",
+    "match_date": "17 Oct 2026",
+    "match_time": "18:45 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 23.7,
+      "draw_pct": 23.8,
+      "away_win_pct": 52.4
+    }
+  },
+  {
     "league": "A-League",
+    "category": "Asia / AFC",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": true,
     "is_global": true,
     "home": "Wellington Phoenix FC",
@@ -3658,13 +6321,16 @@
     "match_time": "02:00 UTC",
     "bookmaker": "SportsBet",
     "probabilities": {
-      "home_win_pct": 28.8,
-      "draw_pct": 25.0,
-      "away_win_pct": 46.3
+      "home_win_pct": 32.4,
+      "draw_pct": 25.1,
+      "away_win_pct": 42.5
     }
   },
   {
     "league": "Austrian Football Bundesliga",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": false,
     "home": "RB Salzburg",
@@ -3681,6 +6347,9 @@
   },
   {
     "league": "Austrian Football Bundesliga",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": false,
     "home": "Wolfsberger AC",
@@ -3696,7 +6365,105 @@
     }
   },
   {
+    "league": "EPL",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Bournemouth",
+    "away": "Sunderland",
+    "commence_time": "2026-10-18T13:00:00Z",
+    "match_date": "18 Oct 2026",
+    "match_time": "13:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 47.5,
+      "draw_pct": 25.9,
+      "away_win_pct": 26.6
+    }
+  },
+  {
+    "league": "EPL",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Brighton and Hove Albion",
+    "away": "Crystal Palace",
+    "commence_time": "2026-10-18T13:00:00Z",
+    "match_date": "18 Oct 2026",
+    "match_time": "13:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 62.5,
+      "draw_pct": 21.1,
+      "away_win_pct": 16.4
+    }
+  },
+  {
+    "league": "EPL",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Leeds United",
+    "away": "Manchester United",
+    "commence_time": "2026-10-18T13:00:00Z",
+    "match_date": "18 Oct 2026",
+    "match_time": "13:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 33.5,
+      "draw_pct": 25.1,
+      "away_win_pct": 41.5
+    }
+  },
+  {
+    "league": "Ligue 1 - France",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Angers",
+    "away": "Marseille",
+    "commence_time": "2026-10-18T13:00:00Z",
+    "match_date": "18 Oct 2026",
+    "match_time": "13:00 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 30.9,
+      "draw_pct": 25.8,
+      "away_win_pct": 43.3
+    }
+  },
+  {
+    "league": "Bundesliga - Germany",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Bayer Leverkusen",
+    "away": "SC Freiburg",
+    "commence_time": "2026-10-18T13:30:00Z",
+    "match_date": "18 Oct 2026",
+    "match_time": "13:30 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 57.4,
+      "draw_pct": 21.4,
+      "away_win_pct": 21.2
+    }
+  },
+  {
     "league": "Austrian Football Bundesliga",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": false,
     "home": "Sturm Graz",
@@ -3712,7 +6479,143 @@
     }
   },
   {
+    "league": "Ligue 1 - France",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Lorient",
+    "away": "AS Monaco",
+    "commence_time": "2026-10-18T15:15:00Z",
+    "match_date": "18 Oct 2026",
+    "match_time": "15:15 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 26.7,
+      "draw_pct": 28.0,
+      "away_win_pct": 45.3
+    }
+  },
+  {
+    "league": "Ligue 1 - France",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Le Havre",
+    "away": "Auxerre",
+    "commence_time": "2026-10-18T15:15:00Z",
+    "match_date": "18 Oct 2026",
+    "match_time": "15:15 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 39.2,
+      "draw_pct": 28.0,
+      "away_win_pct": 32.8
+    }
+  },
+  {
+    "league": "Ligue 1 - France",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Paris FC",
+    "away": "Rennes",
+    "commence_time": "2026-10-18T15:15:00Z",
+    "match_date": "18 Oct 2026",
+    "match_time": "15:15 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 41.2,
+      "draw_pct": 29.5,
+      "away_win_pct": 29.3
+    }
+  },
+  {
+    "league": "EPL",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Nottingham Forest",
+    "away": "Arsenal",
+    "commence_time": "2026-10-18T15:30:00Z",
+    "match_date": "18 Oct 2026",
+    "match_time": "15:30 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 15.8,
+      "draw_pct": 23.6,
+      "away_win_pct": 60.6
+    }
+  },
+  {
+    "league": "Bundesliga - Germany",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Borussia Monchengladbach",
+    "away": "TSG Hoffenheim",
+    "commence_time": "2026-10-18T15:30:00Z",
+    "match_date": "18 Oct 2026",
+    "match_time": "15:30 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 26.5,
+      "draw_pct": 22.4,
+      "away_win_pct": 51.1
+    }
+  },
+  {
+    "league": "Ligue 1 - France",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Lyon",
+    "away": "Nice",
+    "commence_time": "2026-10-18T18:45:00Z",
+    "match_date": "18 Oct 2026",
+    "match_time": "18:45 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 57.4,
+      "draw_pct": 23.3,
+      "away_win_pct": 19.3
+    }
+  },
+  {
+    "league": "EPL",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
+    "is_asian": false,
+    "is_global": false,
+    "home": "Tottenham Hotspur",
+    "away": "Coventry City",
+    "commence_time": "2026-10-19T19:00:00Z",
+    "match_date": "19 Oct 2026",
+    "match_time": "19:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 63.9,
+      "draw_pct": 20.3,
+      "away_win_pct": 15.9
+    }
+  },
+  {
     "league": "A-League",
+    "category": "Asia / AFC",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": true,
     "is_global": true,
     "home": "Brisbane Roar",
@@ -3729,6 +6632,9 @@
   },
   {
     "league": "A-League",
+    "category": "Asia / AFC",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": true,
     "is_global": true,
     "home": "Newcastle Jets FC",
@@ -3745,6 +6651,9 @@
   },
   {
     "league": "A-League",
+    "category": "Asia / AFC",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": true,
     "is_global": true,
     "home": "Western Sydney Wanderers",
@@ -3761,6 +6670,9 @@
   },
   {
     "league": "A-League",
+    "category": "Asia / AFC",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": true,
     "is_global": true,
     "home": "Melbourne Victory",
@@ -3777,6 +6689,9 @@
   },
   {
     "league": "A-League",
+    "category": "Asia / AFC",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": true,
     "is_global": true,
     "home": "Wellington Phoenix FC",
@@ -3793,6 +6708,9 @@
   },
   {
     "league": "A-League",
+    "category": "Asia / AFC",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": true,
     "is_global": true,
     "home": "Sydney FC",
@@ -3809,6 +6727,9 @@
   },
   {
     "league": "EFL Cup",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": false,
     "home": "Bradford City",
@@ -3825,6 +6746,9 @@
   },
   {
     "league": "EFL Cup",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": false,
     "home": "Fleetwood Town",
@@ -3841,6 +6765,9 @@
   },
   {
     "league": "EFL Cup",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": false,
     "home": "Manchester City",
@@ -3857,6 +6784,9 @@
   },
   {
     "league": "EFL Cup",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": false,
     "home": "Bournemouth",
@@ -3873,6 +6803,9 @@
   },
   {
     "league": "EFL Cup",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": false,
     "home": "Sunderland",
@@ -3889,6 +6822,9 @@
   },
   {
     "league": "EFL Cup",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": false,
     "home": "Fulham",
@@ -3905,6 +6841,9 @@
   },
   {
     "league": "EFL Cup",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": false,
     "home": "Liverpool",
@@ -3921,6 +6860,9 @@
   },
   {
     "league": "EFL Cup",
+    "category": "General",
+    "is_sa": false,
+    "is_africa": false,
     "is_asian": false,
     "is_global": false,
     "home": "Everton",
