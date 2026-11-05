@@ -1,0 +1,4932 @@
+[
+  {
+    "league": "UEFA Europa League",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": true,
+    "home": "AC Milan",
+    "away": "Ferencv\u00e1ros TC",
+    "commence_time": "2026-11-05T17:45:00Z",
+    "match_date": "05 Nov 2026",
+    "match_time": "17:45 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 73.8,
+      "draw_pct": 16.3,
+      "away_win_pct": 9.9
+    }
+  },
+  {
+    "league": "UEFA Europa League",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": true,
+    "home": "Anderlecht",
+    "away": "Salzburg",
+    "commence_time": "2026-11-05T17:45:00Z",
+    "match_date": "05 Nov 2026",
+    "match_time": "17:45 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 47.1,
+      "draw_pct": 24.8,
+      "away_win_pct": 28.1
+    }
+  },
+  {
+    "league": "UEFA Europa League",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": true,
+    "home": "Sparta Prague",
+    "away": "Bournemouth",
+    "commence_time": "2026-11-05T17:45:00Z",
+    "match_date": "05 Nov 2026",
+    "match_time": "17:45 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 12.9,
+      "draw_pct": 19.5,
+      "away_win_pct": 67.5
+    }
+  },
+  {
+    "league": "UEFA Europa League",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": true,
+    "home": "Crystal Palace",
+    "away": "TSG Hoffenheim",
+    "commence_time": "2026-11-05T17:45:00Z",
+    "match_date": "05 Nov 2026",
+    "match_time": "17:45 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 52.9,
+      "draw_pct": 23.5,
+      "away_win_pct": 23.5
+    }
+  },
+  {
+    "league": "UEFA Europa League",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": true,
+    "home": "PFC Levski Sofia",
+    "away": "Jagiellonia Bia\u0142ystok",
+    "commence_time": "2026-11-05T17:45:00Z",
+    "match_date": "05 Nov 2026",
+    "match_time": "17:45 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 46.6,
+      "draw_pct": 29.1,
+      "away_win_pct": 24.3
+    }
+  },
+  {
+    "league": "UEFA Europa League",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": true,
+    "home": "Lillestrom",
+    "away": "Viktoria Plze\u0148",
+    "commence_time": "2026-11-05T17:45:00Z",
+    "match_date": "05 Nov 2026",
+    "match_time": "17:45 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 32.8,
+      "draw_pct": 24.6,
+      "away_win_pct": 42.5
+    }
+  },
+  {
+    "league": "UEFA Europa League",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": true,
+    "home": "Real Sociedad",
+    "away": "Lyon",
+    "commence_time": "2026-11-05T17:45:00Z",
+    "match_date": "05 Nov 2026",
+    "match_time": "17:45 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 59.7,
+      "draw_pct": 21.4,
+      "away_win_pct": 18.9
+    }
+  },
+  {
+    "league": "UEFA Europa League",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": true,
+    "home": "NEC Nijmegen",
+    "away": "Omonoia FC",
+    "commence_time": "2026-11-05T17:45:00Z",
+    "match_date": "05 Nov 2026",
+    "match_time": "17:45 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 54.3,
+      "draw_pct": 24.2,
+      "away_win_pct": 21.5
+    }
+  },
+  {
+    "league": "Primera Divisi\u00f3n - Argentina",
+    "is_latam": true,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Aldosivi Mar del Plata",
+    "away": "River Plate",
+    "commence_time": "2026-11-05T18:00:00Z",
+    "match_date": "05 Nov 2026",
+    "match_time": "18:00 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 13.0,
+      "draw_pct": 20.3,
+      "away_win_pct": 66.7
+    }
+  },
+  {
+    "league": "UEFA Europa League",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": true,
+    "home": "AZ Alkmaar",
+    "away": "Juventus",
+    "commence_time": "2026-11-05T20:00:00Z",
+    "match_date": "05 Nov 2026",
+    "match_time": "20:00 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 23.7,
+      "draw_pct": 25.4,
+      "away_win_pct": 50.9
+    }
+  },
+  {
+    "league": "UEFA Europa League",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": true,
+    "home": "Bayer Leverkusen",
+    "away": "Marseille",
+    "commence_time": "2026-11-05T20:00:00Z",
+    "match_date": "05 Nov 2026",
+    "match_time": "20:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 73.3,
+      "draw_pct": 15.6,
+      "away_win_pct": 11.0
+    }
+  },
+  {
+    "league": "UEFA Europa League",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": true,
+    "home": "Benfica",
+    "away": "Lech Pozna\u0144",
+    "commence_time": "2026-11-05T20:00:00Z",
+    "match_date": "05 Nov 2026",
+    "match_time": "20:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 85.2,
+      "draw_pct": 9.6,
+      "away_win_pct": 5.2
+    }
+  },
+  {
+    "league": "UEFA Europa League",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": true,
+    "home": "Celtic",
+    "away": "Besiktas JK",
+    "commence_time": "2026-11-05T20:00:00Z",
+    "match_date": "05 Nov 2026",
+    "match_time": "20:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 32.1,
+      "draw_pct": 24.9,
+      "away_win_pct": 43.0
+    }
+  },
+  {
+    "league": "UEFA Europa League",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": true,
+    "home": "Celta Vigo",
+    "away": "Union Saint-Gilloise",
+    "commence_time": "2026-11-05T20:00:00Z",
+    "match_date": "05 Nov 2026",
+    "match_time": "20:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 40.3,
+      "draw_pct": 28.7,
+      "away_win_pct": 31.0
+    }
+  },
+  {
+    "league": "UEFA Europa League",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": true,
+    "home": "Sunderland",
+    "away": "Dinamo Zagreb",
+    "commence_time": "2026-11-05T20:00:00Z",
+    "match_date": "05 Nov 2026",
+    "match_time": "20:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 67.6,
+      "draw_pct": 19.3,
+      "away_win_pct": 13.1
+    }
+  },
+  {
+    "league": "UEFA Europa League",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": true,
+    "home": "Torreense",
+    "away": "FC Ararat-Armenia",
+    "commence_time": "2026-11-05T20:00:00Z",
+    "match_date": "05 Nov 2026",
+    "match_time": "20:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 55.6,
+      "draw_pct": 25.5,
+      "away_win_pct": 18.9
+    }
+  },
+  {
+    "league": "UEFA Europa League",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": true,
+    "home": "Hapoel Be'er Sheva",
+    "away": "OFI Crete",
+    "commence_time": "2026-11-05T20:00:00Z",
+    "match_date": "05 Nov 2026",
+    "match_time": "20:00 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 44.1,
+      "draw_pct": 27.1,
+      "away_win_pct": 28.9
+    }
+  },
+  {
+    "league": "UEFA Europa League",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": true,
+    "home": "SK Sturm Graz",
+    "away": "NK Celje",
+    "commence_time": "2026-11-05T20:00:00Z",
+    "match_date": "05 Nov 2026",
+    "match_time": "20:00 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 63.6,
+      "draw_pct": 20.3,
+      "away_win_pct": 16.1
+    }
+  },
+  {
+    "league": "Primera Divisi\u00f3n - Argentina",
+    "is_latam": true,
+    "is_asian": true,
+    "is_euro_cup": false,
+    "home": "Gimnasia La Plata",
+    "away": "Belgrano de Cordoba",
+    "commence_time": "2026-11-05T22:15:00Z",
+    "match_date": "05 Nov 2026",
+    "match_time": "22:15 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 35.4,
+      "draw_pct": 31.3,
+      "away_win_pct": 33.3
+    }
+  },
+  {
+    "league": "Brazil S\u00e9rie A",
+    "is_latam": true,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Palmeiras",
+    "away": "Remo",
+    "commence_time": "2026-11-05T22:30:00Z",
+    "match_date": "05 Nov 2026",
+    "match_time": "22:30 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 79.1,
+      "draw_pct": 13.6,
+      "away_win_pct": 7.3
+    }
+  },
+  {
+    "league": "Brazil S\u00e9rie B",
+    "is_latam": true,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Botafogo-SP",
+    "away": "Londrina",
+    "commence_time": "2026-11-05T22:30:00Z",
+    "match_date": "05 Nov 2026",
+    "match_time": "22:30 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 58.7,
+      "draw_pct": 25.0,
+      "away_win_pct": 16.3
+    }
+  },
+  {
+    "league": "Brazil S\u00e9rie A",
+    "is_latam": true,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Cruzeiro",
+    "away": "Bahia",
+    "commence_time": "2026-11-06T00:30:00Z",
+    "match_date": "06 Nov 2026",
+    "match_time": "00:30 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 55.0,
+      "draw_pct": 23.8,
+      "away_win_pct": 21.2
+    }
+  },
+  {
+    "league": "A-League",
+    "is_latam": false,
+    "is_asian": true,
+    "is_euro_cup": false,
+    "home": "Sydney FC",
+    "away": "Central Coast Mariners",
+    "commence_time": "2026-11-06T08:40:00Z",
+    "match_date": "06 Nov 2026",
+    "match_time": "08:40 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 63.6,
+      "draw_pct": 20.6,
+      "away_win_pct": 15.8
+    }
+  },
+  {
+    "league": "Primera Divisi\u00f3n - Argentina",
+    "is_latam": true,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Barracas Central",
+    "away": "Racing Club",
+    "commence_time": "2026-11-06T18:00:00Z",
+    "match_date": "06 Nov 2026",
+    "match_time": "18:00 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 41.8,
+      "draw_pct": 29.7,
+      "away_win_pct": 28.5
+    }
+  },
+  {
+    "league": "Denmark Superliga",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Silkeborg IF",
+    "away": "Lyngby",
+    "commence_time": "2026-11-06T18:00:00Z",
+    "match_date": "06 Nov 2026",
+    "match_time": "18:00 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 39.4,
+      "draw_pct": 26.2,
+      "away_win_pct": 34.4
+    }
+  },
+  {
+    "league": "Austrian Football Bundesliga",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Rapid Wien",
+    "away": "Wolfsberger AC",
+    "commence_time": "2026-11-06T18:30:00Z",
+    "match_date": "06 Nov 2026",
+    "match_time": "18:30 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 74.0,
+      "draw_pct": 14.9,
+      "away_win_pct": 11.0
+    }
+  },
+  {
+    "league": "Ligue 2 - France",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Boulogne",
+    "away": "Annecy FC",
+    "commence_time": "2026-11-06T19:00:00Z",
+    "match_date": "06 Nov 2026",
+    "match_time": "19:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 38.3,
+      "draw_pct": 30.6,
+      "away_win_pct": 31.1
+    }
+  },
+  {
+    "league": "Ligue 2 - France",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Dijon",
+    "away": "Red Star",
+    "commence_time": "2026-11-06T19:00:00Z",
+    "match_date": "06 Nov 2026",
+    "match_time": "19:00 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 36.1,
+      "draw_pct": 27.2,
+      "away_win_pct": 36.8
+    }
+  },
+  {
+    "league": "Ligue 2 - France",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Grenoble",
+    "away": "Stade de Reims",
+    "commence_time": "2026-11-06T19:00:00Z",
+    "match_date": "06 Nov 2026",
+    "match_time": "19:00 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 24.3,
+      "draw_pct": 27.1,
+      "away_win_pct": 48.7
+    }
+  },
+  {
+    "league": "Ligue 2 - France",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "USL Dunkerque",
+    "away": "Guingamp",
+    "commence_time": "2026-11-06T19:00:00Z",
+    "match_date": "06 Nov 2026",
+    "match_time": "19:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 34.7,
+      "draw_pct": 26.2,
+      "away_win_pct": 39.1
+    }
+  },
+  {
+    "league": "Ligue 2 - France",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Montpellier",
+    "away": "Metz",
+    "commence_time": "2026-11-06T19:00:00Z",
+    "match_date": "06 Nov 2026",
+    "match_time": "19:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 46.6,
+      "draw_pct": 27.1,
+      "away_win_pct": 26.3
+    }
+  },
+  {
+    "league": "Ligue 2 - France",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Nancy",
+    "away": "Sochaux",
+    "commence_time": "2026-11-06T19:00:00Z",
+    "match_date": "06 Nov 2026",
+    "match_time": "19:00 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 53.6,
+      "draw_pct": 25.2,
+      "away_win_pct": 21.2
+    }
+  },
+  {
+    "league": "FA Cup",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Bristol Rovers",
+    "away": "Cambridge United",
+    "commence_time": "2026-11-06T19:30:00Z",
+    "match_date": "06 Nov 2026",
+    "match_time": "19:30 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 31.9,
+      "draw_pct": 25.8,
+      "away_win_pct": 42.2
+    }
+  },
+  {
+    "league": "Bundesliga - Germany",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Hamburger SV",
+    "away": "Borussia Monchengladbach",
+    "commence_time": "2026-11-06T19:30:00Z",
+    "match_date": "06 Nov 2026",
+    "match_time": "19:30 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 39.1,
+      "draw_pct": 26.2,
+      "away_win_pct": 34.7
+    }
+  },
+  {
+    "league": "Belgium First Div",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Standard Liege",
+    "away": "SK Beveren",
+    "commence_time": "2026-11-06T19:45:00Z",
+    "match_date": "06 Nov 2026",
+    "match_time": "19:45 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 53.8,
+      "draw_pct": 24.1,
+      "away_win_pct": 22.1
+    }
+  },
+  {
+    "league": "FA Cup",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Oxford City FC",
+    "away": "Leicester City",
+    "commence_time": "2026-11-06T19:45:00Z",
+    "match_date": "06 Nov 2026",
+    "match_time": "19:45 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 13.3,
+      "draw_pct": 17.5,
+      "away_win_pct": 69.3
+    }
+  },
+  {
+    "league": "Ligue 1 - France",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Toulouse",
+    "away": "Strasbourg",
+    "commence_time": "2026-11-06T19:45:00Z",
+    "match_date": "06 Nov 2026",
+    "match_time": "19:45 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 46.4,
+      "draw_pct": 25.4,
+      "away_win_pct": 28.1
+    }
+  },
+  {
+    "league": "Championship",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": true,
+    "home": "Derby County",
+    "away": "Bolton Wanderers",
+    "commence_time": "2026-11-06T20:00:00Z",
+    "match_date": "06 Nov 2026",
+    "match_time": "20:00 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 40.6,
+      "draw_pct": 26.7,
+      "away_win_pct": 32.8
+    }
+  },
+  {
+    "league": "EPL",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Everton",
+    "away": "Coventry City",
+    "commence_time": "2026-11-06T20:00:00Z",
+    "match_date": "06 Nov 2026",
+    "match_time": "20:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 56.0,
+      "draw_pct": 24.3,
+      "away_win_pct": 19.7
+    }
+  },
+  {
+    "league": "Primera Divisi\u00f3n - Argentina",
+    "is_latam": true,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Independiente",
+    "away": "Deportivo Riestra",
+    "commence_time": "2026-11-06T22:15:00Z",
+    "match_date": "06 Nov 2026",
+    "match_time": "22:15 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 58.0,
+      "draw_pct": 26.1,
+      "away_win_pct": 15.8
+    }
+  },
+  {
+    "league": "Primera Divisi\u00f3n - Argentina",
+    "is_latam": true,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "San Lorenzo",
+    "away": "Platense",
+    "commence_time": "2026-11-06T22:15:00Z",
+    "match_date": "06 Nov 2026",
+    "match_time": "22:15 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 35.6,
+      "draw_pct": 33.4,
+      "away_win_pct": 31.0
+    }
+  },
+  {
+    "league": "Primera Divisi\u00f3n - Argentina",
+    "is_latam": true,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Union Santa Fe",
+    "away": "Velez Sarsfield BA",
+    "commence_time": "2026-11-06T22:15:00Z",
+    "match_date": "06 Nov 2026",
+    "match_time": "22:15 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 37.1,
+      "draw_pct": 29.5,
+      "away_win_pct": 33.4
+    }
+  },
+  {
+    "league": "Brazil S\u00e9rie B",
+    "is_latam": true,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Operario PR",
+    "away": "Sport Recife",
+    "commence_time": "2026-11-06T22:30:00Z",
+    "match_date": "06 Nov 2026",
+    "match_time": "22:30 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 32.3,
+      "draw_pct": 27.9,
+      "away_win_pct": 39.8
+    }
+  },
+  {
+    "league": "Brazil S\u00e9rie A",
+    "is_latam": true,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Vitoria",
+    "away": "Fluminense",
+    "commence_time": "2026-11-06T23:00:00Z",
+    "match_date": "06 Nov 2026",
+    "match_time": "23:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 34.3,
+      "draw_pct": 28.6,
+      "away_win_pct": 37.0
+    }
+  },
+  {
+    "league": "Primera Divisi\u00f3n - Argentina",
+    "is_latam": true,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Banfield",
+    "away": "Atl\u00e9tico Tucuman",
+    "commence_time": "2026-11-07T01:00:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "01:00 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 39.0,
+      "draw_pct": 29.7,
+      "away_win_pct": 31.2
+    }
+  },
+  {
+    "league": "Primera Divisi\u00f3n - Argentina",
+    "is_latam": true,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "CA Tigre BA",
+    "away": "Sarmiento de Junin",
+    "commence_time": "2026-11-07T01:00:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "01:00 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 51.5,
+      "draw_pct": 28.2,
+      "away_win_pct": 20.3
+    }
+  },
+  {
+    "league": "Liga MX",
+    "is_latam": true,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Atl\u00e9tico San Luis",
+    "away": "FC Ju\u00e1rez",
+    "commence_time": "2026-11-07T01:00:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "01:00 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 57.1,
+      "draw_pct": 23.3,
+      "away_win_pct": 19.6
+    }
+  },
+  {
+    "league": "Liga MX",
+    "is_latam": true,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Necaxa",
+    "away": "Tijuana",
+    "commence_time": "2026-11-07T01:00:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "01:00 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 40.4,
+      "draw_pct": 26.7,
+      "away_win_pct": 32.9
+    }
+  },
+  {
+    "league": "Liga MX",
+    "is_latam": true,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Atlante FC",
+    "away": "Santos Laguna",
+    "commence_time": "2026-11-07T03:00:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "03:00 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 45.6,
+      "draw_pct": 25.2,
+      "away_win_pct": 29.2
+    }
+  },
+  {
+    "league": "J League",
+    "is_latam": false,
+    "is_asian": true,
+    "is_euro_cup": false,
+    "home": "Shimizu S Pulse",
+    "away": "Tokyo Verdy",
+    "commence_time": "2026-11-07T04:00:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "04:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 40.6,
+      "draw_pct": 29.7,
+      "away_win_pct": 29.7
+    }
+  },
+  {
+    "league": "A-League",
+    "is_latam": false,
+    "is_asian": true,
+    "is_euro_cup": false,
+    "home": "Auckland FC",
+    "away": "Wellington Phoenix FC",
+    "commence_time": "2026-11-07T04:00:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "04:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 43.9,
+      "draw_pct": 26.2,
+      "away_win_pct": 29.9
+    }
+  },
+  {
+    "league": "J League",
+    "is_latam": false,
+    "is_asian": true,
+    "is_euro_cup": false,
+    "home": "Yokohama F Marinos",
+    "away": "Fagiano Okayama",
+    "commence_time": "2026-11-07T05:00:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "05:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 37.1,
+      "draw_pct": 27.3,
+      "away_win_pct": 35.7
+    }
+  },
+  {
+    "league": "J League",
+    "is_latam": false,
+    "is_asian": true,
+    "is_euro_cup": false,
+    "home": "Nagoya Grampus",
+    "away": "Kyoto Purple Sanga",
+    "commence_time": "2026-11-07T05:00:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "05:00 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 50.9,
+      "draw_pct": 25.2,
+      "away_win_pct": 23.9
+    }
+  },
+  {
+    "league": "K League 1",
+    "is_latam": false,
+    "is_asian": true,
+    "is_euro_cup": false,
+    "home": "Jeju United FC",
+    "away": "Gwangju FC",
+    "commence_time": "2026-11-07T05:00:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "05:00 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 53.3,
+      "draw_pct": 25.5,
+      "away_win_pct": 21.2
+    }
+  },
+  {
+    "league": "J League",
+    "is_latam": false,
+    "is_asian": true,
+    "is_euro_cup": false,
+    "home": "Avispa Fukuoka",
+    "away": "V-Varen Nagasaki",
+    "commence_time": "2026-11-07T06:00:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "06:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 45.0,
+      "draw_pct": 27.9,
+      "away_win_pct": 27.1
+    }
+  },
+  {
+    "league": "J League",
+    "is_latam": false,
+    "is_asian": true,
+    "is_euro_cup": false,
+    "home": "FC Tokyo",
+    "away": "Kashima Antlers",
+    "commence_time": "2026-11-07T06:00:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "06:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 45.6,
+      "draw_pct": 26.0,
+      "away_win_pct": 28.4
+    }
+  },
+  {
+    "league": "J League",
+    "is_latam": false,
+    "is_asian": true,
+    "is_euro_cup": false,
+    "home": "Kashiwa Reysol",
+    "away": "Kawasaki Frontale",
+    "commence_time": "2026-11-07T07:00:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "07:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 42.8,
+      "draw_pct": 24.5,
+      "away_win_pct": 32.7
+    }
+  },
+  {
+    "league": "K League 1",
+    "is_latam": false,
+    "is_asian": true,
+    "is_euro_cup": false,
+    "home": "Sangju Sangmu FC",
+    "away": "FC Anyang",
+    "commence_time": "2026-11-07T07:30:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "07:30 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 39.9,
+      "draw_pct": 27.8,
+      "away_win_pct": 32.3
+    }
+  },
+  {
+    "league": "A-League",
+    "is_latam": false,
+    "is_asian": true,
+    "is_euro_cup": false,
+    "home": "Melbourne City",
+    "away": "Western Sydney Wanderers",
+    "commence_time": "2026-11-07T08:40:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "08:40 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 41.9,
+      "draw_pct": 26.2,
+      "away_win_pct": 31.9
+    }
+  },
+  {
+    "league": "A-League",
+    "is_latam": false,
+    "is_asian": true,
+    "is_euro_cup": false,
+    "home": "Perth Glory",
+    "away": "Newcastle Jets FC",
+    "commence_time": "2026-11-07T10:45:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "10:45 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 41.7,
+      "draw_pct": 23.5,
+      "away_win_pct": 34.8
+    }
+  },
+  {
+    "league": "Championship",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": true,
+    "home": "Bristol City",
+    "away": "Norwich City",
+    "commence_time": "2026-11-07T12:30:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "12:30 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 36.6,
+      "draw_pct": 26.7,
+      "away_win_pct": 36.6
+    }
+  },
+  {
+    "league": "Championship",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": true,
+    "home": "Portsmouth",
+    "away": "Stoke City",
+    "commence_time": "2026-11-07T12:30:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "12:30 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 40.2,
+      "draw_pct": 29.2,
+      "away_win_pct": 30.6
+    }
+  },
+  {
+    "league": "Championship",
+    "is_latam": false,
+    "is_asian": true,
+    "is_euro_cup": true,
+    "home": "Wrexham AFC",
+    "away": "Wolverhampton Wanderers",
+    "commence_time": "2026-11-07T12:30:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "12:30 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 31.1,
+      "draw_pct": 27.9,
+      "away_win_pct": 41.0
+    }
+  },
+  {
+    "league": "EPL",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Leeds United",
+    "away": "Tottenham Hotspur",
+    "commence_time": "2026-11-07T12:30:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "12:30 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 35.0,
+      "draw_pct": 28.6,
+      "away_win_pct": 36.4
+    }
+  },
+  {
+    "league": "Ligue 2 - France",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Clermont",
+    "away": "Rodez AF",
+    "commence_time": "2026-11-07T13:00:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "13:00 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 29.7,
+      "draw_pct": 27.5,
+      "away_win_pct": 42.7
+    }
+  },
+  {
+    "league": "Bundesliga - Germany",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "RB Leipzig",
+    "away": "Augsburg",
+    "commence_time": "2026-11-07T14:30:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "14:30 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 65.9,
+      "draw_pct": 17.3,
+      "away_win_pct": 16.8
+    }
+  },
+  {
+    "league": "Bundesliga - Germany",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "FSV Mainz 05",
+    "away": "Bayern Munich",
+    "commence_time": "2026-11-07T14:30:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "14:30 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 13.9,
+      "draw_pct": 14.1,
+      "away_win_pct": 72.0
+    }
+  },
+  {
+    "league": "Bundesliga - Germany",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Borussia Dortmund",
+    "away": "Elversberg",
+    "commence_time": "2026-11-07T14:30:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "14:30 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 73.7,
+      "draw_pct": 15.1,
+      "away_win_pct": 11.2
+    }
+  },
+  {
+    "league": "Bundesliga - Germany",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "SC Paderborn",
+    "away": "Eintracht Frankfurt",
+    "commence_time": "2026-11-07T14:30:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "14:30 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 30.9,
+      "draw_pct": 24.8,
+      "away_win_pct": 44.3
+    }
+  },
+  {
+    "league": "Belgium First Div",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Westerlo",
+    "away": "Charleroi",
+    "commence_time": "2026-11-07T15:00:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "15:00 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 34.6,
+      "draw_pct": 25.6,
+      "away_win_pct": 39.9
+    }
+  },
+  {
+    "league": "Championship",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": true,
+    "home": "Birmingham City",
+    "away": "Swansea City",
+    "commence_time": "2026-11-07T15:00:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "15:00 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 49.6,
+      "draw_pct": 25.9,
+      "away_win_pct": 24.5
+    }
+  },
+  {
+    "league": "Championship",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": true,
+    "home": "Blackburn Rovers",
+    "away": "West Ham United",
+    "commence_time": "2026-11-07T15:00:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "15:00 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 20.8,
+      "draw_pct": 23.6,
+      "away_win_pct": 55.6
+    }
+  },
+  {
+    "league": "Championship",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": true,
+    "home": "Cardiff City",
+    "away": "Burnley",
+    "commence_time": "2026-11-07T15:00:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "15:00 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 44.5,
+      "draw_pct": 24.9,
+      "away_win_pct": 30.6
+    }
+  },
+  {
+    "league": "Championship",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": true,
+    "home": "Charlton Athletic",
+    "away": "Sheffield United",
+    "commence_time": "2026-11-07T15:00:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "15:00 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 26.7,
+      "draw_pct": 27.1,
+      "away_win_pct": 46.2
+    }
+  },
+  {
+    "league": "Championship",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": true,
+    "home": "Queens Park Rangers",
+    "away": "Lincoln City",
+    "commence_time": "2026-11-07T15:00:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "15:00 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 55.5,
+      "draw_pct": 24.2,
+      "away_win_pct": 20.3
+    }
+  },
+  {
+    "league": "Championship",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": true,
+    "home": "Watford",
+    "away": "Middlesbrough",
+    "commence_time": "2026-11-07T15:00:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "15:00 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 17.0,
+      "draw_pct": 20.8,
+      "away_win_pct": 62.3
+    }
+  },
+  {
+    "league": "Championship",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": true,
+    "home": "West Bromwich Albion",
+    "away": "Millwall",
+    "commence_time": "2026-11-07T15:00:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "15:00 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 45.6,
+      "draw_pct": 26.2,
+      "away_win_pct": 28.2
+    }
+  },
+  {
+    "league": "Championship",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": true,
+    "home": "Preston North End",
+    "away": "Southampton",
+    "commence_time": "2026-11-07T15:00:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "15:00 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 19.4,
+      "draw_pct": 22.2,
+      "away_win_pct": 58.3
+    }
+  },
+  {
+    "league": "EPL",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Arsenal",
+    "away": "Hull City",
+    "commence_time": "2026-11-07T15:00:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "15:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 83.0,
+      "draw_pct": 11.5,
+      "away_win_pct": 5.6
+    }
+  },
+  {
+    "league": "EPL",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Fulham",
+    "away": "Newcastle United",
+    "commence_time": "2026-11-07T15:00:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "15:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 46.8,
+      "draw_pct": 26.2,
+      "away_win_pct": 27.0
+    }
+  },
+  {
+    "league": "FA Cup",
+    "is_latam": false,
+    "is_asian": true,
+    "is_euro_cup": false,
+    "home": "Harrogate Town AFC",
+    "away": "AFC Fylde",
+    "commence_time": "2026-11-07T15:00:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "15:00 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 47.8,
+      "draw_pct": 24.6,
+      "away_win_pct": 27.6
+    }
+  },
+  {
+    "league": "FA Cup",
+    "is_latam": false,
+    "is_asian": true,
+    "is_euro_cup": false,
+    "home": "Burton Albion",
+    "away": "AFC Rushden and Diamonds",
+    "commence_time": "2026-11-07T15:00:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "15:00 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 87.6,
+      "draw_pct": 8.4,
+      "away_win_pct": 4.0
+    }
+  },
+  {
+    "league": "FA Cup",
+    "is_latam": false,
+    "is_asian": true,
+    "is_euro_cup": false,
+    "home": "Crewe Alexandra",
+    "away": "AFC Wimbledon",
+    "commence_time": "2026-11-07T15:00:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "15:00 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 36.9,
+      "draw_pct": 29.0,
+      "away_win_pct": 34.1
+    }
+  },
+  {
+    "league": "FA Cup",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Accrington Stanley",
+    "away": "Wycombe Wanderers",
+    "commence_time": "2026-11-07T15:00:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "15:00 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 26.6,
+      "draw_pct": 24.4,
+      "away_win_pct": 49.0
+    }
+  },
+  {
+    "league": "FA Cup",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Barnsley",
+    "away": "Aldershot Town FC",
+    "commence_time": "2026-11-07T15:00:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "15:00 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 74.2,
+      "draw_pct": 14.7,
+      "away_win_pct": 11.1
+    }
+  },
+  {
+    "league": "FA Cup",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Plymouth Argyle",
+    "away": "Alvechurch FC",
+    "commence_time": "2026-11-07T15:00:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "15:00 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 78.5,
+      "draw_pct": 13.5,
+      "away_win_pct": 8.0
+    }
+  },
+  {
+    "league": "FA Cup",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Barnet FC",
+    "away": "Tranmere Rovers",
+    "commence_time": "2026-11-07T15:00:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "15:00 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 57.9,
+      "draw_pct": 22.9,
+      "away_win_pct": 19.2
+    }
+  },
+  {
+    "league": "FA Cup",
+    "is_latam": false,
+    "is_asian": true,
+    "is_euro_cup": false,
+    "home": "Gillingham",
+    "away": "Barrow AFC",
+    "commence_time": "2026-11-07T15:00:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "15:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 50.9,
+      "draw_pct": 24.9,
+      "away_win_pct": 24.3
+    }
+  },
+  {
+    "league": "FA Cup",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Hornchurch FC",
+    "away": "Blackpool",
+    "commence_time": "2026-11-07T15:00:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "15:00 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 23.2,
+      "draw_pct": 23.5,
+      "away_win_pct": 53.3
+    }
+  },
+  {
+    "league": "FA Cup",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Boreham Wood FC",
+    "away": "Wigan Athletic",
+    "commence_time": "2026-11-07T15:00:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "15:00 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 54.0,
+      "draw_pct": 23.3,
+      "away_win_pct": 22.7
+    }
+  },
+  {
+    "league": "FA Cup",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Bradford City",
+    "away": "Marine FC",
+    "commence_time": "2026-11-07T15:00:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "15:00 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 74.9,
+      "draw_pct": 15.6,
+      "away_win_pct": 9.5
+    }
+  },
+  {
+    "league": "FA Cup",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Bromley FC",
+    "away": "Rotherham United",
+    "commence_time": "2026-11-07T15:00:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "15:00 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 45.2,
+      "draw_pct": 25.2,
+      "away_win_pct": 29.6
+    }
+  },
+  {
+    "league": "FA Cup",
+    "is_latam": false,
+    "is_asian": true,
+    "is_euro_cup": false,
+    "home": "Carlisle United",
+    "away": "Salford City",
+    "commence_time": "2026-11-07T15:00:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "15:00 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 33.1,
+      "draw_pct": 25.3,
+      "away_win_pct": 41.6
+    }
+  },
+  {
+    "league": "FA Cup",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Cheltenham Town",
+    "away": "FC Halifax Town",
+    "commence_time": "2026-11-07T15:00:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "15:00 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 51.2,
+      "draw_pct": 21.8,
+      "away_win_pct": 26.9
+    }
+  },
+  {
+    "league": "FA Cup",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Chesterfield FC",
+    "away": "Yeovil Town",
+    "commence_time": "2026-11-07T15:00:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "15:00 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 61.7,
+      "draw_pct": 21.0,
+      "away_win_pct": 17.3
+    }
+  },
+  {
+    "league": "FA Cup",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Colchester United",
+    "away": "Worcester City FC",
+    "commence_time": "2026-11-07T15:00:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "15:00 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 72.4,
+      "draw_pct": 16.5,
+      "away_win_pct": 11.2
+    }
+  },
+  {
+    "league": "FA Cup",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Kidderminster Harriers FC",
+    "away": "Doncaster Rovers",
+    "commence_time": "2026-11-07T15:00:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "15:00 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 22.7,
+      "draw_pct": 24.3,
+      "away_win_pct": 53.0
+    }
+  },
+  {
+    "league": "FA Cup",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Dover Athletic FC",
+    "away": "Wealdstone FC",
+    "commence_time": "2026-11-07T15:00:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "15:00 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 26.8,
+      "draw_pct": 23.0,
+      "away_win_pct": 50.3
+    }
+  },
+  {
+    "league": "FA Cup",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Eastleigh FC",
+    "away": "Shrewsbury Town",
+    "commence_time": "2026-11-07T15:00:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "15:00 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 27.3,
+      "draw_pct": 24.7,
+      "away_win_pct": 48.0
+    }
+  },
+  {
+    "league": "FA Cup",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Huddersfield Town",
+    "away": "Exeter City",
+    "commence_time": "2026-11-07T15:00:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "15:00 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 73.4,
+      "draw_pct": 16.1,
+      "away_win_pct": 10.5
+    }
+  },
+  {
+    "league": "FA Cup",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Fleetwood Town",
+    "away": "Rochdale",
+    "commence_time": "2026-11-07T15:00:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "15:00 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 55.8,
+      "draw_pct": 23.8,
+      "away_win_pct": 20.4
+    }
+  },
+  {
+    "league": "FA Cup",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Luton Town",
+    "away": "Forest Green Rovers",
+    "commence_time": "2026-11-07T15:00:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "15:00 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 73.3,
+      "draw_pct": 15.6,
+      "away_win_pct": 11.2
+    }
+  },
+  {
+    "league": "FA Cup",
+    "is_latam": false,
+    "is_asian": true,
+    "is_euro_cup": false,
+    "home": "Guiseley AFC",
+    "away": "Sutton United FC",
+    "commence_time": "2026-11-07T15:00:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "15:00 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 27.5,
+      "draw_pct": 25.5,
+      "away_win_pct": 47.1
+    }
+  },
+  {
+    "league": "FA Cup",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Leyton Orient",
+    "away": "Harborough Town FC",
+    "commence_time": "2026-11-07T15:00:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "15:00 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 68.1,
+      "draw_pct": 18.0,
+      "away_win_pct": 13.9
+    }
+  },
+  {
+    "league": "FA Cup",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Mansfield Town",
+    "away": "Macclesfield Town",
+    "commence_time": "2026-11-07T15:00:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "15:00 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 69.6,
+      "draw_pct": 17.4,
+      "away_win_pct": 13.0
+    }
+  },
+  {
+    "league": "FA Cup",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Milton Keynes Dons",
+    "away": "Swindon Town",
+    "commence_time": "2026-11-07T15:00:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "15:00 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 63.1,
+      "draw_pct": 20.1,
+      "away_win_pct": 16.7
+    }
+  },
+  {
+    "league": "FA Cup",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Newport County",
+    "away": "Walsall Wood FC",
+    "commence_time": "2026-11-07T15:00:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "15:00 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 36.8,
+      "draw_pct": 28.1,
+      "away_win_pct": 35.0
+    }
+  },
+  {
+    "league": "FA Cup",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "York City FC",
+    "away": "Northampton Town",
+    "commence_time": "2026-11-07T15:00:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "15:00 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 52.5,
+      "draw_pct": 24.1,
+      "away_win_pct": 23.5
+    }
+  },
+  {
+    "league": "FA Cup",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Oxford United",
+    "away": "Stevenage",
+    "commence_time": "2026-11-07T15:00:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "15:00 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 47.5,
+      "draw_pct": 27.7,
+      "away_win_pct": 24.8
+    }
+  },
+  {
+    "league": "FA Cup",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Port Vale",
+    "away": "Scunthorpe United",
+    "commence_time": "2026-11-07T15:00:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "15:00 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 61.1,
+      "draw_pct": 21.8,
+      "away_win_pct": 17.1
+    }
+  },
+  {
+    "league": "FA Cup",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Salisbury FC",
+    "away": "Sholing FC",
+    "commence_time": "2026-11-07T15:00:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "15:00 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 67.7,
+      "draw_pct": 19.5,
+      "away_win_pct": 12.8
+    }
+  },
+  {
+    "league": "Austrian Football Bundesliga",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Austria Lustenau",
+    "away": "Grazer AK",
+    "commence_time": "2026-11-07T16:00:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "16:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 33.8,
+      "draw_pct": 27.1,
+      "away_win_pct": 39.1
+    }
+  },
+  {
+    "league": "Denmark Superliga",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "OB Odense BK",
+    "away": "Viborg FF",
+    "commence_time": "2026-11-07T17:00:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "17:00 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 34.6,
+      "draw_pct": 25.6,
+      "away_win_pct": 39.9
+    }
+  },
+  {
+    "league": "Belgium First Div",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Leuven",
+    "away": "KV Mechelen",
+    "commence_time": "2026-11-07T17:15:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "17:15 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 41.3,
+      "draw_pct": 26.5,
+      "away_win_pct": 32.2
+    }
+  },
+  {
+    "league": "EPL",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Nottingham Forest",
+    "away": "Manchester City",
+    "commence_time": "2026-11-07T17:30:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "17:30 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 20.7,
+      "draw_pct": 23.8,
+      "away_win_pct": 55.4
+    }
+  },
+  {
+    "league": "FA Cup",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Altrincham FC",
+    "away": "Notts County FC",
+    "commence_time": "2026-11-07T17:30:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "17:30 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 23.1,
+      "draw_pct": 22.4,
+      "away_win_pct": 54.5
+    }
+  },
+  {
+    "league": "Bundesliga - Germany",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "VfB Stuttgart",
+    "away": "Werder Bremen",
+    "commence_time": "2026-11-07T17:30:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "17:30 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 59.6,
+      "draw_pct": 19.9,
+      "away_win_pct": 20.5
+    }
+  },
+  {
+    "league": "Primera Divisi\u00f3n - Argentina",
+    "is_latam": true,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Talleres",
+    "away": "Estudiantes",
+    "commence_time": "2026-11-07T18:00:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "18:00 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 39.2,
+      "draw_pct": 29.9,
+      "away_win_pct": 30.9
+    }
+  },
+  {
+    "league": "Primera Divisi\u00f3n - Argentina",
+    "is_latam": true,
+    "is_asian": true,
+    "is_euro_cup": false,
+    "home": "Gimnasia Mendoza",
+    "away": "Independiente Rivadavia",
+    "commence_time": "2026-11-07T18:00:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "18:00 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 31.7,
+      "draw_pct": 29.3,
+      "away_win_pct": 39.0
+    }
+  },
+  {
+    "league": "Primera Divisi\u00f3n - Chile",
+    "is_latam": true,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "La Serena",
+    "away": "Palestino",
+    "commence_time": "2026-11-07T18:00:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "18:00 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 39.4,
+      "draw_pct": 27.6,
+      "away_win_pct": 33.0
+    }
+  },
+  {
+    "league": "Ligue 1 - France",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Auxerre",
+    "away": "Paris FC",
+    "commence_time": "2026-11-07T18:00:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "18:00 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 22.4,
+      "draw_pct": 23.6,
+      "away_win_pct": 54.1
+    }
+  },
+  {
+    "league": "Austrian Football Bundesliga",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Ried",
+    "away": "LASK",
+    "commence_time": "2026-11-07T18:30:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "18:30 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 16.9,
+      "draw_pct": 19.8,
+      "away_win_pct": 63.3
+    }
+  },
+  {
+    "league": "Brazil S\u00e9rie B",
+    "is_latam": true,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Avai",
+    "away": "S\u00e3o Bernardo",
+    "commence_time": "2026-11-07T19:00:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "19:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 38.8,
+      "draw_pct": 28.6,
+      "away_win_pct": 32.6
+    }
+  },
+  {
+    "league": "Ligue 2 - France",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Pau FC",
+    "away": "Nantes",
+    "commence_time": "2026-11-07T19:00:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "19:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 32.1,
+      "draw_pct": 28.1,
+      "away_win_pct": 39.8
+    }
+  },
+  {
+    "league": "Ligue 2 - France",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Saint Etienne",
+    "away": "Stade Lavallois",
+    "commence_time": "2026-11-07T19:00:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "19:00 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 70.9,
+      "draw_pct": 17.8,
+      "away_win_pct": 11.2
+    }
+  },
+  {
+    "league": "Brazil S\u00e9rie B",
+    "is_latam": true,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Gr\u00eamio Novorizontino",
+    "away": "Fortaleza",
+    "commence_time": "2026-11-07T19:10:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "19:10 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 50.8,
+      "draw_pct": 27.5,
+      "away_win_pct": 21.7
+    }
+  },
+  {
+    "league": "Belgium First Div",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "RAAL La Louvi\u00e8re",
+    "away": "Cercle Brugge KSV",
+    "commence_time": "2026-11-07T19:45:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "19:45 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 36.1,
+      "draw_pct": 27.8,
+      "away_win_pct": 36.1
+    }
+  },
+  {
+    "league": "Belgium First Div",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Royal Antwerp",
+    "away": "Lommel SK",
+    "commence_time": "2026-11-07T19:45:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "19:45 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 48.6,
+      "draw_pct": 24.8,
+      "away_win_pct": 26.6
+    }
+  },
+  {
+    "league": "FA Cup",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Peterborough United",
+    "away": "Reading",
+    "commence_time": "2026-11-07T20:00:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "20:00 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 33.9,
+      "draw_pct": 26.4,
+      "away_win_pct": 39.6
+    }
+  },
+  {
+    "league": "Ligue 1 - France",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Paris Saint Germain",
+    "away": "Troyes",
+    "commence_time": "2026-11-07T20:05:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "20:05 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 86.2,
+      "draw_pct": 8.3,
+      "away_win_pct": 5.5
+    }
+  },
+  {
+    "league": "Primera Divisi\u00f3n - Argentina",
+    "is_latam": true,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Argentinos Juniors",
+    "away": "Atl\u00e9tico Hurac\u00e1n",
+    "commence_time": "2026-11-07T20:30:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "20:30 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 52.9,
+      "draw_pct": 28.0,
+      "away_win_pct": 19.1
+    }
+  },
+  {
+    "league": "Primera Divisi\u00f3n - Argentina",
+    "is_latam": true,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Boca Juniors",
+    "away": "Defensa y Justicia",
+    "commence_time": "2026-11-07T20:30:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "20:30 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 70.3,
+      "draw_pct": 19.2,
+      "away_win_pct": 10.5
+    }
+  },
+  {
+    "league": "Primera Divisi\u00f3n - Argentina",
+    "is_latam": true,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Rosario Central",
+    "away": "Estudiantes de R\u00edo Cuarto",
+    "commence_time": "2026-11-07T20:30:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "20:30 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 79.7,
+      "draw_pct": 14.5,
+      "away_win_pct": 5.9
+    }
+  },
+  {
+    "league": "Primera Divisi\u00f3n - Chile",
+    "is_latam": true,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Everton de Vi\u00f1a del Mar",
+    "away": "Deportes Concepci\u00f3n",
+    "commence_time": "2026-11-07T20:30:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "20:30 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 50.0,
+      "draw_pct": 26.3,
+      "away_win_pct": 23.7
+    }
+  },
+  {
+    "league": "Brazil S\u00e9rie B",
+    "is_latam": true,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Vila Nova",
+    "away": "Criciuma",
+    "commence_time": "2026-11-07T23:00:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "23:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 41.6,
+      "draw_pct": 29.7,
+      "away_win_pct": 28.8
+    }
+  },
+  {
+    "league": "Brazil S\u00e9rie B",
+    "is_latam": true,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Cuiab\u00e1",
+    "away": "Juventude",
+    "commence_time": "2026-11-07T23:00:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "23:00 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 22.2,
+      "draw_pct": 29.2,
+      "away_win_pct": 48.6
+    }
+  },
+  {
+    "league": "Liga MX",
+    "is_latam": true,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Atlas",
+    "away": "Pachuca",
+    "commence_time": "2026-11-07T23:00:00Z",
+    "match_date": "07 Nov 2026",
+    "match_time": "23:00 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 42.2,
+      "draw_pct": 26.7,
+      "away_win_pct": 31.2
+    }
+  },
+  {
+    "league": "Brazil S\u00e9rie B",
+    "is_latam": true,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Nautico PE",
+    "away": "Clube de Regatas Brasil",
+    "commence_time": "2026-11-08T00:30:00Z",
+    "match_date": "08 Nov 2026",
+    "match_time": "00:30 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 15.8,
+      "draw_pct": 21.0,
+      "away_win_pct": 63.1
+    }
+  },
+  {
+    "league": "Primera Divisi\u00f3n - Argentina",
+    "is_latam": true,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Instituto de C\u00f3rdoba",
+    "away": "Newells Old Boys",
+    "commence_time": "2026-11-08T01:00:00Z",
+    "match_date": "08 Nov 2026",
+    "match_time": "01:00 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 50.5,
+      "draw_pct": 28.3,
+      "away_win_pct": 21.2
+    }
+  },
+  {
+    "league": "Liga MX",
+    "is_latam": true,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Tigres",
+    "away": "Cruz Azul",
+    "commence_time": "2026-11-08T01:00:00Z",
+    "match_date": "08 Nov 2026",
+    "match_time": "01:00 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 33.5,
+      "draw_pct": 27.1,
+      "away_win_pct": 39.5
+    }
+  },
+  {
+    "league": "Liga MX",
+    "is_latam": true,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Toluca",
+    "away": "Monterrey",
+    "commence_time": "2026-11-08T01:00:00Z",
+    "match_date": "08 Nov 2026",
+    "match_time": "01:00 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 59.3,
+      "draw_pct": 21.9,
+      "away_win_pct": 18.8
+    }
+  },
+  {
+    "league": "Liga MX",
+    "is_latam": true,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Pumas",
+    "away": "Am\u00e9rica",
+    "commence_time": "2026-11-08T03:10:00Z",
+    "match_date": "08 Nov 2026",
+    "match_time": "03:10 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 31.9,
+      "draw_pct": 25.8,
+      "away_win_pct": 42.3
+    }
+  },
+  {
+    "league": "A-League",
+    "is_latam": false,
+    "is_asian": true,
+    "is_euro_cup": false,
+    "home": "Macarthur FC",
+    "away": "Brisbane Roar",
+    "commence_time": "2026-11-08T04:00:00Z",
+    "match_date": "08 Nov 2026",
+    "match_time": "04:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 38.6,
+      "draw_pct": 26.3,
+      "away_win_pct": 35.1
+    }
+  },
+  {
+    "league": "J League",
+    "is_latam": false,
+    "is_asian": true,
+    "is_euro_cup": false,
+    "home": "FC Machida Zelvia",
+    "away": "Hiroshima Sanfrecce FC",
+    "commence_time": "2026-11-08T05:00:00Z",
+    "match_date": "08 Nov 2026",
+    "match_time": "05:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 32.2,
+      "draw_pct": 27.1,
+      "away_win_pct": 40.7
+    }
+  },
+  {
+    "league": "J League",
+    "is_latam": false,
+    "is_asian": true,
+    "is_euro_cup": false,
+    "home": "Vissel Kobe",
+    "away": "Urawa Red Diamonds",
+    "commence_time": "2026-11-08T05:00:00Z",
+    "match_date": "08 Nov 2026",
+    "match_time": "05:00 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 44.0,
+      "draw_pct": 27.3,
+      "away_win_pct": 28.7
+    }
+  },
+  {
+    "league": "K League 1",
+    "is_latam": false,
+    "is_asian": true,
+    "is_euro_cup": false,
+    "home": "Daejeon Citizen",
+    "away": "Incheon United",
+    "commence_time": "2026-11-08T05:00:00Z",
+    "match_date": "08 Nov 2026",
+    "match_time": "05:00 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 42.4,
+      "draw_pct": 27.9,
+      "away_win_pct": 29.7
+    }
+  },
+  {
+    "league": "K League 1",
+    "is_latam": false,
+    "is_asian": true,
+    "is_euro_cup": false,
+    "home": "FC Seoul",
+    "away": "Ulsan Hyundai FC",
+    "commence_time": "2026-11-08T05:00:00Z",
+    "match_date": "08 Nov 2026",
+    "match_time": "05:00 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 52.6,
+      "draw_pct": 24.2,
+      "away_win_pct": 23.2
+    }
+  },
+  {
+    "league": "J League",
+    "is_latam": false,
+    "is_asian": true,
+    "is_euro_cup": false,
+    "home": "Gamba Osaka",
+    "away": "Cerezo Osaka",
+    "commence_time": "2026-11-08T06:00:00Z",
+    "match_date": "08 Nov 2026",
+    "match_time": "06:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 41.6,
+      "draw_pct": 26.7,
+      "away_win_pct": 31.7
+    }
+  },
+  {
+    "league": "A-League",
+    "is_latam": false,
+    "is_asian": true,
+    "is_euro_cup": false,
+    "home": "Adelaide United",
+    "away": "Melbourne Victory",
+    "commence_time": "2026-11-08T06:00:00Z",
+    "match_date": "08 Nov 2026",
+    "match_time": "06:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 34.4,
+      "draw_pct": 26.3,
+      "away_win_pct": 39.4
+    }
+  },
+  {
+    "league": "K League 1",
+    "is_latam": false,
+    "is_asian": true,
+    "is_euro_cup": false,
+    "home": "Bucheon FC 1995",
+    "away": "Pohang Steelers",
+    "commence_time": "2026-11-08T07:30:00Z",
+    "match_date": "08 Nov 2026",
+    "match_time": "07:30 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 28.3,
+      "draw_pct": 29.2,
+      "away_win_pct": 42.5
+    }
+  },
+  {
+    "league": "K League 1",
+    "is_latam": false,
+    "is_asian": true,
+    "is_euro_cup": false,
+    "home": "Gangwon FC",
+    "away": "Jeonbuk Hyundai Motors",
+    "commence_time": "2026-11-08T07:30:00Z",
+    "match_date": "08 Nov 2026",
+    "match_time": "07:30 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 37.3,
+      "draw_pct": 29.1,
+      "away_win_pct": 33.5
+    }
+  },
+  {
+    "league": "Super League - China",
+    "is_latam": false,
+    "is_asian": true,
+    "is_euro_cup": false,
+    "home": "Beijing FC",
+    "away": "Chongqing Tonglianglong FC",
+    "commence_time": "2026-11-08T07:30:00Z",
+    "match_date": "08 Nov 2026",
+    "match_time": "07:30 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 72.0,
+      "draw_pct": 17.0,
+      "away_win_pct": 11.0
+    }
+  },
+  {
+    "league": "Super League - China",
+    "is_latam": false,
+    "is_asian": true,
+    "is_euro_cup": false,
+    "home": "Shandong Luneng Taishan FC",
+    "away": "Chengdu Rongcheng FC",
+    "commence_time": "2026-11-08T07:30:00Z",
+    "match_date": "08 Nov 2026",
+    "match_time": "07:30 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 40.7,
+      "draw_pct": 24.0,
+      "away_win_pct": 35.3
+    }
+  },
+  {
+    "league": "Super League - China",
+    "is_latam": false,
+    "is_asian": true,
+    "is_euro_cup": false,
+    "home": "Dalian Yingbo",
+    "away": "Tianjin Jinmen Tiger FC",
+    "commence_time": "2026-11-08T07:30:00Z",
+    "match_date": "08 Nov 2026",
+    "match_time": "07:30 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 68.1,
+      "draw_pct": 19.0,
+      "away_win_pct": 12.9
+    }
+  },
+  {
+    "league": "Super League - China",
+    "is_latam": false,
+    "is_asian": true,
+    "is_euro_cup": false,
+    "home": "Zhejiang",
+    "away": "Henan FC",
+    "commence_time": "2026-11-08T07:30:00Z",
+    "match_date": "08 Nov 2026",
+    "match_time": "07:30 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 46.2,
+      "draw_pct": 22.1,
+      "away_win_pct": 31.8
+    }
+  },
+  {
+    "league": "Super League - China",
+    "is_latam": false,
+    "is_asian": true,
+    "is_euro_cup": false,
+    "home": "Shanghai SIPG FC",
+    "away": "Liaoning Tieren FC",
+    "commence_time": "2026-11-08T07:30:00Z",
+    "match_date": "08 Nov 2026",
+    "match_time": "07:30 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 73.6,
+      "draw_pct": 15.5,
+      "away_win_pct": 10.9
+    }
+  },
+  {
+    "league": "Super League - China",
+    "is_latam": false,
+    "is_asian": true,
+    "is_euro_cup": false,
+    "home": "Qingdao Hainiu FC",
+    "away": "Shenzhen Peng City FC",
+    "commence_time": "2026-11-08T07:30:00Z",
+    "match_date": "08 Nov 2026",
+    "match_time": "07:30 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 19.9,
+      "draw_pct": 21.3,
+      "away_win_pct": 58.8
+    }
+  },
+  {
+    "league": "Super League - China",
+    "is_latam": false,
+    "is_asian": true,
+    "is_euro_cup": false,
+    "home": "Shanghai Shenhua FC",
+    "away": "Qingdao West Coast FC",
+    "commence_time": "2026-11-08T07:30:00Z",
+    "match_date": "08 Nov 2026",
+    "match_time": "07:30 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 65.5,
+      "draw_pct": 18.4,
+      "away_win_pct": 16.1
+    }
+  },
+  {
+    "league": "Super League - China",
+    "is_latam": false,
+    "is_asian": true,
+    "is_euro_cup": false,
+    "home": "Yunnan Yukun",
+    "away": "Wuhan Three Towns",
+    "commence_time": "2026-11-08T07:30:00Z",
+    "match_date": "08 Nov 2026",
+    "match_time": "07:30 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 57.9,
+      "draw_pct": 19.2,
+      "away_win_pct": 22.9
+    }
+  },
+  {
+    "league": "J League",
+    "is_latam": false,
+    "is_asian": true,
+    "is_euro_cup": false,
+    "home": "JEF United Chiba",
+    "away": "Mito HollyHock",
+    "commence_time": "2026-11-08T08:00:00Z",
+    "match_date": "08 Nov 2026",
+    "match_time": "08:00 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 47.0,
+      "draw_pct": 27.6,
+      "away_win_pct": 25.4
+    }
+  },
+  {
+    "league": "Denmark Superliga",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "FC Copenhagen",
+    "away": "Brondby IF",
+    "commence_time": "2026-11-08T11:00:00Z",
+    "match_date": "08 Nov 2026",
+    "match_time": "11:00 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 54.6,
+      "draw_pct": 23.8,
+      "away_win_pct": 21.6
+    }
+  },
+  {
+    "league": "FA Cup",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Stafford Rangers FC",
+    "away": "Grimsby Town",
+    "commence_time": "2026-11-08T12:00:00Z",
+    "match_date": "08 Nov 2026",
+    "match_time": "12:00 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 12.1,
+      "draw_pct": 17.1,
+      "away_win_pct": 70.8
+    }
+  },
+  {
+    "league": "Belgium First Div",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Club Brugge",
+    "away": "Anderlecht",
+    "commence_time": "2026-11-08T12:30:00Z",
+    "match_date": "08 Nov 2026",
+    "match_time": "12:30 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 63.4,
+      "draw_pct": 20.1,
+      "away_win_pct": 16.5
+    }
+  },
+  {
+    "league": "Denmark Superliga",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "AGF Aarhus",
+    "away": "AC Horsens",
+    "commence_time": "2026-11-08T13:00:00Z",
+    "match_date": "08 Nov 2026",
+    "match_time": "13:00 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 58.9,
+      "draw_pct": 23.3,
+      "away_win_pct": 17.8
+    }
+  },
+  {
+    "league": "Veikkausliiga - Finland",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "HJK Helsinki",
+    "away": "AC Oulu",
+    "commence_time": "2026-11-08T13:00:00Z",
+    "match_date": "08 Nov 2026",
+    "match_time": "13:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 81.8,
+      "draw_pct": 11.1,
+      "away_win_pct": 7.1
+    }
+  },
+  {
+    "league": "Veikkausliiga - Finland",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "KuPS Kuopio",
+    "away": "FC Inter Turku",
+    "commence_time": "2026-11-08T13:00:00Z",
+    "match_date": "08 Nov 2026",
+    "match_time": "13:00 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 23.2,
+      "draw_pct": 23.6,
+      "away_win_pct": 53.2
+    }
+  },
+  {
+    "league": "Veikkausliiga - Finland",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "IF Gnistan",
+    "away": "VPS Vaasa",
+    "commence_time": "2026-11-08T13:00:00Z",
+    "match_date": "08 Nov 2026",
+    "match_time": "13:00 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 46.5,
+      "draw_pct": 24.1,
+      "away_win_pct": 29.4
+    }
+  },
+  {
+    "league": "Austrian Football Bundesliga",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "WSG Tirol",
+    "away": "Austria Wien",
+    "commence_time": "2026-11-08T13:30:00Z",
+    "match_date": "08 Nov 2026",
+    "match_time": "13:30 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 36.8,
+      "draw_pct": 27.2,
+      "away_win_pct": 36.0
+    }
+  },
+  {
+    "league": "Austrian Football Bundesliga",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Hartberg",
+    "away": "Rheindorf Altach",
+    "commence_time": "2026-11-08T13:30:00Z",
+    "match_date": "08 Nov 2026",
+    "match_time": "13:30 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 37.4,
+      "draw_pct": 26.7,
+      "away_win_pct": 35.9
+    }
+  },
+  {
+    "league": "EPL",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Ipswich Town",
+    "away": "Bournemouth",
+    "commence_time": "2026-11-08T14:00:00Z",
+    "match_date": "08 Nov 2026",
+    "match_time": "14:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 25.0,
+      "draw_pct": 26.4,
+      "away_win_pct": 48.5
+    }
+  },
+  {
+    "league": "EPL",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Brighton and Hove Albion",
+    "away": "Brentford",
+    "commence_time": "2026-11-08T14:00:00Z",
+    "match_date": "08 Nov 2026",
+    "match_time": "14:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 49.3,
+      "draw_pct": 25.4,
+      "away_win_pct": 25.4
+    }
+  },
+  {
+    "league": "EPL",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Sunderland",
+    "away": "Chelsea",
+    "commence_time": "2026-11-08T14:00:00Z",
+    "match_date": "08 Nov 2026",
+    "match_time": "14:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 26.4,
+      "draw_pct": 26.4,
+      "away_win_pct": 47.1
+    }
+  },
+  {
+    "league": "EPL",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Crystal Palace",
+    "away": "Liverpool",
+    "commence_time": "2026-11-08T14:00:00Z",
+    "match_date": "08 Nov 2026",
+    "match_time": "14:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 17.6,
+      "draw_pct": 22.1,
+      "away_win_pct": 60.2
+    }
+  },
+  {
+    "league": "Ligue 1 - France",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Rennes",
+    "away": "Lille",
+    "commence_time": "2026-11-08T14:00:00Z",
+    "match_date": "08 Nov 2026",
+    "match_time": "14:00 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 44.3,
+      "draw_pct": 26.1,
+      "away_win_pct": 29.6
+    }
+  },
+  {
+    "league": "FA Cup",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Cray Wanderers FC",
+    "away": "Stockport County FC",
+    "commence_time": "2026-11-08T14:15:00Z",
+    "match_date": "08 Nov 2026",
+    "match_time": "14:15 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 7.1,
+      "draw_pct": 11.7,
+      "away_win_pct": 81.2
+    }
+  },
+  {
+    "league": "Bundesliga - Germany",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "1. FC K\u00f6ln",
+    "away": "Bayer Leverkusen",
+    "commence_time": "2026-11-08T14:30:00Z",
+    "match_date": "08 Nov 2026",
+    "match_time": "14:30 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 23.6,
+      "draw_pct": 22.5,
+      "away_win_pct": 54.0
+    }
+  },
+  {
+    "league": "Belgium First Div",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Gent",
+    "away": "KV Kortrijk",
+    "commence_time": "2026-11-08T15:00:00Z",
+    "match_date": "08 Nov 2026",
+    "match_time": "15:00 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 66.5,
+      "draw_pct": 20.6,
+      "away_win_pct": 12.9
+    }
+  },
+  {
+    "league": "Denmark Superliga",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Randers FC",
+    "away": "FC Nordsjaelland",
+    "commence_time": "2026-11-08T15:00:00Z",
+    "match_date": "08 Nov 2026",
+    "match_time": "15:00 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 21.3,
+      "draw_pct": 22.7,
+      "away_win_pct": 56.0
+    }
+  },
+  {
+    "league": "FA Cup",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Wimborne Town FC",
+    "away": "Crawley Town",
+    "commence_time": "2026-11-08T15:00:00Z",
+    "match_date": "08 Nov 2026",
+    "match_time": "15:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 17.3,
+      "draw_pct": 20.6,
+      "away_win_pct": 62.1
+    }
+  },
+  {
+    "league": "Primera Divisi\u00f3n - Chile",
+    "is_latam": true,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Audax Italiano",
+    "away": "Coquimbo Unido",
+    "commence_time": "2026-11-08T15:30:00Z",
+    "match_date": "08 Nov 2026",
+    "match_time": "15:30 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 34.5,
+      "draw_pct": 28.2,
+      "away_win_pct": 37.3
+    }
+  },
+  {
+    "league": "Primera Divisi\u00f3n - Chile",
+    "is_latam": true,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Universidad Cat\u00f3lica (CHI)",
+    "away": "Deportes Limache",
+    "commence_time": "2026-11-08T15:30:00Z",
+    "match_date": "08 Nov 2026",
+    "match_time": "15:30 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 62.0,
+      "draw_pct": 21.1,
+      "away_win_pct": 16.9
+    }
+  },
+  {
+    "league": "Austrian Football Bundesliga",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Sturm Graz",
+    "away": "RB Salzburg",
+    "commence_time": "2026-11-08T16:00:00Z",
+    "match_date": "08 Nov 2026",
+    "match_time": "16:00 UTC",
+    "bookmaker": "Betr",
+    "probabilities": {
+      "home_win_pct": 32.0,
+      "draw_pct": 23.0,
+      "away_win_pct": 45.0
+    }
+  },
+  {
+    "league": "Ligue 1 - France",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Le Mans FC",
+    "away": "AS Monaco",
+    "commence_time": "2026-11-08T16:15:00Z",
+    "match_date": "08 Nov 2026",
+    "match_time": "16:15 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 23.1,
+      "draw_pct": 22.6,
+      "away_win_pct": 54.3
+    }
+  },
+  {
+    "league": "Ligue 1 - France",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Angers",
+    "away": "Nice",
+    "commence_time": "2026-11-08T16:15:00Z",
+    "match_date": "08 Nov 2026",
+    "match_time": "16:15 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 26.9,
+      "draw_pct": 26.4,
+      "away_win_pct": 46.6
+    }
+  },
+  {
+    "league": "Ligue 1 - France",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Brest",
+    "away": "Lyon",
+    "commence_time": "2026-11-08T16:15:00Z",
+    "match_date": "08 Nov 2026",
+    "match_time": "16:15 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 34.6,
+      "draw_pct": 27.1,
+      "away_win_pct": 38.3
+    }
+  },
+  {
+    "league": "Ligue 1 - France",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Le Havre",
+    "away": "Lorient",
+    "commence_time": "2026-11-08T16:15:00Z",
+    "match_date": "08 Nov 2026",
+    "match_time": "16:15 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 33.9,
+      "draw_pct": 28.9,
+      "away_win_pct": 37.2
+    }
+  },
+  {
+    "league": "EPL",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Manchester United",
+    "away": "Aston Villa",
+    "commence_time": "2026-11-08T16:30:00Z",
+    "match_date": "08 Nov 2026",
+    "match_time": "16:30 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 43.9,
+      "draw_pct": 26.2,
+      "away_win_pct": 29.9
+    }
+  },
+  {
+    "league": "Bundesliga - Germany",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "SC Freiburg",
+    "away": "Union Berlin",
+    "commence_time": "2026-11-08T16:30:00Z",
+    "match_date": "08 Nov 2026",
+    "match_time": "16:30 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 64.4,
+      "draw_pct": 20.5,
+      "away_win_pct": 15.2
+    }
+  },
+  {
+    "league": "Denmark Superliga",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "FC Midtjylland",
+    "away": "SonderjyskE",
+    "commence_time": "2026-11-08T17:00:00Z",
+    "match_date": "08 Nov 2026",
+    "match_time": "17:00 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 70.4,
+      "draw_pct": 17.5,
+      "away_win_pct": 12.1
+    }
+  },
+  {
+    "league": "FA Cup",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Oldham Athletic",
+    "away": "Sheffield Wednesday",
+    "commence_time": "2026-11-08T17:15:00Z",
+    "match_date": "08 Nov 2026",
+    "match_time": "17:15 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 29.5,
+      "draw_pct": 24.8,
+      "away_win_pct": 45.7
+    }
+  },
+  {
+    "league": "Belgium First Div",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Union Saint-Gilloise",
+    "away": "Genk",
+    "commence_time": "2026-11-08T17:30:00Z",
+    "match_date": "08 Nov 2026",
+    "match_time": "17:30 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 55.3,
+      "draw_pct": 23.6,
+      "away_win_pct": 21.1
+    }
+  },
+  {
+    "league": "Primera Divisi\u00f3n - Chile",
+    "is_latam": true,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Universidad de Chile",
+    "away": "Cobresal",
+    "commence_time": "2026-11-08T18:00:00Z",
+    "match_date": "08 Nov 2026",
+    "match_time": "18:00 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 73.3,
+      "draw_pct": 15.5,
+      "away_win_pct": 11.2
+    }
+  },
+  {
+    "league": "Primera Divisi\u00f3n - Chile",
+    "is_latam": true,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "\u00d1ublense",
+    "away": "Colo Colo",
+    "commence_time": "2026-11-08T18:00:00Z",
+    "match_date": "08 Nov 2026",
+    "match_time": "18:00 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 22.2,
+      "draw_pct": 25.3,
+      "away_win_pct": 52.5
+    }
+  },
+  {
+    "league": "Belgium First Div",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Sint Truiden",
+    "away": "SV Zulte-Waregem",
+    "commence_time": "2026-11-08T18:15:00Z",
+    "match_date": "08 Nov 2026",
+    "match_time": "18:15 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 52.0,
+      "draw_pct": 23.8,
+      "away_win_pct": 24.1
+    }
+  },
+  {
+    "league": "Bundesliga - Germany",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "TSG Hoffenheim",
+    "away": "FC Schalke 04",
+    "commence_time": "2026-11-08T18:30:00Z",
+    "match_date": "08 Nov 2026",
+    "match_time": "18:30 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 59.3,
+      "draw_pct": 21.1,
+      "away_win_pct": 19.6
+    }
+  },
+  {
+    "league": "Brazil S\u00e9rie B",
+    "is_latam": true,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Athletic Club (MG)",
+    "away": "Atletico Goianiense",
+    "commence_time": "2026-11-08T19:00:00Z",
+    "match_date": "08 Nov 2026",
+    "match_time": "19:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 23.9,
+      "draw_pct": 26.6,
+      "away_win_pct": 49.5
+    }
+  },
+  {
+    "league": "Ligue 1 - France",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "RC Lens",
+    "away": "Marseille",
+    "commence_time": "2026-11-08T19:45:00Z",
+    "match_date": "08 Nov 2026",
+    "match_time": "19:45 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 44.7,
+      "draw_pct": 24.3,
+      "away_win_pct": 31.0
+    }
+  },
+  {
+    "league": "Primera Divisi\u00f3n - Chile",
+    "is_latam": true,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Union La Calera",
+    "away": "Huachipato",
+    "commence_time": "2026-11-08T20:30:00Z",
+    "match_date": "08 Nov 2026",
+    "match_time": "20:30 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 44.8,
+      "draw_pct": 27.0,
+      "away_win_pct": 28.2
+    }
+  },
+  {
+    "league": "Brazil S\u00e9rie B",
+    "is_latam": true,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Cear\u00e1",
+    "away": "Am\u00e9rica Mineiro",
+    "commence_time": "2026-11-08T22:15:00Z",
+    "match_date": "08 Nov 2026",
+    "match_time": "22:15 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 56.2,
+      "draw_pct": 25.2,
+      "away_win_pct": 18.6
+    }
+  },
+  {
+    "league": "Brazil S\u00e9rie B",
+    "is_latam": true,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Goi\u00e1s",
+    "away": "Ponte Preta",
+    "commence_time": "2026-11-08T22:15:00Z",
+    "match_date": "08 Nov 2026",
+    "match_time": "22:15 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 84.4,
+      "draw_pct": 10.4,
+      "away_win_pct": 5.2
+    }
+  },
+  {
+    "league": "Primera Divisi\u00f3n - Argentina",
+    "is_latam": true,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Central C\u00f3rdoba",
+    "away": "Lanus",
+    "commence_time": "2026-11-08T22:30:00Z",
+    "match_date": "08 Nov 2026",
+    "match_time": "22:30 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 19.6,
+      "draw_pct": 26.8,
+      "away_win_pct": 53.6
+    }
+  },
+  {
+    "league": "Primera Divisi\u00f3n - Chile",
+    "is_latam": true,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Universidad de Concepci\u00f3n",
+    "away": "O'Higgins",
+    "commence_time": "2026-11-08T23:00:00Z",
+    "match_date": "08 Nov 2026",
+    "match_time": "23:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 31.6,
+      "draw_pct": 28.6,
+      "away_win_pct": 39.8
+    }
+  },
+  {
+    "league": "Liga MX",
+    "is_latam": true,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Quer\u00e9taro",
+    "away": "Puebla",
+    "commence_time": "2026-11-09T00:00:00Z",
+    "match_date": "09 Nov 2026",
+    "match_time": "00:00 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 53.1,
+      "draw_pct": 24.5,
+      "away_win_pct": 22.4
+    }
+  },
+  {
+    "league": "Liga MX",
+    "is_latam": true,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Le\u00f3n",
+    "away": "Guadalajara",
+    "commence_time": "2026-11-09T02:10:00Z",
+    "match_date": "09 Nov 2026",
+    "match_time": "02:10 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 33.4,
+      "draw_pct": 26.6,
+      "away_win_pct": 40.0
+    }
+  },
+  {
+    "league": "FA Cup",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Plymouth Parkway FC",
+    "away": "Berkhamsted FC",
+    "commence_time": "2026-11-09T19:30:00Z",
+    "match_date": "09 Nov 2026",
+    "match_time": "19:30 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 44.4,
+      "draw_pct": 26.1,
+      "away_win_pct": 29.5
+    }
+  },
+  {
+    "league": "UEFA Nations League",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": true,
+    "home": "Armenia",
+    "away": "Cyprus",
+    "commence_time": "2026-11-12T17:00:00Z",
+    "match_date": "12 Nov 2026",
+    "match_time": "17:00 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 41.0,
+      "draw_pct": 28.6,
+      "away_win_pct": 30.4
+    }
+  },
+  {
+    "league": "UEFA Nations League",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": true,
+    "home": "Turkey",
+    "away": "Belgium",
+    "commence_time": "2026-11-12T17:00:00Z",
+    "match_date": "12 Nov 2026",
+    "match_time": "17:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 27.0,
+      "draw_pct": 23.9,
+      "away_win_pct": 49.1
+    }
+  },
+  {
+    "league": "UEFA Nations League",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": true,
+    "home": "Albania",
+    "away": "Finland",
+    "commence_time": "2026-11-12T19:45:00Z",
+    "match_date": "12 Nov 2026",
+    "match_time": "19:45 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 45.9,
+      "draw_pct": 29.0,
+      "away_win_pct": 25.1
+    }
+  },
+  {
+    "league": "UEFA Nations League",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": true,
+    "home": "San Marino",
+    "away": "Belarus",
+    "commence_time": "2026-11-12T19:45:00Z",
+    "match_date": "12 Nov 2026",
+    "match_time": "19:45 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 3.8,
+      "draw_pct": 9.5,
+      "away_win_pct": 86.7
+    }
+  },
+  {
+    "league": "UEFA Nations League",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": true,
+    "home": "England",
+    "away": "Croatia",
+    "commence_time": "2026-11-12T19:45:00Z",
+    "match_date": "12 Nov 2026",
+    "match_time": "19:45 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 76.0,
+      "draw_pct": 15.8,
+      "away_win_pct": 8.1
+    }
+  },
+  {
+    "league": "UEFA Nations League",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": true,
+    "home": "Czech Republic",
+    "away": "Spain",
+    "commence_time": "2026-11-12T19:45:00Z",
+    "match_date": "12 Nov 2026",
+    "match_time": "19:45 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 5.2,
+      "draw_pct": 12.9,
+      "away_win_pct": 81.9
+    }
+  },
+  {
+    "league": "UEFA Nations League",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": true,
+    "home": "Italy",
+    "away": "France",
+    "commence_time": "2026-11-12T19:45:00Z",
+    "match_date": "12 Nov 2026",
+    "match_time": "19:45 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 24.7,
+      "draw_pct": 24.7,
+      "away_win_pct": 50.7
+    }
+  },
+  {
+    "league": "UEFA Nations League",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": true,
+    "home": "Montenegro",
+    "away": "Latvia",
+    "commence_time": "2026-11-12T19:45:00Z",
+    "match_date": "12 Nov 2026",
+    "match_time": "19:45 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 70.3,
+      "draw_pct": 19.8,
+      "away_win_pct": 10.0
+    }
+  },
+  {
+    "league": "UEFA Nations League",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": true,
+    "home": "Moldova",
+    "away": "Kazakhstan",
+    "commence_time": "2026-11-13T17:00:00Z",
+    "match_date": "13 Nov 2026",
+    "match_time": "17:00 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 37.0,
+      "draw_pct": 31.0,
+      "away_win_pct": 32.0
+    }
+  },
+  {
+    "league": "UEFA Nations League",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": true,
+    "home": "Andorra",
+    "away": "Gibraltar",
+    "commence_time": "2026-11-13T19:45:00Z",
+    "match_date": "13 Nov 2026",
+    "match_time": "19:45 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 53.2,
+      "draw_pct": 30.7,
+      "away_win_pct": 16.1
+    }
+  },
+  {
+    "league": "UEFA Nations League",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": true,
+    "home": "Liechtenstein",
+    "away": "Azerbaijan",
+    "commence_time": "2026-11-13T19:45:00Z",
+    "match_date": "13 Nov 2026",
+    "match_time": "19:45 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 6.3,
+      "draw_pct": 18.0,
+      "away_win_pct": 75.7
+    }
+  },
+  {
+    "league": "UEFA Nations League",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": true,
+    "home": "Bulgaria",
+    "away": "Iceland",
+    "commence_time": "2026-11-13T19:45:00Z",
+    "match_date": "13 Nov 2026",
+    "match_time": "19:45 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 25.8,
+      "draw_pct": 28.6,
+      "away_win_pct": 45.6
+    }
+  },
+  {
+    "league": "UEFA Nations League",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": true,
+    "home": "Luxembourg",
+    "away": "Estonia",
+    "commence_time": "2026-11-13T19:45:00Z",
+    "match_date": "13 Nov 2026",
+    "match_time": "19:45 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 50.4,
+      "draw_pct": 28.1,
+      "away_win_pct": 21.4
+    }
+  },
+  {
+    "league": "UEFA Nations League",
+    "is_latam": false,
+    "is_asian": true,
+    "is_euro_cup": true,
+    "home": "Slovakia",
+    "away": "Faroe Islands",
+    "commence_time": "2026-11-13T19:45:00Z",
+    "match_date": "13 Nov 2026",
+    "match_time": "19:45 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 71.9,
+      "draw_pct": 18.6,
+      "away_win_pct": 9.5
+    }
+  },
+  {
+    "league": "UEFA Nations League",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": true,
+    "home": "Serbia",
+    "away": "Germany",
+    "commence_time": "2026-11-13T19:45:00Z",
+    "match_date": "13 Nov 2026",
+    "match_time": "19:45 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 9.8,
+      "draw_pct": 15.8,
+      "away_win_pct": 74.4
+    }
+  },
+  {
+    "league": "UEFA Nations League",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": true,
+    "home": "Netherlands",
+    "away": "Greece",
+    "commence_time": "2026-11-13T19:45:00Z",
+    "match_date": "13 Nov 2026",
+    "match_time": "19:45 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 67.9,
+      "draw_pct": 18.7,
+      "away_win_pct": 13.4
+    }
+  },
+  {
+    "league": "UEFA Nations League",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": true,
+    "home": "Scotland",
+    "away": "North Macedonia",
+    "commence_time": "2026-11-13T19:45:00Z",
+    "match_date": "13 Nov 2026",
+    "match_time": "19:45 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 75.7,
+      "draw_pct": 17.1,
+      "away_win_pct": 7.2
+    }
+  },
+  {
+    "league": "UEFA Nations League",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": true,
+    "home": "Slovenia",
+    "away": "Switzerland",
+    "commence_time": "2026-11-13T19:45:00Z",
+    "match_date": "13 Nov 2026",
+    "match_time": "19:45 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 17.1,
+      "draw_pct": 26.4,
+      "away_win_pct": 56.5
+    }
+  },
+  {
+    "league": "UEFA Nations League",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": true,
+    "home": "Kosovo",
+    "away": "Israel",
+    "commence_time": "2026-11-14T14:00:00Z",
+    "match_date": "14 Nov 2026",
+    "match_time": "14:00 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 48.2,
+      "draw_pct": 26.6,
+      "away_win_pct": 25.2
+    }
+  },
+  {
+    "league": "UEFA Nations League",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": true,
+    "home": "Georgia",
+    "away": "Hungary",
+    "commence_time": "2026-11-14T17:00:00Z",
+    "match_date": "14 Nov 2026",
+    "match_time": "17:00 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 36.5,
+      "draw_pct": 29.6,
+      "away_win_pct": 33.9
+    }
+  },
+  {
+    "league": "UEFA Nations League",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": true,
+    "home": "Norway",
+    "away": "Wales",
+    "commence_time": "2026-11-14T17:00:00Z",
+    "match_date": "14 Nov 2026",
+    "match_time": "17:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 77.0,
+      "draw_pct": 14.9,
+      "away_win_pct": 8.1
+    }
+  },
+  {
+    "league": "UEFA Nations League",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": true,
+    "home": "Austria",
+    "away": "Republic of Ireland",
+    "commence_time": "2026-11-14T19:45:00Z",
+    "match_date": "14 Nov 2026",
+    "match_time": "19:45 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 59.9,
+      "draw_pct": 23.8,
+      "away_win_pct": 16.3
+    }
+  },
+  {
+    "league": "UEFA Nations League",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": true,
+    "home": "Sweden",
+    "away": "Bosnia & Herzegovina",
+    "commence_time": "2026-11-14T19:45:00Z",
+    "match_date": "14 Nov 2026",
+    "match_time": "19:45 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 61.7,
+      "draw_pct": 22.0,
+      "away_win_pct": 16.3
+    }
+  },
+  {
+    "league": "UEFA Nations League",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": true,
+    "home": "Portugal",
+    "away": "Denmark",
+    "commence_time": "2026-11-14T19:45:00Z",
+    "match_date": "14 Nov 2026",
+    "match_time": "19:45 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 64.6,
+      "draw_pct": 20.4,
+      "away_win_pct": 15.0
+    }
+  },
+  {
+    "league": "UEFA Nations League",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": true,
+    "home": "Northern Ireland",
+    "away": "Ukraine",
+    "commence_time": "2026-11-14T19:45:00Z",
+    "match_date": "14 Nov 2026",
+    "match_time": "19:45 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 39.6,
+      "draw_pct": 30.4,
+      "away_win_pct": 29.9
+    }
+  },
+  {
+    "league": "UEFA Nations League",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": true,
+    "home": "Romania",
+    "away": "Poland",
+    "commence_time": "2026-11-14T19:45:00Z",
+    "match_date": "14 Nov 2026",
+    "match_time": "19:45 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 26.1,
+      "draw_pct": 26.5,
+      "away_win_pct": 47.4
+    }
+  },
+  {
+    "league": "Brazil S\u00e9rie A",
+    "is_latam": true,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Mirassol",
+    "away": "Atletico Mineiro",
+    "commence_time": "2026-11-14T21:30:00Z",
+    "match_date": "14 Nov 2026",
+    "match_time": "21:30 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 38.0,
+      "draw_pct": 27.5,
+      "away_win_pct": 34.5
+    }
+  },
+  {
+    "league": "Brazil S\u00e9rie A",
+    "is_latam": true,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Chapecoense",
+    "away": "Vasco da Gama",
+    "commence_time": "2026-11-14T23:30:00Z",
+    "match_date": "14 Nov 2026",
+    "match_time": "23:30 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 19.5,
+      "draw_pct": 23.9,
+      "away_win_pct": 56.6
+    }
+  },
+  {
+    "league": "Bundesliga - Germany",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Bayern Munich",
+    "away": "1. FC K\u00f6ln",
+    "commence_time": "2026-11-20T19:30:00Z",
+    "match_date": "20 Nov 2026",
+    "match_time": "19:30 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 88.8,
+      "draw_pct": 6.7,
+      "away_win_pct": 4.5
+    }
+  },
+  {
+    "league": "Ligue 1 - France",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Troyes",
+    "away": "Le Havre",
+    "commence_time": "2026-11-20T19:45:00Z",
+    "match_date": "20 Nov 2026",
+    "match_time": "19:45 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 44.2,
+      "draw_pct": 27.0,
+      "away_win_pct": 28.7
+    }
+  },
+  {
+    "league": "EPL",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Manchester City",
+    "away": "Fulham",
+    "commence_time": "2026-11-21T12:30:00Z",
+    "match_date": "21 Nov 2026",
+    "match_time": "12:30 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 63.9,
+      "draw_pct": 20.6,
+      "away_win_pct": 15.5
+    }
+  },
+  {
+    "league": "Bundesliga - Germany",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Bayer Leverkusen",
+    "away": "SC Paderborn",
+    "commence_time": "2026-11-21T14:30:00Z",
+    "match_date": "21 Nov 2026",
+    "match_time": "14:30 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 76.6,
+      "draw_pct": 13.1,
+      "away_win_pct": 10.4
+    }
+  },
+  {
+    "league": "Bundesliga - Germany",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Borussia Monchengladbach",
+    "away": "Borussia Dortmund",
+    "commence_time": "2026-11-21T14:30:00Z",
+    "match_date": "21 Nov 2026",
+    "match_time": "14:30 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 20.4,
+      "draw_pct": 22.0,
+      "away_win_pct": 57.6
+    }
+  },
+  {
+    "league": "Bundesliga - Germany",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Eintracht Frankfurt",
+    "away": "TSG Hoffenheim",
+    "commence_time": "2026-11-21T14:30:00Z",
+    "match_date": "21 Nov 2026",
+    "match_time": "14:30 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 39.7,
+      "draw_pct": 24.9,
+      "away_win_pct": 35.4
+    }
+  },
+  {
+    "league": "Bundesliga - Germany",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Elversberg",
+    "away": "SC Freiburg",
+    "commence_time": "2026-11-21T14:30:00Z",
+    "match_date": "21 Nov 2026",
+    "match_time": "14:30 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 27.7,
+      "draw_pct": 25.3,
+      "away_win_pct": 47.0
+    }
+  },
+  {
+    "league": "Bundesliga - Germany",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Union Berlin",
+    "away": "RB Leipzig",
+    "commence_time": "2026-11-21T14:30:00Z",
+    "match_date": "21 Nov 2026",
+    "match_time": "14:30 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 21.8,
+      "draw_pct": 22.0,
+      "away_win_pct": 56.2
+    }
+  },
+  {
+    "league": "EPL",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Aston Villa",
+    "away": "Sunderland",
+    "commence_time": "2026-11-21T15:00:00Z",
+    "match_date": "21 Nov 2026",
+    "match_time": "15:00 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 54.0,
+      "draw_pct": 24.3,
+      "away_win_pct": 21.7
+    }
+  },
+  {
+    "league": "EPL",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Bournemouth",
+    "away": "Nottingham Forest",
+    "commence_time": "2026-11-21T15:00:00Z",
+    "match_date": "21 Nov 2026",
+    "match_time": "15:00 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 48.0,
+      "draw_pct": 26.3,
+      "away_win_pct": 25.6
+    }
+  },
+  {
+    "league": "EPL",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Chelsea",
+    "away": "Leeds United",
+    "commence_time": "2026-11-21T15:00:00Z",
+    "match_date": "21 Nov 2026",
+    "match_time": "15:00 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 52.6,
+      "draw_pct": 25.1,
+      "away_win_pct": 22.3
+    }
+  },
+  {
+    "league": "EPL",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Coventry City",
+    "away": "Crystal Palace",
+    "commence_time": "2026-11-21T15:00:00Z",
+    "match_date": "21 Nov 2026",
+    "match_time": "15:00 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 42.0,
+      "draw_pct": 26.8,
+      "away_win_pct": 31.3
+    }
+  },
+  {
+    "league": "EPL",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Tottenham Hotspur",
+    "away": "Ipswich Town",
+    "commence_time": "2026-11-21T15:00:00Z",
+    "match_date": "21 Nov 2026",
+    "match_time": "15:00 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 60.4,
+      "draw_pct": 22.5,
+      "away_win_pct": 17.1
+    }
+  },
+  {
+    "league": "Ligue 1 - France",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Nice",
+    "away": "Paris Saint Germain",
+    "commence_time": "2026-11-21T16:15:00Z",
+    "match_date": "21 Nov 2026",
+    "match_time": "16:15 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 15.5,
+      "draw_pct": 19.7,
+      "away_win_pct": 64.8
+    }
+  },
+  {
+    "league": "EPL",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Newcastle United",
+    "away": "Arsenal",
+    "commence_time": "2026-11-21T17:30:00Z",
+    "match_date": "21 Nov 2026",
+    "match_time": "17:30 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 17.4,
+      "draw_pct": 23.1,
+      "away_win_pct": 59.5
+    }
+  },
+  {
+    "league": "Bundesliga - Germany",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "FC Schalke 04",
+    "away": "VfB Stuttgart",
+    "commence_time": "2026-11-21T17:30:00Z",
+    "match_date": "21 Nov 2026",
+    "match_time": "17:30 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 23.7,
+      "draw_pct": 22.8,
+      "away_win_pct": 53.5
+    }
+  },
+  {
+    "league": "Ligue 1 - France",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "AS Monaco",
+    "away": "Auxerre",
+    "commence_time": "2026-11-21T19:45:00Z",
+    "match_date": "21 Nov 2026",
+    "match_time": "19:45 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 67.0,
+      "draw_pct": 19.3,
+      "away_win_pct": 13.7
+    }
+  },
+  {
+    "league": "Ligue 1 - France",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Strasbourg",
+    "away": "Brest",
+    "commence_time": "2026-11-21T19:45:00Z",
+    "match_date": "21 Nov 2026",
+    "match_time": "19:45 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 39.7,
+      "draw_pct": 25.6,
+      "away_win_pct": 34.7
+    }
+  },
+  {
+    "league": "Ligue 1 - France",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Lille",
+    "away": "Lyon",
+    "commence_time": "2026-11-21T19:45:00Z",
+    "match_date": "21 Nov 2026",
+    "match_time": "19:45 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 40.7,
+      "draw_pct": 27.7,
+      "away_win_pct": 31.6
+    }
+  },
+  {
+    "league": "Ligue 1 - France",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "RC Lens",
+    "away": "Toulouse",
+    "commence_time": "2026-11-21T19:45:00Z",
+    "match_date": "21 Nov 2026",
+    "match_time": "19:45 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 51.0,
+      "draw_pct": 24.6,
+      "away_win_pct": 24.3
+    }
+  },
+  {
+    "league": "Copa Sudamericana",
+    "is_latam": true,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Clube Atl\u00e9tico Mineiro",
+    "away": "Boca Juniors",
+    "commence_time": "2026-11-21T22:30:00Z",
+    "match_date": "21 Nov 2026",
+    "match_time": "22:30 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 30.1,
+      "draw_pct": 31.6,
+      "away_win_pct": 38.3
+    }
+  },
+  {
+    "league": "EPL",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Hull City",
+    "away": "Brighton and Hove Albion",
+    "commence_time": "2026-11-22T14:00:00Z",
+    "match_date": "22 Nov 2026",
+    "match_time": "14:00 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 15.4,
+      "draw_pct": 21.5,
+      "away_win_pct": 63.0
+    }
+  },
+  {
+    "league": "Ligue 1 - France",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Paris FC",
+    "away": "Angers",
+    "commence_time": "2026-11-22T14:00:00Z",
+    "match_date": "22 Nov 2026",
+    "match_time": "14:00 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 66.8,
+      "draw_pct": 20.0,
+      "away_win_pct": 13.2
+    }
+  },
+  {
+    "league": "Bundesliga - Germany",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Augsburg",
+    "away": "FSV Mainz 05",
+    "commence_time": "2026-11-22T14:30:00Z",
+    "match_date": "22 Nov 2026",
+    "match_time": "14:30 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 35.0,
+      "draw_pct": 24.8,
+      "away_win_pct": 40.2
+    }
+  },
+  {
+    "league": "Ligue 1 - France",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Lorient",
+    "away": "Rennes",
+    "commence_time": "2026-11-22T16:15:00Z",
+    "match_date": "22 Nov 2026",
+    "match_time": "16:15 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 30.6,
+      "draw_pct": 26.6,
+      "away_win_pct": 42.7
+    }
+  },
+  {
+    "league": "EPL",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Liverpool",
+    "away": "Manchester United",
+    "commence_time": "2026-11-22T16:30:00Z",
+    "match_date": "22 Nov 2026",
+    "match_time": "16:30 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 54.8,
+      "draw_pct": 23.7,
+      "away_win_pct": 21.5
+    }
+  },
+  {
+    "league": "Bundesliga - Germany",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Werder Bremen",
+    "away": "Hamburger SV",
+    "commence_time": "2026-11-22T16:30:00Z",
+    "match_date": "22 Nov 2026",
+    "match_time": "16:30 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 56.9,
+      "draw_pct": 21.8,
+      "away_win_pct": 21.3
+    }
+  },
+  {
+    "league": "Ligue 1 - France",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Marseille",
+    "away": "Le Mans FC",
+    "commence_time": "2026-11-22T19:45:00Z",
+    "match_date": "22 Nov 2026",
+    "match_time": "19:45 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 65.1,
+      "draw_pct": 20.1,
+      "away_win_pct": 14.8
+    }
+  },
+  {
+    "league": "EPL",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Brentford",
+    "away": "Everton",
+    "commence_time": "2026-11-23T20:00:00Z",
+    "match_date": "23 Nov 2026",
+    "match_time": "20:00 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 51.5,
+      "draw_pct": 24.9,
+      "away_win_pct": 23.6
+    }
+  },
+  {
+    "league": "UEFA Champions League",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": true,
+    "home": "Galatasaray",
+    "away": "Aston Villa",
+    "commence_time": "2026-11-24T17:45:00Z",
+    "match_date": "24 Nov 2026",
+    "match_time": "17:45 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 36.3,
+      "draw_pct": 25.2,
+      "away_win_pct": 38.5
+    }
+  },
+  {
+    "league": "UEFA Champions League",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": true,
+    "home": "Bod\u00f8/Glimt",
+    "away": "LASK",
+    "commence_time": "2026-11-24T17:45:00Z",
+    "match_date": "24 Nov 2026",
+    "match_time": "17:45 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 61.4,
+      "draw_pct": 20.7,
+      "away_win_pct": 17.9
+    }
+  },
+  {
+    "league": "UEFA Champions League",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": true,
+    "home": "Como",
+    "away": "AEK Athens",
+    "commence_time": "2026-11-24T20:00:00Z",
+    "match_date": "24 Nov 2026",
+    "match_time": "20:00 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 70.9,
+      "draw_pct": 17.3,
+      "away_win_pct": 11.9
+    }
+  },
+  {
+    "league": "UEFA Champions League",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": true,
+    "home": "Arsenal",
+    "away": "Borussia Dortmund",
+    "commence_time": "2026-11-24T20:00:00Z",
+    "match_date": "24 Nov 2026",
+    "match_time": "20:00 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 67.3,
+      "draw_pct": 20.0,
+      "away_win_pct": 12.7
+    }
+  },
+  {
+    "league": "UEFA Champions League",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": true,
+    "home": "Feyenoord",
+    "away": "Porto",
+    "commence_time": "2026-11-24T20:00:00Z",
+    "match_date": "24 Nov 2026",
+    "match_time": "20:00 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 32.4,
+      "draw_pct": 25.8,
+      "away_win_pct": 41.9
+    }
+  },
+  {
+    "league": "UEFA Champions League",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": true,
+    "home": "Manchester City",
+    "away": "Napoli",
+    "commence_time": "2026-11-24T20:00:00Z",
+    "match_date": "24 Nov 2026",
+    "match_time": "20:00 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 76.1,
+      "draw_pct": 15.2,
+      "away_win_pct": 8.7
+    }
+  },
+  {
+    "league": "UEFA Champions League",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": true,
+    "home": "Real Madrid",
+    "away": "PSV Eindhoven",
+    "commence_time": "2026-11-24T20:00:00Z",
+    "match_date": "24 Nov 2026",
+    "match_time": "20:00 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 78.7,
+      "draw_pct": 12.7,
+      "away_win_pct": 8.7
+    }
+  },
+  {
+    "league": "UEFA Champions League",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": true,
+    "home": "RB Leipzig",
+    "away": "RC Lens",
+    "commence_time": "2026-11-24T20:00:00Z",
+    "match_date": "24 Nov 2026",
+    "match_time": "20:00 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 66.3,
+      "draw_pct": 18.6,
+      "away_win_pct": 15.2
+    }
+  },
+  {
+    "league": "UEFA Champions League",
+    "is_latam": false,
+    "is_asian": true,
+    "is_euro_cup": true,
+    "home": "\u0160K Slovan Bratislava",
+    "away": "Real Betis",
+    "commence_time": "2026-11-24T20:00:00Z",
+    "match_date": "24 Nov 2026",
+    "match_time": "20:00 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 11.2,
+      "draw_pct": 17.3,
+      "away_win_pct": 71.5
+    }
+  },
+  {
+    "league": "UEFA Champions League",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": true,
+    "home": "Sabah FK",
+    "away": "Barcelona",
+    "commence_time": "2026-11-25T17:45:00Z",
+    "match_date": "25 Nov 2026",
+    "match_time": "17:45 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 4.2,
+      "draw_pct": 7.4,
+      "away_win_pct": 88.5
+    }
+  },
+  {
+    "league": "UEFA Champions League",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": true,
+    "home": "Slavia Praha",
+    "away": "Villarreal",
+    "commence_time": "2026-11-25T17:45:00Z",
+    "match_date": "25 Nov 2026",
+    "match_time": "17:45 UTC",
+    "bookmaker": "Unibet (NL)",
+    "probabilities": {
+      "home_win_pct": 33.5,
+      "draw_pct": 25.2,
+      "away_win_pct": 41.3
+    }
+  },
+  {
+    "league": "UEFA Champions League",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": true,
+    "home": "Paris Saint Germain",
+    "away": "AS Roma",
+    "commence_time": "2026-11-25T20:00:00Z",
+    "match_date": "25 Nov 2026",
+    "match_time": "20:00 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 68.2,
+      "draw_pct": 17.7,
+      "away_win_pct": 14.1
+    }
+  },
+  {
+    "league": "UEFA Champions League",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": true,
+    "home": "Atl\u00e9tico Madrid",
+    "away": "Viking FK",
+    "commence_time": "2026-11-25T20:00:00Z",
+    "match_date": "25 Nov 2026",
+    "match_time": "20:00 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 84.6,
+      "draw_pct": 10.6,
+      "away_win_pct": 4.8
+    }
+  },
+  {
+    "league": "UEFA Champions League",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": true,
+    "home": "Lille",
+    "away": "Bayern Munich",
+    "commence_time": "2026-11-25T20:00:00Z",
+    "match_date": "25 Nov 2026",
+    "match_time": "20:00 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 11.9,
+      "draw_pct": 16.4,
+      "away_win_pct": 71.7
+    }
+  },
+  {
+    "league": "UEFA Champions League",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": true,
+    "home": "Club Brugge",
+    "away": "Liverpool",
+    "commence_time": "2026-11-25T20:00:00Z",
+    "match_date": "25 Nov 2026",
+    "match_time": "20:00 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 20.2,
+      "draw_pct": 21.8,
+      "away_win_pct": 57.9
+    }
+  },
+  {
+    "league": "UEFA Champions League",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": true,
+    "home": "Shakhtar Donetsk",
+    "away": "Fenerbahce",
+    "commence_time": "2026-11-25T20:00:00Z",
+    "match_date": "25 Nov 2026",
+    "match_time": "20:00 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 36.7,
+      "draw_pct": 26.5,
+      "away_win_pct": 36.7
+    }
+  },
+  {
+    "league": "UEFA Champions League",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": true,
+    "home": "Inter Milan",
+    "away": "VfB Stuttgart",
+    "commence_time": "2026-11-25T20:00:00Z",
+    "match_date": "25 Nov 2026",
+    "match_time": "20:00 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 62.6,
+      "draw_pct": 18.9,
+      "away_win_pct": 18.5
+    }
+  },
+  {
+    "league": "UEFA Champions League",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": true,
+    "home": "Sporting Lisbon",
+    "away": "Manchester United",
+    "commence_time": "2026-11-25T20:00:00Z",
+    "match_date": "25 Nov 2026",
+    "match_time": "20:00 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 36.7,
+      "draw_pct": 26.5,
+      "away_win_pct": 36.7
+    }
+  },
+  {
+    "league": "Copa Libertadores",
+    "is_latam": true,
+    "is_asian": false,
+    "is_euro_cup": false,
+    "home": "Palmeiras-SP",
+    "away": "Estudiantes La Plata",
+    "commence_time": "2026-11-28T20:00:00Z",
+    "match_date": "28 Nov 2026",
+    "match_time": "20:00 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 49.9,
+      "draw_pct": 28.7,
+      "away_win_pct": 21.4
+    }
+  },
+  {
+    "league": "EFL Cup",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": true,
+    "home": "Fleetwood Town",
+    "away": "Everton",
+    "commence_time": "2026-12-15T16:00:00Z",
+    "match_date": "15 Dec 2026",
+    "match_time": "16:00 UTC",
+    "bookmaker": "Pinnacle",
+    "probabilities": {
+      "home_win_pct": 7.6,
+      "draw_pct": 15.1,
+      "away_win_pct": 77.2
+    }
+  },
+  {
+    "league": "EFL Cup",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": true,
+    "home": "Liverpool",
+    "away": "Bournemouth",
+    "commence_time": "2026-12-15T18:00:00Z",
+    "match_date": "15 Dec 2026",
+    "match_time": "18:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 63.3,
+      "draw_pct": 22.8,
+      "away_win_pct": 13.9
+    }
+  },
+  {
+    "league": "EFL Cup",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": true,
+    "home": "Manchester City",
+    "away": "Bradford City",
+    "commence_time": "2026-12-15T18:00:00Z",
+    "match_date": "15 Dec 2026",
+    "match_time": "18:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 87.3,
+      "draw_pct": 8.6,
+      "away_win_pct": 4.1
+    }
+  },
+  {
+    "league": "EFL Cup",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": true,
+    "home": "Crystal Palace",
+    "away": "Sunderland",
+    "commence_time": "2026-12-15T18:00:00Z",
+    "match_date": "15 Dec 2026",
+    "match_time": "18:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 49.3,
+      "draw_pct": 26.7,
+      "away_win_pct": 24.0
+    }
+  },
+  {
+    "league": "EFL Cup",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": true,
+    "home": "Liverpool",
+    "away": "Bournemouth",
+    "commence_time": "2026-12-16T20:00:00Z",
+    "match_date": "16 Dec 2026",
+    "match_time": "20:00 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 61.1,
+      "draw_pct": 22.2,
+      "away_win_pct": 16.7
+    }
+  },
+  {
+    "league": "EFL Cup",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": true,
+    "home": "Manchester City",
+    "away": "Bradford City",
+    "commence_time": "2026-12-16T20:00:00Z",
+    "match_date": "16 Dec 2026",
+    "match_time": "20:00 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 86.1,
+      "draw_pct": 8.9,
+      "away_win_pct": 4.9
+    }
+  },
+  {
+    "league": "EFL Cup",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": true,
+    "home": "Crystal Palace",
+    "away": "Sunderland",
+    "commence_time": "2026-12-16T20:00:00Z",
+    "match_date": "16 Dec 2026",
+    "match_time": "20:00 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 48.4,
+      "draw_pct": 26.3,
+      "away_win_pct": 25.3
+    }
+  },
+  {
+    "league": "EFL Cup",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": true,
+    "home": "Fleetwood Town",
+    "away": "Everton",
+    "commence_time": "2026-12-16T20:00:00Z",
+    "match_date": "16 Dec 2026",
+    "match_time": "20:00 UTC",
+    "bookmaker": "Unibet",
+    "probabilities": {
+      "home_win_pct": 7.2,
+      "draw_pct": 15.4,
+      "away_win_pct": 77.4
+    }
+  },
+  {
+    "league": "EFL Cup",
+    "is_latam": false,
+    "is_asian": false,
+    "is_euro_cup": true,
+    "home": "Fleetwood Town",
+    "away": "Everton",
+    "commence_time": "2026-12-17T20:00:00Z",
+    "match_date": "17 Dec 2026",
+    "match_time": "20:00 UTC",
+    "bookmaker": "SportsBet",
+    "probabilities": {
+      "home_win_pct": 12.9,
+      "draw_pct": 15.8,
+      "away_win_pct": 71.3
+    }
+  }
+]
